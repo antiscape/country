@@ -66,7 +66,7 @@
 
   // When a Google-certified CMP (Funding Choices) is configured in AdSense it
   // owns the consent UI and Consent Mode, so the built-in banner stays off.
-  if (String(ads.cmp || 'custom') === 'google') return;
+  const cmp = String(ads.cmp || 'custom');
 
   const lang = (document.documentElement.lang || 'en').slice(0, 2);
   const copy = {
@@ -133,6 +133,29 @@
       location.reload();
     });
   });
+
+  if (cmp === 'google') {
+    // Funding Choices should paint its own message. If it is not published, is
+    // blocked, or targets a different site, fall back to the built-in banner so
+    // the page is never left with no consent notice at all.
+    const hasConsentUi = () => Boolean(
+      window.googlefc
+      || document.querySelector('.fc-consent-root')
+      || document.querySelector('.fc-dialog-overlay'),
+    );
+    if (hasConsentUi()) return;
+    let waited = 0;
+    const timer = setInterval(() => {
+      if (hasConsentUi()) { clearInterval(timer); return; }
+      waited += 300;
+      if (waited < 3000) return;
+      clearInterval(timer);
+      if (consent === 'granted') grantConsent();
+      else if (consent !== 'denied') showBanner();
+      else adBoxes.forEach((el) => el.classList.add('ad-slot--empty'));
+    }, 300);
+    return;
+  }
 
   if (consent === 'granted') grantConsent();
   else if (consent !== 'denied') showBanner();

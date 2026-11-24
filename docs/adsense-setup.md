@@ -59,15 +59,32 @@
 - 拒绝后仍可玩，AdSense 只出非个性化/受限广告；
 - 页脚“Cookie 设置”可撤回。
 
-### 面向 EEA / 英国 / 瑞士时还差一步
+### 面向 EEA / 英国 / 瑞士：启用 Funding Choices
 
-Google 要求这些地区投放**个性化广告**必须使用 **Google 认证 CMP**（集成 IAB TCF）。自带横幅不是认证 CMP，所以：
+Google 要求这些地区投放**个性化广告**必须使用 **Google 认证 CMP**（集成 IAB TCF）。
+Funding Choices 是 Google 自己的免费 CMP，开通不需要写代码。
 
-1. 打开 AdSense → **隐私与消息** → 启用 **GDPR 消息**（Funding Choices，免费）；
-2. 把 `site.config.json` 的 `adsense.cmp` 改成 `"google"`；
-3. `npm run build` 重新部署 —— 自带横幅会自动让位，避免双横幅。
+**后台步骤**（AdSense → 隐私与消息）：
 
-在此之前，EEA 流量只会拿到非个性化广告，不算违规，但收入偏低。
+1. 左侧菜单进入 **隐私与消息 / Privacy & messaging**；
+2. 选择 **GDPR** 标签页，点 **创建消息 / Create message**；
+3. 站点选 `navpage.win`，消息类型选 **Consent / Do not consent**（两个按钮，不要用只有一个按钮或仅关闭的模板）；
+4. 语言至少勾选 **English / 中文（简体）/ Español / Français** —— 会按访客浏览器语言自动显示；
+5. 样式可以改配色，但**不要关掉「Do not consent」**，也不要默认勾选同意；
+6. 点 **发布 / Publish**，确认状态变成「已发布 / Published」；
+7. 用无痕窗口 + 欧洲 IP（或 VPN）打开 `https://navpage.win/en/`，应能看到 Google 自己的弹窗，右下角带「Privacy」小标签。
+
+**代码切换**：`site.config.json` → `adsense.cmp` 改成 `"google"`，然后 `npm run build` 并部署。
+
+```json
+"adsense": { "enabled": true, "client": "ca-pub-6758251429919320", "autoAds": true, "cmp": "google" }
+```
+
+- `cmp: "custom"`（默认）：用站点自带横幅 + Consent Mode v2；
+- `cmp: "google"`：不再输出自带的 consent 默认值，由 Funding Choices 全权处理。
+
+**顺序很重要**：先在后台发布 FC，确认能弹出，再切 `cmp`。如果反过来，EEA 访客会在一段时间内既没有 FC 也没有自带横幅，等于没有同意提示。
+代码里做了兜底：`cmp: "google"` 但 3 秒内没检测到 FC 时，会自动回退显示自带横幅，避免完全空白。
 
 参考：[Google 认证 CMP 要求](https://support.google.com/adsense/answer/13554116)
 
