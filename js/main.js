@@ -88,18 +88,25 @@ function render() {
 function boot() {
   const bootParams = new URLSearchParams(location.search);
   let hasSave = false;
-  try { hasSave = !!localStorage.getItem('geoquest_v1'); } catch { /* noop */ }
+  let siteLang = '';
+  try {
+    hasSave = !!localStorage.getItem('geoquest_v1');
+    siteLang = localStorage.getItem('geoquest_lang') || '';
+  } catch { /* noop */ }
+
   if (bootParams.get('lang')) {
     store.settings.lang = normalizeLang(bootParams.get('lang'));
     save();
   } else if (!hasSave) {
-    const browserLang = normalizeLang(navigator.languages?.[0] || navigator.language);
-    if (browserLang !== 'zh') {
-      store.settings.lang = browserLang;
-      save();
-    }
+    // Prefer the language chosen on the SEO site; otherwise use the browser.
+    const candidates = siteLang
+      ? [siteLang, ...(navigator.languages?.length ? navigator.languages : [navigator.language])]
+      : (navigator.languages?.length ? navigator.languages : [navigator.language]);
+    store.settings.lang = normalizeLang(candidates.find((l) => ['zh', 'en', 'es', 'fr'].includes(String(l).toLowerCase().slice(0, 2))) || 'en');
+    save();
   }
   setLang(store.settings.lang);
+  try { localStorage.setItem('geoquest_lang', store.settings.lang); } catch { /* noop */ }
   document.body.classList.toggle('reduced-motion', !store.settings.motion);
   setSfxEnabled(store.settings.sound);
   if (!store.settings.music) setMusicEnabled(false);

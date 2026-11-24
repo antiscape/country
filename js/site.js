@@ -3,6 +3,19 @@
   const cfg = window.__SITE_CONFIG__ || {};
   const ads = cfg.adsense || {};
   const CONSENT_KEY = 'geoquest_consent_v1';
+  const LANG_KEY = 'geoquest_lang';
+  const LANGS = ['zh', 'en', 'es', 'fr'];
+
+  // Remember the language the visitor is actually reading.
+  const pathLang = location.pathname.split('/')[1];
+  if (LANGS.includes(pathLang)) {
+    try { localStorage.setItem(LANG_KEY, pathLang); } catch { /* noop */ }
+  }
+  document.querySelectorAll('[data-set-lang]').forEach((link) => {
+    link.addEventListener('click', () => {
+      try { localStorage.setItem(LANG_KEY, link.dataset.setLang); } catch { /* noop */ }
+    });
+  });
 
   /* ---------------- atlas filter ---------------- */
   const search = document.querySelector('[data-atlas-search]');

@@ -176,7 +176,7 @@ function siteHeader(lang, active, pathName) {
     ['guides', langPath(lang, 'guides/'), t.nav.guides],
     ['about', legalPath(lang, 'about'), t.nav.about],
   ];
-  const langLinks = LANGS.map((l) => `<a href="/${l}/${pathWithoutLang}" class="${l === lang ? 'on' : ''}">${SITE[l].label}<span>${l.toUpperCase()}</span></a>`).join('');
+  const langLinks = LANGS.map((l) => `<a href="/${l}/${pathWithoutLang}" class="${l === lang ? 'on' : ''}" data-set-lang="${l}">${SITE[l].label}<span>${l.toUpperCase()}</span></a>`).join('');
   return `<header class="site-header">
   <div class="site-wrap site-header-inner">
     <a class="site-brand" href="/${lang}/" aria-label="GEOQUEST">
@@ -224,6 +224,7 @@ function siteFooter(lang) {
         <li><a href="${legalPath(lang, 'privacy')}">${esc(t.legal.privacyTitle)}</a></li>
         <li><a href="${legalPath(lang, 'terms')}">${esc(t.legal.termsTitle)}</a></li>
         <li><a href="${legalPath(lang, 'contact')}">${esc(t.legal.contactTitle)}</a></li>
+        <li><a href="/?choose=1">${esc(t.languageTitle)}</a></li>
         ${ADS.enabled && ADS.client ? `<li><button type="button" class="linklike" data-consent-open>${esc(t.common.cookieSettings)}</button></li>` : ''}
       </ul></div>
     </div>
@@ -566,7 +567,28 @@ function languageHub() {
   const title = 'GEOQUEST — World geography quiz in 4 languages';
   const desc = 'A free geography quiz in English, Chinese, Spanish and French. Flags, capitals, countries, population and independence days.';
   const alternates = LANGS.map((l) => `<link rel="alternate" hreflang="${LOCALES[l]}" href="${absUrl(`/${l}/`)}">`).join('\n') + `\n<link rel="alternate" hreflang="x-default" href="${absUrl('/en/')}">`;
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>${title}</title><meta name="description" content="${desc}"><meta name="robots" content="index,follow"><link rel="canonical" href="${absUrl('/')}">${alternates}<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/site.css"></head><body class="site-body"><main class="lang-hub"><div class="lang-hub-card">${logoMark()}<h1>GEOQUEST</h1><p>${esc(SITE.en.languageLead)}</p><div class="lang-hub-grid">${cards}</div></div></main></body></html>`;
+  const autoLang = `(() => {
+    const supported = ['zh', 'en', 'es', 'fr'];
+    const params = new URLSearchParams(location.search);
+    if (params.get('choose') === '1') return;
+    let lang = params.get('lang');
+    if (lang !== null) {
+      // An explicit but unsupported language falls back to English.
+      if (!supported.includes(lang)) lang = 'en';
+    } else {
+      try { lang = localStorage.getItem('geoquest_lang') || ''; } catch { lang = ''; }
+      if (!supported.includes(lang)) {
+        const list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
+        for (const item of list) {
+          const code = String(item || '').toLowerCase().slice(0, 2);
+          if (supported.includes(code)) { lang = code; break; }
+        }
+      }
+      if (!supported.includes(lang)) lang = 'en';
+    }
+    location.replace('/' + lang + '/');
+  })();`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>${title}</title><meta name="description" content="${desc}"><meta name="robots" content="index,follow"><link rel="canonical" href="${absUrl('/')}">${alternates}<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/site.css"><script>${autoLang}</script></head><body class="site-body"><main class="lang-hub"><div class="lang-hub-card">${logoMark()}<h1>GEOQUEST</h1><p>${esc(SITE.en.languageLead)}</p><div class="lang-hub-grid">${cards}</div></div></main></body></html>`;
 }
 
 /* ---------------- write ---------------- */

@@ -15,7 +15,7 @@ let current = 'zh';
 
 export function normalizeLang(lang) {
   const v = String(lang || '').toLowerCase().slice(0, 2);
-  return LANG_IDS.has(v) ? v : 'zh';
+  return LANG_IDS.has(v) ? v : 'en';
 }
 
 export function setLang(lang) {

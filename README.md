@@ -316,6 +316,9 @@ npm run build
 
 - UI、国家名、首都、地区、数字、日期、面积、人口均为四语言；
 - 语言由 URL 决定：`/zh/`、`/en/`、`/es/`、`/fr/`；
+- **根路径 `/` 自动按浏览器语言跳转**：支持 `zh` / `en` / `es` / `fr`，不支持时默认 `/en/`；
+- 用户手动选过语言后保存到 `localStorage`，下次访问 `/` 或 `/play/` 优先使用该语言；
+- 想强制查看语言选择页，用 `/?choose=1`（自动跳转不会触发）；
 - 游戏入口 `?lang=es`，语言切换写回 URL；
 - 翻译集中在 `js/locales/es.js`、`js/locales/fr.js`，以及 `site/content.mjs`。
 
