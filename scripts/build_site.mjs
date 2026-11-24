@@ -6,6 +6,7 @@
    - sitemap.xml, robots.txt, ads.txt
 */
 import fs from 'node:fs';
+import crypto from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { COUNTRIES, REGIONS, BY_ID } from '../js/data.js';
@@ -24,6 +25,16 @@ const ADS = config.adsense || {};
 const TODAY = new Date().toISOString().slice(0, 10);
 const UPDATED = String(config.contentUpdated || TODAY);
 const LANGS = ['zh', 'en', 'es', 'fr'];
+
+// Content hash for static assets. Cloudflare caches /css/* and /js/* at the
+// edge, so a bare URL can serve a stale bundle for hours after a deploy.
+const BUILD_ID = (() => {
+  const hash = crypto.createHash('sha1');
+  for (const file of ['css/base.css', 'css/site.css', 'css/components.css', 'js/site.js']) {
+    hash.update(fs.readFileSync(path.join(ROOT, file)));
+  }
+  return hash.digest('hex').slice(0, 8);
+})();
 const LOCALES = { zh: 'zh-CN', en: 'en-US', es: 'es-ES', fr: 'fr-FR' };
 const OG_LOCALES = { zh: 'zh_CN', en: 'en_US', es: 'es_ES', fr: 'fr_FR' };
 
@@ -174,8 +185,8 @@ ${xDefault}
 <meta name="theme-color" content="#07111f">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/icon-192.png">
-<link rel="stylesheet" href="/css/base.css">
-<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/base.css?v=${BUILD_ID}">
+<link rel="stylesheet" href="/css/site.css?v=${BUILD_ID}">
 ${adsenseHead()}
 ${ga}
 ${json}
@@ -286,7 +297,7 @@ ${siteHeader(lang, opts.active || '', pathName)}
 <main id="main">${body}</main>
 ${siteFooter(lang)}
 <script>window.__SITE_CONFIG__=${JSON.stringify({ baseUrl: BASE, adsense: ADS }).replace(/</g, '\\u003c')};</script>
-<script src="/js/site.js" defer></script>
+<script src="/js/site.js?v=${BUILD_ID}" defer></script>
 </body>
 </html>`;
 }
@@ -652,7 +663,7 @@ function languageHub() {
     }
     location.replace('/' + lang + '/');
   })();`;
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>${title}</title><meta name="description" content="${desc}"><meta name="robots" content="index,follow"><link rel="canonical" href="${absUrl('/')}">${alternates}<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/site.css"><script>${autoLang}</script></head><body class="site-body"><main class="lang-hub"><div class="lang-hub-card">${logoMark()}<h1>GEOQUEST</h1><p>${esc(SITE.en.languageLead)}</p><div class="lang-hub-grid">${cards}</div></div></main></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>${title}</title><meta name="description" content="${desc}"><meta name="robots" content="index,follow"><link rel="canonical" href="${absUrl('/')}">${alternates}<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/css/base.css?v=${BUILD_ID}"><link rel="stylesheet" href="/css/site.css?v=${BUILD_ID}"><script>${autoLang}</script></head><body class="site-body"><main class="lang-hub"><div class="lang-hub-card">${logoMark()}<h1>GEOQUEST</h1><p>${esc(SITE.en.languageLead)}</p><div class="lang-hub-grid">${cards}</div></div></main></body></html>`;
 }
 
 /* ---------------- write ---------------- */
@@ -737,7 +748,7 @@ function main() {
 /es /es/ 301
 /fr /fr/ 301
 `);
-  write('404.html', `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Page not found | GEOQUEST</title><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/site.css"></head><body class="site-body"><main class="lang-hub"><div class="lang-hub-card">${logoMark()}<h1>404</h1><p>This page doesn't exist. Pick a language or head back to the game.</p><div class="lang-hub-grid"><a href="/en/"><span>English</span><small>EN</small></a><a href="/zh/"><span>中文</span><small>ZH</small></a><a href="/es/"><span>Español</span><small>ES</small></a><a href="/fr/"><span>Français</span><small>FR</small></a><a href="/play/?lang=en"><span>Play GEOQUEST</span><small>→</small></a><a href="/en/atlas/"><span>World atlas</span><small>→</small></a></div></div></main></body></html>`);
+  write('404.html', `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Page not found | GEOQUEST</title><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/css/base.css?v=${BUILD_ID}"><link rel="stylesheet" href="/css/site.css?v=${BUILD_ID}"></head><body class="site-body"><main class="lang-hub"><div class="lang-hub-card">${logoMark()}<h1>404</h1><p>This page doesn't exist. Pick a language or head back to the game.</p><div class="lang-hub-grid"><a href="/en/"><span>English</span><small>EN</small></a><a href="/zh/"><span>中文</span><small>ZH</small></a><a href="/es/"><span>Español</span><small>ES</small></a><a href="/fr/"><span>Français</span><small>FR</small></a><a href="/play/?lang=en"><span>Play GEOQUEST</span><small>→</small></a><a href="/en/atlas/"><span>World atlas</span><small>→</small></a></div></div></main></body></html>`);
 
   console.log(`Built ${seo.pages} indexable pages in ${path.relative(ROOT, DIST)}/`);
   console.log(`  baseUrl: ${BASE}${BASE.includes('example') ? '  ← change this in site.config.json before deploy' : ''}`);
