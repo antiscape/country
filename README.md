@@ -50,24 +50,76 @@ npm run serve:dist        # 预览构建产物 http://127.0.0.1:8791
 
 首次打开后，PWA 会缓存核心资源；玩过的国旗也会被缓存，之后断网仍可继续。进度保存在浏览器 `localStorage`。
 
-## Cloudflare Pages 自动构建（推荐）
+## Cloudflare 自动构建：Workers 或 Pages
 
-项目已经按 Cloudflare Pages 的构建方式准备好：
+你截图里的是 **Cloudflare Workers Builds**，不是 Pages 的创建界面。两种都能部署这个项目：
+
+- 如果你已经在这个界面：按 **A. Workers Builds** 填；
+- 如果你想用更简单的静态 Pages：按 **B. Pages** 填，然后从 Dashboard 重新创建 Pages 项目。
+
+项目本身两种都支持：
 
 - `package.json` 有 `build` 脚本；
 - `.nvmrc` 固定 Node 22；
 - 构建产物是 `dist/`（已加入 `.gitignore`，由 Cloudflare 构建）；
 - 构建会生成 `dist/_headers`、`dist/_redirects`、`dist/404.html`；
-- 游戏在 `/play/`，内容页是预渲染 HTML，不需要 SPA fallback。
+- 游戏在 `/play/`，内容页是预渲染 HTML，不需要 SPA fallback；
+- Workers 静态资源支持 `_headers` 和 `_redirects`，所以两套规则都能用。
 
-### 1. 推到 GitHub
+---
 
-```bash
-git remote add origin git@github.com:<you>/<repo>.git
-git push -u origin main
+### A. Workers Builds（对应你的截图）
+
+仓库根目录已经有 [wrangler.jsonc](wrangler.jsonc)：
+
+```jsonc
+{
+  "name": "geoquest",
+  "compatibility_date": "2026-11-24",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}
 ```
 
-### 2. Cloudflare 连接 GitHub
+它告诉 Wrangler：把 `dist/` 作为静态资源目录，并用 `404.html` 处理未命中路径。
+
+按截图填：
+
+| 字段 | 填什么 |
+|---|---|
+| 构建命令 | `npm run build` |
+| 部署命令 | `npx wrangler deploy` |
+| 预览命令 | 保持默认 `npx wrangler preview` |
+| 启用预览构建 | 开（可选） |
+| 使用 Cloudflare Access 保护 | 关（这是公开站点） |
+| 根目录 | 留空 / 仓库根目录 |
+| 生产分支 | `main` |
+
+然后在 **Settings → Build → Build variables and secrets** 添加：
+
+```text
+SITE_BASE_URL=https://your-domain.com
+```
+
+可选但推荐：
+
+```text
+NODE_VERSION=22
+```
+
+说明：
+
+- `wrangler.jsonc` 的 `name` 必须和 Cloudflare 里创建的 Worker 名称一致；如果你把项目命名为别的，改这里或改项目名。
+- `npx wrangler deploy` 会读取 `wrangler.jsonc`，把 `dist/` 上传为静态资源。
+- `npx wrangler preview` 是 Workers Builds 的默认预览命令，用来给非 `main` 分支生成 Preview URL；如果预览失败，可以在 Build 设置里改成 `npx wrangler versions upload`，或者先关闭预览构建。
+- 自定义域名在 Worker 的 **Settings → Domains & Routes** 里绑定。
+- `dist/_headers`、`dist/_redirects`、`dist/404.html` 由构建脚本自动生成，Workers 会消费它们。
+
+---
+
+### B. Cloudflare Pages
 
 Cloudflare Dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**，
 选择仓库，然后填：
@@ -80,39 +132,42 @@ Cloudflare Dashboard → **Workers & Pages** → **Create** → **Pages** → **
 | Root directory | 仓库根目录（本项目就是根目录） |
 | Node version | 由 `.nvmrc` 指定 22；也可加 `NODE_VERSION=22` |
 
-### 3. 环境变量
-
-在 Cloudflare Pages 的 **Production** 环境添加：
+Pages 的环境变量同样加：
 
 ```text
 SITE_BASE_URL=https://your-domain.com
 ```
 
-构建脚本优先读取 `SITE_BASE_URL`，其次才读 `site.config.json` 的 `baseUrl`。
-这样 canonical、hreflang、sitemap 都会指向真实域名。
+Pages 会自动识别 `_headers`、`_redirects`、`404.html`，不需要 `wrangler.jsonc`。
+自定义域名在 Pages 项目的 **Custom domains** 里绑定。
 
-- 自定义域名接好后，把 `SITE_BASE_URL` 改成最终域名；
-- Preview 环境可以沿用同一值（preview 页面 canonical 指生产域名，不影响主站）；
-- 如果暂时用 `*.pages.dev`，就填 `https://<project>.pages.dev`。
+---
 
-### 4. 域名与 AdSense
+### 共同步骤
 
-1. Cloudflare Pages → Custom domains 绑定域名；
-2. 改 `site.config.json` 的 `contactEmail` 和 AdSense 配置；
-3. 重新 push，Cloudflare 自动构建；
-4. 确认 `https://your-domain.com/ads.txt` 可访问；
-5. Search Console 提交 `sitemap.xml`。
+1. 推到 GitHub：
 
-### 5. Cloudflare 注意事项
+```bash
+git remote add origin git@github.com:<you>/<repo>.git
+git push -u origin main
+```
+
+2. 连接 Cloudflare，按 A 或 B 填构建配置；
+3. 加 `SITE_BASE_URL`；
+4. 绑定域名；
+5. 在 `site.config.json` 填 `contactEmail` 和 AdSense 配置，push 自动重新构建；
+6. 确认 `https://your-domain.com/ads.txt` 可访问；
+7. Search Console 提交 `sitemap.xml`。
+
+### 注意事项
 
 - **不要开启 Rocket Loader**：它可能干扰 AdSense 与游戏脚本；
 - 保留 Google `Googlebot` / `AdsBot-Google` / `Mediapartners-Google` 的访问，
   不要用 WAF / Bot Fight Mode 误伤 AdSense 爬虫；
 - `_headers` 已为 `sw.js` 设置 `no-cache`，避免 Service Worker 旧缓存；
 - `_redirects` 会把 `/play`、`/zh` 等无斜杠路径 301 到带斜杠目录；
-- 构建产物约 15MB、约 1,100 个文件，远低于 Pages 的 20,000 文件限制。
-
-GitHub 只负责源码托管；Cloudflare Pages 负责构建与发布，不需要额外 GitHub Actions。
+- 构建产物约 15MB、约 1,900 个文件，仍远低于 Workers/Pages 的 20,000 文件限制；
+- GitHub 只负责源码托管；Cloudflare 负责构建与发布，不需要额外 GitHub Actions。
 
 > 产品分析见 **[docs/analysis.md](docs/analysis.md)**；SEO/广告路线见 **[docs/seo-ads-roadmap.md](docs/seo-ads-roadmap.md)**。
 
@@ -281,6 +336,7 @@ npm run build
 geography/
 ├── index.html              # game app shell (source, /play/ in dist)
 ├── site.config.json        # baseUrl, contact email, AdSense IDs
+├── wrangler.jsonc          # Workers 静态资源配置（dist + 404）
 ├── manifest.webmanifest
 ├── sw.js
 ├── package.json

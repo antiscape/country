@@ -1,0 +1,10 @@
+{
+  // Cloudflare Workers static-assets configuration.
+  // The Worker name must match the project name in Cloudflare.
+  "name": "geoquest",
+  "compatibility_date": "2026-11-24",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}
