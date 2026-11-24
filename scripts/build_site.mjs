@@ -12,9 +12,10 @@ import { fileURLToPath } from 'node:url';
 import { COUNTRIES, REGIONS, BY_ID } from '../js/data.js';
 import { MODES, MODE_ORDER, LEVELS } from '../js/modes.js';
 import { icon } from '../js/icons.js';
-import { SITE } from '../site/content.mjs';
+import { SITE, GUIDE_ORDER } from '../site/content.mjs';
 import { writeSeoFiles } from './seo_files.mjs';
 import { factsFor, isCurated } from '../site/country-facts.mjs';
+import { extraFor } from '../site/country-extra.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const DIST = path.join(ROOT, 'dist');
@@ -68,6 +69,13 @@ function nameInSentence(c, lang) {
   if (lang === 'en' && EN_ARTICLE.has(c.id)) return `the ${name}`;
   return name;
 }
+// Spanish country names that take a definite article after "en".
+function esPlace(name) {
+  if (/^Reino/.test(name)) return `el ${name}`;
+  if (/^Países/.test(name)) return `los ${name}`;
+  if (/^República/.test(name)) return `la ${name}`;
+  return name;
+}
 function sentenceStart(value) {
   const s = String(value || '');
   return s.charAt(0).toUpperCase() + s.slice(1);
@@ -95,6 +103,20 @@ function regionLabel(r, lang) { return r[lang] || r.en; }
 function modeField(m, field, lang) {
   const suffix = { zh: 'Zh', en: 'En', es: 'Es', fr: 'Fr' }[lang] || 'En';
   return m[`${field}${suffix}`] || m[`${field}En`];
+}
+const DENSITY_RANK = new Map(
+  [...COUNTRIES]
+    .sort((a, b) => (b.population / b.area) - (a.population / a.area))
+    .map((c, i) => [c.id, i + 1]),
+);
+function joinList(items, lang) {
+  const list = (items || []).filter(Boolean);
+  if (list.length === 0) return '';
+  if (list.length === 1) return list[0];
+  const and = { en: ' and ', zh: '和', es: ' y ', fr: ' et ' }[lang] || ' and ';
+  if (list.length === 2) return list[0] + and + list[1];
+  const comma = { en: ', ', zh: '、', es: ', ', fr: ', ' }[lang] || ', ';
+  return list.slice(0, -1).join(comma) + and + list[list.length - 1];
 }
 function fmtNum(n, lang) {
   const locale = LOCALES[lang];
@@ -479,17 +501,30 @@ function countryPage(lang, c) {
   const sentenceName = nameInSentence(c, lang);
   const subject = sentenceStart(sentenceName);
   const intro = format(t.country.intro, { name: subject, region: reg, capital: cap, pop: fmtNum(c.population, lang), area: fmtArea(c, lang) });
-  const vars = { name: sentenceName, capital: cap, region: reg, subregion: sub, pop: fmtNum(c.population, lang) };
-  const faq = t.country.faq.map(([q, a], i) => {
-    // "more precisely in North America" repeated the region for countries whose
-    // subregion equals the region. Use the subregion only when it adds detail.
-    if (i === 2) {
-      const where = sub && sub !== reg ? t.country.whereSub : t.country.whereRegion;
-      return [format(q, vars), sentenceStart(format(where, vars))];
-    }
-    return [format(q, vars), format(a, { ...vars, capital: cap.replace(/\.+$/, '') })];
-  });
   const highlights = factsFor(c.id, lang);
+  const extra = extraFor(c.id, lang);
+  const density = c.area > 0 ? c.population / c.area : 0;
+  const densityText = new Intl.NumberFormat(LOCALES[lang], {
+    maximumFractionDigits: density < 10 ? 1 : 0,
+  }).format(density);
+  // Answers must add something the fact table below does not already show:
+  // main language, currency and a density comparison.
+  const faqName = lang === 'en' ? sentenceName : lang === 'es' ? esPlace(name) : name;
+  const faq = [];
+  if (extra && extra.langs.length) {
+    const list = joinList(extra.langs, lang);
+    const answer = extra.many
+      ? format(t.country.faqLang.more, { list, m: extra.many })
+      : format(extra.langs.length > 1 ? t.country.faqLang.many : t.country.faqLang.one, { list });
+    faq.push([format(t.country.faqLang.q, { name: faqName }), answer]);
+    if (extra.currency) {
+      faq.push([format(t.country.faqCurrency.q, { name: faqName }), format(t.country.faqCurrency.a, { cur: extra.currency })]);
+    }
+  }
+  faq.push([
+    format(t.country.faqDensity.q, { name: faqName }),
+    format(t.country.faqDensity.a, { d: densityText, r: DENSITY_RANK.get(c.id) || '—' }),
+  ]);
   const indexable = isCurated(c.id);
   const related = COUNTRIES.filter((x) => x.region === c.region && x.id !== c.id).sort((a, b) => b.population - a.population).slice(0, 6);
   const independence = c.independence ? fmtDate(c.independence, lang) : '—';
@@ -558,16 +593,17 @@ function countryPage(lang, c) {
 
 function guideIndexPage(lang) {
   const t = SITE[lang];
-  const guides = [
-    ['how-to-play', t.guides.howTo, t.guides.howToLead, 'compass'],
-    ['flags-of-the-world', t.guides.flags, t.guides.flagsLead, 'flag'],
-  ];
+  const items = t.guides.items;
+  const cards = GUIDE_ORDER.filter((slug) => items[slug]).map((slug) => {
+    const g = items[slug];
+    return `<a class="site-why" href="${guidePath(lang, slug)}">${icon(g.icon || 'compass')}<h3>${esc(g.title)}</h3><p>${esc(g.lead)}</p><span class="site-link" style="margin-top:12px">${esc(t.common.readGuide)} ${icon('arrow-right')}</span></a>`;
+  }).join('');
   const body = `${crumb(lang, [[t.common.home, `/${lang}/`], [t.nav.guides, null]])}
 <section class="site-section tight site-wrap">
   <div class="site-eyebrow">${esc(t.nav.guides)}</div>
   <h1 class="site-h1">${esc(t.guides.title)}</h1>
   <p class="site-lead">${esc(t.guides.lead)}</p>
-  <div class="site-why-grid" style="margin-top:28px">${guides.map(([slug, title, lead, ic]) => `<a class="site-why" href="${guidePath(lang, slug)}">${icon(ic)}<h3>${esc(title)}</h3><p>${esc(lead)}</p><span class="site-link" style="margin-top:12px">${esc(t.common.readGuide)} ${icon('arrow-right')}</span></a>`).join('')}</div>
+  <div class="site-why-grid" style="margin-top:28px">${cards}</div>
   ${adSlot(lang, 'guide')}
   <div class="site-cta">${icon('play')}<div><h2>${esc(t.home.modesTitle)}</h2><p>${esc(t.home.modesLead)}</p></div><a class="btn btn-primary" href="${playUrl(lang)}">${esc(t.common.play)} ${icon('arrow-right')}</a></div>
 </section>`;
@@ -576,17 +612,21 @@ function guideIndexPage(lang) {
 
 function guidePage(lang, slug) {
   const t = SITE[lang];
-  const isHow = slug === 'how-to-play';
-  const title = isHow ? t.guides.howTo : t.guides.flags;
-  const lead = isHow ? t.guides.howToLead : t.guides.flagsLead;
-  const sections = isHow ? t.guides.sections.howTo : t.guides.sections.flags;
+  const g = t.guides.items[slug];
+  if (!g) return '';
+  const { title, lead, sections } = g;
+  const others = GUIDE_ORDER.filter((s) => s !== slug && t.guides.items[s]);
+  const related = others.length
+    ? `<h2>${esc(t.guides.title)}</h2><ul>${others.map((s) => `<li><a href="${guidePath(lang, s)}">${esc(t.guides.items[s].title)}</a></li>`).join('')}</ul>`
+    : '';
   const body = `${crumb(lang, [[t.common.home, `/${lang}/`], [t.nav.guides, langPath(lang, 'guides/')], [title, null]])}
 <section class="site-section tight site-wrap"><div class="prose">
   <div class="site-eyebrow">${esc(t.nav.guides)}</div>
   <h1>${esc(title)}</h1>
   <p class="site-lead">${esc(lead)}</p>
-  ${sections.map(([h, p]) => `<h2>${esc(h)}</h2><p>${esc(p)}</p>`).join('')}
+  ${sections.map(([h, p]) => `<h2>${esc(h)}</h2><p>${rich(expandCountryLinks(p, lang))}</p>`).join('')}
   ${adSlot(lang, 'guide')}
+  ${related}
   <div class="site-cta" style="margin-top:30px">${icon('play')}<div><h2>${esc(t.home.cta)}</h2><p>${esc(t.home.lead)}</p></div><a class="btn btn-primary" href="${playUrl(lang)}">${esc(t.common.play)} ${icon('arrow-right')}</a></div>
 </div></section>`;
   const jsonld = [
@@ -600,11 +640,21 @@ function guidePage(lang, slug) {
   return page(lang, guidePath(lang, slug), `${title} | GEOQUEST`, lead, body, { active: 'guides', jsonld, image: '/assets/icon-512.png' });
 }
 
+function expandCountryLinks(text, lang) {
+  return String(text).replace(/\{c:([A-Z]{2})\}/g, (m, id) => {
+    const c = BY_ID[id];
+    return c ? countryPath(lang, c) : '/';
+  });
+}
+
 function rich(text, vars = {}) {
   const email = vars.email || EMAIL;
   const body = esc(format(text, { ...vars, email: '\u0000EMAIL\u0000' }));
   return body
-    .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, (m, label, url) => `<a href="${url}" rel="noopener noreferrer" target="_blank">${label}</a>`)
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]*)\)/g, (m, label, url) => {
+      const external = /^https?:/.test(url);
+      return `<a href="${url}"${external ? ' rel="noopener noreferrer" target="_blank"' : ''}>${label}</a>`;
+    })
     .replace(/\u0000EMAIL\u0000/g, `<a href="mailto:${esc(email)}">${esc(email)}</a>`);
 }
 
@@ -687,8 +737,7 @@ function main() {
     write(`${lang}/atlas/index.html`, atlasPage(lang));
     for (const c of COUNTRIES) write(`${lang}/atlas/${c.id.toLowerCase()}/index.html`, countryPage(lang, c));
     write(`${lang}/guides/index.html`, guideIndexPage(lang));
-    write(`${lang}/guides/how-to-play/index.html`, guidePage(lang, 'how-to-play'));
-    write(`${lang}/guides/flags-of-the-world/index.html`, guidePage(lang, 'flags-of-the-world'));
+    for (const slug of GUIDE_ORDER) write(`${lang}/guides/${slug}/index.html`, guidePage(lang, slug));
     for (const type of ['privacy', 'terms', 'about', 'contact']) write(`${lang}/${type}/index.html`, legalPage(lang, type));
   }
 

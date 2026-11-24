@@ -1,0 +1,2804 @@
+{
+ "languages": {
+  "en": {
+   "en": "English",
+   "zh": "英语",
+   "es": "el inglés",
+   "fr": "l’anglais"
+  },
+  "fr": {
+   "en": "French",
+   "zh": "法语",
+   "es": "el francés",
+   "fr": "le français"
+  },
+  "es": {
+   "en": "Spanish",
+   "zh": "西班牙语",
+   "es": "el español",
+   "fr": "l’espagnol"
+  },
+  "pt": {
+   "en": "Portuguese",
+   "zh": "葡萄牙语",
+   "es": "el portugués",
+   "fr": "le portugais"
+  },
+  "de": {
+   "en": "German",
+   "zh": "德语",
+   "es": "el alemán",
+   "fr": "l’allemand"
+  },
+  "it": {
+   "en": "Italian",
+   "zh": "意大利语",
+   "es": "el italiano",
+   "fr": "l’italien"
+  },
+  "nl": {
+   "en": "Dutch",
+   "zh": "荷兰语",
+   "es": "el neerlandés",
+   "fr": "le néerlandais"
+  },
+  "da": {
+   "en": "Danish",
+   "zh": "丹麦语",
+   "es": "el danés",
+   "fr": "le danois"
+  },
+  "sv": {
+   "en": "Swedish",
+   "zh": "瑞典语",
+   "es": "el sueco",
+   "fr": "le suédois"
+  },
+  "no": {
+   "en": "Norwegian",
+   "zh": "挪威语",
+   "es": "el noruego",
+   "fr": "le norvégien"
+  },
+  "is": {
+   "en": "Icelandic",
+   "zh": "冰岛语",
+   "es": "el islandés",
+   "fr": "l’islandais"
+  },
+  "fi": {
+   "en": "Finnish",
+   "zh": "芬兰语",
+   "es": "el finés",
+   "fr": "le finnois"
+  },
+  "et": {
+   "en": "Estonian",
+   "zh": "爱沙尼亚语",
+   "es": "el estonio",
+   "fr": "l’estonien"
+  },
+  "lv": {
+   "en": "Latvian",
+   "zh": "拉脱维亚语",
+   "es": "el letón",
+   "fr": "le letton"
+  },
+  "lt": {
+   "en": "Lithuanian",
+   "zh": "立陶宛语",
+   "es": "el lituano",
+   "fr": "le lituanien"
+  },
+  "pl": {
+   "en": "Polish",
+   "zh": "波兰语",
+   "es": "el polaco",
+   "fr": "le polonais"
+  },
+  "cs": {
+   "en": "Czech",
+   "zh": "捷克语",
+   "es": "el checo",
+   "fr": "le tchèque"
+  },
+  "sk": {
+   "en": "Slovak",
+   "zh": "斯洛伐克语",
+   "es": "el eslovaco",
+   "fr": "le slovaque"
+  },
+  "hu": {
+   "en": "Hungarian",
+   "zh": "匈牙利语",
+   "es": "el húngaro",
+   "fr": "le hongrois"
+  },
+  "ro": {
+   "en": "Romanian",
+   "zh": "罗马尼亚语",
+   "es": "el rumano",
+   "fr": "le roumain"
+  },
+  "bg": {
+   "en": "Bulgarian",
+   "zh": "保加利亚语",
+   "es": "el búlgaro",
+   "fr": "le bulgare"
+  },
+  "el": {
+   "en": "Greek",
+   "zh": "希腊语",
+   "es": "el griego",
+   "fr": "le grec"
+  },
+  "hr": {
+   "en": "Croatian",
+   "zh": "克罗地亚语",
+   "es": "el croata",
+   "fr": "le croate"
+  },
+  "sr": {
+   "en": "Serbian",
+   "zh": "塞尔维亚语",
+   "es": "el serbio",
+   "fr": "le serbe"
+  },
+  "bs": {
+   "en": "Bosnian",
+   "zh": "波斯尼亚语",
+   "es": "el bosnio",
+   "fr": "le bosnien"
+  },
+  "sl": {
+   "en": "Slovene",
+   "zh": "斯洛文尼亚语",
+   "es": "el esloveno",
+   "fr": "le slovène"
+  },
+  "sq": {
+   "en": "Albanian",
+   "zh": "阿尔巴尼亚语",
+   "es": "el albanés",
+   "fr": "l’albanais"
+  },
+  "mk": {
+   "en": "Macedonian",
+   "zh": "马其顿语",
+   "es": "el macedonio",
+   "fr": "le macédonien"
+  },
+  "mt": {
+   "en": "Maltese",
+   "zh": "马耳他语",
+   "es": "el maltés",
+   "fr": "le maltais"
+  },
+  "ru": {
+   "en": "Russian",
+   "zh": "俄语",
+   "es": "el ruso",
+   "fr": "le russe"
+  },
+  "uk": {
+   "en": "Ukrainian",
+   "zh": "乌克兰语",
+   "es": "el ucraniano",
+   "fr": "l’ukrainien"
+  },
+  "be": {
+   "en": "Belarusian",
+   "zh": "白俄罗斯语",
+   "es": "el bielorruso",
+   "fr": "le biélorusse"
+  },
+  "tr": {
+   "en": "Turkish",
+   "zh": "土耳其语",
+   "es": "el turco",
+   "fr": "le turc"
+  },
+  "ka": {
+   "en": "Georgian",
+   "zh": "格鲁吉亚语",
+   "es": "el georgiano",
+   "fr": "le géorgien"
+  },
+  "hy": {
+   "en": "Armenian",
+   "zh": "亚美尼亚语",
+   "es": "el armenio",
+   "fr": "l’arménien"
+  },
+  "az": {
+   "en": "Azerbaijani",
+   "zh": "阿塞拜疆语",
+   "es": "el azerí",
+   "fr": "l’azerbaïdjanais"
+  },
+  "he": {
+   "en": "Hebrew",
+   "zh": "希伯来语",
+   "es": "el hebreo",
+   "fr": "l’hébreu"
+  },
+  "ar": {
+   "en": "Arabic",
+   "zh": "阿拉伯语",
+   "es": "el árabe",
+   "fr": "l’arabe"
+  },
+  "fa": {
+   "en": "Persian",
+   "zh": "波斯语",
+   "es": "el persa",
+   "fr": "le persan"
+  },
+  "ur": {
+   "en": "Urdu",
+   "zh": "乌尔都语",
+   "es": "el urdu",
+   "fr": "l’ourdou"
+  },
+  "ps": {
+   "en": "Pashto",
+   "zh": "普什图语",
+   "es": "el pastún",
+   "fr": "le pachto"
+  },
+  "ku": {
+   "en": "Kurdish",
+   "zh": "库尔德语",
+   "es": "el kurdo",
+   "fr": "le kurde"
+  },
+  "hi": {
+   "en": "Hindi",
+   "zh": "印地语",
+   "es": "el hindi",
+   "fr": "l’hindi"
+  },
+  "bn": {
+   "en": "Bengali",
+   "zh": "孟加拉语",
+   "es": "el bengalí",
+   "fr": "le bengali"
+  },
+  "ta": {
+   "en": "Tamil",
+   "zh": "泰米尔语",
+   "es": "el tamil",
+   "fr": "le tamoul"
+  },
+  "si": {
+   "en": "Sinhala",
+   "zh": "僧伽罗语",
+   "es": "el cingalés",
+   "fr": "le cinghalais"
+  },
+  "dv": {
+   "en": "Dhivehi",
+   "zh": "迪维希语",
+   "es": "el divehi",
+   "fr": "le divehi"
+  },
+  "ne": {
+   "en": "Nepali",
+   "zh": "尼泊尔语",
+   "es": "el nepalí",
+   "fr": "le népalais"
+  },
+  "dz": {
+   "en": "Dzongkha",
+   "zh": "宗卡语",
+   "es": "el dzongkha",
+   "fr": "le dzongkha"
+  },
+  "my": {
+   "en": "Burmese",
+   "zh": "缅甸语",
+   "es": "el birmano",
+   "fr": "le birman"
+  },
+  "th": {
+   "en": "Thai",
+   "zh": "泰语",
+   "es": "el tailandés",
+   "fr": "le thaï"
+  },
+  "lo": {
+   "en": "Lao",
+   "zh": "老挝语",
+   "es": "el lao",
+   "fr": "le lao"
+  },
+  "km": {
+   "en": "Khmer",
+   "zh": "高棉语",
+   "es": "el jemer",
+   "fr": "le khmer"
+  },
+  "vi": {
+   "en": "Vietnamese",
+   "zh": "越南语",
+   "es": "el vietnamita",
+   "fr": "le vietnamien"
+  },
+  "ms": {
+   "en": "Malay",
+   "zh": "马来语",
+   "es": "el malayo",
+   "fr": "le malais"
+  },
+  "id": {
+   "en": "Indonesian",
+   "zh": "印尼语",
+   "es": "el indonesio",
+   "fr": "l’indonésien"
+  },
+  "tl": {
+   "en": "Filipino",
+   "zh": "菲律宾语",
+   "es": "el filipino",
+   "fr": "le filipino"
+  },
+  "zh": {
+   "en": "Mandarin Chinese",
+   "zh": "汉语（普通话）",
+   "es": "el chino mandarín",
+   "fr": "le chinois mandarin"
+  },
+  "ja": {
+   "en": "Japanese",
+   "zh": "日语",
+   "es": "el japonés",
+   "fr": "le japonais"
+  },
+  "ko": {
+   "en": "Korean",
+   "zh": "韩语",
+   "es": "el coreano",
+   "fr": "le coréen"
+  },
+  "mn": {
+   "en": "Mongolian",
+   "zh": "蒙古语",
+   "es": "el mongol",
+   "fr": "le mongol"
+  },
+  "kk": {
+   "en": "Kazakh",
+   "zh": "哈萨克语",
+   "es": "el kazajo",
+   "fr": "le kazakh"
+  },
+  "ky": {
+   "en": "Kyrgyz",
+   "zh": "吉尔吉斯语",
+   "es": "el kirguís",
+   "fr": "le kirghize"
+  },
+  "tg": {
+   "en": "Tajik",
+   "zh": "塔吉克语",
+   "es": "el tayiko",
+   "fr": "le tadjik"
+  },
+  "tk": {
+   "en": "Turkmen",
+   "zh": "土库曼语",
+   "es": "el turcomano",
+   "fr": "le turkmène"
+  },
+  "uz": {
+   "en": "Uzbek",
+   "zh": "乌兹别克语",
+   "es": "el uzbeko",
+   "fr": "l’ouzbek"
+  },
+  "am": {
+   "en": "Amharic",
+   "zh": "阿姆哈拉语",
+   "es": "el amárico",
+   "fr": "l’amharique"
+  },
+  "sw": {
+   "en": "Swahili",
+   "zh": "斯瓦希里语",
+   "es": "el suajili",
+   "fr": "le swahili"
+  },
+  "ha": {
+   "en": "Hausa",
+   "zh": "豪萨语",
+   "es": "el hausa",
+   "fr": "le haoussa"
+  },
+  "yo": {
+   "en": "Yoruba",
+   "zh": "约鲁巴语",
+   "es": "el yoruba",
+   "fr": "le yoruba"
+  },
+  "ig": {
+   "en": "Igbo",
+   "zh": "伊博语",
+   "es": "el igbo",
+   "fr": "l’igbo"
+  },
+  "so": {
+   "en": "Somali",
+   "zh": "索马里语",
+   "es": "el somalí",
+   "fr": "le somali"
+  },
+  "rw": {
+   "en": "Kinyarwanda",
+   "zh": "卢旺达语",
+   "es": "el kiñaruanda",
+   "fr": "le kinyarwanda"
+  },
+  "rn": {
+   "en": "Kirundi",
+   "zh": "基隆迪语",
+   "es": "el kirundi",
+   "fr": "le kirundi"
+  },
+  "mg": {
+   "en": "Malagasy",
+   "zh": "马达加斯加语",
+   "es": "el malgache",
+   "fr": "le malgache"
+  },
+  "ny": {
+   "en": "Chichewa",
+   "zh": "齐切瓦语",
+   "es": "el chichewa",
+   "fr": "le chichewa"
+  },
+  "sn": {
+   "en": "Shona",
+   "zh": "绍纳语",
+   "es": "el shona",
+   "fr": "le shona"
+  },
+  "st": {
+   "en": "Sesotho",
+   "zh": "塞索托语",
+   "es": "el sesoto",
+   "fr": "le sesotho"
+  },
+  "tn": {
+   "en": "Setswana",
+   "zh": "茨瓦纳语",
+   "es": "el setsuana",
+   "fr": "le setswana"
+  },
+  "ss": {
+   "en": "Swazi",
+   "zh": "斯瓦蒂语",
+   "es": "el suazi",
+   "fr": "le swati"
+  },
+  "zu": {
+   "en": "Zulu",
+   "zh": "祖鲁语",
+   "es": "el zulú",
+   "fr": "le zoulou"
+  },
+  "af": {
+   "en": "Afrikaans",
+   "zh": "南非荷兰语",
+   "es": "el afrikáans",
+   "fr": "l’afrikaans"
+  },
+  "xh": {
+   "en": "Xhosa",
+   "zh": "科萨语",
+   "es": "el xhosa",
+   "fr": "le xhosa"
+  },
+  "wo": {
+   "en": "Wolof",
+   "zh": "沃洛夫语",
+   "es": "el wolof",
+   "fr": "le wolof"
+  },
+  "bm": {
+   "en": "Bambara",
+   "zh": "班巴拉语",
+   "es": "el bambara",
+   "fr": "le bambara"
+  },
+  "ff": {
+   "en": "Fula",
+   "zh": "富拉语",
+   "es": "el fula",
+   "fr": "le peul"
+  },
+  "tw": {
+   "en": "Twi",
+   "zh": "契维语",
+   "es": "el twi",
+   "fr": "le twi"
+  },
+  "ee": {
+   "en": "Ewe",
+   "zh": "埃维语",
+   "es": "el ewé",
+   "fr": "l’éwé"
+  },
+  "ln": {
+   "en": "Lingala",
+   "zh": "林加拉语",
+   "es": "el lingala",
+   "fr": "le lingala"
+  },
+  "kg": {
+   "en": "Kongo",
+   "zh": "刚果语",
+   "es": "el kikongo",
+   "fr": "le kikongo"
+  },
+  "sg": {
+   "en": "Sango",
+   "zh": "桑戈语",
+   "es": "el sango",
+   "fr": "le sango"
+  },
+  "ti": {
+   "en": "Tigrinya",
+   "zh": "提格里尼亚语",
+   "es": "el tigriña",
+   "fr": "le tigrigna"
+  },
+  "om": {
+   "en": "Oromo",
+   "zh": "奥罗莫语",
+   "es": "el oromo",
+   "fr": "l’oromo"
+  },
+  "cr": {
+   "en": "Creole",
+   "zh": "克里奥尔语",
+   "es": "el criollo",
+   "fr": "le créole"
+  },
+  "ht": {
+   "en": "Haitian Creole",
+   "zh": "海地克里奥尔语",
+   "es": "el criollo haitiano",
+   "fr": "le créole haïtien"
+  },
+  "qu": {
+   "en": "Quechua",
+   "zh": "克丘亚语",
+   "es": "el quechua",
+   "fr": "le quechua"
+  },
+  "ay": {
+   "en": "Aymara",
+   "zh": "艾马拉语",
+   "es": "el aimara",
+   "fr": "l’aymara"
+  },
+  "gn": {
+   "en": "Guaraní",
+   "zh": "瓜拉尼语",
+   "es": "el guaraní",
+   "fr": "le guarani"
+  },
+  "fj": {
+   "en": "Fijian",
+   "zh": "斐济语",
+   "es": "el fiyiano",
+   "fr": "le fidjien"
+  },
+  "to": {
+   "en": "Tongan",
+   "zh": "汤加语",
+   "es": "el tongano",
+   "fr": "le tongien"
+  },
+  "sm": {
+   "en": "Samoan",
+   "zh": "萨摩亚语",
+   "es": "el samoano",
+   "fr": "le samoan"
+  },
+  "mi": {
+   "en": "Māori",
+   "zh": "毛利语",
+   "es": "el maorí",
+   "fr": "le maori"
+  },
+  "bi": {
+   "en": "Bislama",
+   "zh": "比斯拉马语",
+   "es": "el bislama",
+   "fr": "le bichelamar"
+  },
+  "na": {
+   "en": "Nauruan",
+   "zh": "瑙鲁语",
+   "es": "el nauruano",
+   "fr": "le nauruan"
+  },
+  "mh": {
+   "en": "Marshallese",
+   "zh": "马绍尔语",
+   "es": "el marshalés",
+   "fr": "le marshallais"
+  },
+  "gil": {
+   "en": "Gilbertese",
+   "zh": "基里巴斯语",
+   "es": "el gilbertés",
+   "fr": "le gilbertin"
+  },
+  "pau": {
+   "en": "Palauan",
+   "zh": "帕劳语",
+   "es": "el palauano",
+   "fr": "le palauan"
+  },
+  "tet": {
+   "en": "Tetum",
+   "zh": "德顿语",
+   "es": "el tetun",
+   "fr": "le tétoum"
+  },
+  "tpi": {
+   "en": "Tok Pisin",
+   "zh": "托克皮辛语",
+   "es": "el tok pisin",
+   "fr": "le tok pisin"
+  },
+  "ca": {
+   "en": "Catalan",
+   "zh": "加泰罗尼亚语",
+   "es": "el catalán",
+   "fr": "le catalan"
+  },
+  "lb": {
+   "en": "Luxembourgish",
+   "zh": "卢森堡语",
+   "es": "el luxemburgués",
+   "fr": "le luxembourgeois"
+  },
+  "rm": {
+   "en": "Romansh",
+   "zh": "罗曼什语",
+   "es": "el romanche",
+   "fr": "le romanche"
+  },
+  "ber": {
+   "en": "Berber",
+   "zh": "柏柏尔语",
+   "es": "el bereber",
+   "fr": "le berbère"
+  },
+  "ga": {
+   "en": "Irish",
+   "zh": "爱尔兰语",
+   "es": "el irlandés",
+   "fr": "l’irlandais"
+  }
+ },
+ "currencies": {
+  "USD": {
+   "en": "the US dollar (USD)",
+   "zh": "美元（USD）",
+   "es": "el dólar estadounidense (USD)",
+   "fr": "le dollar américain (USD)"
+  },
+  "EUR": {
+   "en": "the euro (EUR)",
+   "zh": "欧元（EUR）",
+   "es": "el euro (EUR)",
+   "fr": "l’euro (EUR)"
+  },
+  "GBP": {
+   "en": "the pound sterling (GBP)",
+   "zh": "英镑（GBP）",
+   "es": "la libra esterlina (GBP)",
+   "fr": "la livre sterling (GBP)"
+  },
+  "JPY": {
+   "en": "the yen (JPY)",
+   "zh": "日元（JPY）",
+   "es": "el yen (JPY)",
+   "fr": "le yen (JPY)"
+  },
+  "CNY": {
+   "en": "the renminbi (CNY)",
+   "zh": "人民币（CNY）",
+   "es": "el renminbi (CNY)",
+   "fr": "le renminbi (CNY)"
+  },
+  "INR": {
+   "en": "the Indian rupee (INR)",
+   "zh": "印度卢比（INR）",
+   "es": "la rupia india (INR)",
+   "fr": "la roupie indienne (INR)"
+  },
+  "RUB": {
+   "en": "the Russian ruble (RUB)",
+   "zh": "俄罗斯卢布（RUB）",
+   "es": "el rublo ruso (RUB)",
+   "fr": "le rouble russe (RUB)"
+  },
+  "BRL": {
+   "en": "the Brazilian real (BRL)",
+   "zh": "巴西雷亚尔（BRL）",
+   "es": "el real brasileño (BRL)",
+   "fr": "le real brésilien (BRL)"
+  },
+  "MXN": {
+   "en": "the Mexican peso (MXN)",
+   "zh": "墨西哥比索（MXN）",
+   "es": "el peso mexicano (MXN)",
+   "fr": "le peso mexicain (MXN)"
+  },
+  "AUD": {
+   "en": "the Australian dollar (AUD)",
+   "zh": "澳大利亚元（AUD）",
+   "es": "el dólar australiano (AUD)",
+   "fr": "le dollar australien (AUD)"
+  },
+  "NZD": {
+   "en": "the New Zealand dollar (NZD)",
+   "zh": "新西兰元（NZD）",
+   "es": "el dólar neozelandés (NZD)",
+   "fr": "le dollar néo-zélandais (NZD)"
+  },
+  "CAD": {
+   "en": "the Canadian dollar (CAD)",
+   "zh": "加拿大元（CAD）",
+   "es": "el dólar canadiense (CAD)",
+   "fr": "le dollar canadien (CAD)"
+  },
+  "CHF": {
+   "en": "the Swiss franc (CHF)",
+   "zh": "瑞士法郎（CHF）",
+   "es": "el franco suizo (CHF)",
+   "fr": "le franc suisse (CHF)"
+  },
+  "SEK": {
+   "en": "the Swedish krona (SEK)",
+   "zh": "瑞典克朗（SEK）",
+   "es": "la corona sueca (SEK)",
+   "fr": "la couronne suédoise (SEK)"
+  },
+  "NOK": {
+   "en": "the Norwegian krone (NOK)",
+   "zh": "挪威克朗（NOK）",
+   "es": "la corona noruega (NOK)",
+   "fr": "la couronne norvégienne (NOK)"
+  },
+  "DKK": {
+   "en": "the Danish krone (DKK)",
+   "zh": "丹麦克朗（DKK）",
+   "es": "la corona danesa (DKK)",
+   "fr": "la couronne danoise (DKK)"
+  },
+  "ISK": {
+   "en": "the Icelandic króna (ISK)",
+   "zh": "冰岛克朗（ISK）",
+   "es": "la corona islandesa (ISK)",
+   "fr": "la couronne islandaise (ISK)"
+  },
+  "PLN": {
+   "en": "the Polish złoty (PLN)",
+   "zh": "波兰兹罗提（PLN）",
+   "es": "el złoty polaco (PLN)",
+   "fr": "le złoty polonais (PLN)"
+  },
+  "CZK": {
+   "en": "the Czech koruna (CZK)",
+   "zh": "捷克克朗（CZK）",
+   "es": "la corona checa (CZK)",
+   "fr": "la couronne tchèque (CZK)"
+  },
+  "HUF": {
+   "en": "the Hungarian forint (HUF)",
+   "zh": "匈牙利福林（HUF）",
+   "es": "el forinto húngaro (HUF)",
+   "fr": "le forint hongrois (HUF)"
+  },
+  "RON": {
+   "en": "the Romanian leu (RON)",
+   "zh": "罗马尼亚列伊（RON）",
+   "es": "el leu rumano (RON)",
+   "fr": "le leu roumain (RON)"
+  },
+  "BGN": {
+   "en": "the Bulgarian lev (BGN)",
+   "zh": "保加利亚列弗（BGN）",
+   "es": "el lev búlgaro (BGN)",
+   "fr": "le lev bulgare (BGN)"
+  },
+  "RSD": {
+   "en": "the Serbian dinar (RSD)",
+   "zh": "塞尔维亚第纳尔（RSD）",
+   "es": "el dinar serbio (RSD)",
+   "fr": "le dinar serbe (RSD)"
+  },
+  "BAM": {
+   "en": "the convertible mark (BAM)",
+   "zh": "波黑可兑换马克（BAM）",
+   "es": "el marco convertible (BAM)",
+   "fr": "le mark convertible (BAM)"
+  },
+  "MKD": {
+   "en": "the Macedonian denar (MKD)",
+   "zh": "马其顿第纳尔（MKD）",
+   "es": "el denar macedonio (MKD)",
+   "fr": "le denar macédonien (MKD)"
+  },
+  "ALL": {
+   "en": "the Albanian lek (ALL)",
+   "zh": "阿尔巴尼亚列克（ALL）",
+   "es": "el lek albanés (ALL)",
+   "fr": "le lek albanais (ALL)"
+  },
+  "MDL": {
+   "en": "the Moldovan leu (MDL)",
+   "zh": "摩尔多瓦列伊（MDL）",
+   "es": "el leu moldavo (MDL)",
+   "fr": "le leu moldave (MDL)"
+  },
+  "UAH": {
+   "en": "the hryvnia (UAH)",
+   "zh": "乌克兰格里夫纳（UAH）",
+   "es": "la grivna (UAH)",
+   "fr": "la hryvnia (UAH)"
+  },
+  "BYN": {
+   "en": "the Belarusian ruble (BYN)",
+   "zh": "白俄罗斯卢布（BYN）",
+   "es": "el rublo bielorruso (BYN)",
+   "fr": "le rouble biélorusse (BYN)"
+  },
+  "GEL": {
+   "en": "the lari (GEL)",
+   "zh": "格鲁吉亚拉里（GEL）",
+   "es": "el lari (GEL)",
+   "fr": "le lari (GEL)"
+  },
+  "AMD": {
+   "en": "the dram (AMD)",
+   "zh": "亚美尼亚德拉姆（AMD）",
+   "es": "el dram (AMD)",
+   "fr": "le dram (AMD)"
+  },
+  "AZN": {
+   "en": "the manat (AZN)",
+   "zh": "阿塞拜疆马纳特（AZN）",
+   "es": "el manat (AZN)",
+   "fr": "le manat (AZN)"
+  },
+  "TRY": {
+   "en": "the Turkish lira (TRY)",
+   "zh": "土耳其里拉（TRY）",
+   "es": "la lira turca (TRY)",
+   "fr": "la livre turque (TRY)"
+  },
+  "ILS": {
+   "en": "the new shekel (ILS)",
+   "zh": "以色列新谢克尔（ILS）",
+   "es": "el nuevo séquel (ILS)",
+   "fr": "le nouveau shekel (ILS)"
+  },
+  "AED": {
+   "en": "the UAE dirham (AED)",
+   "zh": "阿联酋迪拉姆（AED）",
+   "es": "el dirham de los EAU (AED)",
+   "fr": "le dirham des ÉAU (AED)"
+  },
+  "SAR": {
+   "en": "the Saudi riyal (SAR)",
+   "zh": "沙特里亚尔（SAR）",
+   "es": "el riyal saudí (SAR)",
+   "fr": "le riyal saoudien (SAR)"
+  },
+  "QAR": {
+   "en": "the Qatari riyal (QAR)",
+   "zh": "卡塔尔里亚尔（QAR）",
+   "es": "el riyal catarí (QAR)",
+   "fr": "le riyal qatari (QAR)"
+  },
+  "KWD": {
+   "en": "the Kuwaiti dinar (KWD)",
+   "zh": "科威特第纳尔（KWD）",
+   "es": "el dinar kuwaití (KWD)",
+   "fr": "le dinar koweïtien (KWD)"
+  },
+  "BHD": {
+   "en": "the Bahraini dinar (BHD)",
+   "zh": "巴林第纳尔（BHD）",
+   "es": "el dinar bareiní (BHD)",
+   "fr": "le dinar bahreïni (BHD)"
+  },
+  "OMR": {
+   "en": "the Omani rial (OMR)",
+   "zh": "阿曼里亚尔（OMR）",
+   "es": "el rial omaní (OMR)",
+   "fr": "le rial omanais (OMR)"
+  },
+  "JOD": {
+   "en": "the Jordanian dinar (JOD)",
+   "zh": "约旦第纳尔（JOD）",
+   "es": "el dinar jordano (JOD)",
+   "fr": "le dinar jordanien (JOD)"
+  },
+  "LBP": {
+   "en": "the Lebanese pound (LBP)",
+   "zh": "黎巴嫩镑（LBP）",
+   "es": "la libra libanesa (LBP)",
+   "fr": "la livre libanaise (LBP)"
+  },
+  "SYP": {
+   "en": "the Syrian pound (SYP)",
+   "zh": "叙利亚镑（SYP）",
+   "es": "la libra siria (SYP)",
+   "fr": "la livre syrienne (SYP)"
+  },
+  "IQD": {
+   "en": "the Iraqi dinar (IQD)",
+   "zh": "伊拉克第纳尔（IQD）",
+   "es": "el dinar iraquí (IQD)",
+   "fr": "le dinar irakien (IQD)"
+  },
+  "IRR": {
+   "en": "the Iranian rial (IRR)",
+   "zh": "伊朗里亚尔（IRR）",
+   "es": "el rial iraní (IRR)",
+   "fr": "le rial iranien (IRR)"
+  },
+  "AFN": {
+   "en": "the afghani (AFN)",
+   "zh": "阿富汗尼（AFN）",
+   "es": "el afgani (AFN)",
+   "fr": "l’afghani (AFN)"
+  },
+  "PKR": {
+   "en": "the Pakistani rupee (PKR)",
+   "zh": "巴基斯坦卢比（PKR）",
+   "es": "la rupia pakistaní (PKR)",
+   "fr": "la roupie pakistanaise (PKR)"
+  },
+  "BDT": {
+   "en": "the taka (BDT)",
+   "zh": "孟加拉塔卡（BDT）",
+   "es": "el taka (BDT)",
+   "fr": "le taka (BDT)"
+  },
+  "LKR": {
+   "en": "the Sri Lankan rupee (LKR)",
+   "zh": "斯里兰卡卢比（LKR）",
+   "es": "la rupia de Sri Lanka (LKR)",
+   "fr": "la roupie srilankaise (LKR)"
+  },
+  "NPR": {
+   "en": "the Nepalese rupee (NPR)",
+   "zh": "尼泊尔卢比（NPR）",
+   "es": "la rupia nepalesa (NPR)",
+   "fr": "la roupie népalaise (NPR)"
+  },
+  "BTN": {
+   "en": "the ngultrum (BTN)",
+   "zh": "不丹努尔特鲁姆（BTN）",
+   "es": "el ngultrum (BTN)",
+   "fr": "le ngultrum (BTN)"
+  },
+  "MMK": {
+   "en": "the kyat (MMK)",
+   "zh": "缅甸元（MMK）",
+   "es": "el kyat (MMK)",
+   "fr": "le kyat (MMK)"
+  },
+  "THB": {
+   "en": "the baht (THB)",
+   "zh": "泰铢（THB）",
+   "es": "el baht (THB)",
+   "fr": "le baht (THB)"
+  },
+  "LAK": {
+   "en": "the kip (LAK)",
+   "zh": "老挝基普（LAK）",
+   "es": "el kip (LAK)",
+   "fr": "le kip (LAK)"
+  },
+  "KHR": {
+   "en": "the riel (KHR)",
+   "zh": "柬埔寨瑞尔（KHR）",
+   "es": "el riel (KHR)",
+   "fr": "le riel (KHR)"
+  },
+  "VND": {
+   "en": "the đồng (VND)",
+   "zh": "越南盾（VND）",
+   "es": "el dong (VND)",
+   "fr": "le dông (VND)"
+  },
+  "MYR": {
+   "en": "the ringgit (MYR)",
+   "zh": "马来西亚林吉特（MYR）",
+   "es": "el ringgit (MYR)",
+   "fr": "le ringgit (MYR)"
+  },
+  "SGD": {
+   "en": "the Singapore dollar (SGD)",
+   "zh": "新加坡元（SGD）",
+   "es": "el dólar de Singapur (SGD)",
+   "fr": "le dollar de Singapour (SGD)"
+  },
+  "IDR": {
+   "en": "the rupiah (IDR)",
+   "zh": "印尼盾（IDR）",
+   "es": "la rupia indonesia (IDR)",
+   "fr": "la roupie indonésienne (IDR)"
+  },
+  "PHP": {
+   "en": "the Philippine peso (PHP)",
+   "zh": "菲律宾比索（PHP）",
+   "es": "el peso filipino (PHP)",
+   "fr": "le peso philippin (PHP)"
+  },
+  "KRW": {
+   "en": "the won (KRW)",
+   "zh": "韩元（KRW）",
+   "es": "el won (KRW)",
+   "fr": "le won (KRW)"
+  },
+  "KPW": {
+   "en": "the North Korean won (KPW)",
+   "zh": "朝鲜元（KPW）",
+   "es": "el won norcoreano (KPW)",
+   "fr": "le won nord-coréen (KPW)"
+  },
+  "MNT": {
+   "en": "the tögrög (MNT)",
+   "zh": "蒙古图格里克（MNT）",
+   "es": "el tugrik (MNT)",
+   "fr": "le tögrög (MNT)"
+  },
+  "KZT": {
+   "en": "the tenge (KZT)",
+   "zh": "哈萨克斯坦坚戈（KZT）",
+   "es": "el tenge (KZT)",
+   "fr": "le tenge (KZT)"
+  },
+  "UZS": {
+   "en": "the som (UZS)",
+   "zh": "乌兹别克斯坦苏姆（UZS）",
+   "es": "el som (UZS)",
+   "fr": "le som (UZS)"
+  },
+  "TMT": {
+   "en": "the manat (TMT)",
+   "zh": "土库曼斯坦马纳特（TMT）",
+   "es": "el manat turcomano (TMT)",
+   "fr": "le manat turkmène (TMT)"
+  },
+  "TJS": {
+   "en": "the somoni (TJS)",
+   "zh": "塔吉克斯坦索莫尼（TJS）",
+   "es": "el somoni (TJS)",
+   "fr": "le somoni (TJS)"
+  },
+  "KGS": {
+   "en": "the som (KGS)",
+   "zh": "吉尔吉斯斯坦索姆（KGS）",
+   "es": "el som kirguís (KGS)",
+   "fr": "le som kirghize (KGS)"
+  },
+  "MVR": {
+   "en": "the rufiyaa (MVR)",
+   "zh": "马尔代夫拉菲亚（MVR）",
+   "es": "la rufiyaa (MVR)",
+   "fr": "la rufiyaa (MVR)"
+  },
+  "BND": {
+   "en": "the Brunei dollar (BND)",
+   "zh": "文莱元（BND）",
+   "es": "el dólar de Brunéi (BND)",
+   "fr": "le dollar de Brunei (BND)"
+  },
+  "YER": {
+   "en": "the Yemeni rial (YER)",
+   "zh": "也门里亚尔（YER）",
+   "es": "el rial yemení (YER)",
+   "fr": "le rial yéménite (YER)"
+  },
+  "DZD": {
+   "en": "the Algerian dinar (DZD)",
+   "zh": "阿尔及利亚第纳尔（DZD）",
+   "es": "el dinar argelino (DZD)",
+   "fr": "le dinar algérien (DZD)"
+  },
+  "AOA": {
+   "en": "the kwanza (AOA)",
+   "zh": "安哥拉宽扎（AOA）",
+   "es": "el kwanza (AOA)",
+   "fr": "le kwanza (AOA)"
+  },
+  "XOF": {
+   "en": "the West African CFA franc (XOF)",
+   "zh": "西非法郎（XOF）",
+   "es": "el franco CFA de África Occidental (XOF)",
+   "fr": "le franc CFA ouest-africain (XOF)"
+  },
+  "XAF": {
+   "en": "the Central African CFA franc (XAF)",
+   "zh": "中非法郎（XAF）",
+   "es": "el franco CFA de África Central (XAF)",
+   "fr": "le franc CFA centrafricain (XAF)"
+  },
+  "BWP": {
+   "en": "the pula (BWP)",
+   "zh": "博茨瓦纳普拉（BWP）",
+   "es": "el pula (BWP)",
+   "fr": "le pula (BWP)"
+  },
+  "BIF": {
+   "en": "the Burundian franc (BIF)",
+   "zh": "布隆迪法郎（BIF）",
+   "es": "el franco burundés (BIF)",
+   "fr": "le franc burundais (BIF)"
+  },
+  "CVE": {
+   "en": "the Cape Verdean escudo (CVE)",
+   "zh": "佛得角埃斯库多（CVE）",
+   "es": "el escudo caboverdiano (CVE)",
+   "fr": "l’escudo cap-verdien (CVE)"
+  },
+  "KMF": {
+   "en": "the Comorian franc (KMF)",
+   "zh": "科摩罗法郎（KMF）",
+   "es": "el franco comorense (KMF)",
+   "fr": "le franc comorien (KMF)"
+  },
+  "CDF": {
+   "en": "the Congolese franc (CDF)",
+   "zh": "刚果法郎（CDF）",
+   "es": "el franco congoleño (CDF)",
+   "fr": "le franc congolais (CDF)"
+  },
+  "DJF": {
+   "en": "the Djiboutian franc (DJF)",
+   "zh": "吉布提法郎（DJF）",
+   "es": "el franco yibutiano (DJF)",
+   "fr": "le franc djiboutien (DJF)"
+  },
+  "ERN": {
+   "en": "the nakfa (ERN)",
+   "zh": "厄立特里亚纳克法（ERN）",
+   "es": "el nakfa (ERN)",
+   "fr": "le nakfa (ERN)"
+  },
+  "SZL": {
+   "en": "the lilangeni (SZL)",
+   "zh": "斯威士兰里兰吉尼（SZL）",
+   "es": "el lilangeni (SZL)",
+   "fr": "le lilangeni (SZL)"
+  },
+  "GMD": {
+   "en": "the dalasi (GMD)",
+   "zh": "冈比亚达拉西（GMD）",
+   "es": "el dalasi (GMD)",
+   "fr": "le dalasi (GMD)"
+  },
+  "GHS": {
+   "en": "the cedi (GHS)",
+   "zh": "加纳塞地（GHS）",
+   "es": "el cedi (GHS)",
+   "fr": "le cedi (GHS)"
+  },
+  "GNF": {
+   "en": "the Guinean franc (GNF)",
+   "zh": "几内亚法郎（GNF）",
+   "es": "el franco guineano (GNF)",
+   "fr": "le franc guinéen (GNF)"
+  },
+  "KES": {
+   "en": "the Kenyan shilling (KES)",
+   "zh": "肯尼亚先令（KES）",
+   "es": "el chelín keniano (KES)",
+   "fr": "le shilling kényan (KES)"
+  },
+  "LSL": {
+   "en": "the loti (LSL)",
+   "zh": "莱索托洛蒂（LSL）",
+   "es": "el loti (LSL)",
+   "fr": "le loti (LSL)"
+  },
+  "LRD": {
+   "en": "the Liberian dollar (LRD)",
+   "zh": "利比里亚元（LRD）",
+   "es": "el dólar liberiano (LRD)",
+   "fr": "le dollar libérien (LRD)"
+  },
+  "LYD": {
+   "en": "the Libyan dinar (LYD)",
+   "zh": "利比亚第纳尔（LYD）",
+   "es": "el dinar libio (LYD)",
+   "fr": "le dinar libyen (LYD)"
+  },
+  "MGA": {
+   "en": "the ariary (MGA)",
+   "zh": "马达加斯加阿里亚里（MGA）",
+   "es": "el ariary (MGA)",
+   "fr": "l’ariary (MGA)"
+  },
+  "MWK": {
+   "en": "the kwacha (MWK)",
+   "zh": "马拉维克瓦查（MWK）",
+   "es": "el kwacha malauí (MWK)",
+   "fr": "le kwacha malawite (MWK)"
+  },
+  "MRU": {
+   "en": "the ouguiya (MRU)",
+   "zh": "毛里塔尼亚乌吉亚（MRU）",
+   "es": "la uguiya (MRU)",
+   "fr": "l’ouguija (MRU)"
+  },
+  "MUR": {
+   "en": "the Mauritian rupee (MUR)",
+   "zh": "毛里求斯卢比（MUR）",
+   "es": "la rupia de Mauricio (MUR)",
+   "fr": "la roupie mauricienne (MUR)"
+  },
+  "MAD": {
+   "en": "the Moroccan dirham (MAD)",
+   "zh": "摩洛哥迪拉姆（MAD）",
+   "es": "el dirham marroquí (MAD)",
+   "fr": "le dirham marocain (MAD)"
+  },
+  "MZN": {
+   "en": "the metical (MZN)",
+   "zh": "莫桑比克梅蒂卡尔（MZN）",
+   "es": "el metical (MZN)",
+   "fr": "le metical (MZN)"
+  },
+  "NAD": {
+   "en": "the Namibian dollar (NAD)",
+   "zh": "纳米比亚元（NAD）",
+   "es": "el dólar namibio (NAD)",
+   "fr": "le dollar namibien (NAD)"
+  },
+  "RWF": {
+   "en": "the Rwandan franc (RWF)",
+   "zh": "卢旺达法郎（RWF）",
+   "es": "el franco ruandés (RWF)",
+   "fr": "le franc rwandais (RWF)"
+  },
+  "SCR": {
+   "en": "the Seychellois rupee (SCR)",
+   "zh": "塞舌尔卢比（SCR）",
+   "es": "la rupia de Seychelles (SCR)",
+   "fr": "la roupie seychelloise (SCR)"
+  },
+  "SLE": {
+   "en": "the leone (SLE)",
+   "zh": "塞拉利昂利昂（SLE）",
+   "es": "el leone (SLE)",
+   "fr": "le leone (SLE)"
+  },
+  "SOS": {
+   "en": "the Somali shilling (SOS)",
+   "zh": "索马里先令（SOS）",
+   "es": "el chelín somalí (SOS)",
+   "fr": "le shilling somalien (SOS)"
+  },
+  "SSP": {
+   "en": "the South Sudanese pound (SSP)",
+   "zh": "南苏丹镑（SSP）",
+   "es": "la libra sursudanesa (SSP)",
+   "fr": "la livre sud-soudanaise (SSP)"
+  },
+  "SDG": {
+   "en": "the Sudanese pound (SDG)",
+   "zh": "苏丹镑（SDG）",
+   "es": "la libra sudanesa (SDG)",
+   "fr": "la livre soudanaise (SDG)"
+  },
+  "STN": {
+   "en": "the dobra (STN)",
+   "zh": "圣多美多布拉（STN）",
+   "es": "la dobra (STN)",
+   "fr": "le dobra (STN)"
+  },
+  "TZS": {
+   "en": "the Tanzanian shilling (TZS)",
+   "zh": "坦桑尼亚先令（TZS）",
+   "es": "el chelín tanzano (TZS)",
+   "fr": "le shilling tanzanien (TZS)"
+  },
+  "TND": {
+   "en": "the Tunisian dinar (TND)",
+   "zh": "突尼斯第纳尔（TND）",
+   "es": "el dinar tunecino (TND)",
+   "fr": "le dinar tunisien (TND)"
+  },
+  "UGX": {
+   "en": "the Ugandan shilling (UGX)",
+   "zh": "乌干达先令（UGX）",
+   "es": "el chelín ugandés (UGX)",
+   "fr": "le shilling ougandais (UGX)"
+  },
+  "ZMW": {
+   "en": "the Zambian kwacha (ZMW)",
+   "zh": "赞比亚克瓦查（ZMW）",
+   "es": "el kwacha zambiano (ZMW)",
+   "fr": "le kwacha zambien (ZMW)"
+  },
+  "ZWL": {
+   "en": "the Zimbabwean dollar (ZWL)",
+   "zh": "津巴布韦元（ZWL）",
+   "es": "el dólar zimbabuense (ZWL)",
+   "fr": "le dollar zimbabwéen (ZWL)"
+  },
+  "XCD": {
+   "en": "the East Caribbean dollar (XCD)",
+   "zh": "东加勒比元（XCD）",
+   "es": "el dólar del Caribe Oriental (XCD)",
+   "fr": "le dollar des Caraïbes orientales (XCD)"
+  },
+  "BSD": {
+   "en": "the Bahamian dollar (BSD)",
+   "zh": "巴哈马元（BSD）",
+   "es": "el dólar bahameño (BSD)",
+   "fr": "le dollar bahaméen (BSD)"
+  },
+  "BBD": {
+   "en": "the Barbadian dollar (BBD)",
+   "zh": "巴巴多斯元（BBD）",
+   "es": "el dólar de Barbados (BBD)",
+   "fr": "le dollar barbadien (BBD)"
+  },
+  "BZD": {
+   "en": "the Belize dollar (BZD)",
+   "zh": "伯利兹元（BZD）",
+   "es": "el dólar beliceño (BZD)",
+   "fr": "le dollar bélizien (BZD)"
+  },
+  "CRC": {
+   "en": "the colón (CRC)",
+   "zh": "哥斯达黎加科朗（CRC）",
+   "es": "el colón costarricense (CRC)",
+   "fr": "le colón costaricien (CRC)"
+  },
+  "CUP": {
+   "en": "the Cuban peso (CUP)",
+   "zh": "古巴比索（CUP）",
+   "es": "el peso cubano (CUP)",
+   "fr": "le peso cubain (CUP)"
+  },
+  "DOP": {
+   "en": "the Dominican peso (DOP)",
+   "zh": "多米尼加比索（DOP）",
+   "es": "el peso dominicano (DOP)",
+   "fr": "le peso dominicain (DOP)"
+  },
+  "GTQ": {
+   "en": "the quetzal (GTQ)",
+   "zh": "危地马拉格查尔（GTQ）",
+   "es": "el quetzal (GTQ)",
+   "fr": "le quetzal (GTQ)"
+  },
+  "HTG": {
+   "en": "the gourde (HTG)",
+   "zh": "海地古德（HTG）",
+   "es": "el gourde (HTG)",
+   "fr": "la gourde (HTG)"
+  },
+  "HNL": {
+   "en": "the lempira (HNL)",
+   "zh": "洪都拉斯伦皮拉（HNL）",
+   "es": "la lempira (HNL)",
+   "fr": "le lempira (HNL)"
+  },
+  "JMD": {
+   "en": "the Jamaican dollar (JMD)",
+   "zh": "牙买加元（JMD）",
+   "es": "el dólar jamaicano (JMD)",
+   "fr": "le dollar jamaïcain (JMD)"
+  },
+  "NIO": {
+   "en": "the córdoba (NIO)",
+   "zh": "尼加拉瓜科多巴（NIO）",
+   "es": "el córdoba (NIO)",
+   "fr": "le córdoba (NIO)"
+  },
+  "PAB": {
+   "en": "the balboa (PAB)",
+   "zh": "巴拿马巴波亚（PAB）",
+   "es": "el balboa (PAB)",
+   "fr": "le balboa (PAB)"
+  },
+  "TTD": {
+   "en": "the Trinidad and Tobago dollar (TTD)",
+   "zh": "特立尼达和多巴哥元（TTD）",
+   "es": "el dólar de Trinidad y Tobago (TTD)",
+   "fr": "le dollar de Trinité-et-Tobago (TTD)"
+  },
+  "ARS": {
+   "en": "the Argentine peso (ARS)",
+   "zh": "阿根廷比索（ARS）",
+   "es": "el peso argentino (ARS)",
+   "fr": "le peso argentin (ARS)"
+  },
+  "BOB": {
+   "en": "the boliviano (BOB)",
+   "zh": "玻利维亚诺（BOB）",
+   "es": "el boliviano (BOB)",
+   "fr": "le boliviano (BOB)"
+  },
+  "CLP": {
+   "en": "the Chilean peso (CLP)",
+   "zh": "智利比索（CLP）",
+   "es": "el peso chileno (CLP)",
+   "fr": "le peso chilien (CLP)"
+  },
+  "COP": {
+   "en": "the Colombian peso (COP)",
+   "zh": "哥伦比亚比索（COP）",
+   "es": "el peso colombiano (COP)",
+   "fr": "le peso colombien (COP)"
+  },
+  "GYD": {
+   "en": "the Guyanese dollar (GYD)",
+   "zh": "圭亚那元（GYD）",
+   "es": "el dólar guyanés (GYD)",
+   "fr": "le dollar guyanien (GYD)"
+  },
+  "PYG": {
+   "en": "the guaraní (PYG)",
+   "zh": "巴拉圭瓜拉尼（PYG）",
+   "es": "el guaraní (PYG)",
+   "fr": "le guarani (PYG)"
+  },
+  "PEN": {
+   "en": "the sol (PEN)",
+   "zh": "秘鲁索尔（PEN）",
+   "es": "el sol (PEN)",
+   "fr": "le sol (PEN)"
+  },
+  "SRD": {
+   "en": "the Surinamese dollar (SRD)",
+   "zh": "苏里南元（SRD）",
+   "es": "el dólar surinamés (SRD)",
+   "fr": "le dollar surinamais (SRD)"
+  },
+  "UYU": {
+   "en": "the Uruguayan peso (UYU)",
+   "zh": "乌拉圭比索（UYU）",
+   "es": "el peso uruguayo (UYU)",
+   "fr": "le peso uruguayen (UYU)"
+  },
+  "VES": {
+   "en": "the bolívar (VES)",
+   "zh": "委内瑞拉玻利瓦尔（VES）",
+   "es": "el bolívar (VES)",
+   "fr": "le bolivar (VES)"
+  },
+  "FJD": {
+   "en": "the Fijian dollar (FJD)",
+   "zh": "斐济元（FJD）",
+   "es": "el dólar fiyiano (FJD)",
+   "fr": "le dollar fidjien (FJD)"
+  },
+  "PGK": {
+   "en": "the kina (PGK)",
+   "zh": "巴布亚新几内亚基那（PGK）",
+   "es": "el kina (PGK)",
+   "fr": "le kina (PGK)"
+  },
+  "SBD": {
+   "en": "the Solomon Islands dollar (SBD)",
+   "zh": "所罗门群岛元（SBD）",
+   "es": "el dólar de las Islas Salomón (SBD)",
+   "fr": "le dollar des îles Salomon (SBD)"
+  },
+  "VUV": {
+   "en": "the vatu (VUV)",
+   "zh": "瓦努阿图瓦图（VUV）",
+   "es": "el vatu (VUV)",
+   "fr": "le vatu (VUV)"
+  },
+  "WST": {
+   "en": "the tala (WST)",
+   "zh": "萨摩亚塔拉（WST）",
+   "es": "el tala (WST)",
+   "fr": "le tala (WST)"
+  },
+  "TOP": {
+   "en": "the paʻanga (TOP)",
+   "zh": "汤加潘加（TOP）",
+   "es": "el paʻanga (TOP)",
+   "fr": "le paʻanga (TOP)"
+  },
+  "NGN": {
+   "en": "the naira (NGN)",
+   "zh": "尼日利亚奈拉（NGN）",
+   "es": "el naira (NGN)",
+   "fr": "le naira (NGN)"
+  },
+  "EGP": {
+   "en": "the Egyptian pound (EGP)",
+   "zh": "埃及镑（EGP）",
+   "es": "la libra egipcia (EGP)",
+   "fr": "la livre égyptienne (EGP)"
+  },
+  "ZAR": {
+   "en": "the rand (ZAR)",
+   "zh": "南非兰特（ZAR）",
+   "es": "el rand (ZAR)",
+   "fr": "le rand (ZAR)"
+  },
+  "ETB": {
+   "en": "the birr (ETB)",
+   "zh": "埃塞俄比亚比尔（ETB）",
+   "es": "el birr (ETB)",
+   "fr": "le birr (ETB)"
+  }
+ },
+ "countries": {
+  "AF": {
+   "l": [
+    "ps",
+    "fa"
+   ],
+   "c": "AFN"
+  },
+  "AM": {
+   "l": [
+    "hy"
+   ],
+   "c": "AMD"
+  },
+  "AZ": {
+   "l": [
+    "az"
+   ],
+   "c": "AZN"
+  },
+  "BH": {
+   "l": [
+    "ar"
+   ],
+   "c": "BHD"
+  },
+  "BT": {
+   "l": [
+    "dz"
+   ],
+   "c": "BTN"
+  },
+  "BN": {
+   "l": [
+    "ms"
+   ],
+   "c": "BND"
+  },
+  "KH": {
+   "l": [
+    "km"
+   ],
+   "c": "KHR"
+  },
+  "CN": {
+   "l": [
+    "zh"
+   ],
+   "c": "CNY"
+  },
+  "GE": {
+   "l": [
+    "ka"
+   ],
+   "c": "GEL"
+  },
+  "IN": {
+   "l": [
+    "hi",
+    "en"
+   ],
+   "c": "INR"
+  },
+  "ID": {
+   "l": [
+    "id"
+   ],
+   "c": "IDR"
+  },
+  "IR": {
+   "l": [
+    "fa"
+   ],
+   "c": "IRR"
+  },
+  "IQ": {
+   "l": [
+    "ar",
+    "ku"
+   ],
+   "c": "IQD"
+  },
+  "IL": {
+   "l": [
+    "he",
+    "ar"
+   ],
+   "c": "ILS"
+  },
+  "JP": {
+   "l": [
+    "ja"
+   ],
+   "c": "JPY"
+  },
+  "JO": {
+   "l": [
+    "ar"
+   ],
+   "c": "JOD"
+  },
+  "KZ": {
+   "l": [
+    "kk",
+    "ru"
+   ],
+   "c": "KZT"
+  },
+  "KW": {
+   "l": [
+    "ar"
+   ],
+   "c": "KWD"
+  },
+  "KG": {
+   "l": [
+    "ky",
+    "ru"
+   ],
+   "c": "KGS"
+  },
+  "LA": {
+   "l": [
+    "lo"
+   ],
+   "c": "LAK"
+  },
+  "LB": {
+   "l": [
+    "ar"
+   ],
+   "c": "LBP"
+  },
+  "MY": {
+   "l": [
+    "ms"
+   ],
+   "c": "MYR"
+  },
+  "MV": {
+   "l": [
+    "dv"
+   ],
+   "c": "MVR"
+  },
+  "MN": {
+   "l": [
+    "mn"
+   ],
+   "c": "MNT"
+  },
+  "MM": {
+   "l": [
+    "my"
+   ],
+   "c": "MMK"
+  },
+  "NP": {
+   "l": [
+    "ne"
+   ],
+   "c": "NPR"
+  },
+  "KP": {
+   "l": [
+    "ko"
+   ],
+   "c": "KPW"
+  },
+  "OM": {
+   "l": [
+    "ar"
+   ],
+   "c": "OMR"
+  },
+  "PK": {
+   "l": [
+    "ur",
+    "en"
+   ],
+   "c": "PKR"
+  },
+  "PH": {
+   "l": [
+    "tl",
+    "en"
+   ],
+   "c": "PHP"
+  },
+  "QA": {
+   "l": [
+    "ar"
+   ],
+   "c": "QAR"
+  },
+  "SA": {
+   "l": [
+    "ar"
+   ],
+   "c": "SAR"
+  },
+  "SG": {
+   "l": [
+    "en",
+    "ms",
+    "zh"
+   ],
+   "m": 4,
+   "c": "SGD"
+  },
+  "KR": {
+   "l": [
+    "ko"
+   ],
+   "c": "KRW"
+  },
+  "LK": {
+   "l": [
+    "si",
+    "ta"
+   ],
+   "c": "LKR"
+  },
+  "SY": {
+   "l": [
+    "ar"
+   ],
+   "c": "SYP"
+  },
+  "TJ": {
+   "l": [
+    "tg"
+   ],
+   "c": "TJS"
+  },
+  "TH": {
+   "l": [
+    "th"
+   ],
+   "c": "THB"
+  },
+  "TL": {
+   "l": [
+    "tet",
+    "pt"
+   ],
+   "c": "USD"
+  },
+  "TM": {
+   "l": [
+    "tk"
+   ],
+   "c": "TMT"
+  },
+  "AE": {
+   "l": [
+    "ar"
+   ],
+   "c": "AED"
+  },
+  "UZ": {
+   "l": [
+    "uz"
+   ],
+   "c": "UZS"
+  },
+  "VN": {
+   "l": [
+    "vi"
+   ],
+   "c": "VND"
+  },
+  "YE": {
+   "l": [
+    "ar"
+   ],
+   "c": "YER"
+  },
+  "BD": {
+   "l": [
+    "bn"
+   ],
+   "c": "BDT"
+  },
+  "TR": {
+   "l": [
+    "tr"
+   ],
+   "c": "TRY"
+  },
+  "AL": {
+   "l": [
+    "sq"
+   ],
+   "c": "ALL"
+  },
+  "AD": {
+   "l": [
+    "ca"
+   ],
+   "c": "EUR"
+  },
+  "AT": {
+   "l": [
+    "de"
+   ],
+   "c": "EUR"
+  },
+  "BY": {
+   "l": [
+    "be",
+    "ru"
+   ],
+   "c": "BYN"
+  },
+  "BE": {
+   "l": [
+    "nl",
+    "fr",
+    "de"
+   ],
+   "m": 3,
+   "c": "EUR"
+  },
+  "BA": {
+   "l": [
+    "bs",
+    "sr",
+    "hr"
+   ],
+   "m": 3,
+   "c": "BAM"
+  },
+  "BG": {
+   "l": [
+    "bg"
+   ],
+   "c": "BGN"
+  },
+  "HR": {
+   "l": [
+    "hr"
+   ],
+   "c": "EUR"
+  },
+  "CY": {
+   "l": [
+    "el",
+    "tr"
+   ],
+   "c": "EUR"
+  },
+  "CZ": {
+   "l": [
+    "cs"
+   ],
+   "c": "CZK"
+  },
+  "DK": {
+   "l": [
+    "da"
+   ],
+   "c": "DKK"
+  },
+  "EE": {
+   "l": [
+    "et"
+   ],
+   "c": "EUR"
+  },
+  "FI": {
+   "l": [
+    "fi",
+    "sv"
+   ],
+   "c": "EUR"
+  },
+  "FR": {
+   "l": [
+    "fr"
+   ],
+   "c": "EUR"
+  },
+  "DE": {
+   "l": [
+    "de"
+   ],
+   "c": "EUR"
+  },
+  "GR": {
+   "l": [
+    "el"
+   ],
+   "c": "EUR"
+  },
+  "HU": {
+   "l": [
+    "hu"
+   ],
+   "c": "HUF"
+  },
+  "IS": {
+   "l": [
+    "is"
+   ],
+   "c": "ISK"
+  },
+  "IE": {
+   "l": [
+    "en",
+    "ga"
+   ],
+   "c": "EUR"
+  },
+  "IT": {
+   "l": [
+    "it"
+   ],
+   "c": "EUR"
+  },
+  "LV": {
+   "l": [
+    "lv"
+   ],
+   "c": "EUR"
+  },
+  "LI": {
+   "l": [
+    "de"
+   ],
+   "c": "CHF"
+  },
+  "LT": {
+   "l": [
+    "lt"
+   ],
+   "c": "EUR"
+  },
+  "LU": {
+   "l": [
+    "lb",
+    "fr",
+    "de"
+   ],
+   "m": 3,
+   "c": "EUR"
+  },
+  "MT": {
+   "l": [
+    "mt",
+    "en"
+   ],
+   "c": "EUR"
+  },
+  "MD": {
+   "l": [
+    "ro"
+   ],
+   "c": "MDL"
+  },
+  "MC": {
+   "l": [
+    "fr"
+   ],
+   "c": "EUR"
+  },
+  "ME": {
+   "l": [
+    "sr"
+   ],
+   "c": "EUR"
+  },
+  "NL": {
+   "l": [
+    "nl"
+   ],
+   "c": "EUR"
+  },
+  "MK": {
+   "l": [
+    "mk",
+    "sq"
+   ],
+   "c": "MKD"
+  },
+  "NO": {
+   "l": [
+    "no"
+   ],
+   "c": "NOK"
+  },
+  "PL": {
+   "l": [
+    "pl"
+   ],
+   "c": "PLN"
+  },
+  "PT": {
+   "l": [
+    "pt"
+   ],
+   "c": "EUR"
+  },
+  "RO": {
+   "l": [
+    "ro"
+   ],
+   "c": "RON"
+  },
+  "RU": {
+   "l": [
+    "ru"
+   ],
+   "c": "RUB"
+  },
+  "SM": {
+   "l": [
+    "it"
+   ],
+   "c": "EUR"
+  },
+  "RS": {
+   "l": [
+    "sr"
+   ],
+   "c": "RSD"
+  },
+  "SK": {
+   "l": [
+    "sk"
+   ],
+   "c": "EUR"
+  },
+  "SI": {
+   "l": [
+    "sl"
+   ],
+   "c": "EUR"
+  },
+  "ES": {
+   "l": [
+    "es"
+   ],
+   "c": "EUR"
+  },
+  "SE": {
+   "l": [
+    "sv"
+   ],
+   "c": "SEK"
+  },
+  "CH": {
+   "l": [
+    "de",
+    "fr",
+    "it",
+    "rm"
+   ],
+   "m": 4,
+   "c": "CHF"
+  },
+  "UA": {
+   "l": [
+    "uk"
+   ],
+   "c": "UAH"
+  },
+  "GB": {
+   "l": [
+    "en"
+   ],
+   "c": "GBP"
+  },
+  "VA": {
+   "l": [
+    "it"
+   ],
+   "c": "EUR"
+  },
+  "DZ": {
+   "l": [
+    "ar",
+    "ber"
+   ],
+   "c": "DZD"
+  },
+  "AO": {
+   "l": [
+    "pt"
+   ],
+   "c": "AOA"
+  },
+  "BJ": {
+   "l": [
+    "fr"
+   ],
+   "c": "XOF"
+  },
+  "BW": {
+   "l": [
+    "en",
+    "tn"
+   ],
+   "c": "BWP"
+  },
+  "BF": {
+   "l": [
+    "fr"
+   ],
+   "c": "XOF"
+  },
+  "BI": {
+   "l": [
+    "fr",
+    "rn"
+   ],
+   "c": "BIF"
+  },
+  "CM": {
+   "l": [
+    "fr",
+    "en"
+   ],
+   "c": "XAF"
+  },
+  "CV": {
+   "l": [
+    "pt"
+   ],
+   "c": "CVE"
+  },
+  "CF": {
+   "l": [
+    "fr",
+    "sg"
+   ],
+   "c": "XAF"
+  },
+  "TD": {
+   "l": [
+    "fr",
+    "ar"
+   ],
+   "c": "XAF"
+  },
+  "KM": {
+   "l": [
+    "ar",
+    "fr"
+   ],
+   "c": "KMF"
+  },
+  "CD": {
+   "l": [
+    "fr"
+   ],
+   "c": "CDF"
+  },
+  "CG": {
+   "l": [
+    "fr"
+   ],
+   "c": "XAF"
+  },
+  "DJ": {
+   "l": [
+    "fr",
+    "ar"
+   ],
+   "c": "DJF"
+  },
+  "GQ": {
+   "l": [
+    "es",
+    "fr",
+    "pt"
+   ],
+   "m": 3,
+   "c": "XAF"
+  },
+  "ER": {
+   "l": [
+    "ti",
+    "ar",
+    "en"
+   ],
+   "m": 3,
+   "c": "ERN"
+  },
+  "SZ": {
+   "l": [
+    "en",
+    "ss"
+   ],
+   "c": "SZL"
+  },
+  "ET": {
+   "l": [
+    "am"
+   ],
+   "c": "ETB"
+  },
+  "GA": {
+   "l": [
+    "fr"
+   ],
+   "c": "XAF"
+  },
+  "GM": {
+   "l": [
+    "en"
+   ],
+   "c": "GMD"
+  },
+  "GH": {
+   "l": [
+    "en"
+   ],
+   "c": "GHS"
+  },
+  "GN": {
+   "l": [
+    "fr"
+   ],
+   "c": "GNF"
+  },
+  "GW": {
+   "l": [
+    "pt"
+   ],
+   "c": "XOF"
+  },
+  "CI": {
+   "l": [
+    "fr"
+   ],
+   "c": "XOF"
+  },
+  "KE": {
+   "l": [
+    "en",
+    "sw"
+   ],
+   "c": "KES"
+  },
+  "LS": {
+   "l": [
+    "st",
+    "en"
+   ],
+   "c": "LSL"
+  },
+  "LR": {
+   "l": [
+    "en"
+   ],
+   "c": "LRD"
+  },
+  "LY": {
+   "l": [
+    "ar"
+   ],
+   "c": "LYD"
+  },
+  "MG": {
+   "l": [
+    "mg",
+    "fr"
+   ],
+   "c": "MGA"
+  },
+  "MW": {
+   "l": [
+    "en",
+    "ny"
+   ],
+   "c": "MWK"
+  },
+  "ML": {
+   "l": [
+    "fr",
+    "bm"
+   ],
+   "c": "XOF"
+  },
+  "MR": {
+   "l": [
+    "ar"
+   ],
+   "c": "MRU"
+  },
+  "MU": {
+   "l": [
+    "en",
+    "fr"
+   ],
+   "c": "MUR"
+  },
+  "MA": {
+   "l": [
+    "ar",
+    "ber"
+   ],
+   "c": "MAD"
+  },
+  "MZ": {
+   "l": [
+    "pt"
+   ],
+   "c": "MZN"
+  },
+  "NA": {
+   "l": [
+    "en"
+   ],
+   "c": "NAD"
+  },
+  "NE": {
+   "l": [
+    "fr"
+   ],
+   "c": "XOF"
+  },
+  "NG": {
+   "l": [
+    "en"
+   ],
+   "c": "NGN"
+  },
+  "RW": {
+   "l": [
+    "rw",
+    "en",
+    "fr"
+   ],
+   "m": 4,
+   "c": "RWF"
+  },
+  "SN": {
+   "l": [
+    "fr",
+    "wo"
+   ],
+   "c": "XOF"
+  },
+  "SC": {
+   "l": [
+    "en",
+    "fr",
+    "cr"
+   ],
+   "m": 3,
+   "c": "SCR"
+  },
+  "SL": {
+   "l": [
+    "en"
+   ],
+   "c": "SLE"
+  },
+  "SO": {
+   "l": [
+    "so",
+    "ar"
+   ],
+   "c": "SOS"
+  },
+  "ZA": {
+   "l": [
+    "zu",
+    "en",
+    "af"
+   ],
+   "m": 12,
+   "c": "ZAR"
+  },
+  "SS": {
+   "l": [
+    "en"
+   ],
+   "c": "SSP"
+  },
+  "SD": {
+   "l": [
+    "ar",
+    "en"
+   ],
+   "c": "SDG"
+  },
+  "ST": {
+   "l": [
+    "pt"
+   ],
+   "c": "STN"
+  },
+  "TZ": {
+   "l": [
+    "sw",
+    "en"
+   ],
+   "c": "TZS"
+  },
+  "TG": {
+   "l": [
+    "fr"
+   ],
+   "c": "XOF"
+  },
+  "TN": {
+   "l": [
+    "ar"
+   ],
+   "c": "TND"
+  },
+  "UG": {
+   "l": [
+    "en",
+    "sw"
+   ],
+   "c": "UGX"
+  },
+  "ZM": {
+   "l": [
+    "en"
+   ],
+   "c": "ZMW"
+  },
+  "ZW": {
+   "l": [
+    "en",
+    "sn"
+   ],
+   "m": 16,
+   "c": "ZWL"
+  },
+  "EG": {
+   "l": [
+    "ar"
+   ],
+   "c": "EGP"
+  },
+  "AG": {
+   "l": [
+    "en"
+   ],
+   "c": "XCD"
+  },
+  "BS": {
+   "l": [
+    "en"
+   ],
+   "c": "BSD"
+  },
+  "BB": {
+   "l": [
+    "en"
+   ],
+   "c": "BBD"
+  },
+  "BZ": {
+   "l": [
+    "en"
+   ],
+   "c": "BZD"
+  },
+  "CR": {
+   "l": [
+    "es"
+   ],
+   "c": "CRC"
+  },
+  "CU": {
+   "l": [
+    "es"
+   ],
+   "c": "CUP"
+  },
+  "DM": {
+   "l": [
+    "en"
+   ],
+   "c": "XCD"
+  },
+  "DO": {
+   "l": [
+    "es"
+   ],
+   "c": "DOP"
+  },
+  "SV": {
+   "l": [
+    "es"
+   ],
+   "c": "USD"
+  },
+  "GD": {
+   "l": [
+    "en"
+   ],
+   "c": "XCD"
+  },
+  "GT": {
+   "l": [
+    "es"
+   ],
+   "c": "GTQ"
+  },
+  "HT": {
+   "l": [
+    "fr",
+    "ht"
+   ],
+   "c": "HTG"
+  },
+  "HN": {
+   "l": [
+    "es"
+   ],
+   "c": "HNL"
+  },
+  "JM": {
+   "l": [
+    "en"
+   ],
+   "c": "JMD"
+  },
+  "NI": {
+   "l": [
+    "es"
+   ],
+   "c": "NIO"
+  },
+  "PA": {
+   "l": [
+    "es"
+   ],
+   "c": "PAB"
+  },
+  "KN": {
+   "l": [
+    "en"
+   ],
+   "c": "XCD"
+  },
+  "LC": {
+   "l": [
+    "en"
+   ],
+   "c": "XCD"
+  },
+  "VC": {
+   "l": [
+    "en"
+   ],
+   "c": "XCD"
+  },
+  "TT": {
+   "l": [
+    "en"
+   ],
+   "c": "TTD"
+  },
+  "AR": {
+   "l": [
+    "es"
+   ],
+   "c": "ARS"
+  },
+  "BO": {
+   "l": [
+    "es",
+    "qu",
+    "ay"
+   ],
+   "m": 37,
+   "c": "BOB"
+  },
+  "BR": {
+   "l": [
+    "pt"
+   ],
+   "c": "BRL"
+  },
+  "CL": {
+   "l": [
+    "es"
+   ],
+   "c": "CLP"
+  },
+  "CO": {
+   "l": [
+    "es"
+   ],
+   "c": "COP"
+  },
+  "EC": {
+   "l": [
+    "es"
+   ],
+   "c": "USD"
+  },
+  "GY": {
+   "l": [
+    "en"
+   ],
+   "c": "GYD"
+  },
+  "PY": {
+   "l": [
+    "es",
+    "gn"
+   ],
+   "c": "PYG"
+  },
+  "PE": {
+   "l": [
+    "es",
+    "qu",
+    "ay"
+   ],
+   "c": "PEN"
+  },
+  "SR": {
+   "l": [
+    "nl"
+   ],
+   "c": "SRD"
+  },
+  "UY": {
+   "l": [
+    "es"
+   ],
+   "c": "UYU"
+  },
+  "VE": {
+   "l": [
+    "es"
+   ],
+   "c": "VES"
+  },
+  "MX": {
+   "l": [
+    "es"
+   ],
+   "c": "MXN"
+  },
+  "US": {
+   "l": [
+    "en"
+   ],
+   "c": "USD"
+  },
+  "CA": {
+   "l": [
+    "en",
+    "fr"
+   ],
+   "c": "CAD"
+  },
+  "AU": {
+   "l": [
+    "en"
+   ],
+   "c": "AUD"
+  },
+  "FJ": {
+   "l": [
+    "en",
+    "fj"
+   ],
+   "c": "FJD"
+  },
+  "KI": {
+   "l": [
+    "en",
+    "gil"
+   ],
+   "c": "AUD"
+  },
+  "MH": {
+   "l": [
+    "en",
+    "mh"
+   ],
+   "c": "USD"
+  },
+  "FM": {
+   "l": [
+    "en"
+   ],
+   "c": "USD"
+  },
+  "NR": {
+   "l": [
+    "en",
+    "na"
+   ],
+   "c": "AUD"
+  },
+  "NZ": {
+   "l": [
+    "en",
+    "mi"
+   ],
+   "c": "NZD"
+  },
+  "PW": {
+   "l": [
+    "en",
+    "pau"
+   ],
+   "c": "USD"
+  },
+  "PG": {
+   "l": [
+    "en",
+    "tpi"
+   ],
+   "c": "PGK"
+  },
+  "WS": {
+   "l": [
+    "sm",
+    "en"
+   ],
+   "c": "WST"
+  },
+  "SB": {
+   "l": [
+    "en"
+   ],
+   "c": "SBD"
+  },
+  "TO": {
+   "l": [
+    "to",
+    "en"
+   ],
+   "c": "TOP"
+  },
+  "TV": {
+   "l": [
+    "en"
+   ],
+   "c": "AUD"
+  },
+  "VU": {
+   "l": [
+    "bi",
+    "en",
+    "fr"
+   ],
+   "m": 3,
+   "c": "VUV"
+  }
+ }
+}

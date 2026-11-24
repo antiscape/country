@@ -327,7 +327,7 @@ npm run seo -- --out /tmp/seo-test
   ├── /flags/ /capitals/   五种模式介绍页
   ├── /atlas/              图鉴索引
   ├── /atlas/cn/           194 个国家详情页（含手写亮点）
-  ├── /guides/...          2 篇指南
+  ├── /guides/...          8 篇指南（四语言）
   └── /privacy/ /terms/    合规页
 /play/                     游戏 SPA（noindex）
 ```
@@ -345,7 +345,7 @@ npm run seo -- --out /tmp/seo-test
 
 ```bash
 npm run build
-# 833 indexable pages, app: /play/ (noindex)
+# 857 indexable pages, app: /play/ (noindex)
 ```
 
 ### 多语言

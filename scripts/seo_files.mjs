@@ -5,6 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { COUNTRIES } from '../js/data.js';
 import { isCurated } from '../site/country-facts.mjs';
+import { GUIDE_ORDER } from '../site/content.mjs';
 
 export const LANGS = ['zh', 'en', 'es', 'fr'];
 export const LOCALES = { zh: 'zh-CN', en: 'en-US', es: 'es-ES', fr: 'fr-FR' };
@@ -37,8 +38,7 @@ export function buildSeoEntries() {
       ...MODE_IDS.map((id) => [`/${lang}/${id}/`, '0.9']),
       [`/${lang}/atlas/`, '0.9'],
       [`/${lang}/guides/`, '0.7'],
-      [`/${lang}/guides/how-to-play/`, '0.7'],
-      [`/${lang}/guides/flags-of-the-world/`, '0.7'],
+      ...GUIDE_ORDER.map((slug) => [`/${lang}/guides/${slug}/`, '0.7']),
       [`/${lang}/about/`, '0.5'],
       [`/${lang}/privacy/`, '0.3'],
       [`/${lang}/terms/`, '0.3'],
