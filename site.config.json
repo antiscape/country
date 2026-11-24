@@ -1,0 +1,16 @@
+{
+  "baseUrl": "https://geoquest.example",
+  "siteName": "GEOQUEST",
+  "contactEmail": "hello@geoquest.example",
+  "adsense": {
+    "enabled": false,
+    "client": "",
+    "slots": {
+      "home": "",
+      "mode": "",
+      "atlas": "",
+      "country": "",
+      "guide": ""
+    }
+  }
+}

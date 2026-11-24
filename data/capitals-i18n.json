@@ -1,0 +1,972 @@
+{
+  "AF": {
+    "es": "Kabul",
+    "fr": "Kaboul",
+    "en": "Kabul"
+  },
+  "AL": {
+    "es": "Tirana",
+    "fr": "Tirana",
+    "en": "Tirana"
+  },
+  "DZ": {
+    "es": "Argel",
+    "fr": "Alger",
+    "en": "Algiers"
+  },
+  "AD": {
+    "es": "Andorra la Vieja",
+    "fr": "Andorre-la-Vieille",
+    "en": "Andorra la Vella"
+  },
+  "AO": {
+    "es": "Luanda",
+    "fr": "Luanda",
+    "en": "Luanda"
+  },
+  "AG": {
+    "es": "Saint John",
+    "fr": "Saint John's",
+    "en": ""
+  },
+  "AR": {
+    "es": "Buenos Aires",
+    "fr": "Buenos Aires",
+    "en": "Buenos Aires"
+  },
+  "AM": {
+    "es": "Ereván",
+    "fr": "Erevan",
+    "en": "Yerevan"
+  },
+  "AU": {
+    "es": "Canberra",
+    "fr": "Canberra",
+    "en": "Canberra"
+  },
+  "AT": {
+    "es": "Viena",
+    "fr": "Vienne",
+    "en": "Vienna"
+  },
+  "AZ": {
+    "es": "Bakú",
+    "fr": "Bakou",
+    "en": "Baku"
+  },
+  "BS": {
+    "es": "Nasáu",
+    "fr": "Nassau",
+    "en": "Nassau"
+  },
+  "BH": {
+    "es": "Manama",
+    "fr": "Manama",
+    "en": "Manama"
+  },
+  "BD": {
+    "es": "Daca",
+    "fr": "Dacca",
+    "en": "Dhaka"
+  },
+  "BB": {
+    "es": "Bridgetown",
+    "fr": "Bridgetown",
+    "en": "Bridgetown"
+  },
+  "BY": {
+    "es": "Minsk",
+    "fr": "Minsk",
+    "en": "Minsk"
+  },
+  "BE": {
+    "es": "Bruselas",
+    "fr": "Bruxelles",
+    "en": "Brussels"
+  },
+  "BZ": {
+    "es": "Belmopán",
+    "fr": "Belmopan",
+    "en": "Belmopan"
+  },
+  "BJ": {
+    "es": "Porto Novo",
+    "fr": "Porto-Novo",
+    "en": "Porto-Novo"
+  },
+  "BT": {
+    "es": "Timbu",
+    "fr": "Thimphou",
+    "en": "Thimphu"
+  },
+  "BO": {
+    "es": "Sucre",
+    "fr": "Sucre",
+    "en": "Sucre"
+  },
+  "BA": {
+    "es": "Sarajevo",
+    "fr": "Sarajevo",
+    "en": "Sarajevo"
+  },
+  "BW": {
+    "es": "Gaborone",
+    "fr": "Gaborone",
+    "en": "Gaborone"
+  },
+  "BR": {
+    "es": "Brasilia",
+    "fr": "Brasilia",
+    "en": "Brasília"
+  },
+  "BN": {
+    "es": "Bandar Seri Begawan",
+    "fr": "Bandar Seri Begawan",
+    "en": "Bandar Seri Begawan"
+  },
+  "BG": {
+    "es": "Sofía",
+    "fr": "Sofia",
+    "en": "Sofia"
+  },
+  "BF": {
+    "es": "Uagadugú",
+    "fr": "Ouagadougou",
+    "en": "Ouagadougou"
+  },
+  "BI": {
+    "es": "Guitega",
+    "fr": "Gitega",
+    "en": "Gitega"
+  },
+  "KH": {
+    "es": "Nom Pen",
+    "fr": "Phnom Penh",
+    "en": "Phnom Penh"
+  },
+  "CM": {
+    "es": "Yaundé",
+    "fr": "Yaoundé",
+    "en": "Yaoundé"
+  },
+  "CA": {
+    "es": "Ottawa",
+    "fr": "Ottawa",
+    "en": "Ottawa"
+  },
+  "CV": {
+    "es": "Praia",
+    "fr": "Praia",
+    "en": "Praia"
+  },
+  "CF": {
+    "es": "Bangui",
+    "fr": "Bangui",
+    "en": "Bangui"
+  },
+  "TD": {
+    "es": "Yamena",
+    "fr": "N'Djaména",
+    "en": "N'Djamena"
+  },
+  "CL": {
+    "es": "Santiago de Chile",
+    "fr": "Santiago",
+    "en": "Santiago"
+  },
+  "CN": {
+    "es": "Pekín",
+    "fr": "Pékin",
+    "en": "Beijing"
+  },
+  "CO": {
+    "es": "Bogotá",
+    "fr": "Bogota",
+    "en": "Bogotá"
+  },
+  "KM": {
+    "es": "Moroni",
+    "fr": "Moroni",
+    "en": "Moroni"
+  },
+  "CR": {
+    "es": "San José",
+    "fr": "San José",
+    "en": "San José"
+  },
+  "HR": {
+    "es": "Zagreb",
+    "fr": "Zagreb",
+    "en": "Zagreb"
+  },
+  "CU": {
+    "es": "La Habana",
+    "fr": "La Havane",
+    "en": "Havana"
+  },
+  "CY": {
+    "es": "Nicosia",
+    "fr": "Nicosie",
+    "en": "Nicosia"
+  },
+  "CZ": {
+    "es": "Praga",
+    "fr": "Prague",
+    "en": "Prague"
+  },
+  "CD": {
+    "es": "Kinsasa",
+    "fr": "Kinshasa",
+    "en": "Kinshasa"
+  },
+  "DK": {
+    "es": "Copenhague",
+    "fr": "Copenhague",
+    "en": "Copenhagen"
+  },
+  "DJ": {
+    "es": "Ciudad de Yibuti",
+    "fr": "Djibouti",
+    "en": "Djibouti"
+  },
+  "DM": {
+    "es": "Roseau",
+    "fr": "Roseau",
+    "en": "Roseau"
+  },
+  "DO": {
+    "es": "Santo Domingo",
+    "fr": "Saint-Domingue",
+    "en": "Santo Domingo"
+  },
+  "EC": {
+    "es": "Quito",
+    "fr": "Quito",
+    "en": "Quito"
+  },
+  "EG": {
+    "es": "El Cairo",
+    "fr": "Le Caire",
+    "en": "Cairo"
+  },
+  "SV": {
+    "es": "San Salvador",
+    "fr": "San Salvador",
+    "en": "San Salvador"
+  },
+  "GQ": {
+    "es": "Ciudad de la Paz",
+    "fr": "Ciudad de la Paz",
+    "en": "Ciudad de la Paz"
+  },
+  "ER": {
+    "es": "Asmara",
+    "fr": "Asmara",
+    "en": "Asmara"
+  },
+  "EE": {
+    "es": "Tallin",
+    "fr": "Tallinn",
+    "en": "Tallinn"
+  },
+  "SZ": {
+    "es": "Mbabane",
+    "fr": "Mbabane",
+    "en": "Mbabane"
+  },
+  "ET": {
+    "es": "Adís Abeba",
+    "fr": "Addis-Abeba",
+    "en": "Addis Ababa"
+  },
+  "FJ": {
+    "es": "Suva",
+    "fr": "Suva",
+    "en": "Suva"
+  },
+  "FI": {
+    "es": "Helsinki",
+    "fr": "Helsinki",
+    "en": "Helsinki"
+  },
+  "FR": {
+    "es": "París",
+    "fr": "Paris",
+    "en": "Paris"
+  },
+  "GA": {
+    "es": "Libreville",
+    "fr": "Libreville",
+    "en": "Libreville"
+  },
+  "GM": {
+    "es": "Banjul",
+    "fr": "Banjul",
+    "en": "Banjul"
+  },
+  "GE": {
+    "es": "Tiflis",
+    "fr": "Tbilissi",
+    "en": "Tbilisi"
+  },
+  "DE": {
+    "es": "Berlín",
+    "fr": "Berlin",
+    "en": "Berlin"
+  },
+  "GH": {
+    "es": "Acra",
+    "fr": "Accra",
+    "en": "Accra"
+  },
+  "GR": {
+    "es": "Atenas",
+    "fr": "Athènes",
+    "en": "Athens"
+  },
+  "GD": {
+    "es": "Saint George",
+    "fr": "Saint-Georges",
+    "en": "St. George's"
+  },
+  "GT": {
+    "es": "Ciudad de Guatemala",
+    "fr": "Guatemala",
+    "en": "Guatemala City"
+  },
+  "GN": {
+    "es": "Conakri",
+    "fr": "Conakry",
+    "en": "Conakry"
+  },
+  "GW": {
+    "es": "Bisáu",
+    "fr": "Bissau",
+    "en": "Bissau"
+  },
+  "GY": {
+    "es": "Georgetown",
+    "fr": "Georgetown",
+    "en": "Georgetown"
+  },
+  "HT": {
+    "es": "Puerto Príncipe",
+    "fr": "Port-au-Prince",
+    "en": "Port-au-Prince"
+  },
+  "HN": {
+    "es": "Tegucigalpa",
+    "fr": "Tegucigalpa",
+    "en": "Tegucigalpa"
+  },
+  "HU": {
+    "es": "Budapest",
+    "fr": "Budapest",
+    "en": "Budapest"
+  },
+  "IS": {
+    "es": "Reikiavik",
+    "fr": "Reykjavik",
+    "en": "Reykjavík"
+  },
+  "IN": {
+    "es": "Nueva Delhi",
+    "fr": "New Delhi",
+    "en": "New Delhi"
+  },
+  "ID": {
+    "es": "Yakarta",
+    "fr": "Jakarta",
+    "en": "Jakarta"
+  },
+  "IR": {
+    "es": "Teherán",
+    "fr": "Téhéran",
+    "en": "Tehran"
+  },
+  "IQ": {
+    "es": "Bagdad",
+    "fr": "Bagdad",
+    "en": "Baghdad"
+  },
+  "IE": {
+    "es": "Dublín",
+    "fr": "Dublin",
+    "en": "Dublin"
+  },
+  "IL": {
+    "es": "Jerusalén",
+    "fr": "Jérusalem",
+    "en": "Jerusalem"
+  },
+  "IT": {
+    "es": "Roma",
+    "fr": "Rome",
+    "en": "Rome"
+  },
+  "CI": {
+    "es": "Yamusukro",
+    "fr": "Yamoussoukro",
+    "en": "Yamoussoukro"
+  },
+  "JM": {
+    "es": "Kingston",
+    "fr": "Kingston",
+    "en": "Kingston"
+  },
+  "JP": {
+    "es": "Tokio",
+    "fr": "Tokyo",
+    "en": "Tokyo"
+  },
+  "JO": {
+    "es": "Amán",
+    "fr": "Amman",
+    "en": "Amman"
+  },
+  "KZ": {
+    "es": "Astaná",
+    "fr": "Astana",
+    "en": "Astana"
+  },
+  "KE": {
+    "es": "Nairobi",
+    "fr": "Nairobi",
+    "en": "Nairobi"
+  },
+  "KI": {
+    "es": "Tarawa Sur",
+    "fr": "Tarawa-Sud",
+    "en": "South Tarawa"
+  },
+  "KW": {
+    "es": "Ciudad de Kuwait",
+    "fr": "Koweït",
+    "en": "Kuwait City"
+  },
+  "KG": {
+    "es": "Biskek",
+    "fr": "Bichkek",
+    "en": "Bishkek"
+  },
+  "LA": {
+    "es": "Vientián",
+    "fr": "Vientiane",
+    "en": "Vientiane"
+  },
+  "LV": {
+    "es": "Riga",
+    "fr": "Riga",
+    "en": "Riga"
+  },
+  "LB": {
+    "es": "Beirut",
+    "fr": "Beyrouth",
+    "en": "Beirut"
+  },
+  "LS": {
+    "es": "Maseru",
+    "fr": "Maseru",
+    "en": "Maseru"
+  },
+  "LR": {
+    "es": "Monrovia",
+    "fr": "Monrovia",
+    "en": "Monrovia"
+  },
+  "LY": {
+    "es": "Trípoli",
+    "fr": "Tripoli",
+    "en": "Tripoli"
+  },
+  "LI": {
+    "es": "Vaduz",
+    "fr": "Vaduz",
+    "en": "Vaduz"
+  },
+  "LT": {
+    "es": "Vilna",
+    "fr": "Vilnius",
+    "en": "Vilnius"
+  },
+  "LU": {
+    "es": "Luxemburgo",
+    "fr": "Luxembourg",
+    "en": "Luxembourg"
+  },
+  "MG": {
+    "es": "Antananarivo",
+    "fr": "Antananarivo",
+    "en": "Antananarivo"
+  },
+  "MW": {
+    "es": "Lilongüe",
+    "fr": "Lilongwe",
+    "en": "Lilongwe"
+  },
+  "MY": {
+    "es": "Kuala Lumpur",
+    "fr": "Kuala Lumpur",
+    "en": "Kuala Lumpur"
+  },
+  "MV": {
+    "es": "Malé",
+    "fr": "Malé",
+    "en": "Malé"
+  },
+  "ML": {
+    "es": "Bamako",
+    "fr": "Bamako",
+    "en": "Bamako"
+  },
+  "MT": {
+    "es": "La Valeta",
+    "fr": "La Valette",
+    "en": "Valletta"
+  },
+  "MH": {
+    "es": "Majuro",
+    "fr": "Majuro",
+    "en": "Majuro"
+  },
+  "MR": {
+    "es": "Nuakchot",
+    "fr": "Nouakchott",
+    "en": "Nouakchott"
+  },
+  "MU": {
+    "es": "Port Louis",
+    "fr": "Port-Louis",
+    "en": "Port Louis"
+  },
+  "MX": {
+    "es": "Ciudad de México",
+    "fr": "Mexico",
+    "en": "Mexico City"
+  },
+  "FM": {
+    "es": "Palikir",
+    "fr": "Palikir",
+    "en": "Palikir"
+  },
+  "MD": {
+    "es": "Chisináu",
+    "fr": "Chișinău",
+    "en": "Chișinău"
+  },
+  "MC": {
+    "es": "Mónaco",
+    "fr": "Monaco",
+    "en": "Monaco"
+  },
+  "MN": {
+    "es": "Ulán Bator",
+    "fr": "Oulan-Bator",
+    "en": "Ulaanbaatar"
+  },
+  "ME": {
+    "es": "Podgorica",
+    "fr": "Podgorica",
+    "en": "Podgorica"
+  },
+  "MA": {
+    "es": "Rabat",
+    "fr": "Rabat",
+    "en": "Rabat"
+  },
+  "MZ": {
+    "es": "Maputo",
+    "fr": "Maputo",
+    "en": "Maputo"
+  },
+  "MM": {
+    "es": "Naipyidó",
+    "fr": "Naypyidaw",
+    "en": "Naypyidaw"
+  },
+  "NA": {
+    "es": "Windhoek",
+    "fr": "Windhoek",
+    "en": "Windhoek"
+  },
+  "NR": {
+    "es": "Yaren",
+    "fr": "Yaren",
+    "en": "Yaren District"
+  },
+  "NP": {
+    "es": "Katmandú",
+    "fr": "Katmandou",
+    "en": "Kathmandu"
+  },
+  "NL": {
+    "es": "Ámsterdam",
+    "fr": "Amsterdam",
+    "en": "Amsterdam"
+  },
+  "NZ": {
+    "es": "Wellington",
+    "fr": "Wellington",
+    "en": "Wellington"
+  },
+  "NI": {
+    "es": "Managua",
+    "fr": "Managua",
+    "en": "Managua"
+  },
+  "NE": {
+    "es": "Niamey",
+    "fr": "Niamey",
+    "en": "Niamey"
+  },
+  "NG": {
+    "es": "Abuya",
+    "fr": "Abuja",
+    "en": "Abuja"
+  },
+  "KP": {
+    "es": "Pionyang",
+    "fr": "Pyongyang",
+    "en": "Pyongyang"
+  },
+  "MK": {
+    "es": "Skopie",
+    "fr": "Skopje",
+    "en": "Skopje"
+  },
+  "NO": {
+    "es": "Oslo",
+    "fr": "Oslo",
+    "en": "Oslo"
+  },
+  "OM": {
+    "es": "Mascate",
+    "fr": "Mascate",
+    "en": "Muscat"
+  },
+  "PK": {
+    "es": "Islamabad",
+    "fr": "Islamabad",
+    "en": "Islamabad"
+  },
+  "PW": {
+    "es": "Ngerulmud",
+    "fr": "Ngerulmud",
+    "en": "Ngerulmud"
+  },
+  "PA": {
+    "es": "Ciudad de Panamá",
+    "fr": "Panama",
+    "en": "Panama City"
+  },
+  "PG": {
+    "es": "Puerto Moresby",
+    "fr": "Port Moresby",
+    "en": "Port Moresby"
+  },
+  "PY": {
+    "es": "Asunción",
+    "fr": "Asuncion",
+    "en": "Asunción"
+  },
+  "PE": {
+    "es": "Lima",
+    "fr": "Lima",
+    "en": "Lima"
+  },
+  "PH": {
+    "es": "Manila",
+    "fr": "Manille",
+    "en": "Manila"
+  },
+  "PL": {
+    "es": "Varsovia",
+    "fr": "Varsovie",
+    "en": "Warsaw"
+  },
+  "PT": {
+    "es": "Lisboa",
+    "fr": "Lisbonne",
+    "en": "Lisbon"
+  },
+  "QA": {
+    "es": "Doha",
+    "fr": "Doha",
+    "en": "Doha"
+  },
+  "CG": {
+    "es": "Brazzaville",
+    "fr": "Brazzaville",
+    "en": "Brazzaville"
+  },
+  "RO": {
+    "es": "Bucarest",
+    "fr": "Bucarest",
+    "en": "Bucharest"
+  },
+  "RU": {
+    "es": "Moscú",
+    "fr": "Moscou",
+    "en": "Moscow"
+  },
+  "RW": {
+    "es": "Kigali",
+    "fr": "Kigali",
+    "en": "Kigali"
+  },
+  "KN": {
+    "es": "Basseterre",
+    "fr": "Basseterre",
+    "en": "Basseterre"
+  },
+  "LC": {
+    "es": "Castries",
+    "fr": "Castries",
+    "en": "Castries"
+  },
+  "VC": {
+    "es": "Kingstown",
+    "fr": "Kingstown",
+    "en": "Kingstown"
+  },
+  "WS": {
+    "es": "Apia",
+    "fr": "Apia",
+    "en": "Apia"
+  },
+  "SM": {
+    "es": "San Marino",
+    "fr": "Saint-Marin",
+    "en": "San Marino"
+  },
+  "SA": {
+    "es": "Riad",
+    "fr": "Riyad",
+    "en": "Riyadh"
+  },
+  "SN": {
+    "es": "Dakar",
+    "fr": "Dakar",
+    "en": "Dakar"
+  },
+  "RS": {
+    "es": "Belgrado",
+    "fr": "Belgrade",
+    "en": "Belgrade"
+  },
+  "SC": {
+    "es": "Victoria",
+    "fr": "Victoria",
+    "en": "Victoria"
+  },
+  "SL": {
+    "es": "Freetown",
+    "fr": "Freetown",
+    "en": "Freetown"
+  },
+  "SG": {
+    "es": "Singapur",
+    "fr": "Singapour",
+    "en": "Singapore"
+  },
+  "SK": {
+    "es": "Bratislava",
+    "fr": "Bratislava",
+    "en": "Bratislava"
+  },
+  "SI": {
+    "es": "Liubliana",
+    "fr": "Ljubljana",
+    "en": "Ljubljana"
+  },
+  "SB": {
+    "es": "Honiara",
+    "fr": "Honiara",
+    "en": "Honiara"
+  },
+  "SO": {
+    "es": "Mogadiscio",
+    "fr": "Mogadiscio",
+    "en": "Mogadishu"
+  },
+  "ZA": {
+    "es": "Pretoria",
+    "fr": "Pretoria",
+    "en": "Pretoria"
+  },
+  "KR": {
+    "es": "Seúl",
+    "fr": "Séoul",
+    "en": "Seoul"
+  },
+  "SS": {
+    "es": "Yuba",
+    "fr": "Djouba",
+    "en": "Juba"
+  },
+  "ES": {
+    "es": "Madrid",
+    "fr": "Madrid",
+    "en": "Madrid"
+  },
+  "LK": {
+    "es": "Sri Jayawardenapura Kotte",
+    "fr": "Sri Jayawardenapura",
+    "en": "Sri Jayawardenepura Kotte"
+  },
+  "SD": {
+    "es": "Jartum",
+    "fr": "Khartoum",
+    "en": "Khartoum"
+  },
+  "SR": {
+    "es": "Paramaribo",
+    "fr": "Paramaribo",
+    "en": "Paramaribo"
+  },
+  "SE": {
+    "es": "Estocolmo",
+    "fr": "Stockholm",
+    "en": "Stockholm"
+  },
+  "CH": {
+    "es": "Berna",
+    "fr": "Berne",
+    "en": "Bern"
+  },
+  "SY": {
+    "es": "Damasco",
+    "fr": "Damas",
+    "en": "Damascus"
+  },
+  "ST": {
+    "es": "Santo Tomé",
+    "fr": "São Tomé",
+    "en": "São Tomé"
+  },
+  "TJ": {
+    "es": "Dusambé",
+    "fr": "Douchanbé",
+    "en": "Dushanbe"
+  },
+  "TZ": {
+    "es": "Dodoma",
+    "fr": "Dodoma",
+    "en": "Dodoma"
+  },
+  "TH": {
+    "es": "Bangkok",
+    "fr": "Bangkok",
+    "en": "Bangkok"
+  },
+  "TL": {
+    "es": "Dili",
+    "fr": "Dili",
+    "en": "Dili"
+  },
+  "TG": {
+    "es": "Lomé",
+    "fr": "Lomé",
+    "en": "Lomé"
+  },
+  "TO": {
+    "es": "Nukualofa",
+    "fr": "Nukuʻalofa",
+    "en": "Nukuʻalofa"
+  },
+  "TT": {
+    "es": "Puerto España",
+    "fr": "Port-d'Espagne",
+    "en": "Port of Spain"
+  },
+  "TN": {
+    "es": "Túnez",
+    "fr": "Tunis",
+    "en": "Tunis"
+  },
+  "TR": {
+    "es": "Ankara",
+    "fr": "Ankara",
+    "en": "Ankara"
+  },
+  "TM": {
+    "es": "Asjabad",
+    "fr": "Achgabat",
+    "en": "Ashgabat"
+  },
+  "TV": {
+    "es": "Funafuti",
+    "fr": "Funafuti",
+    "en": "Funafuti"
+  },
+  "UG": {
+    "es": "Kampala",
+    "fr": "Kampala",
+    "en": "Kampala"
+  },
+  "UA": {
+    "es": "Kiev",
+    "fr": "Kiev",
+    "en": "Kyiv"
+  },
+  "AE": {
+    "es": "Abu Dhabi",
+    "fr": "Abou Dabi",
+    "en": "Abu Dhabi"
+  },
+  "GB": {
+    "es": "Londres",
+    "fr": "Londres",
+    "en": "London"
+  },
+  "US": {
+    "es": "Washington D. C.",
+    "fr": "Washington",
+    "en": "Washington, D.C."
+  },
+  "UY": {
+    "es": "Montevideo",
+    "fr": "Montevideo",
+    "en": "Montevideo"
+  },
+  "UZ": {
+    "es": "Taskent",
+    "fr": "Tachkent",
+    "en": "Tashkent"
+  },
+  "VU": {
+    "es": "Port Vila",
+    "fr": "Port-Vila",
+    "en": "Port Vila"
+  },
+  "VA": {
+    "es": "Ciudad del Vaticano",
+    "fr": "Vatican",
+    "en": "Vatican City"
+  },
+  "VE": {
+    "es": "Caracas",
+    "fr": "Caracas",
+    "en": "Caracas"
+  },
+  "VN": {
+    "es": "Hanói",
+    "fr": "Hanoï",
+    "en": "Hanoi"
+  },
+  "YE": {
+    "es": "Saná",
+    "fr": "Sanaa",
+    "en": "Sanaa"
+  },
+  "ZM": {
+    "es": "Lusaka",
+    "fr": "Lusaka",
+    "en": "Lusaka"
+  },
+  "ZW": {
+    "es": "Harare",
+    "fr": "Harare",
+    "en": "Harare"
+  }
+}

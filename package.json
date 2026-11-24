@@ -1,0 +1,16 @@
+{
+  "name": "geoquest",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "GEOQUEST \u73af\u7403\u5730\u7406 \u2014 a web geography quiz inspired by Geography Quiz: Flags and Capitals",
+  "scripts": {
+    "start": "node scripts/serve.mjs 8790",
+    "dev": "node scripts/serve.mjs 8790",
+    "build": "node scripts/build_site.mjs",
+    "serve:dist": "SERVE_ROOT=dist node scripts/serve.mjs 8791"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
