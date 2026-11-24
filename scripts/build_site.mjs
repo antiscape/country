@@ -29,11 +29,23 @@ const LANGS = ['zh', 'en', 'es', 'fr'];
 
 // Content hash for static assets. Cloudflare caches /css/* and /js/* at the
 // edge, so a bare URL can serve a stale bundle for hours after a deploy.
+function listFiles(dir) {
+  const out = [];
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) out.push(...listFiles(full));
+    else if (/\.(css|js)$/.test(entry.name)) out.push(full);
+  }
+  return out;
+}
+// Hash every stylesheet and script so any change busts the whole module graph.
 const BUILD_ID = (() => {
   const hash = crypto.createHash('sha1');
-  for (const file of ['css/base.css', 'css/site.css', 'css/components.css', 'js/site.js']) {
-    hash.update(fs.readFileSync(path.join(ROOT, file)));
-  }
+  const files = [
+    ...listFiles(path.join(ROOT, 'css')),
+    ...listFiles(path.join(ROOT, 'js')),
+  ].sort();
+  for (const file of files) hash.update(path.relative(ROOT, file)).update(fs.readFileSync(file));
   return hash.digest('hex').slice(0, 8);
 })();
 const LOCALES = { zh: 'zh-CN', en: 'en-US', es: 'es-ES', fr: 'fr-FR' };
@@ -752,12 +764,25 @@ function main() {
   // Copy the game app and shared assets
   copy('css');
   copy('js');
+  for (const file of listFiles(path.join(DIST, 'js'))) {
+    const source = fs.readFileSync(file, 'utf8');
+    const versioned = source
+      .replace(/(from\s+['"])(\.{1,2}\/[^'"?]+)(['"])/g, (m, a, spec, b) => `${a}${spec}?v=${BUILD_ID}${b}`)
+      .replace(/(import\s*\(\s*['"])(\.{1,2}\/[^'"?]+)(['"])/g, (m, a, spec, b) => `${a}${spec}?v=${BUILD_ID}${b}`)
+      .replace(/(import\s+['"])(\.{1,2}\/[^'"?]+)(['"])/g, (m, a, spec, b) => `${a}${spec}?v=${BUILD_ID}${b}`);
+    if (versioned !== source) fs.writeFileSync(file, versioned);
+  }
   copy('assets');
   copy('sw.js');
   fs.mkdirSync(path.join(DIST, 'play'), { recursive: true });
   fs.copyFileSync(path.join(ROOT, 'index.html'), path.join(DIST, 'play', 'index.html'));
   let playHtml = fs.readFileSync(path.join(DIST, 'play', 'index.html'), 'utf8');
   playHtml = playHtml.replace('<title>GEOQUEST 环球地理 · 国旗、首都与人口挑战</title>', '<title>GEOQUEST · Play</title>');
+  playHtml = playHtml
+    .replace('/css/base.css"', `/css/base.css?v=${BUILD_ID}"`)
+    .replace('/css/components.css"', `/css/components.css?v=${BUILD_ID}"`)
+    .replace('/css/game.css"', `/css/game.css?v=${BUILD_ID}"`)
+    .replace('/js/main.js"', `/js/main.js?v=${BUILD_ID}"`);
   playHtml = playHtml.replace('</head>', '<meta name="robots" content="noindex,follow">\n</head>');
   write('play/index.html', playHtml);
 
