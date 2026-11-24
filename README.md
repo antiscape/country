@@ -21,7 +21,7 @@ npm run serve:dist        # 预览构建产物 http://127.0.0.1:8791
 
 生产环境：
 
-- `dist/{zh,en,es,fr}/`：首页、五种模式页、图鉴、194×4 国家页（精选国可索引，其余 noindex）、指南、隐私/条款/关于/联系
+- `dist/{zh,en,es,fr}/`：首页、五种模式页、图鉴、194×4 国家页、指南、隐私/条款/关于/联系
 - `dist/play/`：游戏应用（`noindex`，通过 `?lang=xx&mode=flags` 进入）
 - `dist/sitemap.xml`、`dist/robots.txt`、`dist/ads.txt`
 - 所有静态页使用 `History` 风格路径，游戏保持 hash 路由（不影响 SEO）
@@ -326,7 +326,7 @@ npm run seo -- --out /tmp/seo-test
   ├── /                    首页
   ├── /flags/ /capitals/   五种模式介绍页
   ├── /atlas/              图鉴索引
-  ├── /atlas/cn/           194 个国家详情页（精选国可索引）
+  ├── /atlas/cn/           194 个国家详情页（含手写亮点）
   ├── /guides/...          2 篇指南
   └── /privacy/ /terms/    合规页
 /play/                     游戏 SPA（noindex）
@@ -345,7 +345,7 @@ npm run seo -- --out /tmp/seo-test
 
 ```bash
 npm run build
-# 153 indexable pages (24 curated countries × 4 + hub pages), app: /play/ (noindex)
+# 833 indexable pages, app: /play/ (noindex)
 ```
 
 ### 多语言
