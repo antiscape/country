@@ -333,13 +333,13 @@ function countryCard(c, lang) {
   const name = countryName(c, lang);
   const capName = capitalName(c, lang);
   const search = [c.name, c.nameZh, c.nameEs, c.nameFr, c.capital, c.capitalZh, c.capitalEs, c.capitalFr, c.id].join(' ').toLowerCase();
-  const speak = (text, label) => `<button type="button" class="speak" data-speak="${attrs(text)}" aria-label="${attrs(label)}" title="${attrs(label)}">${icon('volume')}</button>`;
+  const speak = (text, label, field) => `<button type="button" class="speak" data-speak="${attrs(text)}" data-audio="/assets/audio/${lang}/${c.id.toLowerCase()}-${field}.mp3" aria-label="${attrs(label)}" title="${attrs(label)}">${icon('volume')}</button>`;
   return `<div class="site-country-card" data-country-card data-region="${c.region}" data-search="${attrs(search)}">
     <a class="site-country-hit" href="${countryPath(lang, c)}"><span class="sr-only">${esc(name)}</span></a>
     <span class="flag"><img src="${c.flag}" alt="${attrs(name)} flag" loading="lazy" width="320" height="180"></span>
     <span class="cc-text">
-      <span class="cc-name"><b>${esc(name)}</b>${speak(name, t.common.listenName)}</span>
-      <span class="cc-capital"><span>${esc(capName)}</span>${speak(capName, t.common.listenCapital)}</span>
+      <span class="cc-name"><b>${esc(name)}</b>${speak(name, t.common.listenName, 'name')}</span>
+      <span class="cc-capital"><span>${esc(capName)}</span>${speak(capName, t.common.listenCapital, 'capital')}</span>
     </span>
     <span class="meta"><span>${esc(regionLabel(REGIONS.find((r) => r.id === c.region), lang))}</span><span class="pop">${fmtNum(c.population, lang)}</span></span>
   </div>`;

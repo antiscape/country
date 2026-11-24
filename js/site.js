@@ -60,20 +60,25 @@
   const speakButtons = [...document.querySelectorAll('[data-speak]')];
   if (speakButtons.length) {
     const synth = window.speechSynthesis;
-    const canSpeak = synth && typeof window.SpeechSynthesisUtterance === 'function';
-    if (!canSpeak) {
+    const canSpeak = Boolean(synth) && typeof window.SpeechSynthesisUtterance === 'function';
+    // Recorded clips work without any speech support; only hide the buttons
+    // when there is neither audio nor synthesis.
+    const hasAudio = speakButtons.some((btn) => btn.dataset.audio);
+    if (!canSpeak && !hasAudio) {
       document.documentElement.classList.add('no-tts');
     } else {
       const pageLang = document.documentElement.lang || 'en';
       let voice = null;
       const pickVoice = () => {
+        if (!canSpeak) return;
         const voices = synth.getVoices() || [];
         voice = voices.find((v) => String(v.lang || '').toLowerCase().replace('_', '-').startsWith(pageLang.slice(0, 2).toLowerCase())) || null;
       };
       pickVoice();
-      if (typeof synth.addEventListener === 'function') synth.addEventListener('voiceschanged', pickVoice);
+      if (canSpeak && typeof synth.addEventListener === 'function') synth.addEventListener('voiceschanged', pickVoice);
 
-      const speak = (text, btn) => {
+      const fallbackSpeak = (text, btn) => {
+        if (!canSpeak) return;
         synth.cancel();
         const utter = new SpeechSynthesisUtterance(text);
         utter.lang = pageLang;
@@ -86,11 +91,37 @@
         synth.speak(utter);
       };
 
+      let current = null;
+      const playClip = (btn) => {
+        const src = btn.dataset.audio;
+        const text = btn.dataset.speak || '';
+        if (current) {
+          current.pause();
+          document.querySelectorAll('.speak.is-speaking').forEach((el) => el.classList.remove('is-speaking'));
+          current = null;
+        }
+        if (!src) { fallbackSpeak(text, btn); return; }
+        const audio = new Audio(src);
+        audio.preload = 'auto';
+        current = audio;
+        const done = () => {
+          btn.classList.remove('is-speaking');
+          if (current === audio) current = null;
+        };
+        audio.addEventListener('ended', done);
+        audio.addEventListener('pause', done);
+        btn.classList.add('is-speaking');
+        const played = audio.play();
+        if (played && typeof played.catch === 'function') {
+          played.catch(() => { done(); fallbackSpeak(text, btn); });
+        }
+      };
+
       for (const btn of speakButtons) {
         btn.addEventListener('click', (event) => {
           event.preventDefault();
           event.stopPropagation();
-          speak(btn.dataset.speak || '', btn);
+          playClip(btn);
         });
       }
     }

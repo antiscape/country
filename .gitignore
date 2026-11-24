@@ -17,3 +17,7 @@ npm-debug.log*
 
 # Local preview screenshots
 .preview/
+
+# Audio generation scratch
+.audio-raw/
+.tools/

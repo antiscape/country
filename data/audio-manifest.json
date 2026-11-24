@@ -1,0 +1,9314 @@
+[
+ {
+  "lang": "zh",
+  "id": "af",
+  "field": "name",
+  "text": "阿富汗"
+ },
+ {
+  "lang": "zh",
+  "id": "af",
+  "field": "capital",
+  "text": "喀布尔"
+ },
+ {
+  "lang": "zh",
+  "id": "al",
+  "field": "name",
+  "text": "阿尔巴尼亚"
+ },
+ {
+  "lang": "zh",
+  "id": "al",
+  "field": "capital",
+  "text": "地拉那"
+ },
+ {
+  "lang": "zh",
+  "id": "dz",
+  "field": "name",
+  "text": "阿尔及利亚"
+ },
+ {
+  "lang": "zh",
+  "id": "dz",
+  "field": "capital",
+  "text": "阿尔及尔"
+ },
+ {
+  "lang": "zh",
+  "id": "ad",
+  "field": "name",
+  "text": "安道尔"
+ },
+ {
+  "lang": "zh",
+  "id": "ad",
+  "field": "capital",
+  "text": "安道尔城"
+ },
+ {
+  "lang": "zh",
+  "id": "ao",
+  "field": "name",
+  "text": "安哥拉"
+ },
+ {
+  "lang": "zh",
+  "id": "ao",
+  "field": "capital",
+  "text": "罗安达"
+ },
+ {
+  "lang": "zh",
+  "id": "ag",
+  "field": "name",
+  "text": "安提瓜和巴布达"
+ },
+ {
+  "lang": "zh",
+  "id": "ag",
+  "field": "capital",
+  "text": "圣约翰"
+ },
+ {
+  "lang": "zh",
+  "id": "ar",
+  "field": "name",
+  "text": "阿根廷"
+ },
+ {
+  "lang": "zh",
+  "id": "ar",
+  "field": "capital",
+  "text": "布宜诺斯艾利斯"
+ },
+ {
+  "lang": "zh",
+  "id": "am",
+  "field": "name",
+  "text": "亚美尼亚"
+ },
+ {
+  "lang": "zh",
+  "id": "am",
+  "field": "capital",
+  "text": "埃里温"
+ },
+ {
+  "lang": "zh",
+  "id": "au",
+  "field": "name",
+  "text": "澳大利亚"
+ },
+ {
+  "lang": "zh",
+  "id": "au",
+  "field": "capital",
+  "text": "堪培拉"
+ },
+ {
+  "lang": "zh",
+  "id": "at",
+  "field": "name",
+  "text": "奥地利"
+ },
+ {
+  "lang": "zh",
+  "id": "at",
+  "field": "capital",
+  "text": "维也纳"
+ },
+ {
+  "lang": "zh",
+  "id": "az",
+  "field": "name",
+  "text": "阿塞拜疆"
+ },
+ {
+  "lang": "zh",
+  "id": "az",
+  "field": "capital",
+  "text": "巴库"
+ },
+ {
+  "lang": "zh",
+  "id": "bs",
+  "field": "name",
+  "text": "巴哈马"
+ },
+ {
+  "lang": "zh",
+  "id": "bs",
+  "field": "capital",
+  "text": "拿骚"
+ },
+ {
+  "lang": "zh",
+  "id": "bh",
+  "field": "name",
+  "text": "巴林"
+ },
+ {
+  "lang": "zh",
+  "id": "bh",
+  "field": "capital",
+  "text": "麦纳麦"
+ },
+ {
+  "lang": "zh",
+  "id": "bd",
+  "field": "name",
+  "text": "孟加拉国"
+ },
+ {
+  "lang": "zh",
+  "id": "bd",
+  "field": "capital",
+  "text": "达卡"
+ },
+ {
+  "lang": "zh",
+  "id": "bb",
+  "field": "name",
+  "text": "巴巴多斯"
+ },
+ {
+  "lang": "zh",
+  "id": "bb",
+  "field": "capital",
+  "text": "布里奇顿"
+ },
+ {
+  "lang": "zh",
+  "id": "by",
+  "field": "name",
+  "text": "白俄罗斯"
+ },
+ {
+  "lang": "zh",
+  "id": "by",
+  "field": "capital",
+  "text": "明斯克"
+ },
+ {
+  "lang": "zh",
+  "id": "be",
+  "field": "name",
+  "text": "比利时"
+ },
+ {
+  "lang": "zh",
+  "id": "be",
+  "field": "capital",
+  "text": "布鲁塞尔"
+ },
+ {
+  "lang": "zh",
+  "id": "bz",
+  "field": "name",
+  "text": "伯利兹"
+ },
+ {
+  "lang": "zh",
+  "id": "bz",
+  "field": "capital",
+  "text": "贝尔莫潘"
+ },
+ {
+  "lang": "zh",
+  "id": "bj",
+  "field": "name",
+  "text": "贝宁"
+ },
+ {
+  "lang": "zh",
+  "id": "bj",
+  "field": "capital",
+  "text": "波多诺伏"
+ },
+ {
+  "lang": "zh",
+  "id": "bt",
+  "field": "name",
+  "text": "不丹"
+ },
+ {
+  "lang": "zh",
+  "id": "bt",
+  "field": "capital",
+  "text": "廷布"
+ },
+ {
+  "lang": "zh",
+  "id": "bo",
+  "field": "name",
+  "text": "玻利维亚"
+ },
+ {
+  "lang": "zh",
+  "id": "bo",
+  "field": "capital",
+  "text": "苏克雷"
+ },
+ {
+  "lang": "zh",
+  "id": "ba",
+  "field": "name",
+  "text": "波斯尼亚和黑塞哥维那"
+ },
+ {
+  "lang": "zh",
+  "id": "ba",
+  "field": "capital",
+  "text": "萨拉热窝"
+ },
+ {
+  "lang": "zh",
+  "id": "bw",
+  "field": "name",
+  "text": "博茨瓦纳"
+ },
+ {
+  "lang": "zh",
+  "id": "bw",
+  "field": "capital",
+  "text": "哈博罗内"
+ },
+ {
+  "lang": "zh",
+  "id": "br",
+  "field": "name",
+  "text": "巴西"
+ },
+ {
+  "lang": "zh",
+  "id": "br",
+  "field": "capital",
+  "text": "巴西利亚"
+ },
+ {
+  "lang": "zh",
+  "id": "bn",
+  "field": "name",
+  "text": "文莱"
+ },
+ {
+  "lang": "zh",
+  "id": "bn",
+  "field": "capital",
+  "text": "斯里巴加湾市"
+ },
+ {
+  "lang": "zh",
+  "id": "bg",
+  "field": "name",
+  "text": "保加利亚"
+ },
+ {
+  "lang": "zh",
+  "id": "bg",
+  "field": "capital",
+  "text": "索菲亚"
+ },
+ {
+  "lang": "zh",
+  "id": "bf",
+  "field": "name",
+  "text": "布基纳法索"
+ },
+ {
+  "lang": "zh",
+  "id": "bf",
+  "field": "capital",
+  "text": "瓦加杜古"
+ },
+ {
+  "lang": "zh",
+  "id": "bi",
+  "field": "name",
+  "text": "布隆迪"
+ },
+ {
+  "lang": "zh",
+  "id": "bi",
+  "field": "capital",
+  "text": "基特加"
+ },
+ {
+  "lang": "zh",
+  "id": "kh",
+  "field": "name",
+  "text": "柬埔寨"
+ },
+ {
+  "lang": "zh",
+  "id": "kh",
+  "field": "capital",
+  "text": "金边"
+ },
+ {
+  "lang": "zh",
+  "id": "cm",
+  "field": "name",
+  "text": "喀麦隆"
+ },
+ {
+  "lang": "zh",
+  "id": "cm",
+  "field": "capital",
+  "text": "雅温得"
+ },
+ {
+  "lang": "zh",
+  "id": "ca",
+  "field": "name",
+  "text": "加拿大"
+ },
+ {
+  "lang": "zh",
+  "id": "ca",
+  "field": "capital",
+  "text": "渥太华"
+ },
+ {
+  "lang": "zh",
+  "id": "cv",
+  "field": "name",
+  "text": "佛得角"
+ },
+ {
+  "lang": "zh",
+  "id": "cv",
+  "field": "capital",
+  "text": "普拉亚"
+ },
+ {
+  "lang": "zh",
+  "id": "cf",
+  "field": "name",
+  "text": "中非共和国"
+ },
+ {
+  "lang": "zh",
+  "id": "cf",
+  "field": "capital",
+  "text": "班吉"
+ },
+ {
+  "lang": "zh",
+  "id": "td",
+  "field": "name",
+  "text": "乍得"
+ },
+ {
+  "lang": "zh",
+  "id": "td",
+  "field": "capital",
+  "text": "恩贾梅纳"
+ },
+ {
+  "lang": "zh",
+  "id": "cl",
+  "field": "name",
+  "text": "智利"
+ },
+ {
+  "lang": "zh",
+  "id": "cl",
+  "field": "capital",
+  "text": "圣地亚哥"
+ },
+ {
+  "lang": "zh",
+  "id": "cn",
+  "field": "name",
+  "text": "中国"
+ },
+ {
+  "lang": "zh",
+  "id": "cn",
+  "field": "capital",
+  "text": "北京"
+ },
+ {
+  "lang": "zh",
+  "id": "co",
+  "field": "name",
+  "text": "哥伦比亚"
+ },
+ {
+  "lang": "zh",
+  "id": "co",
+  "field": "capital",
+  "text": "波哥大"
+ },
+ {
+  "lang": "zh",
+  "id": "km",
+  "field": "name",
+  "text": "科摩罗"
+ },
+ {
+  "lang": "zh",
+  "id": "km",
+  "field": "capital",
+  "text": "莫罗尼"
+ },
+ {
+  "lang": "zh",
+  "id": "cr",
+  "field": "name",
+  "text": "哥斯达黎加"
+ },
+ {
+  "lang": "zh",
+  "id": "cr",
+  "field": "capital",
+  "text": "圣何塞"
+ },
+ {
+  "lang": "zh",
+  "id": "hr",
+  "field": "name",
+  "text": "克罗地亚"
+ },
+ {
+  "lang": "zh",
+  "id": "hr",
+  "field": "capital",
+  "text": "萨格勒布"
+ },
+ {
+  "lang": "zh",
+  "id": "cu",
+  "field": "name",
+  "text": "古巴"
+ },
+ {
+  "lang": "zh",
+  "id": "cu",
+  "field": "capital",
+  "text": "哈瓦那"
+ },
+ {
+  "lang": "zh",
+  "id": "cy",
+  "field": "name",
+  "text": "塞浦路斯"
+ },
+ {
+  "lang": "zh",
+  "id": "cy",
+  "field": "capital",
+  "text": "尼科西亚"
+ },
+ {
+  "lang": "zh",
+  "id": "cz",
+  "field": "name",
+  "text": "捷克"
+ },
+ {
+  "lang": "zh",
+  "id": "cz",
+  "field": "capital",
+  "text": "布拉格"
+ },
+ {
+  "lang": "zh",
+  "id": "cd",
+  "field": "name",
+  "text": "刚果民主共和国"
+ },
+ {
+  "lang": "zh",
+  "id": "cd",
+  "field": "capital",
+  "text": "金沙萨"
+ },
+ {
+  "lang": "zh",
+  "id": "dk",
+  "field": "name",
+  "text": "丹麦"
+ },
+ {
+  "lang": "zh",
+  "id": "dk",
+  "field": "capital",
+  "text": "哥本哈根"
+ },
+ {
+  "lang": "zh",
+  "id": "dj",
+  "field": "name",
+  "text": "吉布提"
+ },
+ {
+  "lang": "zh",
+  "id": "dj",
+  "field": "capital",
+  "text": "吉布提市"
+ },
+ {
+  "lang": "zh",
+  "id": "dm",
+  "field": "name",
+  "text": "多米尼克"
+ },
+ {
+  "lang": "zh",
+  "id": "dm",
+  "field": "capital",
+  "text": "罗索"
+ },
+ {
+  "lang": "zh",
+  "id": "do",
+  "field": "name",
+  "text": "多米尼加"
+ },
+ {
+  "lang": "zh",
+  "id": "do",
+  "field": "capital",
+  "text": "圣多明各"
+ },
+ {
+  "lang": "zh",
+  "id": "ec",
+  "field": "name",
+  "text": "厄瓜多尔"
+ },
+ {
+  "lang": "zh",
+  "id": "ec",
+  "field": "capital",
+  "text": "基多"
+ },
+ {
+  "lang": "zh",
+  "id": "eg",
+  "field": "name",
+  "text": "埃及"
+ },
+ {
+  "lang": "zh",
+  "id": "eg",
+  "field": "capital",
+  "text": "开罗"
+ },
+ {
+  "lang": "zh",
+  "id": "sv",
+  "field": "name",
+  "text": "萨尔瓦多"
+ },
+ {
+  "lang": "zh",
+  "id": "sv",
+  "field": "capital",
+  "text": "圣萨尔瓦多"
+ },
+ {
+  "lang": "zh",
+  "id": "gq",
+  "field": "name",
+  "text": "赤道几内亚"
+ },
+ {
+  "lang": "zh",
+  "id": "gq",
+  "field": "capital",
+  "text": "马拉博"
+ },
+ {
+  "lang": "zh",
+  "id": "er",
+  "field": "name",
+  "text": "厄立特里亚"
+ },
+ {
+  "lang": "zh",
+  "id": "er",
+  "field": "capital",
+  "text": "阿斯马拉"
+ },
+ {
+  "lang": "zh",
+  "id": "ee",
+  "field": "name",
+  "text": "爱沙尼亚"
+ },
+ {
+  "lang": "zh",
+  "id": "ee",
+  "field": "capital",
+  "text": "塔林"
+ },
+ {
+  "lang": "zh",
+  "id": "sz",
+  "field": "name",
+  "text": "埃斯瓦蒂尼"
+ },
+ {
+  "lang": "zh",
+  "id": "sz",
+  "field": "capital",
+  "text": "姆巴巴内"
+ },
+ {
+  "lang": "zh",
+  "id": "et",
+  "field": "name",
+  "text": "埃塞俄比亚"
+ },
+ {
+  "lang": "zh",
+  "id": "et",
+  "field": "capital",
+  "text": "亚的斯亚贝巴"
+ },
+ {
+  "lang": "zh",
+  "id": "fj",
+  "field": "name",
+  "text": "斐济"
+ },
+ {
+  "lang": "zh",
+  "id": "fj",
+  "field": "capital",
+  "text": "苏瓦"
+ },
+ {
+  "lang": "zh",
+  "id": "fi",
+  "field": "name",
+  "text": "芬兰"
+ },
+ {
+  "lang": "zh",
+  "id": "fi",
+  "field": "capital",
+  "text": "赫尔辛基"
+ },
+ {
+  "lang": "zh",
+  "id": "fr",
+  "field": "name",
+  "text": "法国"
+ },
+ {
+  "lang": "zh",
+  "id": "fr",
+  "field": "capital",
+  "text": "巴黎"
+ },
+ {
+  "lang": "zh",
+  "id": "ga",
+  "field": "name",
+  "text": "加蓬"
+ },
+ {
+  "lang": "zh",
+  "id": "ga",
+  "field": "capital",
+  "text": "利伯维尔"
+ },
+ {
+  "lang": "zh",
+  "id": "gm",
+  "field": "name",
+  "text": "冈比亚"
+ },
+ {
+  "lang": "zh",
+  "id": "gm",
+  "field": "capital",
+  "text": "班珠尔"
+ },
+ {
+  "lang": "zh",
+  "id": "ge",
+  "field": "name",
+  "text": "格鲁吉亚"
+ },
+ {
+  "lang": "zh",
+  "id": "ge",
+  "field": "capital",
+  "text": "第比利斯"
+ },
+ {
+  "lang": "zh",
+  "id": "de",
+  "field": "name",
+  "text": "德国"
+ },
+ {
+  "lang": "zh",
+  "id": "de",
+  "field": "capital",
+  "text": "柏林"
+ },
+ {
+  "lang": "zh",
+  "id": "gh",
+  "field": "name",
+  "text": "加纳"
+ },
+ {
+  "lang": "zh",
+  "id": "gh",
+  "field": "capital",
+  "text": "阿克拉"
+ },
+ {
+  "lang": "zh",
+  "id": "gr",
+  "field": "name",
+  "text": "希腊"
+ },
+ {
+  "lang": "zh",
+  "id": "gr",
+  "field": "capital",
+  "text": "雅典"
+ },
+ {
+  "lang": "zh",
+  "id": "gd",
+  "field": "name",
+  "text": "格林纳达"
+ },
+ {
+  "lang": "zh",
+  "id": "gd",
+  "field": "capital",
+  "text": "圣乔治"
+ },
+ {
+  "lang": "zh",
+  "id": "gt",
+  "field": "name",
+  "text": "危地马拉"
+ },
+ {
+  "lang": "zh",
+  "id": "gt",
+  "field": "capital",
+  "text": "危地马拉城"
+ },
+ {
+  "lang": "zh",
+  "id": "gn",
+  "field": "name",
+  "text": "几内亚"
+ },
+ {
+  "lang": "zh",
+  "id": "gn",
+  "field": "capital",
+  "text": "科纳克里"
+ },
+ {
+  "lang": "zh",
+  "id": "gw",
+  "field": "name",
+  "text": "几内亚比绍"
+ },
+ {
+  "lang": "zh",
+  "id": "gw",
+  "field": "capital",
+  "text": "比绍"
+ },
+ {
+  "lang": "zh",
+  "id": "gy",
+  "field": "name",
+  "text": "圭亚那"
+ },
+ {
+  "lang": "zh",
+  "id": "gy",
+  "field": "capital",
+  "text": "乔治敦"
+ },
+ {
+  "lang": "zh",
+  "id": "ht",
+  "field": "name",
+  "text": "海地"
+ },
+ {
+  "lang": "zh",
+  "id": "ht",
+  "field": "capital",
+  "text": "太子港"
+ },
+ {
+  "lang": "zh",
+  "id": "hn",
+  "field": "name",
+  "text": "洪都拉斯"
+ },
+ {
+  "lang": "zh",
+  "id": "hn",
+  "field": "capital",
+  "text": "特古西加尔巴"
+ },
+ {
+  "lang": "zh",
+  "id": "hu",
+  "field": "name",
+  "text": "匈牙利"
+ },
+ {
+  "lang": "zh",
+  "id": "hu",
+  "field": "capital",
+  "text": "布达佩斯"
+ },
+ {
+  "lang": "zh",
+  "id": "is",
+  "field": "name",
+  "text": "冰岛"
+ },
+ {
+  "lang": "zh",
+  "id": "is",
+  "field": "capital",
+  "text": "雷克雅未克"
+ },
+ {
+  "lang": "zh",
+  "id": "in",
+  "field": "name",
+  "text": "印度"
+ },
+ {
+  "lang": "zh",
+  "id": "in",
+  "field": "capital",
+  "text": "新德里"
+ },
+ {
+  "lang": "zh",
+  "id": "id",
+  "field": "name",
+  "text": "印度尼西亚"
+ },
+ {
+  "lang": "zh",
+  "id": "id",
+  "field": "capital",
+  "text": "雅加达"
+ },
+ {
+  "lang": "zh",
+  "id": "ir",
+  "field": "name",
+  "text": "伊朗"
+ },
+ {
+  "lang": "zh",
+  "id": "ir",
+  "field": "capital",
+  "text": "德黑兰"
+ },
+ {
+  "lang": "zh",
+  "id": "iq",
+  "field": "name",
+  "text": "伊拉克"
+ },
+ {
+  "lang": "zh",
+  "id": "iq",
+  "field": "capital",
+  "text": "巴格达"
+ },
+ {
+  "lang": "zh",
+  "id": "ie",
+  "field": "name",
+  "text": "爱尔兰"
+ },
+ {
+  "lang": "zh",
+  "id": "ie",
+  "field": "capital",
+  "text": "都柏林"
+ },
+ {
+  "lang": "zh",
+  "id": "il",
+  "field": "name",
+  "text": "以色列"
+ },
+ {
+  "lang": "zh",
+  "id": "il",
+  "field": "capital",
+  "text": "耶路撒冷"
+ },
+ {
+  "lang": "zh",
+  "id": "it",
+  "field": "name",
+  "text": "意大利"
+ },
+ {
+  "lang": "zh",
+  "id": "it",
+  "field": "capital",
+  "text": "罗马"
+ },
+ {
+  "lang": "zh",
+  "id": "ci",
+  "field": "name",
+  "text": "科特迪瓦"
+ },
+ {
+  "lang": "zh",
+  "id": "ci",
+  "field": "capital",
+  "text": "亚穆苏克罗"
+ },
+ {
+  "lang": "zh",
+  "id": "jm",
+  "field": "name",
+  "text": "牙买加"
+ },
+ {
+  "lang": "zh",
+  "id": "jm",
+  "field": "capital",
+  "text": "金斯敦"
+ },
+ {
+  "lang": "zh",
+  "id": "jp",
+  "field": "name",
+  "text": "日本"
+ },
+ {
+  "lang": "zh",
+  "id": "jp",
+  "field": "capital",
+  "text": "东京"
+ },
+ {
+  "lang": "zh",
+  "id": "jo",
+  "field": "name",
+  "text": "约旦"
+ },
+ {
+  "lang": "zh",
+  "id": "jo",
+  "field": "capital",
+  "text": "安曼"
+ },
+ {
+  "lang": "zh",
+  "id": "kz",
+  "field": "name",
+  "text": "哈萨克斯坦"
+ },
+ {
+  "lang": "zh",
+  "id": "kz",
+  "field": "capital",
+  "text": "阿斯塔纳"
+ },
+ {
+  "lang": "zh",
+  "id": "ke",
+  "field": "name",
+  "text": "肯尼亚"
+ },
+ {
+  "lang": "zh",
+  "id": "ke",
+  "field": "capital",
+  "text": "内罗毕"
+ },
+ {
+  "lang": "zh",
+  "id": "ki",
+  "field": "name",
+  "text": "基里巴斯"
+ },
+ {
+  "lang": "zh",
+  "id": "ki",
+  "field": "capital",
+  "text": "南塔拉瓦"
+ },
+ {
+  "lang": "zh",
+  "id": "kw",
+  "field": "name",
+  "text": "科威特"
+ },
+ {
+  "lang": "zh",
+  "id": "kw",
+  "field": "capital",
+  "text": "科威特城"
+ },
+ {
+  "lang": "zh",
+  "id": "kg",
+  "field": "name",
+  "text": "吉尔吉斯斯坦"
+ },
+ {
+  "lang": "zh",
+  "id": "kg",
+  "field": "capital",
+  "text": "比什凯克"
+ },
+ {
+  "lang": "zh",
+  "id": "la",
+  "field": "name",
+  "text": "老挝"
+ },
+ {
+  "lang": "zh",
+  "id": "la",
+  "field": "capital",
+  "text": "万象"
+ },
+ {
+  "lang": "zh",
+  "id": "lv",
+  "field": "name",
+  "text": "拉脱维亚"
+ },
+ {
+  "lang": "zh",
+  "id": "lv",
+  "field": "capital",
+  "text": "里加"
+ },
+ {
+  "lang": "zh",
+  "id": "lb",
+  "field": "name",
+  "text": "黎巴嫩"
+ },
+ {
+  "lang": "zh",
+  "id": "lb",
+  "field": "capital",
+  "text": "贝鲁特"
+ },
+ {
+  "lang": "zh",
+  "id": "ls",
+  "field": "name",
+  "text": "莱索托"
+ },
+ {
+  "lang": "zh",
+  "id": "ls",
+  "field": "capital",
+  "text": "马塞卢"
+ },
+ {
+  "lang": "zh",
+  "id": "lr",
+  "field": "name",
+  "text": "利比里亚"
+ },
+ {
+  "lang": "zh",
+  "id": "lr",
+  "field": "capital",
+  "text": "蒙罗维亚"
+ },
+ {
+  "lang": "zh",
+  "id": "ly",
+  "field": "name",
+  "text": "利比亚"
+ },
+ {
+  "lang": "zh",
+  "id": "ly",
+  "field": "capital",
+  "text": "的黎波里"
+ },
+ {
+  "lang": "zh",
+  "id": "li",
+  "field": "name",
+  "text": "列支敦士登"
+ },
+ {
+  "lang": "zh",
+  "id": "li",
+  "field": "capital",
+  "text": "瓦杜兹"
+ },
+ {
+  "lang": "zh",
+  "id": "lt",
+  "field": "name",
+  "text": "立陶宛"
+ },
+ {
+  "lang": "zh",
+  "id": "lt",
+  "field": "capital",
+  "text": "维尔纽斯"
+ },
+ {
+  "lang": "zh",
+  "id": "lu",
+  "field": "name",
+  "text": "卢森堡"
+ },
+ {
+  "lang": "zh",
+  "id": "lu",
+  "field": "capital",
+  "text": "卢森堡市"
+ },
+ {
+  "lang": "zh",
+  "id": "mg",
+  "field": "name",
+  "text": "马达加斯加"
+ },
+ {
+  "lang": "zh",
+  "id": "mg",
+  "field": "capital",
+  "text": "塔那那利佛"
+ },
+ {
+  "lang": "zh",
+  "id": "mw",
+  "field": "name",
+  "text": "马拉维"
+ },
+ {
+  "lang": "zh",
+  "id": "mw",
+  "field": "capital",
+  "text": "利隆圭"
+ },
+ {
+  "lang": "zh",
+  "id": "my",
+  "field": "name",
+  "text": "马来西亚"
+ },
+ {
+  "lang": "zh",
+  "id": "my",
+  "field": "capital",
+  "text": "吉隆坡"
+ },
+ {
+  "lang": "zh",
+  "id": "mv",
+  "field": "name",
+  "text": "马尔代夫"
+ },
+ {
+  "lang": "zh",
+  "id": "mv",
+  "field": "capital",
+  "text": "马累"
+ },
+ {
+  "lang": "zh",
+  "id": "ml",
+  "field": "name",
+  "text": "马里"
+ },
+ {
+  "lang": "zh",
+  "id": "ml",
+  "field": "capital",
+  "text": "巴马科"
+ },
+ {
+  "lang": "zh",
+  "id": "mt",
+  "field": "name",
+  "text": "马耳他"
+ },
+ {
+  "lang": "zh",
+  "id": "mt",
+  "field": "capital",
+  "text": "瓦莱塔"
+ },
+ {
+  "lang": "zh",
+  "id": "mh",
+  "field": "name",
+  "text": "马绍尔群岛"
+ },
+ {
+  "lang": "zh",
+  "id": "mh",
+  "field": "capital",
+  "text": "马朱罗"
+ },
+ {
+  "lang": "zh",
+  "id": "mr",
+  "field": "name",
+  "text": "毛里塔尼亚"
+ },
+ {
+  "lang": "zh",
+  "id": "mr",
+  "field": "capital",
+  "text": "努瓦克肖特"
+ },
+ {
+  "lang": "zh",
+  "id": "mu",
+  "field": "name",
+  "text": "毛里求斯"
+ },
+ {
+  "lang": "zh",
+  "id": "mu",
+  "field": "capital",
+  "text": "路易港"
+ },
+ {
+  "lang": "zh",
+  "id": "mx",
+  "field": "name",
+  "text": "墨西哥"
+ },
+ {
+  "lang": "zh",
+  "id": "mx",
+  "field": "capital",
+  "text": "墨西哥城"
+ },
+ {
+  "lang": "zh",
+  "id": "fm",
+  "field": "name",
+  "text": "密克罗尼西亚联邦"
+ },
+ {
+  "lang": "zh",
+  "id": "fm",
+  "field": "capital",
+  "text": "帕利基尔"
+ },
+ {
+  "lang": "zh",
+  "id": "md",
+  "field": "name",
+  "text": "摩尔多瓦"
+ },
+ {
+  "lang": "zh",
+  "id": "md",
+  "field": "capital",
+  "text": "基希讷乌"
+ },
+ {
+  "lang": "zh",
+  "id": "mc",
+  "field": "name",
+  "text": "摩纳哥"
+ },
+ {
+  "lang": "zh",
+  "id": "mc",
+  "field": "capital",
+  "text": "摩纳哥"
+ },
+ {
+  "lang": "zh",
+  "id": "mn",
+  "field": "name",
+  "text": "蒙古"
+ },
+ {
+  "lang": "zh",
+  "id": "mn",
+  "field": "capital",
+  "text": "乌兰巴托"
+ },
+ {
+  "lang": "zh",
+  "id": "me",
+  "field": "name",
+  "text": "黑山"
+ },
+ {
+  "lang": "zh",
+  "id": "me",
+  "field": "capital",
+  "text": "波德戈里察"
+ },
+ {
+  "lang": "zh",
+  "id": "ma",
+  "field": "name",
+  "text": "摩洛哥"
+ },
+ {
+  "lang": "zh",
+  "id": "ma",
+  "field": "capital",
+  "text": "拉巴特"
+ },
+ {
+  "lang": "zh",
+  "id": "mz",
+  "field": "name",
+  "text": "莫桑比克"
+ },
+ {
+  "lang": "zh",
+  "id": "mz",
+  "field": "capital",
+  "text": "马普托"
+ },
+ {
+  "lang": "zh",
+  "id": "mm",
+  "field": "name",
+  "text": "缅甸"
+ },
+ {
+  "lang": "zh",
+  "id": "mm",
+  "field": "capital",
+  "text": "内比都"
+ },
+ {
+  "lang": "zh",
+  "id": "na",
+  "field": "name",
+  "text": "纳米比亚"
+ },
+ {
+  "lang": "zh",
+  "id": "na",
+  "field": "capital",
+  "text": "温得和克"
+ },
+ {
+  "lang": "zh",
+  "id": "nr",
+  "field": "name",
+  "text": "瑙鲁"
+ },
+ {
+  "lang": "zh",
+  "id": "nr",
+  "field": "capital",
+  "text": "亚伦"
+ },
+ {
+  "lang": "zh",
+  "id": "np",
+  "field": "name",
+  "text": "尼泊尔"
+ },
+ {
+  "lang": "zh",
+  "id": "np",
+  "field": "capital",
+  "text": "加德满都"
+ },
+ {
+  "lang": "zh",
+  "id": "nl",
+  "field": "name",
+  "text": "荷兰"
+ },
+ {
+  "lang": "zh",
+  "id": "nl",
+  "field": "capital",
+  "text": "阿姆斯特丹"
+ },
+ {
+  "lang": "zh",
+  "id": "nz",
+  "field": "name",
+  "text": "新西兰"
+ },
+ {
+  "lang": "zh",
+  "id": "nz",
+  "field": "capital",
+  "text": "惠灵顿"
+ },
+ {
+  "lang": "zh",
+  "id": "ni",
+  "field": "name",
+  "text": "尼加拉瓜"
+ },
+ {
+  "lang": "zh",
+  "id": "ni",
+  "field": "capital",
+  "text": "马那瓜"
+ },
+ {
+  "lang": "zh",
+  "id": "ne",
+  "field": "name",
+  "text": "尼日尔"
+ },
+ {
+  "lang": "zh",
+  "id": "ne",
+  "field": "capital",
+  "text": "尼亚美"
+ },
+ {
+  "lang": "zh",
+  "id": "ng",
+  "field": "name",
+  "text": "尼日利亚"
+ },
+ {
+  "lang": "zh",
+  "id": "ng",
+  "field": "capital",
+  "text": "阿布贾"
+ },
+ {
+  "lang": "zh",
+  "id": "kp",
+  "field": "name",
+  "text": "朝鲜"
+ },
+ {
+  "lang": "zh",
+  "id": "kp",
+  "field": "capital",
+  "text": "平壤"
+ },
+ {
+  "lang": "zh",
+  "id": "mk",
+  "field": "name",
+  "text": "北马其顿"
+ },
+ {
+  "lang": "zh",
+  "id": "mk",
+  "field": "capital",
+  "text": "斯科普里"
+ },
+ {
+  "lang": "zh",
+  "id": "no",
+  "field": "name",
+  "text": "挪威"
+ },
+ {
+  "lang": "zh",
+  "id": "no",
+  "field": "capital",
+  "text": "奥斯陆"
+ },
+ {
+  "lang": "zh",
+  "id": "om",
+  "field": "name",
+  "text": "阿曼"
+ },
+ {
+  "lang": "zh",
+  "id": "om",
+  "field": "capital",
+  "text": "马斯喀特"
+ },
+ {
+  "lang": "zh",
+  "id": "pk",
+  "field": "name",
+  "text": "巴基斯坦"
+ },
+ {
+  "lang": "zh",
+  "id": "pk",
+  "field": "capital",
+  "text": "伊斯兰堡"
+ },
+ {
+  "lang": "zh",
+  "id": "pw",
+  "field": "name",
+  "text": "帕劳"
+ },
+ {
+  "lang": "zh",
+  "id": "pw",
+  "field": "capital",
+  "text": "恩吉鲁穆德"
+ },
+ {
+  "lang": "zh",
+  "id": "pa",
+  "field": "name",
+  "text": "巴拿马"
+ },
+ {
+  "lang": "zh",
+  "id": "pa",
+  "field": "capital",
+  "text": "巴拿马城"
+ },
+ {
+  "lang": "zh",
+  "id": "pg",
+  "field": "name",
+  "text": "巴布亚新几内亚"
+ },
+ {
+  "lang": "zh",
+  "id": "pg",
+  "field": "capital",
+  "text": "莫尔兹比港"
+ },
+ {
+  "lang": "zh",
+  "id": "py",
+  "field": "name",
+  "text": "巴拉圭"
+ },
+ {
+  "lang": "zh",
+  "id": "py",
+  "field": "capital",
+  "text": "亚松森"
+ },
+ {
+  "lang": "zh",
+  "id": "pe",
+  "field": "name",
+  "text": "秘鲁"
+ },
+ {
+  "lang": "zh",
+  "id": "pe",
+  "field": "capital",
+  "text": "利马"
+ },
+ {
+  "lang": "zh",
+  "id": "ph",
+  "field": "name",
+  "text": "菲律宾"
+ },
+ {
+  "lang": "zh",
+  "id": "ph",
+  "field": "capital",
+  "text": "马尼拉"
+ },
+ {
+  "lang": "zh",
+  "id": "pl",
+  "field": "name",
+  "text": "波兰"
+ },
+ {
+  "lang": "zh",
+  "id": "pl",
+  "field": "capital",
+  "text": "华沙"
+ },
+ {
+  "lang": "zh",
+  "id": "pt",
+  "field": "name",
+  "text": "葡萄牙"
+ },
+ {
+  "lang": "zh",
+  "id": "pt",
+  "field": "capital",
+  "text": "里斯本"
+ },
+ {
+  "lang": "zh",
+  "id": "qa",
+  "field": "name",
+  "text": "卡塔尔"
+ },
+ {
+  "lang": "zh",
+  "id": "qa",
+  "field": "capital",
+  "text": "多哈"
+ },
+ {
+  "lang": "zh",
+  "id": "cg",
+  "field": "name",
+  "text": "刚果共和国"
+ },
+ {
+  "lang": "zh",
+  "id": "cg",
+  "field": "capital",
+  "text": "布拉柴维尔"
+ },
+ {
+  "lang": "zh",
+  "id": "ro",
+  "field": "name",
+  "text": "罗马尼亚"
+ },
+ {
+  "lang": "zh",
+  "id": "ro",
+  "field": "capital",
+  "text": "布加勒斯特"
+ },
+ {
+  "lang": "zh",
+  "id": "ru",
+  "field": "name",
+  "text": "俄罗斯"
+ },
+ {
+  "lang": "zh",
+  "id": "ru",
+  "field": "capital",
+  "text": "莫斯科"
+ },
+ {
+  "lang": "zh",
+  "id": "rw",
+  "field": "name",
+  "text": "卢旺达"
+ },
+ {
+  "lang": "zh",
+  "id": "rw",
+  "field": "capital",
+  "text": "基加利"
+ },
+ {
+  "lang": "zh",
+  "id": "kn",
+  "field": "name",
+  "text": "圣基茨和尼维斯"
+ },
+ {
+  "lang": "zh",
+  "id": "kn",
+  "field": "capital",
+  "text": "巴斯特尔"
+ },
+ {
+  "lang": "zh",
+  "id": "lc",
+  "field": "name",
+  "text": "圣卢西亚"
+ },
+ {
+  "lang": "zh",
+  "id": "lc",
+  "field": "capital",
+  "text": "卡斯特里"
+ },
+ {
+  "lang": "zh",
+  "id": "vc",
+  "field": "name",
+  "text": "圣文森特和格林纳丁斯"
+ },
+ {
+  "lang": "zh",
+  "id": "vc",
+  "field": "capital",
+  "text": "金斯敦"
+ },
+ {
+  "lang": "zh",
+  "id": "ws",
+  "field": "name",
+  "text": "萨摩亚"
+ },
+ {
+  "lang": "zh",
+  "id": "ws",
+  "field": "capital",
+  "text": "阿皮亚"
+ },
+ {
+  "lang": "zh",
+  "id": "sm",
+  "field": "name",
+  "text": "圣马力诺"
+ },
+ {
+  "lang": "zh",
+  "id": "sm",
+  "field": "capital",
+  "text": "圣马力诺"
+ },
+ {
+  "lang": "zh",
+  "id": "sa",
+  "field": "name",
+  "text": "沙特阿拉伯"
+ },
+ {
+  "lang": "zh",
+  "id": "sa",
+  "field": "capital",
+  "text": "利雅得"
+ },
+ {
+  "lang": "zh",
+  "id": "sn",
+  "field": "name",
+  "text": "塞内加尔"
+ },
+ {
+  "lang": "zh",
+  "id": "sn",
+  "field": "capital",
+  "text": "达喀尔"
+ },
+ {
+  "lang": "zh",
+  "id": "rs",
+  "field": "name",
+  "text": "塞尔维亚"
+ },
+ {
+  "lang": "zh",
+  "id": "rs",
+  "field": "capital",
+  "text": "贝尔格莱德"
+ },
+ {
+  "lang": "zh",
+  "id": "sc",
+  "field": "name",
+  "text": "塞舌尔"
+ },
+ {
+  "lang": "zh",
+  "id": "sc",
+  "field": "capital",
+  "text": "维多利亚"
+ },
+ {
+  "lang": "zh",
+  "id": "sl",
+  "field": "name",
+  "text": "塞拉利昂"
+ },
+ {
+  "lang": "zh",
+  "id": "sl",
+  "field": "capital",
+  "text": "弗里敦"
+ },
+ {
+  "lang": "zh",
+  "id": "sg",
+  "field": "name",
+  "text": "新加坡"
+ },
+ {
+  "lang": "zh",
+  "id": "sg",
+  "field": "capital",
+  "text": "新加坡"
+ },
+ {
+  "lang": "zh",
+  "id": "sk",
+  "field": "name",
+  "text": "斯洛伐克"
+ },
+ {
+  "lang": "zh",
+  "id": "sk",
+  "field": "capital",
+  "text": "布拉迪斯拉发"
+ },
+ {
+  "lang": "zh",
+  "id": "si",
+  "field": "name",
+  "text": "斯洛文尼亚"
+ },
+ {
+  "lang": "zh",
+  "id": "si",
+  "field": "capital",
+  "text": "卢布尔雅那"
+ },
+ {
+  "lang": "zh",
+  "id": "sb",
+  "field": "name",
+  "text": "所罗门群岛"
+ },
+ {
+  "lang": "zh",
+  "id": "sb",
+  "field": "capital",
+  "text": "霍尼亚拉"
+ },
+ {
+  "lang": "zh",
+  "id": "so",
+  "field": "name",
+  "text": "索马里"
+ },
+ {
+  "lang": "zh",
+  "id": "so",
+  "field": "capital",
+  "text": "摩加迪沙"
+ },
+ {
+  "lang": "zh",
+  "id": "za",
+  "field": "name",
+  "text": "南非"
+ },
+ {
+  "lang": "zh",
+  "id": "za",
+  "field": "capital",
+  "text": "比勒陀利亚"
+ },
+ {
+  "lang": "zh",
+  "id": "kr",
+  "field": "name",
+  "text": "韩国"
+ },
+ {
+  "lang": "zh",
+  "id": "kr",
+  "field": "capital",
+  "text": "首尔"
+ },
+ {
+  "lang": "zh",
+  "id": "ss",
+  "field": "name",
+  "text": "南苏丹"
+ },
+ {
+  "lang": "zh",
+  "id": "ss",
+  "field": "capital",
+  "text": "朱巴"
+ },
+ {
+  "lang": "zh",
+  "id": "es",
+  "field": "name",
+  "text": "西班牙"
+ },
+ {
+  "lang": "zh",
+  "id": "es",
+  "field": "capital",
+  "text": "马德里"
+ },
+ {
+  "lang": "zh",
+  "id": "lk",
+  "field": "name",
+  "text": "斯里兰卡"
+ },
+ {
+  "lang": "zh",
+  "id": "lk",
+  "field": "capital",
+  "text": "斯里贾亚瓦德纳普拉科特"
+ },
+ {
+  "lang": "zh",
+  "id": "sd",
+  "field": "name",
+  "text": "苏丹"
+ },
+ {
+  "lang": "zh",
+  "id": "sd",
+  "field": "capital",
+  "text": "喀土穆"
+ },
+ {
+  "lang": "zh",
+  "id": "sr",
+  "field": "name",
+  "text": "苏里南"
+ },
+ {
+  "lang": "zh",
+  "id": "sr",
+  "field": "capital",
+  "text": "帕拉马里博"
+ },
+ {
+  "lang": "zh",
+  "id": "se",
+  "field": "name",
+  "text": "瑞典"
+ },
+ {
+  "lang": "zh",
+  "id": "se",
+  "field": "capital",
+  "text": "斯德哥尔摩"
+ },
+ {
+  "lang": "zh",
+  "id": "ch",
+  "field": "name",
+  "text": "瑞士"
+ },
+ {
+  "lang": "zh",
+  "id": "ch",
+  "field": "capital",
+  "text": "伯尔尼"
+ },
+ {
+  "lang": "zh",
+  "id": "sy",
+  "field": "name",
+  "text": "叙利亚"
+ },
+ {
+  "lang": "zh",
+  "id": "sy",
+  "field": "capital",
+  "text": "大马士革"
+ },
+ {
+  "lang": "zh",
+  "id": "st",
+  "field": "name",
+  "text": "圣多美和普林西比"
+ },
+ {
+  "lang": "zh",
+  "id": "st",
+  "field": "capital",
+  "text": "圣多美"
+ },
+ {
+  "lang": "zh",
+  "id": "tj",
+  "field": "name",
+  "text": "塔吉克斯坦"
+ },
+ {
+  "lang": "zh",
+  "id": "tj",
+  "field": "capital",
+  "text": "杜尚别"
+ },
+ {
+  "lang": "zh",
+  "id": "tz",
+  "field": "name",
+  "text": "坦桑尼亚"
+ },
+ {
+  "lang": "zh",
+  "id": "tz",
+  "field": "capital",
+  "text": "多多马"
+ },
+ {
+  "lang": "zh",
+  "id": "th",
+  "field": "name",
+  "text": "泰国"
+ },
+ {
+  "lang": "zh",
+  "id": "th",
+  "field": "capital",
+  "text": "曼谷"
+ },
+ {
+  "lang": "zh",
+  "id": "tl",
+  "field": "name",
+  "text": "东帝汶"
+ },
+ {
+  "lang": "zh",
+  "id": "tl",
+  "field": "capital",
+  "text": "帝力"
+ },
+ {
+  "lang": "zh",
+  "id": "tg",
+  "field": "name",
+  "text": "多哥"
+ },
+ {
+  "lang": "zh",
+  "id": "tg",
+  "field": "capital",
+  "text": "洛美"
+ },
+ {
+  "lang": "zh",
+  "id": "to",
+  "field": "name",
+  "text": "汤加"
+ },
+ {
+  "lang": "zh",
+  "id": "to",
+  "field": "capital",
+  "text": "努库阿洛法"
+ },
+ {
+  "lang": "zh",
+  "id": "tt",
+  "field": "name",
+  "text": "特立尼达和多巴哥"
+ },
+ {
+  "lang": "zh",
+  "id": "tt",
+  "field": "capital",
+  "text": "西班牙港"
+ },
+ {
+  "lang": "zh",
+  "id": "tn",
+  "field": "name",
+  "text": "突尼斯"
+ },
+ {
+  "lang": "zh",
+  "id": "tn",
+  "field": "capital",
+  "text": "突尼斯市"
+ },
+ {
+  "lang": "zh",
+  "id": "tr",
+  "field": "name",
+  "text": "土耳其"
+ },
+ {
+  "lang": "zh",
+  "id": "tr",
+  "field": "capital",
+  "text": "安卡拉"
+ },
+ {
+  "lang": "zh",
+  "id": "tm",
+  "field": "name",
+  "text": "土库曼斯坦"
+ },
+ {
+  "lang": "zh",
+  "id": "tm",
+  "field": "capital",
+  "text": "阿什哈巴德"
+ },
+ {
+  "lang": "zh",
+  "id": "tv",
+  "field": "name",
+  "text": "图瓦卢"
+ },
+ {
+  "lang": "zh",
+  "id": "tv",
+  "field": "capital",
+  "text": "富纳富提"
+ },
+ {
+  "lang": "zh",
+  "id": "ug",
+  "field": "name",
+  "text": "乌干达"
+ },
+ {
+  "lang": "zh",
+  "id": "ug",
+  "field": "capital",
+  "text": "坎帕拉"
+ },
+ {
+  "lang": "zh",
+  "id": "ua",
+  "field": "name",
+  "text": "乌克兰"
+ },
+ {
+  "lang": "zh",
+  "id": "ua",
+  "field": "capital",
+  "text": "基辅"
+ },
+ {
+  "lang": "zh",
+  "id": "ae",
+  "field": "name",
+  "text": "阿联酋"
+ },
+ {
+  "lang": "zh",
+  "id": "ae",
+  "field": "capital",
+  "text": "阿布扎比"
+ },
+ {
+  "lang": "zh",
+  "id": "gb",
+  "field": "name",
+  "text": "英国"
+ },
+ {
+  "lang": "zh",
+  "id": "gb",
+  "field": "capital",
+  "text": "伦敦"
+ },
+ {
+  "lang": "zh",
+  "id": "us",
+  "field": "name",
+  "text": "美国"
+ },
+ {
+  "lang": "zh",
+  "id": "us",
+  "field": "capital",
+  "text": "华盛顿哥伦比亚特区"
+ },
+ {
+  "lang": "zh",
+  "id": "uy",
+  "field": "name",
+  "text": "乌拉圭"
+ },
+ {
+  "lang": "zh",
+  "id": "uy",
+  "field": "capital",
+  "text": "蒙得维的亚"
+ },
+ {
+  "lang": "zh",
+  "id": "uz",
+  "field": "name",
+  "text": "乌兹别克斯坦"
+ },
+ {
+  "lang": "zh",
+  "id": "uz",
+  "field": "capital",
+  "text": "塔什干"
+ },
+ {
+  "lang": "zh",
+  "id": "vu",
+  "field": "name",
+  "text": "瓦努阿图"
+ },
+ {
+  "lang": "zh",
+  "id": "vu",
+  "field": "capital",
+  "text": "维拉港"
+ },
+ {
+  "lang": "zh",
+  "id": "va",
+  "field": "name",
+  "text": "梵蒂冈"
+ },
+ {
+  "lang": "zh",
+  "id": "va",
+  "field": "capital",
+  "text": "梵蒂冈城"
+ },
+ {
+  "lang": "zh",
+  "id": "ve",
+  "field": "name",
+  "text": "委内瑞拉"
+ },
+ {
+  "lang": "zh",
+  "id": "ve",
+  "field": "capital",
+  "text": "加拉加斯"
+ },
+ {
+  "lang": "zh",
+  "id": "vn",
+  "field": "name",
+  "text": "越南"
+ },
+ {
+  "lang": "zh",
+  "id": "vn",
+  "field": "capital",
+  "text": "河内"
+ },
+ {
+  "lang": "zh",
+  "id": "ye",
+  "field": "name",
+  "text": "也门"
+ },
+ {
+  "lang": "zh",
+  "id": "ye",
+  "field": "capital",
+  "text": "萨那"
+ },
+ {
+  "lang": "zh",
+  "id": "zm",
+  "field": "name",
+  "text": "赞比亚"
+ },
+ {
+  "lang": "zh",
+  "id": "zm",
+  "field": "capital",
+  "text": "卢萨卡"
+ },
+ {
+  "lang": "zh",
+  "id": "zw",
+  "field": "name",
+  "text": "津巴布韦"
+ },
+ {
+  "lang": "zh",
+  "id": "zw",
+  "field": "capital",
+  "text": "哈拉雷"
+ },
+ {
+  "lang": "en",
+  "id": "af",
+  "field": "name",
+  "text": "Afghanistan"
+ },
+ {
+  "lang": "en",
+  "id": "af",
+  "field": "capital",
+  "text": "Kabul"
+ },
+ {
+  "lang": "en",
+  "id": "al",
+  "field": "name",
+  "text": "Albania"
+ },
+ {
+  "lang": "en",
+  "id": "al",
+  "field": "capital",
+  "text": "Tirana"
+ },
+ {
+  "lang": "en",
+  "id": "dz",
+  "field": "name",
+  "text": "Algeria"
+ },
+ {
+  "lang": "en",
+  "id": "dz",
+  "field": "capital",
+  "text": "Algiers"
+ },
+ {
+  "lang": "en",
+  "id": "ad",
+  "field": "name",
+  "text": "Andorra"
+ },
+ {
+  "lang": "en",
+  "id": "ad",
+  "field": "capital",
+  "text": "Andorra la Vella"
+ },
+ {
+  "lang": "en",
+  "id": "ao",
+  "field": "name",
+  "text": "Angola"
+ },
+ {
+  "lang": "en",
+  "id": "ao",
+  "field": "capital",
+  "text": "Luanda"
+ },
+ {
+  "lang": "en",
+  "id": "ag",
+  "field": "name",
+  "text": "Antigua and Barbuda"
+ },
+ {
+  "lang": "en",
+  "id": "ag",
+  "field": "capital",
+  "text": "Saint John's"
+ },
+ {
+  "lang": "en",
+  "id": "ar",
+  "field": "name",
+  "text": "Argentina"
+ },
+ {
+  "lang": "en",
+  "id": "ar",
+  "field": "capital",
+  "text": "Buenos Aires"
+ },
+ {
+  "lang": "en",
+  "id": "am",
+  "field": "name",
+  "text": "Armenia"
+ },
+ {
+  "lang": "en",
+  "id": "am",
+  "field": "capital",
+  "text": "Yerevan"
+ },
+ {
+  "lang": "en",
+  "id": "au",
+  "field": "name",
+  "text": "Australia"
+ },
+ {
+  "lang": "en",
+  "id": "au",
+  "field": "capital",
+  "text": "Canberra"
+ },
+ {
+  "lang": "en",
+  "id": "at",
+  "field": "name",
+  "text": "Austria"
+ },
+ {
+  "lang": "en",
+  "id": "at",
+  "field": "capital",
+  "text": "Vienna"
+ },
+ {
+  "lang": "en",
+  "id": "az",
+  "field": "name",
+  "text": "Azerbaijan"
+ },
+ {
+  "lang": "en",
+  "id": "az",
+  "field": "capital",
+  "text": "Baku"
+ },
+ {
+  "lang": "en",
+  "id": "bs",
+  "field": "name",
+  "text": "Bahamas"
+ },
+ {
+  "lang": "en",
+  "id": "bs",
+  "field": "capital",
+  "text": "Nassau"
+ },
+ {
+  "lang": "en",
+  "id": "bh",
+  "field": "name",
+  "text": "Bahrain"
+ },
+ {
+  "lang": "en",
+  "id": "bh",
+  "field": "capital",
+  "text": "Manama"
+ },
+ {
+  "lang": "en",
+  "id": "bd",
+  "field": "name",
+  "text": "Bangladesh"
+ },
+ {
+  "lang": "en",
+  "id": "bd",
+  "field": "capital",
+  "text": "Dhaka"
+ },
+ {
+  "lang": "en",
+  "id": "bb",
+  "field": "name",
+  "text": "Barbados"
+ },
+ {
+  "lang": "en",
+  "id": "bb",
+  "field": "capital",
+  "text": "Bridgetown"
+ },
+ {
+  "lang": "en",
+  "id": "by",
+  "field": "name",
+  "text": "Belarus"
+ },
+ {
+  "lang": "en",
+  "id": "by",
+  "field": "capital",
+  "text": "Minsk"
+ },
+ {
+  "lang": "en",
+  "id": "be",
+  "field": "name",
+  "text": "Belgium"
+ },
+ {
+  "lang": "en",
+  "id": "be",
+  "field": "capital",
+  "text": "Brussels"
+ },
+ {
+  "lang": "en",
+  "id": "bz",
+  "field": "name",
+  "text": "Belize"
+ },
+ {
+  "lang": "en",
+  "id": "bz",
+  "field": "capital",
+  "text": "Belmopan"
+ },
+ {
+  "lang": "en",
+  "id": "bj",
+  "field": "name",
+  "text": "Benin"
+ },
+ {
+  "lang": "en",
+  "id": "bj",
+  "field": "capital",
+  "text": "Porto-Novo"
+ },
+ {
+  "lang": "en",
+  "id": "bt",
+  "field": "name",
+  "text": "Bhutan"
+ },
+ {
+  "lang": "en",
+  "id": "bt",
+  "field": "capital",
+  "text": "Thimphu"
+ },
+ {
+  "lang": "en",
+  "id": "bo",
+  "field": "name",
+  "text": "Bolivia"
+ },
+ {
+  "lang": "en",
+  "id": "bo",
+  "field": "capital",
+  "text": "Sucre"
+ },
+ {
+  "lang": "en",
+  "id": "ba",
+  "field": "name",
+  "text": "Bosnia and Herzegovina"
+ },
+ {
+  "lang": "en",
+  "id": "ba",
+  "field": "capital",
+  "text": "Sarajevo"
+ },
+ {
+  "lang": "en",
+  "id": "bw",
+  "field": "name",
+  "text": "Botswana"
+ },
+ {
+  "lang": "en",
+  "id": "bw",
+  "field": "capital",
+  "text": "Gaborone"
+ },
+ {
+  "lang": "en",
+  "id": "br",
+  "field": "name",
+  "text": "Brazil"
+ },
+ {
+  "lang": "en",
+  "id": "br",
+  "field": "capital",
+  "text": "Brasília"
+ },
+ {
+  "lang": "en",
+  "id": "bn",
+  "field": "name",
+  "text": "Brunei"
+ },
+ {
+  "lang": "en",
+  "id": "bn",
+  "field": "capital",
+  "text": "Bandar Seri Begawan"
+ },
+ {
+  "lang": "en",
+  "id": "bg",
+  "field": "name",
+  "text": "Bulgaria"
+ },
+ {
+  "lang": "en",
+  "id": "bg",
+  "field": "capital",
+  "text": "Sofia"
+ },
+ {
+  "lang": "en",
+  "id": "bf",
+  "field": "name",
+  "text": "Burkina Faso"
+ },
+ {
+  "lang": "en",
+  "id": "bf",
+  "field": "capital",
+  "text": "Ouagadougou"
+ },
+ {
+  "lang": "en",
+  "id": "bi",
+  "field": "name",
+  "text": "Burundi"
+ },
+ {
+  "lang": "en",
+  "id": "bi",
+  "field": "capital",
+  "text": "Gitega"
+ },
+ {
+  "lang": "en",
+  "id": "kh",
+  "field": "name",
+  "text": "Cambodia"
+ },
+ {
+  "lang": "en",
+  "id": "kh",
+  "field": "capital",
+  "text": "Phnom Penh"
+ },
+ {
+  "lang": "en",
+  "id": "cm",
+  "field": "name",
+  "text": "Cameroon"
+ },
+ {
+  "lang": "en",
+  "id": "cm",
+  "field": "capital",
+  "text": "Yaoundé"
+ },
+ {
+  "lang": "en",
+  "id": "ca",
+  "field": "name",
+  "text": "Canada"
+ },
+ {
+  "lang": "en",
+  "id": "ca",
+  "field": "capital",
+  "text": "Ottawa"
+ },
+ {
+  "lang": "en",
+  "id": "cv",
+  "field": "name",
+  "text": "Cape Verde"
+ },
+ {
+  "lang": "en",
+  "id": "cv",
+  "field": "capital",
+  "text": "Praia"
+ },
+ {
+  "lang": "en",
+  "id": "cf",
+  "field": "name",
+  "text": "Central African Republic"
+ },
+ {
+  "lang": "en",
+  "id": "cf",
+  "field": "capital",
+  "text": "Bangui"
+ },
+ {
+  "lang": "en",
+  "id": "td",
+  "field": "name",
+  "text": "Chad"
+ },
+ {
+  "lang": "en",
+  "id": "td",
+  "field": "capital",
+  "text": "N'Djamena"
+ },
+ {
+  "lang": "en",
+  "id": "cl",
+  "field": "name",
+  "text": "Chile"
+ },
+ {
+  "lang": "en",
+  "id": "cl",
+  "field": "capital",
+  "text": "Santiago"
+ },
+ {
+  "lang": "en",
+  "id": "cn",
+  "field": "name",
+  "text": "China"
+ },
+ {
+  "lang": "en",
+  "id": "cn",
+  "field": "capital",
+  "text": "Beijing"
+ },
+ {
+  "lang": "en",
+  "id": "co",
+  "field": "name",
+  "text": "Colombia"
+ },
+ {
+  "lang": "en",
+  "id": "co",
+  "field": "capital",
+  "text": "Bogotá"
+ },
+ {
+  "lang": "en",
+  "id": "km",
+  "field": "name",
+  "text": "Comoros"
+ },
+ {
+  "lang": "en",
+  "id": "km",
+  "field": "capital",
+  "text": "Moroni"
+ },
+ {
+  "lang": "en",
+  "id": "cr",
+  "field": "name",
+  "text": "Costa Rica"
+ },
+ {
+  "lang": "en",
+  "id": "cr",
+  "field": "capital",
+  "text": "San José"
+ },
+ {
+  "lang": "en",
+  "id": "hr",
+  "field": "name",
+  "text": "Croatia"
+ },
+ {
+  "lang": "en",
+  "id": "hr",
+  "field": "capital",
+  "text": "Zagreb"
+ },
+ {
+  "lang": "en",
+  "id": "cu",
+  "field": "name",
+  "text": "Cuba"
+ },
+ {
+  "lang": "en",
+  "id": "cu",
+  "field": "capital",
+  "text": "Havana"
+ },
+ {
+  "lang": "en",
+  "id": "cy",
+  "field": "name",
+  "text": "Cyprus"
+ },
+ {
+  "lang": "en",
+  "id": "cy",
+  "field": "capital",
+  "text": "Nicosia"
+ },
+ {
+  "lang": "en",
+  "id": "cz",
+  "field": "name",
+  "text": "Czechia"
+ },
+ {
+  "lang": "en",
+  "id": "cz",
+  "field": "capital",
+  "text": "Prague"
+ },
+ {
+  "lang": "en",
+  "id": "cd",
+  "field": "name",
+  "text": "DR Congo"
+ },
+ {
+  "lang": "en",
+  "id": "cd",
+  "field": "capital",
+  "text": "Kinshasa"
+ },
+ {
+  "lang": "en",
+  "id": "dk",
+  "field": "name",
+  "text": "Denmark"
+ },
+ {
+  "lang": "en",
+  "id": "dk",
+  "field": "capital",
+  "text": "Copenhagen"
+ },
+ {
+  "lang": "en",
+  "id": "dj",
+  "field": "name",
+  "text": "Djibouti"
+ },
+ {
+  "lang": "en",
+  "id": "dj",
+  "field": "capital",
+  "text": "Djibouti"
+ },
+ {
+  "lang": "en",
+  "id": "dm",
+  "field": "name",
+  "text": "Dominica"
+ },
+ {
+  "lang": "en",
+  "id": "dm",
+  "field": "capital",
+  "text": "Roseau"
+ },
+ {
+  "lang": "en",
+  "id": "do",
+  "field": "name",
+  "text": "Dominican Republic"
+ },
+ {
+  "lang": "en",
+  "id": "do",
+  "field": "capital",
+  "text": "Santo Domingo"
+ },
+ {
+  "lang": "en",
+  "id": "ec",
+  "field": "name",
+  "text": "Ecuador"
+ },
+ {
+  "lang": "en",
+  "id": "ec",
+  "field": "capital",
+  "text": "Quito"
+ },
+ {
+  "lang": "en",
+  "id": "eg",
+  "field": "name",
+  "text": "Egypt"
+ },
+ {
+  "lang": "en",
+  "id": "eg",
+  "field": "capital",
+  "text": "Cairo"
+ },
+ {
+  "lang": "en",
+  "id": "sv",
+  "field": "name",
+  "text": "El Salvador"
+ },
+ {
+  "lang": "en",
+  "id": "sv",
+  "field": "capital",
+  "text": "San Salvador"
+ },
+ {
+  "lang": "en",
+  "id": "gq",
+  "field": "name",
+  "text": "Equatorial Guinea"
+ },
+ {
+  "lang": "en",
+  "id": "gq",
+  "field": "capital",
+  "text": "Malabo"
+ },
+ {
+  "lang": "en",
+  "id": "er",
+  "field": "name",
+  "text": "Eritrea"
+ },
+ {
+  "lang": "en",
+  "id": "er",
+  "field": "capital",
+  "text": "Asmara"
+ },
+ {
+  "lang": "en",
+  "id": "ee",
+  "field": "name",
+  "text": "Estonia"
+ },
+ {
+  "lang": "en",
+  "id": "ee",
+  "field": "capital",
+  "text": "Tallinn"
+ },
+ {
+  "lang": "en",
+  "id": "sz",
+  "field": "name",
+  "text": "Eswatini"
+ },
+ {
+  "lang": "en",
+  "id": "sz",
+  "field": "capital",
+  "text": "Mbabane"
+ },
+ {
+  "lang": "en",
+  "id": "et",
+  "field": "name",
+  "text": "Ethiopia"
+ },
+ {
+  "lang": "en",
+  "id": "et",
+  "field": "capital",
+  "text": "Addis Ababa"
+ },
+ {
+  "lang": "en",
+  "id": "fj",
+  "field": "name",
+  "text": "Fiji"
+ },
+ {
+  "lang": "en",
+  "id": "fj",
+  "field": "capital",
+  "text": "Suva"
+ },
+ {
+  "lang": "en",
+  "id": "fi",
+  "field": "name",
+  "text": "Finland"
+ },
+ {
+  "lang": "en",
+  "id": "fi",
+  "field": "capital",
+  "text": "Helsinki"
+ },
+ {
+  "lang": "en",
+  "id": "fr",
+  "field": "name",
+  "text": "France"
+ },
+ {
+  "lang": "en",
+  "id": "fr",
+  "field": "capital",
+  "text": "Paris"
+ },
+ {
+  "lang": "en",
+  "id": "ga",
+  "field": "name",
+  "text": "Gabon"
+ },
+ {
+  "lang": "en",
+  "id": "ga",
+  "field": "capital",
+  "text": "Libreville"
+ },
+ {
+  "lang": "en",
+  "id": "gm",
+  "field": "name",
+  "text": "Gambia"
+ },
+ {
+  "lang": "en",
+  "id": "gm",
+  "field": "capital",
+  "text": "Banjul"
+ },
+ {
+  "lang": "en",
+  "id": "ge",
+  "field": "name",
+  "text": "Georgia"
+ },
+ {
+  "lang": "en",
+  "id": "ge",
+  "field": "capital",
+  "text": "Tbilisi"
+ },
+ {
+  "lang": "en",
+  "id": "de",
+  "field": "name",
+  "text": "Germany"
+ },
+ {
+  "lang": "en",
+  "id": "de",
+  "field": "capital",
+  "text": "Berlin"
+ },
+ {
+  "lang": "en",
+  "id": "gh",
+  "field": "name",
+  "text": "Ghana"
+ },
+ {
+  "lang": "en",
+  "id": "gh",
+  "field": "capital",
+  "text": "Accra"
+ },
+ {
+  "lang": "en",
+  "id": "gr",
+  "field": "name",
+  "text": "Greece"
+ },
+ {
+  "lang": "en",
+  "id": "gr",
+  "field": "capital",
+  "text": "Athens"
+ },
+ {
+  "lang": "en",
+  "id": "gd",
+  "field": "name",
+  "text": "Grenada"
+ },
+ {
+  "lang": "en",
+  "id": "gd",
+  "field": "capital",
+  "text": "St. George's"
+ },
+ {
+  "lang": "en",
+  "id": "gt",
+  "field": "name",
+  "text": "Guatemala"
+ },
+ {
+  "lang": "en",
+  "id": "gt",
+  "field": "capital",
+  "text": "Guatemala City"
+ },
+ {
+  "lang": "en",
+  "id": "gn",
+  "field": "name",
+  "text": "Guinea"
+ },
+ {
+  "lang": "en",
+  "id": "gn",
+  "field": "capital",
+  "text": "Conakry"
+ },
+ {
+  "lang": "en",
+  "id": "gw",
+  "field": "name",
+  "text": "Guinea-Bissau"
+ },
+ {
+  "lang": "en",
+  "id": "gw",
+  "field": "capital",
+  "text": "Bissau"
+ },
+ {
+  "lang": "en",
+  "id": "gy",
+  "field": "name",
+  "text": "Guyana"
+ },
+ {
+  "lang": "en",
+  "id": "gy",
+  "field": "capital",
+  "text": "Georgetown"
+ },
+ {
+  "lang": "en",
+  "id": "ht",
+  "field": "name",
+  "text": "Haiti"
+ },
+ {
+  "lang": "en",
+  "id": "ht",
+  "field": "capital",
+  "text": "Port-au-Prince"
+ },
+ {
+  "lang": "en",
+  "id": "hn",
+  "field": "name",
+  "text": "Honduras"
+ },
+ {
+  "lang": "en",
+  "id": "hn",
+  "field": "capital",
+  "text": "Tegucigalpa"
+ },
+ {
+  "lang": "en",
+  "id": "hu",
+  "field": "name",
+  "text": "Hungary"
+ },
+ {
+  "lang": "en",
+  "id": "hu",
+  "field": "capital",
+  "text": "Budapest"
+ },
+ {
+  "lang": "en",
+  "id": "is",
+  "field": "name",
+  "text": "Iceland"
+ },
+ {
+  "lang": "en",
+  "id": "is",
+  "field": "capital",
+  "text": "Reykjavik"
+ },
+ {
+  "lang": "en",
+  "id": "in",
+  "field": "name",
+  "text": "India"
+ },
+ {
+  "lang": "en",
+  "id": "in",
+  "field": "capital",
+  "text": "New Delhi"
+ },
+ {
+  "lang": "en",
+  "id": "id",
+  "field": "name",
+  "text": "Indonesia"
+ },
+ {
+  "lang": "en",
+  "id": "id",
+  "field": "capital",
+  "text": "Jakarta"
+ },
+ {
+  "lang": "en",
+  "id": "ir",
+  "field": "name",
+  "text": "Iran"
+ },
+ {
+  "lang": "en",
+  "id": "ir",
+  "field": "capital",
+  "text": "Tehran"
+ },
+ {
+  "lang": "en",
+  "id": "iq",
+  "field": "name",
+  "text": "Iraq"
+ },
+ {
+  "lang": "en",
+  "id": "iq",
+  "field": "capital",
+  "text": "Baghdad"
+ },
+ {
+  "lang": "en",
+  "id": "ie",
+  "field": "name",
+  "text": "Ireland"
+ },
+ {
+  "lang": "en",
+  "id": "ie",
+  "field": "capital",
+  "text": "Dublin"
+ },
+ {
+  "lang": "en",
+  "id": "il",
+  "field": "name",
+  "text": "Israel"
+ },
+ {
+  "lang": "en",
+  "id": "il",
+  "field": "capital",
+  "text": "Jerusalem"
+ },
+ {
+  "lang": "en",
+  "id": "it",
+  "field": "name",
+  "text": "Italy"
+ },
+ {
+  "lang": "en",
+  "id": "it",
+  "field": "capital",
+  "text": "Rome"
+ },
+ {
+  "lang": "en",
+  "id": "ci",
+  "field": "name",
+  "text": "Ivory Coast"
+ },
+ {
+  "lang": "en",
+  "id": "ci",
+  "field": "capital",
+  "text": "Yamoussoukro"
+ },
+ {
+  "lang": "en",
+  "id": "jm",
+  "field": "name",
+  "text": "Jamaica"
+ },
+ {
+  "lang": "en",
+  "id": "jm",
+  "field": "capital",
+  "text": "Kingston"
+ },
+ {
+  "lang": "en",
+  "id": "jp",
+  "field": "name",
+  "text": "Japan"
+ },
+ {
+  "lang": "en",
+  "id": "jp",
+  "field": "capital",
+  "text": "Tokyo"
+ },
+ {
+  "lang": "en",
+  "id": "jo",
+  "field": "name",
+  "text": "Jordan"
+ },
+ {
+  "lang": "en",
+  "id": "jo",
+  "field": "capital",
+  "text": "Amman"
+ },
+ {
+  "lang": "en",
+  "id": "kz",
+  "field": "name",
+  "text": "Kazakhstan"
+ },
+ {
+  "lang": "en",
+  "id": "kz",
+  "field": "capital",
+  "text": "Astana"
+ },
+ {
+  "lang": "en",
+  "id": "ke",
+  "field": "name",
+  "text": "Kenya"
+ },
+ {
+  "lang": "en",
+  "id": "ke",
+  "field": "capital",
+  "text": "Nairobi"
+ },
+ {
+  "lang": "en",
+  "id": "ki",
+  "field": "name",
+  "text": "Kiribati"
+ },
+ {
+  "lang": "en",
+  "id": "ki",
+  "field": "capital",
+  "text": "South Tarawa"
+ },
+ {
+  "lang": "en",
+  "id": "kw",
+  "field": "name",
+  "text": "Kuwait"
+ },
+ {
+  "lang": "en",
+  "id": "kw",
+  "field": "capital",
+  "text": "Kuwait City"
+ },
+ {
+  "lang": "en",
+  "id": "kg",
+  "field": "name",
+  "text": "Kyrgyzstan"
+ },
+ {
+  "lang": "en",
+  "id": "kg",
+  "field": "capital",
+  "text": "Bishkek"
+ },
+ {
+  "lang": "en",
+  "id": "la",
+  "field": "name",
+  "text": "Laos"
+ },
+ {
+  "lang": "en",
+  "id": "la",
+  "field": "capital",
+  "text": "Vientiane"
+ },
+ {
+  "lang": "en",
+  "id": "lv",
+  "field": "name",
+  "text": "Latvia"
+ },
+ {
+  "lang": "en",
+  "id": "lv",
+  "field": "capital",
+  "text": "Riga"
+ },
+ {
+  "lang": "en",
+  "id": "lb",
+  "field": "name",
+  "text": "Lebanon"
+ },
+ {
+  "lang": "en",
+  "id": "lb",
+  "field": "capital",
+  "text": "Beirut"
+ },
+ {
+  "lang": "en",
+  "id": "ls",
+  "field": "name",
+  "text": "Lesotho"
+ },
+ {
+  "lang": "en",
+  "id": "ls",
+  "field": "capital",
+  "text": "Maseru"
+ },
+ {
+  "lang": "en",
+  "id": "lr",
+  "field": "name",
+  "text": "Liberia"
+ },
+ {
+  "lang": "en",
+  "id": "lr",
+  "field": "capital",
+  "text": "Monrovia"
+ },
+ {
+  "lang": "en",
+  "id": "ly",
+  "field": "name",
+  "text": "Libya"
+ },
+ {
+  "lang": "en",
+  "id": "ly",
+  "field": "capital",
+  "text": "Tripoli"
+ },
+ {
+  "lang": "en",
+  "id": "li",
+  "field": "name",
+  "text": "Liechtenstein"
+ },
+ {
+  "lang": "en",
+  "id": "li",
+  "field": "capital",
+  "text": "Vaduz"
+ },
+ {
+  "lang": "en",
+  "id": "lt",
+  "field": "name",
+  "text": "Lithuania"
+ },
+ {
+  "lang": "en",
+  "id": "lt",
+  "field": "capital",
+  "text": "Vilnius"
+ },
+ {
+  "lang": "en",
+  "id": "lu",
+  "field": "name",
+  "text": "Luxembourg"
+ },
+ {
+  "lang": "en",
+  "id": "lu",
+  "field": "capital",
+  "text": "Luxembourg"
+ },
+ {
+  "lang": "en",
+  "id": "mg",
+  "field": "name",
+  "text": "Madagascar"
+ },
+ {
+  "lang": "en",
+  "id": "mg",
+  "field": "capital",
+  "text": "Antananarivo"
+ },
+ {
+  "lang": "en",
+  "id": "mw",
+  "field": "name",
+  "text": "Malawi"
+ },
+ {
+  "lang": "en",
+  "id": "mw",
+  "field": "capital",
+  "text": "Lilongwe"
+ },
+ {
+  "lang": "en",
+  "id": "my",
+  "field": "name",
+  "text": "Malaysia"
+ },
+ {
+  "lang": "en",
+  "id": "my",
+  "field": "capital",
+  "text": "Kuala Lumpur"
+ },
+ {
+  "lang": "en",
+  "id": "mv",
+  "field": "name",
+  "text": "Maldives"
+ },
+ {
+  "lang": "en",
+  "id": "mv",
+  "field": "capital",
+  "text": "Malé"
+ },
+ {
+  "lang": "en",
+  "id": "ml",
+  "field": "name",
+  "text": "Mali"
+ },
+ {
+  "lang": "en",
+  "id": "ml",
+  "field": "capital",
+  "text": "Bamako"
+ },
+ {
+  "lang": "en",
+  "id": "mt",
+  "field": "name",
+  "text": "Malta"
+ },
+ {
+  "lang": "en",
+  "id": "mt",
+  "field": "capital",
+  "text": "Valletta"
+ },
+ {
+  "lang": "en",
+  "id": "mh",
+  "field": "name",
+  "text": "Marshall Islands"
+ },
+ {
+  "lang": "en",
+  "id": "mh",
+  "field": "capital",
+  "text": "Majuro"
+ },
+ {
+  "lang": "en",
+  "id": "mr",
+  "field": "name",
+  "text": "Mauritania"
+ },
+ {
+  "lang": "en",
+  "id": "mr",
+  "field": "capital",
+  "text": "Nouakchott"
+ },
+ {
+  "lang": "en",
+  "id": "mu",
+  "field": "name",
+  "text": "Mauritius"
+ },
+ {
+  "lang": "en",
+  "id": "mu",
+  "field": "capital",
+  "text": "Port Louis"
+ },
+ {
+  "lang": "en",
+  "id": "mx",
+  "field": "name",
+  "text": "Mexico"
+ },
+ {
+  "lang": "en",
+  "id": "mx",
+  "field": "capital",
+  "text": "Mexico City"
+ },
+ {
+  "lang": "en",
+  "id": "fm",
+  "field": "name",
+  "text": "Micronesia"
+ },
+ {
+  "lang": "en",
+  "id": "fm",
+  "field": "capital",
+  "text": "Palikir"
+ },
+ {
+  "lang": "en",
+  "id": "md",
+  "field": "name",
+  "text": "Moldova"
+ },
+ {
+  "lang": "en",
+  "id": "md",
+  "field": "capital",
+  "text": "Chișinău"
+ },
+ {
+  "lang": "en",
+  "id": "mc",
+  "field": "name",
+  "text": "Monaco"
+ },
+ {
+  "lang": "en",
+  "id": "mc",
+  "field": "capital",
+  "text": "Monaco"
+ },
+ {
+  "lang": "en",
+  "id": "mn",
+  "field": "name",
+  "text": "Mongolia"
+ },
+ {
+  "lang": "en",
+  "id": "mn",
+  "field": "capital",
+  "text": "Ulan Bator"
+ },
+ {
+  "lang": "en",
+  "id": "me",
+  "field": "name",
+  "text": "Montenegro"
+ },
+ {
+  "lang": "en",
+  "id": "me",
+  "field": "capital",
+  "text": "Podgorica"
+ },
+ {
+  "lang": "en",
+  "id": "ma",
+  "field": "name",
+  "text": "Morocco"
+ },
+ {
+  "lang": "en",
+  "id": "ma",
+  "field": "capital",
+  "text": "Rabat"
+ },
+ {
+  "lang": "en",
+  "id": "mz",
+  "field": "name",
+  "text": "Mozambique"
+ },
+ {
+  "lang": "en",
+  "id": "mz",
+  "field": "capital",
+  "text": "Maputo"
+ },
+ {
+  "lang": "en",
+  "id": "mm",
+  "field": "name",
+  "text": "Myanmar"
+ },
+ {
+  "lang": "en",
+  "id": "mm",
+  "field": "capital",
+  "text": "Naypyidaw"
+ },
+ {
+  "lang": "en",
+  "id": "na",
+  "field": "name",
+  "text": "Namibia"
+ },
+ {
+  "lang": "en",
+  "id": "na",
+  "field": "capital",
+  "text": "Windhoek"
+ },
+ {
+  "lang": "en",
+  "id": "nr",
+  "field": "name",
+  "text": "Nauru"
+ },
+ {
+  "lang": "en",
+  "id": "nr",
+  "field": "capital",
+  "text": "Yaren"
+ },
+ {
+  "lang": "en",
+  "id": "np",
+  "field": "name",
+  "text": "Nepal"
+ },
+ {
+  "lang": "en",
+  "id": "np",
+  "field": "capital",
+  "text": "Kathmandu"
+ },
+ {
+  "lang": "en",
+  "id": "nl",
+  "field": "name",
+  "text": "Netherlands"
+ },
+ {
+  "lang": "en",
+  "id": "nl",
+  "field": "capital",
+  "text": "Amsterdam"
+ },
+ {
+  "lang": "en",
+  "id": "nz",
+  "field": "name",
+  "text": "New Zealand"
+ },
+ {
+  "lang": "en",
+  "id": "nz",
+  "field": "capital",
+  "text": "Wellington"
+ },
+ {
+  "lang": "en",
+  "id": "ni",
+  "field": "name",
+  "text": "Nicaragua"
+ },
+ {
+  "lang": "en",
+  "id": "ni",
+  "field": "capital",
+  "text": "Managua"
+ },
+ {
+  "lang": "en",
+  "id": "ne",
+  "field": "name",
+  "text": "Niger"
+ },
+ {
+  "lang": "en",
+  "id": "ne",
+  "field": "capital",
+  "text": "Niamey"
+ },
+ {
+  "lang": "en",
+  "id": "ng",
+  "field": "name",
+  "text": "Nigeria"
+ },
+ {
+  "lang": "en",
+  "id": "ng",
+  "field": "capital",
+  "text": "Abuja"
+ },
+ {
+  "lang": "en",
+  "id": "kp",
+  "field": "name",
+  "text": "North Korea"
+ },
+ {
+  "lang": "en",
+  "id": "kp",
+  "field": "capital",
+  "text": "Pyongyang"
+ },
+ {
+  "lang": "en",
+  "id": "mk",
+  "field": "name",
+  "text": "North Macedonia"
+ },
+ {
+  "lang": "en",
+  "id": "mk",
+  "field": "capital",
+  "text": "Skopje"
+ },
+ {
+  "lang": "en",
+  "id": "no",
+  "field": "name",
+  "text": "Norway"
+ },
+ {
+  "lang": "en",
+  "id": "no",
+  "field": "capital",
+  "text": "Oslo"
+ },
+ {
+  "lang": "en",
+  "id": "om",
+  "field": "name",
+  "text": "Oman"
+ },
+ {
+  "lang": "en",
+  "id": "om",
+  "field": "capital",
+  "text": "Muscat"
+ },
+ {
+  "lang": "en",
+  "id": "pk",
+  "field": "name",
+  "text": "Pakistan"
+ },
+ {
+  "lang": "en",
+  "id": "pk",
+  "field": "capital",
+  "text": "Islamabad"
+ },
+ {
+  "lang": "en",
+  "id": "pw",
+  "field": "name",
+  "text": "Palau"
+ },
+ {
+  "lang": "en",
+  "id": "pw",
+  "field": "capital",
+  "text": "Ngerulmud"
+ },
+ {
+  "lang": "en",
+  "id": "pa",
+  "field": "name",
+  "text": "Panama"
+ },
+ {
+  "lang": "en",
+  "id": "pa",
+  "field": "capital",
+  "text": "Panama City"
+ },
+ {
+  "lang": "en",
+  "id": "pg",
+  "field": "name",
+  "text": "Papua New Guinea"
+ },
+ {
+  "lang": "en",
+  "id": "pg",
+  "field": "capital",
+  "text": "Port Moresby"
+ },
+ {
+  "lang": "en",
+  "id": "py",
+  "field": "name",
+  "text": "Paraguay"
+ },
+ {
+  "lang": "en",
+  "id": "py",
+  "field": "capital",
+  "text": "Asunción"
+ },
+ {
+  "lang": "en",
+  "id": "pe",
+  "field": "name",
+  "text": "Peru"
+ },
+ {
+  "lang": "en",
+  "id": "pe",
+  "field": "capital",
+  "text": "Lima"
+ },
+ {
+  "lang": "en",
+  "id": "ph",
+  "field": "name",
+  "text": "Philippines"
+ },
+ {
+  "lang": "en",
+  "id": "ph",
+  "field": "capital",
+  "text": "Manila"
+ },
+ {
+  "lang": "en",
+  "id": "pl",
+  "field": "name",
+  "text": "Poland"
+ },
+ {
+  "lang": "en",
+  "id": "pl",
+  "field": "capital",
+  "text": "Warsaw"
+ },
+ {
+  "lang": "en",
+  "id": "pt",
+  "field": "name",
+  "text": "Portugal"
+ },
+ {
+  "lang": "en",
+  "id": "pt",
+  "field": "capital",
+  "text": "Lisbon"
+ },
+ {
+  "lang": "en",
+  "id": "qa",
+  "field": "name",
+  "text": "Qatar"
+ },
+ {
+  "lang": "en",
+  "id": "qa",
+  "field": "capital",
+  "text": "Doha"
+ },
+ {
+  "lang": "en",
+  "id": "cg",
+  "field": "name",
+  "text": "Republic of the Congo"
+ },
+ {
+  "lang": "en",
+  "id": "cg",
+  "field": "capital",
+  "text": "Brazzaville"
+ },
+ {
+  "lang": "en",
+  "id": "ro",
+  "field": "name",
+  "text": "Romania"
+ },
+ {
+  "lang": "en",
+  "id": "ro",
+  "field": "capital",
+  "text": "Bucharest"
+ },
+ {
+  "lang": "en",
+  "id": "ru",
+  "field": "name",
+  "text": "Russia"
+ },
+ {
+  "lang": "en",
+  "id": "ru",
+  "field": "capital",
+  "text": "Moscow"
+ },
+ {
+  "lang": "en",
+  "id": "rw",
+  "field": "name",
+  "text": "Rwanda"
+ },
+ {
+  "lang": "en",
+  "id": "rw",
+  "field": "capital",
+  "text": "Kigali"
+ },
+ {
+  "lang": "en",
+  "id": "kn",
+  "field": "name",
+  "text": "Saint Kitts and Nevis"
+ },
+ {
+  "lang": "en",
+  "id": "kn",
+  "field": "capital",
+  "text": "Basseterre"
+ },
+ {
+  "lang": "en",
+  "id": "lc",
+  "field": "name",
+  "text": "Saint Lucia"
+ },
+ {
+  "lang": "en",
+  "id": "lc",
+  "field": "capital",
+  "text": "Castries"
+ },
+ {
+  "lang": "en",
+  "id": "vc",
+  "field": "name",
+  "text": "Saint Vincent and the Grenadines"
+ },
+ {
+  "lang": "en",
+  "id": "vc",
+  "field": "capital",
+  "text": "Kingstown"
+ },
+ {
+  "lang": "en",
+  "id": "ws",
+  "field": "name",
+  "text": "Samoa"
+ },
+ {
+  "lang": "en",
+  "id": "ws",
+  "field": "capital",
+  "text": "Apia"
+ },
+ {
+  "lang": "en",
+  "id": "sm",
+  "field": "name",
+  "text": "San Marino"
+ },
+ {
+  "lang": "en",
+  "id": "sm",
+  "field": "capital",
+  "text": "City of San Marino"
+ },
+ {
+  "lang": "en",
+  "id": "sa",
+  "field": "name",
+  "text": "Saudi Arabia"
+ },
+ {
+  "lang": "en",
+  "id": "sa",
+  "field": "capital",
+  "text": "Riyadh"
+ },
+ {
+  "lang": "en",
+  "id": "sn",
+  "field": "name",
+  "text": "Senegal"
+ },
+ {
+  "lang": "en",
+  "id": "sn",
+  "field": "capital",
+  "text": "Dakar"
+ },
+ {
+  "lang": "en",
+  "id": "rs",
+  "field": "name",
+  "text": "Serbia"
+ },
+ {
+  "lang": "en",
+  "id": "rs",
+  "field": "capital",
+  "text": "Belgrade"
+ },
+ {
+  "lang": "en",
+  "id": "sc",
+  "field": "name",
+  "text": "Seychelles"
+ },
+ {
+  "lang": "en",
+  "id": "sc",
+  "field": "capital",
+  "text": "Victoria"
+ },
+ {
+  "lang": "en",
+  "id": "sl",
+  "field": "name",
+  "text": "Sierra Leone"
+ },
+ {
+  "lang": "en",
+  "id": "sl",
+  "field": "capital",
+  "text": "Freetown"
+ },
+ {
+  "lang": "en",
+  "id": "sg",
+  "field": "name",
+  "text": "Singapore"
+ },
+ {
+  "lang": "en",
+  "id": "sg",
+  "field": "capital",
+  "text": "Singapore"
+ },
+ {
+  "lang": "en",
+  "id": "sk",
+  "field": "name",
+  "text": "Slovakia"
+ },
+ {
+  "lang": "en",
+  "id": "sk",
+  "field": "capital",
+  "text": "Bratislava"
+ },
+ {
+  "lang": "en",
+  "id": "si",
+  "field": "name",
+  "text": "Slovenia"
+ },
+ {
+  "lang": "en",
+  "id": "si",
+  "field": "capital",
+  "text": "Ljubljana"
+ },
+ {
+  "lang": "en",
+  "id": "sb",
+  "field": "name",
+  "text": "Solomon Islands"
+ },
+ {
+  "lang": "en",
+  "id": "sb",
+  "field": "capital",
+  "text": "Honiara"
+ },
+ {
+  "lang": "en",
+  "id": "so",
+  "field": "name",
+  "text": "Somalia"
+ },
+ {
+  "lang": "en",
+  "id": "so",
+  "field": "capital",
+  "text": "Mogadishu"
+ },
+ {
+  "lang": "en",
+  "id": "za",
+  "field": "name",
+  "text": "South Africa"
+ },
+ {
+  "lang": "en",
+  "id": "za",
+  "field": "capital",
+  "text": "Pretoria"
+ },
+ {
+  "lang": "en",
+  "id": "kr",
+  "field": "name",
+  "text": "South Korea"
+ },
+ {
+  "lang": "en",
+  "id": "kr",
+  "field": "capital",
+  "text": "Seoul"
+ },
+ {
+  "lang": "en",
+  "id": "ss",
+  "field": "name",
+  "text": "South Sudan"
+ },
+ {
+  "lang": "en",
+  "id": "ss",
+  "field": "capital",
+  "text": "Juba"
+ },
+ {
+  "lang": "en",
+  "id": "es",
+  "field": "name",
+  "text": "Spain"
+ },
+ {
+  "lang": "en",
+  "id": "es",
+  "field": "capital",
+  "text": "Madrid"
+ },
+ {
+  "lang": "en",
+  "id": "lk",
+  "field": "name",
+  "text": "Sri Lanka"
+ },
+ {
+  "lang": "en",
+  "id": "lk",
+  "field": "capital",
+  "text": "Sri Jayawardenepura Kotte"
+ },
+ {
+  "lang": "en",
+  "id": "sd",
+  "field": "name",
+  "text": "Sudan"
+ },
+ {
+  "lang": "en",
+  "id": "sd",
+  "field": "capital",
+  "text": "Khartoum"
+ },
+ {
+  "lang": "en",
+  "id": "sr",
+  "field": "name",
+  "text": "Suriname"
+ },
+ {
+  "lang": "en",
+  "id": "sr",
+  "field": "capital",
+  "text": "Paramaribo"
+ },
+ {
+  "lang": "en",
+  "id": "se",
+  "field": "name",
+  "text": "Sweden"
+ },
+ {
+  "lang": "en",
+  "id": "se",
+  "field": "capital",
+  "text": "Stockholm"
+ },
+ {
+  "lang": "en",
+  "id": "ch",
+  "field": "name",
+  "text": "Switzerland"
+ },
+ {
+  "lang": "en",
+  "id": "ch",
+  "field": "capital",
+  "text": "Bern"
+ },
+ {
+  "lang": "en",
+  "id": "sy",
+  "field": "name",
+  "text": "Syria"
+ },
+ {
+  "lang": "en",
+  "id": "sy",
+  "field": "capital",
+  "text": "Damascus"
+ },
+ {
+  "lang": "en",
+  "id": "st",
+  "field": "name",
+  "text": "São Tomé and Príncipe"
+ },
+ {
+  "lang": "en",
+  "id": "st",
+  "field": "capital",
+  "text": "São Tomé"
+ },
+ {
+  "lang": "en",
+  "id": "tj",
+  "field": "name",
+  "text": "Tajikistan"
+ },
+ {
+  "lang": "en",
+  "id": "tj",
+  "field": "capital",
+  "text": "Dushanbe"
+ },
+ {
+  "lang": "en",
+  "id": "tz",
+  "field": "name",
+  "text": "Tanzania"
+ },
+ {
+  "lang": "en",
+  "id": "tz",
+  "field": "capital",
+  "text": "Dodoma"
+ },
+ {
+  "lang": "en",
+  "id": "th",
+  "field": "name",
+  "text": "Thailand"
+ },
+ {
+  "lang": "en",
+  "id": "th",
+  "field": "capital",
+  "text": "Bangkok"
+ },
+ {
+  "lang": "en",
+  "id": "tl",
+  "field": "name",
+  "text": "Timor-Leste"
+ },
+ {
+  "lang": "en",
+  "id": "tl",
+  "field": "capital",
+  "text": "Dili"
+ },
+ {
+  "lang": "en",
+  "id": "tg",
+  "field": "name",
+  "text": "Togo"
+ },
+ {
+  "lang": "en",
+  "id": "tg",
+  "field": "capital",
+  "text": "Lomé"
+ },
+ {
+  "lang": "en",
+  "id": "to",
+  "field": "name",
+  "text": "Tonga"
+ },
+ {
+  "lang": "en",
+  "id": "to",
+  "field": "capital",
+  "text": "Nuku'alofa"
+ },
+ {
+  "lang": "en",
+  "id": "tt",
+  "field": "name",
+  "text": "Trinidad and Tobago"
+ },
+ {
+  "lang": "en",
+  "id": "tt",
+  "field": "capital",
+  "text": "Port of Spain"
+ },
+ {
+  "lang": "en",
+  "id": "tn",
+  "field": "name",
+  "text": "Tunisia"
+ },
+ {
+  "lang": "en",
+  "id": "tn",
+  "field": "capital",
+  "text": "Tunis"
+ },
+ {
+  "lang": "en",
+  "id": "tr",
+  "field": "name",
+  "text": "Turkey"
+ },
+ {
+  "lang": "en",
+  "id": "tr",
+  "field": "capital",
+  "text": "Ankara"
+ },
+ {
+  "lang": "en",
+  "id": "tm",
+  "field": "name",
+  "text": "Turkmenistan"
+ },
+ {
+  "lang": "en",
+  "id": "tm",
+  "field": "capital",
+  "text": "Ashgabat"
+ },
+ {
+  "lang": "en",
+  "id": "tv",
+  "field": "name",
+  "text": "Tuvalu"
+ },
+ {
+  "lang": "en",
+  "id": "tv",
+  "field": "capital",
+  "text": "Funafuti"
+ },
+ {
+  "lang": "en",
+  "id": "ug",
+  "field": "name",
+  "text": "Uganda"
+ },
+ {
+  "lang": "en",
+  "id": "ug",
+  "field": "capital",
+  "text": "Kampala"
+ },
+ {
+  "lang": "en",
+  "id": "ua",
+  "field": "name",
+  "text": "Ukraine"
+ },
+ {
+  "lang": "en",
+  "id": "ua",
+  "field": "capital",
+  "text": "Kyiv"
+ },
+ {
+  "lang": "en",
+  "id": "ae",
+  "field": "name",
+  "text": "United Arab Emirates"
+ },
+ {
+  "lang": "en",
+  "id": "ae",
+  "field": "capital",
+  "text": "Abu Dhabi"
+ },
+ {
+  "lang": "en",
+  "id": "gb",
+  "field": "name",
+  "text": "United Kingdom"
+ },
+ {
+  "lang": "en",
+  "id": "gb",
+  "field": "capital",
+  "text": "London"
+ },
+ {
+  "lang": "en",
+  "id": "us",
+  "field": "name",
+  "text": "United States"
+ },
+ {
+  "lang": "en",
+  "id": "us",
+  "field": "capital",
+  "text": "Washington, D.C."
+ },
+ {
+  "lang": "en",
+  "id": "uy",
+  "field": "name",
+  "text": "Uruguay"
+ },
+ {
+  "lang": "en",
+  "id": "uy",
+  "field": "capital",
+  "text": "Montevideo"
+ },
+ {
+  "lang": "en",
+  "id": "uz",
+  "field": "name",
+  "text": "Uzbekistan"
+ },
+ {
+  "lang": "en",
+  "id": "uz",
+  "field": "capital",
+  "text": "Tashkent"
+ },
+ {
+  "lang": "en",
+  "id": "vu",
+  "field": "name",
+  "text": "Vanuatu"
+ },
+ {
+  "lang": "en",
+  "id": "vu",
+  "field": "capital",
+  "text": "Port Vila"
+ },
+ {
+  "lang": "en",
+  "id": "va",
+  "field": "name",
+  "text": "Vatican City"
+ },
+ {
+  "lang": "en",
+  "id": "va",
+  "field": "capital",
+  "text": "Vatican City"
+ },
+ {
+  "lang": "en",
+  "id": "ve",
+  "field": "name",
+  "text": "Venezuela"
+ },
+ {
+  "lang": "en",
+  "id": "ve",
+  "field": "capital",
+  "text": "Caracas"
+ },
+ {
+  "lang": "en",
+  "id": "vn",
+  "field": "name",
+  "text": "Vietnam"
+ },
+ {
+  "lang": "en",
+  "id": "vn",
+  "field": "capital",
+  "text": "Hanoi"
+ },
+ {
+  "lang": "en",
+  "id": "ye",
+  "field": "name",
+  "text": "Yemen"
+ },
+ {
+  "lang": "en",
+  "id": "ye",
+  "field": "capital",
+  "text": "Sana'a"
+ },
+ {
+  "lang": "en",
+  "id": "zm",
+  "field": "name",
+  "text": "Zambia"
+ },
+ {
+  "lang": "en",
+  "id": "zm",
+  "field": "capital",
+  "text": "Lusaka"
+ },
+ {
+  "lang": "en",
+  "id": "zw",
+  "field": "name",
+  "text": "Zimbabwe"
+ },
+ {
+  "lang": "en",
+  "id": "zw",
+  "field": "capital",
+  "text": "Harare"
+ },
+ {
+  "lang": "es",
+  "id": "af",
+  "field": "name",
+  "text": "Afganistán"
+ },
+ {
+  "lang": "es",
+  "id": "af",
+  "field": "capital",
+  "text": "Kabul"
+ },
+ {
+  "lang": "es",
+  "id": "al",
+  "field": "name",
+  "text": "Albania"
+ },
+ {
+  "lang": "es",
+  "id": "al",
+  "field": "capital",
+  "text": "Tirana"
+ },
+ {
+  "lang": "es",
+  "id": "dz",
+  "field": "name",
+  "text": "Argelia"
+ },
+ {
+  "lang": "es",
+  "id": "dz",
+  "field": "capital",
+  "text": "Argel"
+ },
+ {
+  "lang": "es",
+  "id": "ad",
+  "field": "name",
+  "text": "Andorra"
+ },
+ {
+  "lang": "es",
+  "id": "ad",
+  "field": "capital",
+  "text": "Andorra la Vieja"
+ },
+ {
+  "lang": "es",
+  "id": "ao",
+  "field": "name",
+  "text": "Angola"
+ },
+ {
+  "lang": "es",
+  "id": "ao",
+  "field": "capital",
+  "text": "Luanda"
+ },
+ {
+  "lang": "es",
+  "id": "ag",
+  "field": "name",
+  "text": "Antigua y Barbuda"
+ },
+ {
+  "lang": "es",
+  "id": "ag",
+  "field": "capital",
+  "text": "Saint John"
+ },
+ {
+  "lang": "es",
+  "id": "ar",
+  "field": "name",
+  "text": "Argentina"
+ },
+ {
+  "lang": "es",
+  "id": "ar",
+  "field": "capital",
+  "text": "Buenos Aires"
+ },
+ {
+  "lang": "es",
+  "id": "am",
+  "field": "name",
+  "text": "Armenia"
+ },
+ {
+  "lang": "es",
+  "id": "am",
+  "field": "capital",
+  "text": "Ereván"
+ },
+ {
+  "lang": "es",
+  "id": "au",
+  "field": "name",
+  "text": "Australia"
+ },
+ {
+  "lang": "es",
+  "id": "au",
+  "field": "capital",
+  "text": "Canberra"
+ },
+ {
+  "lang": "es",
+  "id": "at",
+  "field": "name",
+  "text": "Austria"
+ },
+ {
+  "lang": "es",
+  "id": "at",
+  "field": "capital",
+  "text": "Viena"
+ },
+ {
+  "lang": "es",
+  "id": "az",
+  "field": "name",
+  "text": "Azerbaiyán"
+ },
+ {
+  "lang": "es",
+  "id": "az",
+  "field": "capital",
+  "text": "Bakú"
+ },
+ {
+  "lang": "es",
+  "id": "bs",
+  "field": "name",
+  "text": "Bahamas"
+ },
+ {
+  "lang": "es",
+  "id": "bs",
+  "field": "capital",
+  "text": "Nasáu"
+ },
+ {
+  "lang": "es",
+  "id": "bh",
+  "field": "name",
+  "text": "Bahrein"
+ },
+ {
+  "lang": "es",
+  "id": "bh",
+  "field": "capital",
+  "text": "Manama"
+ },
+ {
+  "lang": "es",
+  "id": "bd",
+  "field": "name",
+  "text": "Bangladesh"
+ },
+ {
+  "lang": "es",
+  "id": "bd",
+  "field": "capital",
+  "text": "Daca"
+ },
+ {
+  "lang": "es",
+  "id": "bb",
+  "field": "name",
+  "text": "Barbados"
+ },
+ {
+  "lang": "es",
+  "id": "bb",
+  "field": "capital",
+  "text": "Bridgetown"
+ },
+ {
+  "lang": "es",
+  "id": "by",
+  "field": "name",
+  "text": "Bielorrusia"
+ },
+ {
+  "lang": "es",
+  "id": "by",
+  "field": "capital",
+  "text": "Minsk"
+ },
+ {
+  "lang": "es",
+  "id": "be",
+  "field": "name",
+  "text": "Bélgica"
+ },
+ {
+  "lang": "es",
+  "id": "be",
+  "field": "capital",
+  "text": "Bruselas"
+ },
+ {
+  "lang": "es",
+  "id": "bz",
+  "field": "name",
+  "text": "Belice"
+ },
+ {
+  "lang": "es",
+  "id": "bz",
+  "field": "capital",
+  "text": "Belmopán"
+ },
+ {
+  "lang": "es",
+  "id": "bj",
+  "field": "name",
+  "text": "Benín"
+ },
+ {
+  "lang": "es",
+  "id": "bj",
+  "field": "capital",
+  "text": "Porto Novo"
+ },
+ {
+  "lang": "es",
+  "id": "bt",
+  "field": "name",
+  "text": "Bután"
+ },
+ {
+  "lang": "es",
+  "id": "bt",
+  "field": "capital",
+  "text": "Timbu"
+ },
+ {
+  "lang": "es",
+  "id": "bo",
+  "field": "name",
+  "text": "Bolivia"
+ },
+ {
+  "lang": "es",
+  "id": "bo",
+  "field": "capital",
+  "text": "Sucre"
+ },
+ {
+  "lang": "es",
+  "id": "ba",
+  "field": "name",
+  "text": "Bosnia y Herzegovina"
+ },
+ {
+  "lang": "es",
+  "id": "ba",
+  "field": "capital",
+  "text": "Sarajevo"
+ },
+ {
+  "lang": "es",
+  "id": "bw",
+  "field": "name",
+  "text": "Botswana"
+ },
+ {
+  "lang": "es",
+  "id": "bw",
+  "field": "capital",
+  "text": "Gaborone"
+ },
+ {
+  "lang": "es",
+  "id": "br",
+  "field": "name",
+  "text": "Brasil"
+ },
+ {
+  "lang": "es",
+  "id": "br",
+  "field": "capital",
+  "text": "Brasilia"
+ },
+ {
+  "lang": "es",
+  "id": "bn",
+  "field": "name",
+  "text": "Brunei"
+ },
+ {
+  "lang": "es",
+  "id": "bn",
+  "field": "capital",
+  "text": "Bandar Seri Begawan"
+ },
+ {
+  "lang": "es",
+  "id": "bg",
+  "field": "name",
+  "text": "Bulgaria"
+ },
+ {
+  "lang": "es",
+  "id": "bg",
+  "field": "capital",
+  "text": "Sofía"
+ },
+ {
+  "lang": "es",
+  "id": "bf",
+  "field": "name",
+  "text": "Burkina Faso"
+ },
+ {
+  "lang": "es",
+  "id": "bf",
+  "field": "capital",
+  "text": "Uagadugú"
+ },
+ {
+  "lang": "es",
+  "id": "bi",
+  "field": "name",
+  "text": "Burundi"
+ },
+ {
+  "lang": "es",
+  "id": "bi",
+  "field": "capital",
+  "text": "Guitega"
+ },
+ {
+  "lang": "es",
+  "id": "kh",
+  "field": "name",
+  "text": "Camboya"
+ },
+ {
+  "lang": "es",
+  "id": "kh",
+  "field": "capital",
+  "text": "Nom Pen"
+ },
+ {
+  "lang": "es",
+  "id": "cm",
+  "field": "name",
+  "text": "Camerún"
+ },
+ {
+  "lang": "es",
+  "id": "cm",
+  "field": "capital",
+  "text": "Yaundé"
+ },
+ {
+  "lang": "es",
+  "id": "ca",
+  "field": "name",
+  "text": "Canadá"
+ },
+ {
+  "lang": "es",
+  "id": "ca",
+  "field": "capital",
+  "text": "Ottawa"
+ },
+ {
+  "lang": "es",
+  "id": "cv",
+  "field": "name",
+  "text": "Cabo Verde"
+ },
+ {
+  "lang": "es",
+  "id": "cv",
+  "field": "capital",
+  "text": "Praia"
+ },
+ {
+  "lang": "es",
+  "id": "cf",
+  "field": "name",
+  "text": "República Centroafricana"
+ },
+ {
+  "lang": "es",
+  "id": "cf",
+  "field": "capital",
+  "text": "Bangui"
+ },
+ {
+  "lang": "es",
+  "id": "td",
+  "field": "name",
+  "text": "Chad"
+ },
+ {
+  "lang": "es",
+  "id": "td",
+  "field": "capital",
+  "text": "Yamena"
+ },
+ {
+  "lang": "es",
+  "id": "cl",
+  "field": "name",
+  "text": "Chile"
+ },
+ {
+  "lang": "es",
+  "id": "cl",
+  "field": "capital",
+  "text": "Santiago de Chile"
+ },
+ {
+  "lang": "es",
+  "id": "cn",
+  "field": "name",
+  "text": "China"
+ },
+ {
+  "lang": "es",
+  "id": "cn",
+  "field": "capital",
+  "text": "Pekín"
+ },
+ {
+  "lang": "es",
+  "id": "co",
+  "field": "name",
+  "text": "Colombia"
+ },
+ {
+  "lang": "es",
+  "id": "co",
+  "field": "capital",
+  "text": "Bogotá"
+ },
+ {
+  "lang": "es",
+  "id": "km",
+  "field": "name",
+  "text": "Comoras"
+ },
+ {
+  "lang": "es",
+  "id": "km",
+  "field": "capital",
+  "text": "Moroni"
+ },
+ {
+  "lang": "es",
+  "id": "cr",
+  "field": "name",
+  "text": "Costa Rica"
+ },
+ {
+  "lang": "es",
+  "id": "cr",
+  "field": "capital",
+  "text": "San José"
+ },
+ {
+  "lang": "es",
+  "id": "hr",
+  "field": "name",
+  "text": "Croacia"
+ },
+ {
+  "lang": "es",
+  "id": "hr",
+  "field": "capital",
+  "text": "Zagreb"
+ },
+ {
+  "lang": "es",
+  "id": "cu",
+  "field": "name",
+  "text": "Cuba"
+ },
+ {
+  "lang": "es",
+  "id": "cu",
+  "field": "capital",
+  "text": "La Habana"
+ },
+ {
+  "lang": "es",
+  "id": "cy",
+  "field": "name",
+  "text": "Chipre"
+ },
+ {
+  "lang": "es",
+  "id": "cy",
+  "field": "capital",
+  "text": "Nicosia"
+ },
+ {
+  "lang": "es",
+  "id": "cz",
+  "field": "name",
+  "text": "Chequia"
+ },
+ {
+  "lang": "es",
+  "id": "cz",
+  "field": "capital",
+  "text": "Praga"
+ },
+ {
+  "lang": "es",
+  "id": "cd",
+  "field": "name",
+  "text": "República Democrática del Congo"
+ },
+ {
+  "lang": "es",
+  "id": "cd",
+  "field": "capital",
+  "text": "Kinsasa"
+ },
+ {
+  "lang": "es",
+  "id": "dk",
+  "field": "name",
+  "text": "Dinamarca"
+ },
+ {
+  "lang": "es",
+  "id": "dk",
+  "field": "capital",
+  "text": "Copenhague"
+ },
+ {
+  "lang": "es",
+  "id": "dj",
+  "field": "name",
+  "text": "Djibouti"
+ },
+ {
+  "lang": "es",
+  "id": "dj",
+  "field": "capital",
+  "text": "Ciudad de Yibuti"
+ },
+ {
+  "lang": "es",
+  "id": "dm",
+  "field": "name",
+  "text": "Dominica"
+ },
+ {
+  "lang": "es",
+  "id": "dm",
+  "field": "capital",
+  "text": "Roseau"
+ },
+ {
+  "lang": "es",
+  "id": "do",
+  "field": "name",
+  "text": "República Dominicana"
+ },
+ {
+  "lang": "es",
+  "id": "do",
+  "field": "capital",
+  "text": "Santo Domingo"
+ },
+ {
+  "lang": "es",
+  "id": "ec",
+  "field": "name",
+  "text": "Ecuador"
+ },
+ {
+  "lang": "es",
+  "id": "ec",
+  "field": "capital",
+  "text": "Quito"
+ },
+ {
+  "lang": "es",
+  "id": "eg",
+  "field": "name",
+  "text": "Egipto"
+ },
+ {
+  "lang": "es",
+  "id": "eg",
+  "field": "capital",
+  "text": "El Cairo"
+ },
+ {
+  "lang": "es",
+  "id": "sv",
+  "field": "name",
+  "text": "El Salvador"
+ },
+ {
+  "lang": "es",
+  "id": "sv",
+  "field": "capital",
+  "text": "San Salvador"
+ },
+ {
+  "lang": "es",
+  "id": "gq",
+  "field": "name",
+  "text": "Guinea Ecuatorial"
+ },
+ {
+  "lang": "es",
+  "id": "gq",
+  "field": "capital",
+  "text": "Ciudad de la Paz"
+ },
+ {
+  "lang": "es",
+  "id": "er",
+  "field": "name",
+  "text": "Eritrea"
+ },
+ {
+  "lang": "es",
+  "id": "er",
+  "field": "capital",
+  "text": "Asmara"
+ },
+ {
+  "lang": "es",
+  "id": "ee",
+  "field": "name",
+  "text": "Estonia"
+ },
+ {
+  "lang": "es",
+  "id": "ee",
+  "field": "capital",
+  "text": "Tallin"
+ },
+ {
+  "lang": "es",
+  "id": "sz",
+  "field": "name",
+  "text": "Esuatini"
+ },
+ {
+  "lang": "es",
+  "id": "sz",
+  "field": "capital",
+  "text": "Mbabane"
+ },
+ {
+  "lang": "es",
+  "id": "et",
+  "field": "name",
+  "text": "Etiopía"
+ },
+ {
+  "lang": "es",
+  "id": "et",
+  "field": "capital",
+  "text": "Adís Abeba"
+ },
+ {
+  "lang": "es",
+  "id": "fj",
+  "field": "name",
+  "text": "Fiyi"
+ },
+ {
+  "lang": "es",
+  "id": "fj",
+  "field": "capital",
+  "text": "Suva"
+ },
+ {
+  "lang": "es",
+  "id": "fi",
+  "field": "name",
+  "text": "Finlandia"
+ },
+ {
+  "lang": "es",
+  "id": "fi",
+  "field": "capital",
+  "text": "Helsinki"
+ },
+ {
+  "lang": "es",
+  "id": "fr",
+  "field": "name",
+  "text": "Francia"
+ },
+ {
+  "lang": "es",
+  "id": "fr",
+  "field": "capital",
+  "text": "París"
+ },
+ {
+  "lang": "es",
+  "id": "ga",
+  "field": "name",
+  "text": "Gabón"
+ },
+ {
+  "lang": "es",
+  "id": "ga",
+  "field": "capital",
+  "text": "Libreville"
+ },
+ {
+  "lang": "es",
+  "id": "gm",
+  "field": "name",
+  "text": "Gambia"
+ },
+ {
+  "lang": "es",
+  "id": "gm",
+  "field": "capital",
+  "text": "Banjul"
+ },
+ {
+  "lang": "es",
+  "id": "ge",
+  "field": "name",
+  "text": "Georgia"
+ },
+ {
+  "lang": "es",
+  "id": "ge",
+  "field": "capital",
+  "text": "Tiflis"
+ },
+ {
+  "lang": "es",
+  "id": "de",
+  "field": "name",
+  "text": "Alemania"
+ },
+ {
+  "lang": "es",
+  "id": "de",
+  "field": "capital",
+  "text": "Berlín"
+ },
+ {
+  "lang": "es",
+  "id": "gh",
+  "field": "name",
+  "text": "Ghana"
+ },
+ {
+  "lang": "es",
+  "id": "gh",
+  "field": "capital",
+  "text": "Acra"
+ },
+ {
+  "lang": "es",
+  "id": "gr",
+  "field": "name",
+  "text": "Grecia"
+ },
+ {
+  "lang": "es",
+  "id": "gr",
+  "field": "capital",
+  "text": "Atenas"
+ },
+ {
+  "lang": "es",
+  "id": "gd",
+  "field": "name",
+  "text": "Grenada"
+ },
+ {
+  "lang": "es",
+  "id": "gd",
+  "field": "capital",
+  "text": "Saint George"
+ },
+ {
+  "lang": "es",
+  "id": "gt",
+  "field": "name",
+  "text": "Guatemala"
+ },
+ {
+  "lang": "es",
+  "id": "gt",
+  "field": "capital",
+  "text": "Ciudad de Guatemala"
+ },
+ {
+  "lang": "es",
+  "id": "gn",
+  "field": "name",
+  "text": "Guinea"
+ },
+ {
+  "lang": "es",
+  "id": "gn",
+  "field": "capital",
+  "text": "Conakri"
+ },
+ {
+  "lang": "es",
+  "id": "gw",
+  "field": "name",
+  "text": "Guinea-Bisáu"
+ },
+ {
+  "lang": "es",
+  "id": "gw",
+  "field": "capital",
+  "text": "Bisáu"
+ },
+ {
+  "lang": "es",
+  "id": "gy",
+  "field": "name",
+  "text": "Guyana"
+ },
+ {
+  "lang": "es",
+  "id": "gy",
+  "field": "capital",
+  "text": "Georgetown"
+ },
+ {
+  "lang": "es",
+  "id": "ht",
+  "field": "name",
+  "text": "Haití"
+ },
+ {
+  "lang": "es",
+  "id": "ht",
+  "field": "capital",
+  "text": "Puerto Príncipe"
+ },
+ {
+  "lang": "es",
+  "id": "hn",
+  "field": "name",
+  "text": "Honduras"
+ },
+ {
+  "lang": "es",
+  "id": "hn",
+  "field": "capital",
+  "text": "Tegucigalpa"
+ },
+ {
+  "lang": "es",
+  "id": "hu",
+  "field": "name",
+  "text": "Hungría"
+ },
+ {
+  "lang": "es",
+  "id": "hu",
+  "field": "capital",
+  "text": "Budapest"
+ },
+ {
+  "lang": "es",
+  "id": "is",
+  "field": "name",
+  "text": "Islandia"
+ },
+ {
+  "lang": "es",
+  "id": "is",
+  "field": "capital",
+  "text": "Reikiavik"
+ },
+ {
+  "lang": "es",
+  "id": "in",
+  "field": "name",
+  "text": "India"
+ },
+ {
+  "lang": "es",
+  "id": "in",
+  "field": "capital",
+  "text": "Nueva Delhi"
+ },
+ {
+  "lang": "es",
+  "id": "id",
+  "field": "name",
+  "text": "Indonesia"
+ },
+ {
+  "lang": "es",
+  "id": "id",
+  "field": "capital",
+  "text": "Yakarta"
+ },
+ {
+  "lang": "es",
+  "id": "ir",
+  "field": "name",
+  "text": "Iran"
+ },
+ {
+  "lang": "es",
+  "id": "ir",
+  "field": "capital",
+  "text": "Teherán"
+ },
+ {
+  "lang": "es",
+  "id": "iq",
+  "field": "name",
+  "text": "Irak"
+ },
+ {
+  "lang": "es",
+  "id": "iq",
+  "field": "capital",
+  "text": "Bagdad"
+ },
+ {
+  "lang": "es",
+  "id": "ie",
+  "field": "name",
+  "text": "Irlanda"
+ },
+ {
+  "lang": "es",
+  "id": "ie",
+  "field": "capital",
+  "text": "Dublín"
+ },
+ {
+  "lang": "es",
+  "id": "il",
+  "field": "name",
+  "text": "Israel"
+ },
+ {
+  "lang": "es",
+  "id": "il",
+  "field": "capital",
+  "text": "Jerusalén"
+ },
+ {
+  "lang": "es",
+  "id": "it",
+  "field": "name",
+  "text": "Italia"
+ },
+ {
+  "lang": "es",
+  "id": "it",
+  "field": "capital",
+  "text": "Roma"
+ },
+ {
+  "lang": "es",
+  "id": "ci",
+  "field": "name",
+  "text": "Costa de Marfil"
+ },
+ {
+  "lang": "es",
+  "id": "ci",
+  "field": "capital",
+  "text": "Yamusukro"
+ },
+ {
+  "lang": "es",
+  "id": "jm",
+  "field": "name",
+  "text": "Jamaica"
+ },
+ {
+  "lang": "es",
+  "id": "jm",
+  "field": "capital",
+  "text": "Kingston"
+ },
+ {
+  "lang": "es",
+  "id": "jp",
+  "field": "name",
+  "text": "Japón"
+ },
+ {
+  "lang": "es",
+  "id": "jp",
+  "field": "capital",
+  "text": "Tokio"
+ },
+ {
+  "lang": "es",
+  "id": "jo",
+  "field": "name",
+  "text": "Jordania"
+ },
+ {
+  "lang": "es",
+  "id": "jo",
+  "field": "capital",
+  "text": "Amán"
+ },
+ {
+  "lang": "es",
+  "id": "kz",
+  "field": "name",
+  "text": "Kazajistán"
+ },
+ {
+  "lang": "es",
+  "id": "kz",
+  "field": "capital",
+  "text": "Astaná"
+ },
+ {
+  "lang": "es",
+  "id": "ke",
+  "field": "name",
+  "text": "Kenia"
+ },
+ {
+  "lang": "es",
+  "id": "ke",
+  "field": "capital",
+  "text": "Nairobi"
+ },
+ {
+  "lang": "es",
+  "id": "ki",
+  "field": "name",
+  "text": "Kiribati"
+ },
+ {
+  "lang": "es",
+  "id": "ki",
+  "field": "capital",
+  "text": "Tarawa Sur"
+ },
+ {
+  "lang": "es",
+  "id": "kw",
+  "field": "name",
+  "text": "Kuwait"
+ },
+ {
+  "lang": "es",
+  "id": "kw",
+  "field": "capital",
+  "text": "Ciudad de Kuwait"
+ },
+ {
+  "lang": "es",
+  "id": "kg",
+  "field": "name",
+  "text": "Kirguizistán"
+ },
+ {
+  "lang": "es",
+  "id": "kg",
+  "field": "capital",
+  "text": "Biskek"
+ },
+ {
+  "lang": "es",
+  "id": "la",
+  "field": "name",
+  "text": "Laos"
+ },
+ {
+  "lang": "es",
+  "id": "la",
+  "field": "capital",
+  "text": "Vientián"
+ },
+ {
+  "lang": "es",
+  "id": "lv",
+  "field": "name",
+  "text": "Letonia"
+ },
+ {
+  "lang": "es",
+  "id": "lv",
+  "field": "capital",
+  "text": "Riga"
+ },
+ {
+  "lang": "es",
+  "id": "lb",
+  "field": "name",
+  "text": "Líbano"
+ },
+ {
+  "lang": "es",
+  "id": "lb",
+  "field": "capital",
+  "text": "Beirut"
+ },
+ {
+  "lang": "es",
+  "id": "ls",
+  "field": "name",
+  "text": "Lesotho"
+ },
+ {
+  "lang": "es",
+  "id": "ls",
+  "field": "capital",
+  "text": "Maseru"
+ },
+ {
+  "lang": "es",
+  "id": "lr",
+  "field": "name",
+  "text": "Liberia"
+ },
+ {
+  "lang": "es",
+  "id": "lr",
+  "field": "capital",
+  "text": "Monrovia"
+ },
+ {
+  "lang": "es",
+  "id": "ly",
+  "field": "name",
+  "text": "Libia"
+ },
+ {
+  "lang": "es",
+  "id": "ly",
+  "field": "capital",
+  "text": "Trípoli"
+ },
+ {
+  "lang": "es",
+  "id": "li",
+  "field": "name",
+  "text": "Liechtenstein"
+ },
+ {
+  "lang": "es",
+  "id": "li",
+  "field": "capital",
+  "text": "Vaduz"
+ },
+ {
+  "lang": "es",
+  "id": "lt",
+  "field": "name",
+  "text": "Lituania"
+ },
+ {
+  "lang": "es",
+  "id": "lt",
+  "field": "capital",
+  "text": "Vilna"
+ },
+ {
+  "lang": "es",
+  "id": "lu",
+  "field": "name",
+  "text": "Luxemburgo"
+ },
+ {
+  "lang": "es",
+  "id": "lu",
+  "field": "capital",
+  "text": "Luxemburgo"
+ },
+ {
+  "lang": "es",
+  "id": "mg",
+  "field": "name",
+  "text": "Madagascar"
+ },
+ {
+  "lang": "es",
+  "id": "mg",
+  "field": "capital",
+  "text": "Antananarivo"
+ },
+ {
+  "lang": "es",
+  "id": "mw",
+  "field": "name",
+  "text": "Malawi"
+ },
+ {
+  "lang": "es",
+  "id": "mw",
+  "field": "capital",
+  "text": "Lilongüe"
+ },
+ {
+  "lang": "es",
+  "id": "my",
+  "field": "name",
+  "text": "Malasia"
+ },
+ {
+  "lang": "es",
+  "id": "my",
+  "field": "capital",
+  "text": "Kuala Lumpur"
+ },
+ {
+  "lang": "es",
+  "id": "mv",
+  "field": "name",
+  "text": "Maldivas"
+ },
+ {
+  "lang": "es",
+  "id": "mv",
+  "field": "capital",
+  "text": "Malé"
+ },
+ {
+  "lang": "es",
+  "id": "ml",
+  "field": "name",
+  "text": "Mali"
+ },
+ {
+  "lang": "es",
+  "id": "ml",
+  "field": "capital",
+  "text": "Bamako"
+ },
+ {
+  "lang": "es",
+  "id": "mt",
+  "field": "name",
+  "text": "Malta"
+ },
+ {
+  "lang": "es",
+  "id": "mt",
+  "field": "capital",
+  "text": "La Valeta"
+ },
+ {
+  "lang": "es",
+  "id": "mh",
+  "field": "name",
+  "text": "Islas Marshall"
+ },
+ {
+  "lang": "es",
+  "id": "mh",
+  "field": "capital",
+  "text": "Majuro"
+ },
+ {
+  "lang": "es",
+  "id": "mr",
+  "field": "name",
+  "text": "Mauritania"
+ },
+ {
+  "lang": "es",
+  "id": "mr",
+  "field": "capital",
+  "text": "Nuakchot"
+ },
+ {
+  "lang": "es",
+  "id": "mu",
+  "field": "name",
+  "text": "Mauricio"
+ },
+ {
+  "lang": "es",
+  "id": "mu",
+  "field": "capital",
+  "text": "Port Louis"
+ },
+ {
+  "lang": "es",
+  "id": "mx",
+  "field": "name",
+  "text": "México"
+ },
+ {
+  "lang": "es",
+  "id": "mx",
+  "field": "capital",
+  "text": "Ciudad de México"
+ },
+ {
+  "lang": "es",
+  "id": "fm",
+  "field": "name",
+  "text": "Micronesia"
+ },
+ {
+  "lang": "es",
+  "id": "fm",
+  "field": "capital",
+  "text": "Palikir"
+ },
+ {
+  "lang": "es",
+  "id": "md",
+  "field": "name",
+  "text": "Moldavia"
+ },
+ {
+  "lang": "es",
+  "id": "md",
+  "field": "capital",
+  "text": "Chisináu"
+ },
+ {
+  "lang": "es",
+  "id": "mc",
+  "field": "name",
+  "text": "Mónaco"
+ },
+ {
+  "lang": "es",
+  "id": "mc",
+  "field": "capital",
+  "text": "Mónaco"
+ },
+ {
+  "lang": "es",
+  "id": "mn",
+  "field": "name",
+  "text": "Mongolia"
+ },
+ {
+  "lang": "es",
+  "id": "mn",
+  "field": "capital",
+  "text": "Ulán Bator"
+ },
+ {
+  "lang": "es",
+  "id": "me",
+  "field": "name",
+  "text": "Montenegro"
+ },
+ {
+  "lang": "es",
+  "id": "me",
+  "field": "capital",
+  "text": "Podgorica"
+ },
+ {
+  "lang": "es",
+  "id": "ma",
+  "field": "name",
+  "text": "Marruecos"
+ },
+ {
+  "lang": "es",
+  "id": "ma",
+  "field": "capital",
+  "text": "Rabat"
+ },
+ {
+  "lang": "es",
+  "id": "mz",
+  "field": "name",
+  "text": "Mozambique"
+ },
+ {
+  "lang": "es",
+  "id": "mz",
+  "field": "capital",
+  "text": "Maputo"
+ },
+ {
+  "lang": "es",
+  "id": "mm",
+  "field": "name",
+  "text": "Myanmar"
+ },
+ {
+  "lang": "es",
+  "id": "mm",
+  "field": "capital",
+  "text": "Naipyidó"
+ },
+ {
+  "lang": "es",
+  "id": "na",
+  "field": "name",
+  "text": "Namibia"
+ },
+ {
+  "lang": "es",
+  "id": "na",
+  "field": "capital",
+  "text": "Windhoek"
+ },
+ {
+  "lang": "es",
+  "id": "nr",
+  "field": "name",
+  "text": "Nauru"
+ },
+ {
+  "lang": "es",
+  "id": "nr",
+  "field": "capital",
+  "text": "Yaren"
+ },
+ {
+  "lang": "es",
+  "id": "np",
+  "field": "name",
+  "text": "Nepal"
+ },
+ {
+  "lang": "es",
+  "id": "np",
+  "field": "capital",
+  "text": "Katmandú"
+ },
+ {
+  "lang": "es",
+  "id": "nl",
+  "field": "name",
+  "text": "Países Bajos"
+ },
+ {
+  "lang": "es",
+  "id": "nl",
+  "field": "capital",
+  "text": "Ámsterdam"
+ },
+ {
+  "lang": "es",
+  "id": "nz",
+  "field": "name",
+  "text": "Nueva Zelanda"
+ },
+ {
+  "lang": "es",
+  "id": "nz",
+  "field": "capital",
+  "text": "Wellington"
+ },
+ {
+  "lang": "es",
+  "id": "ni",
+  "field": "name",
+  "text": "Nicaragua"
+ },
+ {
+  "lang": "es",
+  "id": "ni",
+  "field": "capital",
+  "text": "Managua"
+ },
+ {
+  "lang": "es",
+  "id": "ne",
+  "field": "name",
+  "text": "Níger"
+ },
+ {
+  "lang": "es",
+  "id": "ne",
+  "field": "capital",
+  "text": "Niamey"
+ },
+ {
+  "lang": "es",
+  "id": "ng",
+  "field": "name",
+  "text": "Nigeria"
+ },
+ {
+  "lang": "es",
+  "id": "ng",
+  "field": "capital",
+  "text": "Abuya"
+ },
+ {
+  "lang": "es",
+  "id": "kp",
+  "field": "name",
+  "text": "Corea del Norte"
+ },
+ {
+  "lang": "es",
+  "id": "kp",
+  "field": "capital",
+  "text": "Pionyang"
+ },
+ {
+  "lang": "es",
+  "id": "mk",
+  "field": "name",
+  "text": "Macedonia del Norte"
+ },
+ {
+  "lang": "es",
+  "id": "mk",
+  "field": "capital",
+  "text": "Skopie"
+ },
+ {
+  "lang": "es",
+  "id": "no",
+  "field": "name",
+  "text": "Noruega"
+ },
+ {
+  "lang": "es",
+  "id": "no",
+  "field": "capital",
+  "text": "Oslo"
+ },
+ {
+  "lang": "es",
+  "id": "om",
+  "field": "name",
+  "text": "Omán"
+ },
+ {
+  "lang": "es",
+  "id": "om",
+  "field": "capital",
+  "text": "Mascate"
+ },
+ {
+  "lang": "es",
+  "id": "pk",
+  "field": "name",
+  "text": "Pakistán"
+ },
+ {
+  "lang": "es",
+  "id": "pk",
+  "field": "capital",
+  "text": "Islamabad"
+ },
+ {
+  "lang": "es",
+  "id": "pw",
+  "field": "name",
+  "text": "Palau"
+ },
+ {
+  "lang": "es",
+  "id": "pw",
+  "field": "capital",
+  "text": "Ngerulmud"
+ },
+ {
+  "lang": "es",
+  "id": "pa",
+  "field": "name",
+  "text": "Panamá"
+ },
+ {
+  "lang": "es",
+  "id": "pa",
+  "field": "capital",
+  "text": "Ciudad de Panamá"
+ },
+ {
+  "lang": "es",
+  "id": "pg",
+  "field": "name",
+  "text": "Papúa Nueva Guinea"
+ },
+ {
+  "lang": "es",
+  "id": "pg",
+  "field": "capital",
+  "text": "Puerto Moresby"
+ },
+ {
+  "lang": "es",
+  "id": "py",
+  "field": "name",
+  "text": "Paraguay"
+ },
+ {
+  "lang": "es",
+  "id": "py",
+  "field": "capital",
+  "text": "Asunción"
+ },
+ {
+  "lang": "es",
+  "id": "pe",
+  "field": "name",
+  "text": "Perú"
+ },
+ {
+  "lang": "es",
+  "id": "pe",
+  "field": "capital",
+  "text": "Lima"
+ },
+ {
+  "lang": "es",
+  "id": "ph",
+  "field": "name",
+  "text": "Filipinas"
+ },
+ {
+  "lang": "es",
+  "id": "ph",
+  "field": "capital",
+  "text": "Manila"
+ },
+ {
+  "lang": "es",
+  "id": "pl",
+  "field": "name",
+  "text": "Polonia"
+ },
+ {
+  "lang": "es",
+  "id": "pl",
+  "field": "capital",
+  "text": "Varsovia"
+ },
+ {
+  "lang": "es",
+  "id": "pt",
+  "field": "name",
+  "text": "Portugal"
+ },
+ {
+  "lang": "es",
+  "id": "pt",
+  "field": "capital",
+  "text": "Lisboa"
+ },
+ {
+  "lang": "es",
+  "id": "qa",
+  "field": "name",
+  "text": "Catar"
+ },
+ {
+  "lang": "es",
+  "id": "qa",
+  "field": "capital",
+  "text": "Doha"
+ },
+ {
+  "lang": "es",
+  "id": "cg",
+  "field": "name",
+  "text": "República del Congo"
+ },
+ {
+  "lang": "es",
+  "id": "cg",
+  "field": "capital",
+  "text": "Brazzaville"
+ },
+ {
+  "lang": "es",
+  "id": "ro",
+  "field": "name",
+  "text": "Rumania"
+ },
+ {
+  "lang": "es",
+  "id": "ro",
+  "field": "capital",
+  "text": "Bucarest"
+ },
+ {
+  "lang": "es",
+  "id": "ru",
+  "field": "name",
+  "text": "Rusia"
+ },
+ {
+  "lang": "es",
+  "id": "ru",
+  "field": "capital",
+  "text": "Moscú"
+ },
+ {
+  "lang": "es",
+  "id": "rw",
+  "field": "name",
+  "text": "Ruanda"
+ },
+ {
+  "lang": "es",
+  "id": "rw",
+  "field": "capital",
+  "text": "Kigali"
+ },
+ {
+  "lang": "es",
+  "id": "kn",
+  "field": "name",
+  "text": "San Cristóbal y Nieves"
+ },
+ {
+  "lang": "es",
+  "id": "kn",
+  "field": "capital",
+  "text": "Basseterre"
+ },
+ {
+  "lang": "es",
+  "id": "lc",
+  "field": "name",
+  "text": "Santa Lucía"
+ },
+ {
+  "lang": "es",
+  "id": "lc",
+  "field": "capital",
+  "text": "Castries"
+ },
+ {
+  "lang": "es",
+  "id": "vc",
+  "field": "name",
+  "text": "San Vicente y Granadinas"
+ },
+ {
+  "lang": "es",
+  "id": "vc",
+  "field": "capital",
+  "text": "Kingstown"
+ },
+ {
+  "lang": "es",
+  "id": "ws",
+  "field": "name",
+  "text": "Samoa"
+ },
+ {
+  "lang": "es",
+  "id": "ws",
+  "field": "capital",
+  "text": "Apia"
+ },
+ {
+  "lang": "es",
+  "id": "sm",
+  "field": "name",
+  "text": "San Marino"
+ },
+ {
+  "lang": "es",
+  "id": "sm",
+  "field": "capital",
+  "text": "San Marino"
+ },
+ {
+  "lang": "es",
+  "id": "sa",
+  "field": "name",
+  "text": "Arabia Saudí"
+ },
+ {
+  "lang": "es",
+  "id": "sa",
+  "field": "capital",
+  "text": "Riad"
+ },
+ {
+  "lang": "es",
+  "id": "sn",
+  "field": "name",
+  "text": "Senegal"
+ },
+ {
+  "lang": "es",
+  "id": "sn",
+  "field": "capital",
+  "text": "Dakar"
+ },
+ {
+  "lang": "es",
+  "id": "rs",
+  "field": "name",
+  "text": "Serbia"
+ },
+ {
+  "lang": "es",
+  "id": "rs",
+  "field": "capital",
+  "text": "Belgrado"
+ },
+ {
+  "lang": "es",
+  "id": "sc",
+  "field": "name",
+  "text": "Seychelles"
+ },
+ {
+  "lang": "es",
+  "id": "sc",
+  "field": "capital",
+  "text": "Victoria"
+ },
+ {
+  "lang": "es",
+  "id": "sl",
+  "field": "name",
+  "text": "Sierra Leone"
+ },
+ {
+  "lang": "es",
+  "id": "sl",
+  "field": "capital",
+  "text": "Freetown"
+ },
+ {
+  "lang": "es",
+  "id": "sg",
+  "field": "name",
+  "text": "Singapur"
+ },
+ {
+  "lang": "es",
+  "id": "sg",
+  "field": "capital",
+  "text": "Singapur"
+ },
+ {
+  "lang": "es",
+  "id": "sk",
+  "field": "name",
+  "text": "República Eslovaca"
+ },
+ {
+  "lang": "es",
+  "id": "sk",
+  "field": "capital",
+  "text": "Bratislava"
+ },
+ {
+  "lang": "es",
+  "id": "si",
+  "field": "name",
+  "text": "Eslovenia"
+ },
+ {
+  "lang": "es",
+  "id": "si",
+  "field": "capital",
+  "text": "Liubliana"
+ },
+ {
+  "lang": "es",
+  "id": "sb",
+  "field": "name",
+  "text": "Islas Salomón"
+ },
+ {
+  "lang": "es",
+  "id": "sb",
+  "field": "capital",
+  "text": "Honiara"
+ },
+ {
+  "lang": "es",
+  "id": "so",
+  "field": "name",
+  "text": "Somalia"
+ },
+ {
+  "lang": "es",
+  "id": "so",
+  "field": "capital",
+  "text": "Mogadiscio"
+ },
+ {
+  "lang": "es",
+  "id": "za",
+  "field": "name",
+  "text": "República de Sudáfrica"
+ },
+ {
+  "lang": "es",
+  "id": "za",
+  "field": "capital",
+  "text": "Pretoria"
+ },
+ {
+  "lang": "es",
+  "id": "kr",
+  "field": "name",
+  "text": "Corea del Sur"
+ },
+ {
+  "lang": "es",
+  "id": "kr",
+  "field": "capital",
+  "text": "Seúl"
+ },
+ {
+  "lang": "es",
+  "id": "ss",
+  "field": "name",
+  "text": "Sudán del Sur"
+ },
+ {
+  "lang": "es",
+  "id": "ss",
+  "field": "capital",
+  "text": "Yuba"
+ },
+ {
+  "lang": "es",
+  "id": "es",
+  "field": "name",
+  "text": "España"
+ },
+ {
+  "lang": "es",
+  "id": "es",
+  "field": "capital",
+  "text": "Madrid"
+ },
+ {
+  "lang": "es",
+  "id": "lk",
+  "field": "name",
+  "text": "Sri Lanka"
+ },
+ {
+  "lang": "es",
+  "id": "lk",
+  "field": "capital",
+  "text": "Sri Jayawardenapura Kotte"
+ },
+ {
+  "lang": "es",
+  "id": "sd",
+  "field": "name",
+  "text": "Sudán"
+ },
+ {
+  "lang": "es",
+  "id": "sd",
+  "field": "capital",
+  "text": "Jartum"
+ },
+ {
+  "lang": "es",
+  "id": "sr",
+  "field": "name",
+  "text": "Surinam"
+ },
+ {
+  "lang": "es",
+  "id": "sr",
+  "field": "capital",
+  "text": "Paramaribo"
+ },
+ {
+  "lang": "es",
+  "id": "se",
+  "field": "name",
+  "text": "Suecia"
+ },
+ {
+  "lang": "es",
+  "id": "se",
+  "field": "capital",
+  "text": "Estocolmo"
+ },
+ {
+  "lang": "es",
+  "id": "ch",
+  "field": "name",
+  "text": "Suiza"
+ },
+ {
+  "lang": "es",
+  "id": "ch",
+  "field": "capital",
+  "text": "Berna"
+ },
+ {
+  "lang": "es",
+  "id": "sy",
+  "field": "name",
+  "text": "Siria"
+ },
+ {
+  "lang": "es",
+  "id": "sy",
+  "field": "capital",
+  "text": "Damasco"
+ },
+ {
+  "lang": "es",
+  "id": "st",
+  "field": "name",
+  "text": "Santo Tomé y Príncipe"
+ },
+ {
+  "lang": "es",
+  "id": "st",
+  "field": "capital",
+  "text": "Santo Tomé"
+ },
+ {
+  "lang": "es",
+  "id": "tj",
+  "field": "name",
+  "text": "Tayikistán"
+ },
+ {
+  "lang": "es",
+  "id": "tj",
+  "field": "capital",
+  "text": "Dusambé"
+ },
+ {
+  "lang": "es",
+  "id": "tz",
+  "field": "name",
+  "text": "Tanzania"
+ },
+ {
+  "lang": "es",
+  "id": "tz",
+  "field": "capital",
+  "text": "Dodoma"
+ },
+ {
+  "lang": "es",
+  "id": "th",
+  "field": "name",
+  "text": "Tailandia"
+ },
+ {
+  "lang": "es",
+  "id": "th",
+  "field": "capital",
+  "text": "Bangkok"
+ },
+ {
+  "lang": "es",
+  "id": "tl",
+  "field": "name",
+  "text": "Timor Oriental"
+ },
+ {
+  "lang": "es",
+  "id": "tl",
+  "field": "capital",
+  "text": "Dili"
+ },
+ {
+  "lang": "es",
+  "id": "tg",
+  "field": "name",
+  "text": "Togo"
+ },
+ {
+  "lang": "es",
+  "id": "tg",
+  "field": "capital",
+  "text": "Lomé"
+ },
+ {
+  "lang": "es",
+  "id": "to",
+  "field": "name",
+  "text": "Tonga"
+ },
+ {
+  "lang": "es",
+  "id": "to",
+  "field": "capital",
+  "text": "Nukualofa"
+ },
+ {
+  "lang": "es",
+  "id": "tt",
+  "field": "name",
+  "text": "Trinidad y Tobago"
+ },
+ {
+  "lang": "es",
+  "id": "tt",
+  "field": "capital",
+  "text": "Puerto España"
+ },
+ {
+  "lang": "es",
+  "id": "tn",
+  "field": "name",
+  "text": "Túnez"
+ },
+ {
+  "lang": "es",
+  "id": "tn",
+  "field": "capital",
+  "text": "Túnez"
+ },
+ {
+  "lang": "es",
+  "id": "tr",
+  "field": "name",
+  "text": "Turquía"
+ },
+ {
+  "lang": "es",
+  "id": "tr",
+  "field": "capital",
+  "text": "Ankara"
+ },
+ {
+  "lang": "es",
+  "id": "tm",
+  "field": "name",
+  "text": "Turkmenistán"
+ },
+ {
+  "lang": "es",
+  "id": "tm",
+  "field": "capital",
+  "text": "Asjabad"
+ },
+ {
+  "lang": "es",
+  "id": "tv",
+  "field": "name",
+  "text": "Tuvalu"
+ },
+ {
+  "lang": "es",
+  "id": "tv",
+  "field": "capital",
+  "text": "Funafuti"
+ },
+ {
+  "lang": "es",
+  "id": "ug",
+  "field": "name",
+  "text": "Uganda"
+ },
+ {
+  "lang": "es",
+  "id": "ug",
+  "field": "capital",
+  "text": "Kampala"
+ },
+ {
+  "lang": "es",
+  "id": "ua",
+  "field": "name",
+  "text": "Ucrania"
+ },
+ {
+  "lang": "es",
+  "id": "ua",
+  "field": "capital",
+  "text": "Kiev"
+ },
+ {
+  "lang": "es",
+  "id": "ae",
+  "field": "name",
+  "text": "Emiratos Árabes Unidos"
+ },
+ {
+  "lang": "es",
+  "id": "ae",
+  "field": "capital",
+  "text": "Abu Dhabi"
+ },
+ {
+  "lang": "es",
+  "id": "gb",
+  "field": "name",
+  "text": "Reino Unido"
+ },
+ {
+  "lang": "es",
+  "id": "gb",
+  "field": "capital",
+  "text": "Londres"
+ },
+ {
+  "lang": "es",
+  "id": "us",
+  "field": "name",
+  "text": "Estados Unidos"
+ },
+ {
+  "lang": "es",
+  "id": "us",
+  "field": "capital",
+  "text": "Washington D. C."
+ },
+ {
+  "lang": "es",
+  "id": "uy",
+  "field": "name",
+  "text": "Uruguay"
+ },
+ {
+  "lang": "es",
+  "id": "uy",
+  "field": "capital",
+  "text": "Montevideo"
+ },
+ {
+  "lang": "es",
+  "id": "uz",
+  "field": "name",
+  "text": "Uzbekistán"
+ },
+ {
+  "lang": "es",
+  "id": "uz",
+  "field": "capital",
+  "text": "Taskent"
+ },
+ {
+  "lang": "es",
+  "id": "vu",
+  "field": "name",
+  "text": "Vanuatu"
+ },
+ {
+  "lang": "es",
+  "id": "vu",
+  "field": "capital",
+  "text": "Port Vila"
+ },
+ {
+  "lang": "es",
+  "id": "va",
+  "field": "name",
+  "text": "Ciudad del Vaticano"
+ },
+ {
+  "lang": "es",
+  "id": "va",
+  "field": "capital",
+  "text": "Ciudad del Vaticano"
+ },
+ {
+  "lang": "es",
+  "id": "ve",
+  "field": "name",
+  "text": "Venezuela"
+ },
+ {
+  "lang": "es",
+  "id": "ve",
+  "field": "capital",
+  "text": "Caracas"
+ },
+ {
+  "lang": "es",
+  "id": "vn",
+  "field": "name",
+  "text": "Vietnam"
+ },
+ {
+  "lang": "es",
+  "id": "vn",
+  "field": "capital",
+  "text": "Hanói"
+ },
+ {
+  "lang": "es",
+  "id": "ye",
+  "field": "name",
+  "text": "Yemen"
+ },
+ {
+  "lang": "es",
+  "id": "ye",
+  "field": "capital",
+  "text": "Saná"
+ },
+ {
+  "lang": "es",
+  "id": "zm",
+  "field": "name",
+  "text": "Zambia"
+ },
+ {
+  "lang": "es",
+  "id": "zm",
+  "field": "capital",
+  "text": "Lusaka"
+ },
+ {
+  "lang": "es",
+  "id": "zw",
+  "field": "name",
+  "text": "Zimbabue"
+ },
+ {
+  "lang": "es",
+  "id": "zw",
+  "field": "capital",
+  "text": "Harare"
+ },
+ {
+  "lang": "fr",
+  "id": "af",
+  "field": "name",
+  "text": "Afghanistan"
+ },
+ {
+  "lang": "fr",
+  "id": "af",
+  "field": "capital",
+  "text": "Kaboul"
+ },
+ {
+  "lang": "fr",
+  "id": "al",
+  "field": "name",
+  "text": "Albanie"
+ },
+ {
+  "lang": "fr",
+  "id": "al",
+  "field": "capital",
+  "text": "Tirana"
+ },
+ {
+  "lang": "fr",
+  "id": "dz",
+  "field": "name",
+  "text": "Algérie"
+ },
+ {
+  "lang": "fr",
+  "id": "dz",
+  "field": "capital",
+  "text": "Alger"
+ },
+ {
+  "lang": "fr",
+  "id": "ad",
+  "field": "name",
+  "text": "Andorre"
+ },
+ {
+  "lang": "fr",
+  "id": "ad",
+  "field": "capital",
+  "text": "Andorre-la-Vieille"
+ },
+ {
+  "lang": "fr",
+  "id": "ao",
+  "field": "name",
+  "text": "Angola"
+ },
+ {
+  "lang": "fr",
+  "id": "ao",
+  "field": "capital",
+  "text": "Luanda"
+ },
+ {
+  "lang": "fr",
+  "id": "ag",
+  "field": "name",
+  "text": "Antigua-et-Barbuda"
+ },
+ {
+  "lang": "fr",
+  "id": "ag",
+  "field": "capital",
+  "text": "Saint John's"
+ },
+ {
+  "lang": "fr",
+  "id": "ar",
+  "field": "name",
+  "text": "Argentine"
+ },
+ {
+  "lang": "fr",
+  "id": "ar",
+  "field": "capital",
+  "text": "Buenos Aires"
+ },
+ {
+  "lang": "fr",
+  "id": "am",
+  "field": "name",
+  "text": "Arménie"
+ },
+ {
+  "lang": "fr",
+  "id": "am",
+  "field": "capital",
+  "text": "Erevan"
+ },
+ {
+  "lang": "fr",
+  "id": "au",
+  "field": "name",
+  "text": "Australie"
+ },
+ {
+  "lang": "fr",
+  "id": "au",
+  "field": "capital",
+  "text": "Canberra"
+ },
+ {
+  "lang": "fr",
+  "id": "at",
+  "field": "name",
+  "text": "Autriche"
+ },
+ {
+  "lang": "fr",
+  "id": "at",
+  "field": "capital",
+  "text": "Vienne"
+ },
+ {
+  "lang": "fr",
+  "id": "az",
+  "field": "name",
+  "text": "Azerbaïdjan"
+ },
+ {
+  "lang": "fr",
+  "id": "az",
+  "field": "capital",
+  "text": "Bakou"
+ },
+ {
+  "lang": "fr",
+  "id": "bs",
+  "field": "name",
+  "text": "Bahamas"
+ },
+ {
+  "lang": "fr",
+  "id": "bs",
+  "field": "capital",
+  "text": "Nassau"
+ },
+ {
+  "lang": "fr",
+  "id": "bh",
+  "field": "name",
+  "text": "Bahreïn"
+ },
+ {
+  "lang": "fr",
+  "id": "bh",
+  "field": "capital",
+  "text": "Manama"
+ },
+ {
+  "lang": "fr",
+  "id": "bd",
+  "field": "name",
+  "text": "Bangladesh"
+ },
+ {
+  "lang": "fr",
+  "id": "bd",
+  "field": "capital",
+  "text": "Dacca"
+ },
+ {
+  "lang": "fr",
+  "id": "bb",
+  "field": "name",
+  "text": "Barbade"
+ },
+ {
+  "lang": "fr",
+  "id": "bb",
+  "field": "capital",
+  "text": "Bridgetown"
+ },
+ {
+  "lang": "fr",
+  "id": "by",
+  "field": "name",
+  "text": "Biélorussie"
+ },
+ {
+  "lang": "fr",
+  "id": "by",
+  "field": "capital",
+  "text": "Minsk"
+ },
+ {
+  "lang": "fr",
+  "id": "be",
+  "field": "name",
+  "text": "Belgique"
+ },
+ {
+  "lang": "fr",
+  "id": "be",
+  "field": "capital",
+  "text": "Bruxelles"
+ },
+ {
+  "lang": "fr",
+  "id": "bz",
+  "field": "name",
+  "text": "Belize"
+ },
+ {
+  "lang": "fr",
+  "id": "bz",
+  "field": "capital",
+  "text": "Belmopan"
+ },
+ {
+  "lang": "fr",
+  "id": "bj",
+  "field": "name",
+  "text": "Bénin"
+ },
+ {
+  "lang": "fr",
+  "id": "bj",
+  "field": "capital",
+  "text": "Porto-Novo"
+ },
+ {
+  "lang": "fr",
+  "id": "bt",
+  "field": "name",
+  "text": "Bhoutan"
+ },
+ {
+  "lang": "fr",
+  "id": "bt",
+  "field": "capital",
+  "text": "Thimphou"
+ },
+ {
+  "lang": "fr",
+  "id": "bo",
+  "field": "name",
+  "text": "Bolivie"
+ },
+ {
+  "lang": "fr",
+  "id": "bo",
+  "field": "capital",
+  "text": "Sucre"
+ },
+ {
+  "lang": "fr",
+  "id": "ba",
+  "field": "name",
+  "text": "Bosnie-Herzégovine"
+ },
+ {
+  "lang": "fr",
+  "id": "ba",
+  "field": "capital",
+  "text": "Sarajevo"
+ },
+ {
+  "lang": "fr",
+  "id": "bw",
+  "field": "name",
+  "text": "Botswana"
+ },
+ {
+  "lang": "fr",
+  "id": "bw",
+  "field": "capital",
+  "text": "Gaborone"
+ },
+ {
+  "lang": "fr",
+  "id": "br",
+  "field": "name",
+  "text": "Brésil"
+ },
+ {
+  "lang": "fr",
+  "id": "br",
+  "field": "capital",
+  "text": "Brasilia"
+ },
+ {
+  "lang": "fr",
+  "id": "bn",
+  "field": "name",
+  "text": "Brunei"
+ },
+ {
+  "lang": "fr",
+  "id": "bn",
+  "field": "capital",
+  "text": "Bandar Seri Begawan"
+ },
+ {
+  "lang": "fr",
+  "id": "bg",
+  "field": "name",
+  "text": "Bulgarie"
+ },
+ {
+  "lang": "fr",
+  "id": "bg",
+  "field": "capital",
+  "text": "Sofia"
+ },
+ {
+  "lang": "fr",
+  "id": "bf",
+  "field": "name",
+  "text": "Burkina Faso"
+ },
+ {
+  "lang": "fr",
+  "id": "bf",
+  "field": "capital",
+  "text": "Ouagadougou"
+ },
+ {
+  "lang": "fr",
+  "id": "bi",
+  "field": "name",
+  "text": "Burundi"
+ },
+ {
+  "lang": "fr",
+  "id": "bi",
+  "field": "capital",
+  "text": "Gitega"
+ },
+ {
+  "lang": "fr",
+  "id": "kh",
+  "field": "name",
+  "text": "Cambodge"
+ },
+ {
+  "lang": "fr",
+  "id": "kh",
+  "field": "capital",
+  "text": "Phnom Penh"
+ },
+ {
+  "lang": "fr",
+  "id": "cm",
+  "field": "name",
+  "text": "Cameroun"
+ },
+ {
+  "lang": "fr",
+  "id": "cm",
+  "field": "capital",
+  "text": "Yaoundé"
+ },
+ {
+  "lang": "fr",
+  "id": "ca",
+  "field": "name",
+  "text": "Canada"
+ },
+ {
+  "lang": "fr",
+  "id": "ca",
+  "field": "capital",
+  "text": "Ottawa"
+ },
+ {
+  "lang": "fr",
+  "id": "cv",
+  "field": "name",
+  "text": "Cap-Vert"
+ },
+ {
+  "lang": "fr",
+  "id": "cv",
+  "field": "capital",
+  "text": "Praia"
+ },
+ {
+  "lang": "fr",
+  "id": "cf",
+  "field": "name",
+  "text": "République centrafricaine"
+ },
+ {
+  "lang": "fr",
+  "id": "cf",
+  "field": "capital",
+  "text": "Bangui"
+ },
+ {
+  "lang": "fr",
+  "id": "td",
+  "field": "name",
+  "text": "Tchad"
+ },
+ {
+  "lang": "fr",
+  "id": "td",
+  "field": "capital",
+  "text": "N'Djaména"
+ },
+ {
+  "lang": "fr",
+  "id": "cl",
+  "field": "name",
+  "text": "Chili"
+ },
+ {
+  "lang": "fr",
+  "id": "cl",
+  "field": "capital",
+  "text": "Santiago"
+ },
+ {
+  "lang": "fr",
+  "id": "cn",
+  "field": "name",
+  "text": "Chine"
+ },
+ {
+  "lang": "fr",
+  "id": "cn",
+  "field": "capital",
+  "text": "Pékin"
+ },
+ {
+  "lang": "fr",
+  "id": "co",
+  "field": "name",
+  "text": "Colombie"
+ },
+ {
+  "lang": "fr",
+  "id": "co",
+  "field": "capital",
+  "text": "Bogota"
+ },
+ {
+  "lang": "fr",
+  "id": "km",
+  "field": "name",
+  "text": "Comores"
+ },
+ {
+  "lang": "fr",
+  "id": "km",
+  "field": "capital",
+  "text": "Moroni"
+ },
+ {
+  "lang": "fr",
+  "id": "cr",
+  "field": "name",
+  "text": "Costa Rica"
+ },
+ {
+  "lang": "fr",
+  "id": "cr",
+  "field": "capital",
+  "text": "San José"
+ },
+ {
+  "lang": "fr",
+  "id": "hr",
+  "field": "name",
+  "text": "Croatie"
+ },
+ {
+  "lang": "fr",
+  "id": "hr",
+  "field": "capital",
+  "text": "Zagreb"
+ },
+ {
+  "lang": "fr",
+  "id": "cu",
+  "field": "name",
+  "text": "Cuba"
+ },
+ {
+  "lang": "fr",
+  "id": "cu",
+  "field": "capital",
+  "text": "La Havane"
+ },
+ {
+  "lang": "fr",
+  "id": "cy",
+  "field": "name",
+  "text": "Chypre"
+ },
+ {
+  "lang": "fr",
+  "id": "cy",
+  "field": "capital",
+  "text": "Nicosie"
+ },
+ {
+  "lang": "fr",
+  "id": "cz",
+  "field": "name",
+  "text": "Tchéquie"
+ },
+ {
+  "lang": "fr",
+  "id": "cz",
+  "field": "capital",
+  "text": "Prague"
+ },
+ {
+  "lang": "fr",
+  "id": "cd",
+  "field": "name",
+  "text": "République démocratique du Congo"
+ },
+ {
+  "lang": "fr",
+  "id": "cd",
+  "field": "capital",
+  "text": "Kinshasa"
+ },
+ {
+  "lang": "fr",
+  "id": "dk",
+  "field": "name",
+  "text": "Danemark"
+ },
+ {
+  "lang": "fr",
+  "id": "dk",
+  "field": "capital",
+  "text": "Copenhague"
+ },
+ {
+  "lang": "fr",
+  "id": "dj",
+  "field": "name",
+  "text": "Djibouti"
+ },
+ {
+  "lang": "fr",
+  "id": "dj",
+  "field": "capital",
+  "text": "Djibouti"
+ },
+ {
+  "lang": "fr",
+  "id": "dm",
+  "field": "name",
+  "text": "Dominique"
+ },
+ {
+  "lang": "fr",
+  "id": "dm",
+  "field": "capital",
+  "text": "Roseau"
+ },
+ {
+  "lang": "fr",
+  "id": "do",
+  "field": "name",
+  "text": "République dominicaine"
+ },
+ {
+  "lang": "fr",
+  "id": "do",
+  "field": "capital",
+  "text": "Saint-Domingue"
+ },
+ {
+  "lang": "fr",
+  "id": "ec",
+  "field": "name",
+  "text": "Équateur"
+ },
+ {
+  "lang": "fr",
+  "id": "ec",
+  "field": "capital",
+  "text": "Quito"
+ },
+ {
+  "lang": "fr",
+  "id": "eg",
+  "field": "name",
+  "text": "Égypte"
+ },
+ {
+  "lang": "fr",
+  "id": "eg",
+  "field": "capital",
+  "text": "Le Caire"
+ },
+ {
+  "lang": "fr",
+  "id": "sv",
+  "field": "name",
+  "text": "Salvador"
+ },
+ {
+  "lang": "fr",
+  "id": "sv",
+  "field": "capital",
+  "text": "San Salvador"
+ },
+ {
+  "lang": "fr",
+  "id": "gq",
+  "field": "name",
+  "text": "Guinée équatoriale"
+ },
+ {
+  "lang": "fr",
+  "id": "gq",
+  "field": "capital",
+  "text": "Ciudad de la Paz"
+ },
+ {
+  "lang": "fr",
+  "id": "er",
+  "field": "name",
+  "text": "Érythrée"
+ },
+ {
+  "lang": "fr",
+  "id": "er",
+  "field": "capital",
+  "text": "Asmara"
+ },
+ {
+  "lang": "fr",
+  "id": "ee",
+  "field": "name",
+  "text": "Estonie"
+ },
+ {
+  "lang": "fr",
+  "id": "ee",
+  "field": "capital",
+  "text": "Tallinn"
+ },
+ {
+  "lang": "fr",
+  "id": "sz",
+  "field": "name",
+  "text": "Eswatini"
+ },
+ {
+  "lang": "fr",
+  "id": "sz",
+  "field": "capital",
+  "text": "Mbabane"
+ },
+ {
+  "lang": "fr",
+  "id": "et",
+  "field": "name",
+  "text": "Éthiopie"
+ },
+ {
+  "lang": "fr",
+  "id": "et",
+  "field": "capital",
+  "text": "Addis-Abeba"
+ },
+ {
+  "lang": "fr",
+  "id": "fj",
+  "field": "name",
+  "text": "Fidji"
+ },
+ {
+  "lang": "fr",
+  "id": "fj",
+  "field": "capital",
+  "text": "Suva"
+ },
+ {
+  "lang": "fr",
+  "id": "fi",
+  "field": "name",
+  "text": "Finlande"
+ },
+ {
+  "lang": "fr",
+  "id": "fi",
+  "field": "capital",
+  "text": "Helsinki"
+ },
+ {
+  "lang": "fr",
+  "id": "fr",
+  "field": "name",
+  "text": "France"
+ },
+ {
+  "lang": "fr",
+  "id": "fr",
+  "field": "capital",
+  "text": "Paris"
+ },
+ {
+  "lang": "fr",
+  "id": "ga",
+  "field": "name",
+  "text": "Gabon"
+ },
+ {
+  "lang": "fr",
+  "id": "ga",
+  "field": "capital",
+  "text": "Libreville"
+ },
+ {
+  "lang": "fr",
+  "id": "gm",
+  "field": "name",
+  "text": "Gambie"
+ },
+ {
+  "lang": "fr",
+  "id": "gm",
+  "field": "capital",
+  "text": "Banjul"
+ },
+ {
+  "lang": "fr",
+  "id": "ge",
+  "field": "name",
+  "text": "Géorgie"
+ },
+ {
+  "lang": "fr",
+  "id": "ge",
+  "field": "capital",
+  "text": "Tbilissi"
+ },
+ {
+  "lang": "fr",
+  "id": "de",
+  "field": "name",
+  "text": "Allemagne"
+ },
+ {
+  "lang": "fr",
+  "id": "de",
+  "field": "capital",
+  "text": "Berlin"
+ },
+ {
+  "lang": "fr",
+  "id": "gh",
+  "field": "name",
+  "text": "Ghana"
+ },
+ {
+  "lang": "fr",
+  "id": "gh",
+  "field": "capital",
+  "text": "Accra"
+ },
+ {
+  "lang": "fr",
+  "id": "gr",
+  "field": "name",
+  "text": "Grèce"
+ },
+ {
+  "lang": "fr",
+  "id": "gr",
+  "field": "capital",
+  "text": "Athènes"
+ },
+ {
+  "lang": "fr",
+  "id": "gd",
+  "field": "name",
+  "text": "Grenade"
+ },
+ {
+  "lang": "fr",
+  "id": "gd",
+  "field": "capital",
+  "text": "Saint-Georges"
+ },
+ {
+  "lang": "fr",
+  "id": "gt",
+  "field": "name",
+  "text": "Guatemala"
+ },
+ {
+  "lang": "fr",
+  "id": "gt",
+  "field": "capital",
+  "text": "Guatemala"
+ },
+ {
+  "lang": "fr",
+  "id": "gn",
+  "field": "name",
+  "text": "Guinée"
+ },
+ {
+  "lang": "fr",
+  "id": "gn",
+  "field": "capital",
+  "text": "Conakry"
+ },
+ {
+  "lang": "fr",
+  "id": "gw",
+  "field": "name",
+  "text": "Guinée-Bissau"
+ },
+ {
+  "lang": "fr",
+  "id": "gw",
+  "field": "capital",
+  "text": "Bissau"
+ },
+ {
+  "lang": "fr",
+  "id": "gy",
+  "field": "name",
+  "text": "Guyana"
+ },
+ {
+  "lang": "fr",
+  "id": "gy",
+  "field": "capital",
+  "text": "Georgetown"
+ },
+ {
+  "lang": "fr",
+  "id": "ht",
+  "field": "name",
+  "text": "Haïti"
+ },
+ {
+  "lang": "fr",
+  "id": "ht",
+  "field": "capital",
+  "text": "Port-au-Prince"
+ },
+ {
+  "lang": "fr",
+  "id": "hn",
+  "field": "name",
+  "text": "Honduras"
+ },
+ {
+  "lang": "fr",
+  "id": "hn",
+  "field": "capital",
+  "text": "Tegucigalpa"
+ },
+ {
+  "lang": "fr",
+  "id": "hu",
+  "field": "name",
+  "text": "Hongrie"
+ },
+ {
+  "lang": "fr",
+  "id": "hu",
+  "field": "capital",
+  "text": "Budapest"
+ },
+ {
+  "lang": "fr",
+  "id": "is",
+  "field": "name",
+  "text": "Islande"
+ },
+ {
+  "lang": "fr",
+  "id": "is",
+  "field": "capital",
+  "text": "Reykjavik"
+ },
+ {
+  "lang": "fr",
+  "id": "in",
+  "field": "name",
+  "text": "Inde"
+ },
+ {
+  "lang": "fr",
+  "id": "in",
+  "field": "capital",
+  "text": "New Delhi"
+ },
+ {
+  "lang": "fr",
+  "id": "id",
+  "field": "name",
+  "text": "Indonésie"
+ },
+ {
+  "lang": "fr",
+  "id": "id",
+  "field": "capital",
+  "text": "Jakarta"
+ },
+ {
+  "lang": "fr",
+  "id": "ir",
+  "field": "name",
+  "text": "Iran"
+ },
+ {
+  "lang": "fr",
+  "id": "ir",
+  "field": "capital",
+  "text": "Téhéran"
+ },
+ {
+  "lang": "fr",
+  "id": "iq",
+  "field": "name",
+  "text": "Irak"
+ },
+ {
+  "lang": "fr",
+  "id": "iq",
+  "field": "capital",
+  "text": "Bagdad"
+ },
+ {
+  "lang": "fr",
+  "id": "ie",
+  "field": "name",
+  "text": "Irlande"
+ },
+ {
+  "lang": "fr",
+  "id": "ie",
+  "field": "capital",
+  "text": "Dublin"
+ },
+ {
+  "lang": "fr",
+  "id": "il",
+  "field": "name",
+  "text": "Israël"
+ },
+ {
+  "lang": "fr",
+  "id": "il",
+  "field": "capital",
+  "text": "Jérusalem"
+ },
+ {
+  "lang": "fr",
+  "id": "it",
+  "field": "name",
+  "text": "Italie"
+ },
+ {
+  "lang": "fr",
+  "id": "it",
+  "field": "capital",
+  "text": "Rome"
+ },
+ {
+  "lang": "fr",
+  "id": "ci",
+  "field": "name",
+  "text": "Côte d’Ivoire"
+ },
+ {
+  "lang": "fr",
+  "id": "ci",
+  "field": "capital",
+  "text": "Yamoussoukro"
+ },
+ {
+  "lang": "fr",
+  "id": "jm",
+  "field": "name",
+  "text": "Jamaïque"
+ },
+ {
+  "lang": "fr",
+  "id": "jm",
+  "field": "capital",
+  "text": "Kingston"
+ },
+ {
+  "lang": "fr",
+  "id": "jp",
+  "field": "name",
+  "text": "Japon"
+ },
+ {
+  "lang": "fr",
+  "id": "jp",
+  "field": "capital",
+  "text": "Tokyo"
+ },
+ {
+  "lang": "fr",
+  "id": "jo",
+  "field": "name",
+  "text": "Jordanie"
+ },
+ {
+  "lang": "fr",
+  "id": "jo",
+  "field": "capital",
+  "text": "Amman"
+ },
+ {
+  "lang": "fr",
+  "id": "kz",
+  "field": "name",
+  "text": "Kazakhstan"
+ },
+ {
+  "lang": "fr",
+  "id": "kz",
+  "field": "capital",
+  "text": "Astana"
+ },
+ {
+  "lang": "fr",
+  "id": "ke",
+  "field": "name",
+  "text": "Kenya"
+ },
+ {
+  "lang": "fr",
+  "id": "ke",
+  "field": "capital",
+  "text": "Nairobi"
+ },
+ {
+  "lang": "fr",
+  "id": "ki",
+  "field": "name",
+  "text": "Kiribati"
+ },
+ {
+  "lang": "fr",
+  "id": "ki",
+  "field": "capital",
+  "text": "Tarawa-Sud"
+ },
+ {
+  "lang": "fr",
+  "id": "kw",
+  "field": "name",
+  "text": "Koweït"
+ },
+ {
+  "lang": "fr",
+  "id": "kw",
+  "field": "capital",
+  "text": "Koweït"
+ },
+ {
+  "lang": "fr",
+  "id": "kg",
+  "field": "name",
+  "text": "Kirghizistan"
+ },
+ {
+  "lang": "fr",
+  "id": "kg",
+  "field": "capital",
+  "text": "Bichkek"
+ },
+ {
+  "lang": "fr",
+  "id": "la",
+  "field": "name",
+  "text": "Laos"
+ },
+ {
+  "lang": "fr",
+  "id": "la",
+  "field": "capital",
+  "text": "Vientiane"
+ },
+ {
+  "lang": "fr",
+  "id": "lv",
+  "field": "name",
+  "text": "Lettonie"
+ },
+ {
+  "lang": "fr",
+  "id": "lv",
+  "field": "capital",
+  "text": "Riga"
+ },
+ {
+  "lang": "fr",
+  "id": "lb",
+  "field": "name",
+  "text": "Liban"
+ },
+ {
+  "lang": "fr",
+  "id": "lb",
+  "field": "capital",
+  "text": "Beyrouth"
+ },
+ {
+  "lang": "fr",
+  "id": "ls",
+  "field": "name",
+  "text": "Lesotho"
+ },
+ {
+  "lang": "fr",
+  "id": "ls",
+  "field": "capital",
+  "text": "Maseru"
+ },
+ {
+  "lang": "fr",
+  "id": "lr",
+  "field": "name",
+  "text": "Liberia"
+ },
+ {
+  "lang": "fr",
+  "id": "lr",
+  "field": "capital",
+  "text": "Monrovia"
+ },
+ {
+  "lang": "fr",
+  "id": "ly",
+  "field": "name",
+  "text": "Libye"
+ },
+ {
+  "lang": "fr",
+  "id": "ly",
+  "field": "capital",
+  "text": "Tripoli"
+ },
+ {
+  "lang": "fr",
+  "id": "li",
+  "field": "name",
+  "text": "Liechtenstein"
+ },
+ {
+  "lang": "fr",
+  "id": "li",
+  "field": "capital",
+  "text": "Vaduz"
+ },
+ {
+  "lang": "fr",
+  "id": "lt",
+  "field": "name",
+  "text": "Lituanie"
+ },
+ {
+  "lang": "fr",
+  "id": "lt",
+  "field": "capital",
+  "text": "Vilnius"
+ },
+ {
+  "lang": "fr",
+  "id": "lu",
+  "field": "name",
+  "text": "Luxembourg"
+ },
+ {
+  "lang": "fr",
+  "id": "lu",
+  "field": "capital",
+  "text": "Luxembourg"
+ },
+ {
+  "lang": "fr",
+  "id": "mg",
+  "field": "name",
+  "text": "Madagascar"
+ },
+ {
+  "lang": "fr",
+  "id": "mg",
+  "field": "capital",
+  "text": "Antananarivo"
+ },
+ {
+  "lang": "fr",
+  "id": "mw",
+  "field": "name",
+  "text": "Malawi"
+ },
+ {
+  "lang": "fr",
+  "id": "mw",
+  "field": "capital",
+  "text": "Lilongwe"
+ },
+ {
+  "lang": "fr",
+  "id": "my",
+  "field": "name",
+  "text": "Malaisie"
+ },
+ {
+  "lang": "fr",
+  "id": "my",
+  "field": "capital",
+  "text": "Kuala Lumpur"
+ },
+ {
+  "lang": "fr",
+  "id": "mv",
+  "field": "name",
+  "text": "Maldives"
+ },
+ {
+  "lang": "fr",
+  "id": "mv",
+  "field": "capital",
+  "text": "Malé"
+ },
+ {
+  "lang": "fr",
+  "id": "ml",
+  "field": "name",
+  "text": "Mali"
+ },
+ {
+  "lang": "fr",
+  "id": "ml",
+  "field": "capital",
+  "text": "Bamako"
+ },
+ {
+  "lang": "fr",
+  "id": "mt",
+  "field": "name",
+  "text": "Malte"
+ },
+ {
+  "lang": "fr",
+  "id": "mt",
+  "field": "capital",
+  "text": "La Valette"
+ },
+ {
+  "lang": "fr",
+  "id": "mh",
+  "field": "name",
+  "text": "Îles Marshall"
+ },
+ {
+  "lang": "fr",
+  "id": "mh",
+  "field": "capital",
+  "text": "Majuro"
+ },
+ {
+  "lang": "fr",
+  "id": "mr",
+  "field": "name",
+  "text": "Mauritanie"
+ },
+ {
+  "lang": "fr",
+  "id": "mr",
+  "field": "capital",
+  "text": "Nouakchott"
+ },
+ {
+  "lang": "fr",
+  "id": "mu",
+  "field": "name",
+  "text": "Île Maurice"
+ },
+ {
+  "lang": "fr",
+  "id": "mu",
+  "field": "capital",
+  "text": "Port-Louis"
+ },
+ {
+  "lang": "fr",
+  "id": "mx",
+  "field": "name",
+  "text": "Mexique"
+ },
+ {
+  "lang": "fr",
+  "id": "mx",
+  "field": "capital",
+  "text": "Mexico"
+ },
+ {
+  "lang": "fr",
+  "id": "fm",
+  "field": "name",
+  "text": "Micronésie"
+ },
+ {
+  "lang": "fr",
+  "id": "fm",
+  "field": "capital",
+  "text": "Palikir"
+ },
+ {
+  "lang": "fr",
+  "id": "md",
+  "field": "name",
+  "text": "Moldavie"
+ },
+ {
+  "lang": "fr",
+  "id": "md",
+  "field": "capital",
+  "text": "Chișinău"
+ },
+ {
+  "lang": "fr",
+  "id": "mc",
+  "field": "name",
+  "text": "Monaco"
+ },
+ {
+  "lang": "fr",
+  "id": "mc",
+  "field": "capital",
+  "text": "Monaco"
+ },
+ {
+  "lang": "fr",
+  "id": "mn",
+  "field": "name",
+  "text": "Mongolie"
+ },
+ {
+  "lang": "fr",
+  "id": "mn",
+  "field": "capital",
+  "text": "Oulan-Bator"
+ },
+ {
+  "lang": "fr",
+  "id": "me",
+  "field": "name",
+  "text": "Monténégro"
+ },
+ {
+  "lang": "fr",
+  "id": "me",
+  "field": "capital",
+  "text": "Podgorica"
+ },
+ {
+  "lang": "fr",
+  "id": "ma",
+  "field": "name",
+  "text": "Maroc"
+ },
+ {
+  "lang": "fr",
+  "id": "ma",
+  "field": "capital",
+  "text": "Rabat"
+ },
+ {
+  "lang": "fr",
+  "id": "mz",
+  "field": "name",
+  "text": "Mozambique"
+ },
+ {
+  "lang": "fr",
+  "id": "mz",
+  "field": "capital",
+  "text": "Maputo"
+ },
+ {
+  "lang": "fr",
+  "id": "mm",
+  "field": "name",
+  "text": "Birmanie"
+ },
+ {
+  "lang": "fr",
+  "id": "mm",
+  "field": "capital",
+  "text": "Naypyidaw"
+ },
+ {
+  "lang": "fr",
+  "id": "na",
+  "field": "name",
+  "text": "Namibie"
+ },
+ {
+  "lang": "fr",
+  "id": "na",
+  "field": "capital",
+  "text": "Windhoek"
+ },
+ {
+  "lang": "fr",
+  "id": "nr",
+  "field": "name",
+  "text": "Nauru"
+ },
+ {
+  "lang": "fr",
+  "id": "nr",
+  "field": "capital",
+  "text": "Yaren"
+ },
+ {
+  "lang": "fr",
+  "id": "np",
+  "field": "name",
+  "text": "Népal"
+ },
+ {
+  "lang": "fr",
+  "id": "np",
+  "field": "capital",
+  "text": "Katmandou"
+ },
+ {
+  "lang": "fr",
+  "id": "nl",
+  "field": "name",
+  "text": "Pays-Bas"
+ },
+ {
+  "lang": "fr",
+  "id": "nl",
+  "field": "capital",
+  "text": "Amsterdam"
+ },
+ {
+  "lang": "fr",
+  "id": "nz",
+  "field": "name",
+  "text": "Nouvelle-Zélande"
+ },
+ {
+  "lang": "fr",
+  "id": "nz",
+  "field": "capital",
+  "text": "Wellington"
+ },
+ {
+  "lang": "fr",
+  "id": "ni",
+  "field": "name",
+  "text": "Nicaragua"
+ },
+ {
+  "lang": "fr",
+  "id": "ni",
+  "field": "capital",
+  "text": "Managua"
+ },
+ {
+  "lang": "fr",
+  "id": "ne",
+  "field": "name",
+  "text": "Niger"
+ },
+ {
+  "lang": "fr",
+  "id": "ne",
+  "field": "capital",
+  "text": "Niamey"
+ },
+ {
+  "lang": "fr",
+  "id": "ng",
+  "field": "name",
+  "text": "Nigéria"
+ },
+ {
+  "lang": "fr",
+  "id": "ng",
+  "field": "capital",
+  "text": "Abuja"
+ },
+ {
+  "lang": "fr",
+  "id": "kp",
+  "field": "name",
+  "text": "Corée du Nord"
+ },
+ {
+  "lang": "fr",
+  "id": "kp",
+  "field": "capital",
+  "text": "Pyongyang"
+ },
+ {
+  "lang": "fr",
+  "id": "mk",
+  "field": "name",
+  "text": "Macédoine du Nord"
+ },
+ {
+  "lang": "fr",
+  "id": "mk",
+  "field": "capital",
+  "text": "Skopje"
+ },
+ {
+  "lang": "fr",
+  "id": "no",
+  "field": "name",
+  "text": "Norvège"
+ },
+ {
+  "lang": "fr",
+  "id": "no",
+  "field": "capital",
+  "text": "Oslo"
+ },
+ {
+  "lang": "fr",
+  "id": "om",
+  "field": "name",
+  "text": "Oman"
+ },
+ {
+  "lang": "fr",
+  "id": "om",
+  "field": "capital",
+  "text": "Mascate"
+ },
+ {
+  "lang": "fr",
+  "id": "pk",
+  "field": "name",
+  "text": "Pakistan"
+ },
+ {
+  "lang": "fr",
+  "id": "pk",
+  "field": "capital",
+  "text": "Islamabad"
+ },
+ {
+  "lang": "fr",
+  "id": "pw",
+  "field": "name",
+  "text": "Palaos (Palau)"
+ },
+ {
+  "lang": "fr",
+  "id": "pw",
+  "field": "capital",
+  "text": "Ngerulmud"
+ },
+ {
+  "lang": "fr",
+  "id": "pa",
+  "field": "name",
+  "text": "Panama"
+ },
+ {
+  "lang": "fr",
+  "id": "pa",
+  "field": "capital",
+  "text": "Panama"
+ },
+ {
+  "lang": "fr",
+  "id": "pg",
+  "field": "name",
+  "text": "Papouasie-Nouvelle-Guinée"
+ },
+ {
+  "lang": "fr",
+  "id": "pg",
+  "field": "capital",
+  "text": "Port Moresby"
+ },
+ {
+  "lang": "fr",
+  "id": "py",
+  "field": "name",
+  "text": "Paraguay"
+ },
+ {
+  "lang": "fr",
+  "id": "py",
+  "field": "capital",
+  "text": "Asuncion"
+ },
+ {
+  "lang": "fr",
+  "id": "pe",
+  "field": "name",
+  "text": "Pérou"
+ },
+ {
+  "lang": "fr",
+  "id": "pe",
+  "field": "capital",
+  "text": "Lima"
+ },
+ {
+  "lang": "fr",
+  "id": "ph",
+  "field": "name",
+  "text": "Philippines"
+ },
+ {
+  "lang": "fr",
+  "id": "ph",
+  "field": "capital",
+  "text": "Manille"
+ },
+ {
+  "lang": "fr",
+  "id": "pl",
+  "field": "name",
+  "text": "Pologne"
+ },
+ {
+  "lang": "fr",
+  "id": "pl",
+  "field": "capital",
+  "text": "Varsovie"
+ },
+ {
+  "lang": "fr",
+  "id": "pt",
+  "field": "name",
+  "text": "Portugal"
+ },
+ {
+  "lang": "fr",
+  "id": "pt",
+  "field": "capital",
+  "text": "Lisbonne"
+ },
+ {
+  "lang": "fr",
+  "id": "qa",
+  "field": "name",
+  "text": "Qatar"
+ },
+ {
+  "lang": "fr",
+  "id": "qa",
+  "field": "capital",
+  "text": "Doha"
+ },
+ {
+  "lang": "fr",
+  "id": "cg",
+  "field": "name",
+  "text": "République du Congo"
+ },
+ {
+  "lang": "fr",
+  "id": "cg",
+  "field": "capital",
+  "text": "Brazzaville"
+ },
+ {
+  "lang": "fr",
+  "id": "ro",
+  "field": "name",
+  "text": "Roumanie"
+ },
+ {
+  "lang": "fr",
+  "id": "ro",
+  "field": "capital",
+  "text": "Bucarest"
+ },
+ {
+  "lang": "fr",
+  "id": "ru",
+  "field": "name",
+  "text": "Russie"
+ },
+ {
+  "lang": "fr",
+  "id": "ru",
+  "field": "capital",
+  "text": "Moscou"
+ },
+ {
+  "lang": "fr",
+  "id": "rw",
+  "field": "name",
+  "text": "Rwanda"
+ },
+ {
+  "lang": "fr",
+  "id": "rw",
+  "field": "capital",
+  "text": "Kigali"
+ },
+ {
+  "lang": "fr",
+  "id": "kn",
+  "field": "name",
+  "text": "Saint-Christophe-et-Niévès"
+ },
+ {
+  "lang": "fr",
+  "id": "kn",
+  "field": "capital",
+  "text": "Basseterre"
+ },
+ {
+  "lang": "fr",
+  "id": "lc",
+  "field": "name",
+  "text": "Sainte-Lucie"
+ },
+ {
+  "lang": "fr",
+  "id": "lc",
+  "field": "capital",
+  "text": "Castries"
+ },
+ {
+  "lang": "fr",
+  "id": "vc",
+  "field": "name",
+  "text": "Saint-Vincent-et-les-Grenadines"
+ },
+ {
+  "lang": "fr",
+  "id": "vc",
+  "field": "capital",
+  "text": "Kingstown"
+ },
+ {
+  "lang": "fr",
+  "id": "ws",
+  "field": "name",
+  "text": "Samoa"
+ },
+ {
+  "lang": "fr",
+  "id": "ws",
+  "field": "capital",
+  "text": "Apia"
+ },
+ {
+  "lang": "fr",
+  "id": "sm",
+  "field": "name",
+  "text": "Saint-Marin"
+ },
+ {
+  "lang": "fr",
+  "id": "sm",
+  "field": "capital",
+  "text": "Saint-Marin"
+ },
+ {
+  "lang": "fr",
+  "id": "sa",
+  "field": "name",
+  "text": "Arabie Saoudite"
+ },
+ {
+  "lang": "fr",
+  "id": "sa",
+  "field": "capital",
+  "text": "Riyad"
+ },
+ {
+  "lang": "fr",
+  "id": "sn",
+  "field": "name",
+  "text": "Sénégal"
+ },
+ {
+  "lang": "fr",
+  "id": "sn",
+  "field": "capital",
+  "text": "Dakar"
+ },
+ {
+  "lang": "fr",
+  "id": "rs",
+  "field": "name",
+  "text": "Serbie"
+ },
+ {
+  "lang": "fr",
+  "id": "rs",
+  "field": "capital",
+  "text": "Belgrade"
+ },
+ {
+  "lang": "fr",
+  "id": "sc",
+  "field": "name",
+  "text": "Seychelles"
+ },
+ {
+  "lang": "fr",
+  "id": "sc",
+  "field": "capital",
+  "text": "Victoria"
+ },
+ {
+  "lang": "fr",
+  "id": "sl",
+  "field": "name",
+  "text": "Sierra Leone"
+ },
+ {
+  "lang": "fr",
+  "id": "sl",
+  "field": "capital",
+  "text": "Freetown"
+ },
+ {
+  "lang": "fr",
+  "id": "sg",
+  "field": "name",
+  "text": "Singapour"
+ },
+ {
+  "lang": "fr",
+  "id": "sg",
+  "field": "capital",
+  "text": "Singapour"
+ },
+ {
+  "lang": "fr",
+  "id": "sk",
+  "field": "name",
+  "text": "Slovaquie"
+ },
+ {
+  "lang": "fr",
+  "id": "sk",
+  "field": "capital",
+  "text": "Bratislava"
+ },
+ {
+  "lang": "fr",
+  "id": "si",
+  "field": "name",
+  "text": "Slovénie"
+ },
+ {
+  "lang": "fr",
+  "id": "si",
+  "field": "capital",
+  "text": "Ljubljana"
+ },
+ {
+  "lang": "fr",
+  "id": "sb",
+  "field": "name",
+  "text": "Îles Salomon"
+ },
+ {
+  "lang": "fr",
+  "id": "sb",
+  "field": "capital",
+  "text": "Honiara"
+ },
+ {
+  "lang": "fr",
+  "id": "so",
+  "field": "name",
+  "text": "Somalie"
+ },
+ {
+  "lang": "fr",
+  "id": "so",
+  "field": "capital",
+  "text": "Mogadiscio"
+ },
+ {
+  "lang": "fr",
+  "id": "za",
+  "field": "name",
+  "text": "Afrique du Sud"
+ },
+ {
+  "lang": "fr",
+  "id": "za",
+  "field": "capital",
+  "text": "Pretoria"
+ },
+ {
+  "lang": "fr",
+  "id": "kr",
+  "field": "name",
+  "text": "Corée du Sud"
+ },
+ {
+  "lang": "fr",
+  "id": "kr",
+  "field": "capital",
+  "text": "Séoul"
+ },
+ {
+  "lang": "fr",
+  "id": "ss",
+  "field": "name",
+  "text": "Soudan du Sud"
+ },
+ {
+  "lang": "fr",
+  "id": "ss",
+  "field": "capital",
+  "text": "Djouba"
+ },
+ {
+  "lang": "fr",
+  "id": "es",
+  "field": "name",
+  "text": "Espagne"
+ },
+ {
+  "lang": "fr",
+  "id": "es",
+  "field": "capital",
+  "text": "Madrid"
+ },
+ {
+  "lang": "fr",
+  "id": "lk",
+  "field": "name",
+  "text": "Sri Lanka"
+ },
+ {
+  "lang": "fr",
+  "id": "lk",
+  "field": "capital",
+  "text": "Sri Jayawardenapura"
+ },
+ {
+  "lang": "fr",
+  "id": "sd",
+  "field": "name",
+  "text": "Soudan"
+ },
+ {
+  "lang": "fr",
+  "id": "sd",
+  "field": "capital",
+  "text": "Khartoum"
+ },
+ {
+  "lang": "fr",
+  "id": "sr",
+  "field": "name",
+  "text": "Surinam"
+ },
+ {
+  "lang": "fr",
+  "id": "sr",
+  "field": "capital",
+  "text": "Paramaribo"
+ },
+ {
+  "lang": "fr",
+  "id": "se",
+  "field": "name",
+  "text": "Suède"
+ },
+ {
+  "lang": "fr",
+  "id": "se",
+  "field": "capital",
+  "text": "Stockholm"
+ },
+ {
+  "lang": "fr",
+  "id": "ch",
+  "field": "name",
+  "text": "Suisse"
+ },
+ {
+  "lang": "fr",
+  "id": "ch",
+  "field": "capital",
+  "text": "Berne"
+ },
+ {
+  "lang": "fr",
+  "id": "sy",
+  "field": "name",
+  "text": "Syrie"
+ },
+ {
+  "lang": "fr",
+  "id": "sy",
+  "field": "capital",
+  "text": "Damas"
+ },
+ {
+  "lang": "fr",
+  "id": "st",
+  "field": "name",
+  "text": "São Tomé et Príncipe"
+ },
+ {
+  "lang": "fr",
+  "id": "st",
+  "field": "capital",
+  "text": "São Tomé"
+ },
+ {
+  "lang": "fr",
+  "id": "tj",
+  "field": "name",
+  "text": "Tadjikistan"
+ },
+ {
+  "lang": "fr",
+  "id": "tj",
+  "field": "capital",
+  "text": "Douchanbé"
+ },
+ {
+  "lang": "fr",
+  "id": "tz",
+  "field": "name",
+  "text": "Tanzanie"
+ },
+ {
+  "lang": "fr",
+  "id": "tz",
+  "field": "capital",
+  "text": "Dodoma"
+ },
+ {
+  "lang": "fr",
+  "id": "th",
+  "field": "name",
+  "text": "Thaïlande"
+ },
+ {
+  "lang": "fr",
+  "id": "th",
+  "field": "capital",
+  "text": "Bangkok"
+ },
+ {
+  "lang": "fr",
+  "id": "tl",
+  "field": "name",
+  "text": "Timor oriental"
+ },
+ {
+  "lang": "fr",
+  "id": "tl",
+  "field": "capital",
+  "text": "Dili"
+ },
+ {
+  "lang": "fr",
+  "id": "tg",
+  "field": "name",
+  "text": "Togo"
+ },
+ {
+  "lang": "fr",
+  "id": "tg",
+  "field": "capital",
+  "text": "Lomé"
+ },
+ {
+  "lang": "fr",
+  "id": "to",
+  "field": "name",
+  "text": "Tonga"
+ },
+ {
+  "lang": "fr",
+  "id": "to",
+  "field": "capital",
+  "text": "Nukuʻalofa"
+ },
+ {
+  "lang": "fr",
+  "id": "tt",
+  "field": "name",
+  "text": "Trinité-et-Tobago"
+ },
+ {
+  "lang": "fr",
+  "id": "tt",
+  "field": "capital",
+  "text": "Port-d'Espagne"
+ },
+ {
+  "lang": "fr",
+  "id": "tn",
+  "field": "name",
+  "text": "Tunisie"
+ },
+ {
+  "lang": "fr",
+  "id": "tn",
+  "field": "capital",
+  "text": "Tunis"
+ },
+ {
+  "lang": "fr",
+  "id": "tr",
+  "field": "name",
+  "text": "Turquie"
+ },
+ {
+  "lang": "fr",
+  "id": "tr",
+  "field": "capital",
+  "text": "Ankara"
+ },
+ {
+  "lang": "fr",
+  "id": "tm",
+  "field": "name",
+  "text": "Turkménistan"
+ },
+ {
+  "lang": "fr",
+  "id": "tm",
+  "field": "capital",
+  "text": "Achgabat"
+ },
+ {
+  "lang": "fr",
+  "id": "tv",
+  "field": "name",
+  "text": "Tuvalu"
+ },
+ {
+  "lang": "fr",
+  "id": "tv",
+  "field": "capital",
+  "text": "Funafuti"
+ },
+ {
+  "lang": "fr",
+  "id": "ug",
+  "field": "name",
+  "text": "Ouganda"
+ },
+ {
+  "lang": "fr",
+  "id": "ug",
+  "field": "capital",
+  "text": "Kampala"
+ },
+ {
+  "lang": "fr",
+  "id": "ua",
+  "field": "name",
+  "text": "Ukraine"
+ },
+ {
+  "lang": "fr",
+  "id": "ua",
+  "field": "capital",
+  "text": "Kiev"
+ },
+ {
+  "lang": "fr",
+  "id": "ae",
+  "field": "name",
+  "text": "Émirats arabes unis"
+ },
+ {
+  "lang": "fr",
+  "id": "ae",
+  "field": "capital",
+  "text": "Abou Dabi"
+ },
+ {
+  "lang": "fr",
+  "id": "gb",
+  "field": "name",
+  "text": "Royaume-Uni"
+ },
+ {
+  "lang": "fr",
+  "id": "gb",
+  "field": "capital",
+  "text": "Londres"
+ },
+ {
+  "lang": "fr",
+  "id": "us",
+  "field": "name",
+  "text": "États-Unis"
+ },
+ {
+  "lang": "fr",
+  "id": "us",
+  "field": "capital",
+  "text": "Washington"
+ },
+ {
+  "lang": "fr",
+  "id": "uy",
+  "field": "name",
+  "text": "Uruguay"
+ },
+ {
+  "lang": "fr",
+  "id": "uy",
+  "field": "capital",
+  "text": "Montevideo"
+ },
+ {
+  "lang": "fr",
+  "id": "uz",
+  "field": "name",
+  "text": "Ouzbékistan"
+ },
+ {
+  "lang": "fr",
+  "id": "uz",
+  "field": "capital",
+  "text": "Tachkent"
+ },
+ {
+  "lang": "fr",
+  "id": "vu",
+  "field": "name",
+  "text": "Vanuatu"
+ },
+ {
+  "lang": "fr",
+  "id": "vu",
+  "field": "capital",
+  "text": "Port-Vila"
+ },
+ {
+  "lang": "fr",
+  "id": "va",
+  "field": "name",
+  "text": "Cité du Vatican"
+ },
+ {
+  "lang": "fr",
+  "id": "va",
+  "field": "capital",
+  "text": "Vatican"
+ },
+ {
+  "lang": "fr",
+  "id": "ve",
+  "field": "name",
+  "text": "Venezuela"
+ },
+ {
+  "lang": "fr",
+  "id": "ve",
+  "field": "capital",
+  "text": "Caracas"
+ },
+ {
+  "lang": "fr",
+  "id": "vn",
+  "field": "name",
+  "text": "Viêt Nam"
+ },
+ {
+  "lang": "fr",
+  "id": "vn",
+  "field": "capital",
+  "text": "Hanoï"
+ },
+ {
+  "lang": "fr",
+  "id": "ye",
+  "field": "name",
+  "text": "Yémen"
+ },
+ {
+  "lang": "fr",
+  "id": "ye",
+  "field": "capital",
+  "text": "Sanaa"
+ },
+ {
+  "lang": "fr",
+  "id": "zm",
+  "field": "name",
+  "text": "Zambie"
+ },
+ {
+  "lang": "fr",
+  "id": "zm",
+  "field": "capital",
+  "text": "Lusaka"
+ },
+ {
+  "lang": "fr",
+  "id": "zw",
+  "field": "name",
+  "text": "Zimbabwe"
+ },
+ {
+  "lang": "fr",
+  "id": "zw",
+  "field": "capital",
+  "text": "Harare"
+ }
+]

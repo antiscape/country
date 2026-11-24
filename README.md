@@ -431,6 +431,7 @@ geography/
 │   ├── en-strings.json     # UI source strings
 │   └── translations-*.json # generated ES/FR dictionaries
 ├── assets/
+│   └── audio/              # 1552 条国名/首都朗读（4 语言，mp3）
 │   ├── flags/              # 194 × PNG
 │   ├── world-map.svg       # generated from world-atlas
 │   ├── favicon.svg
