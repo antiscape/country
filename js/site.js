@@ -67,6 +67,11 @@
   // When a Google-certified CMP (Funding Choices) is configured in AdSense it
   // owns the consent UI and Consent Mode, so the built-in banner stays off.
   const cmp = String(ads.cmp || 'custom');
+  const hasConsentUi = () => Boolean(
+    window.googlefc
+    || document.querySelector('.fc-consent-root')
+    || document.querySelector('.fc-dialog-overlay'),
+  );
 
   const lang = (document.documentElement.lang || 'en').slice(0, 2);
   const copy = {
@@ -134,15 +139,16 @@
     });
   });
 
+  const applyStoredChoice = () => {
+    if (consent === 'granted') grantConsent();
+    else if (consent !== 'denied') showBanner();
+    else adBoxes.forEach((el) => el.classList.add('ad-slot--empty'));
+  };
+
   if (cmp === 'google') {
     // Funding Choices should paint its own message. If it is not published, is
     // blocked, or targets a different site, fall back to the built-in banner so
     // the page is never left with no consent notice at all.
-    const hasConsentUi = () => Boolean(
-      window.googlefc
-      || document.querySelector('.fc-consent-root')
-      || document.querySelector('.fc-dialog-overlay'),
-    );
     if (hasConsentUi()) return;
     let waited = 0;
     const timer = setInterval(() => {
@@ -150,14 +156,18 @@
       waited += 300;
       if (waited < 3000) return;
       clearInterval(timer);
-      if (consent === 'granted') grantConsent();
-      else if (consent !== 'denied') showBanner();
-      else adBoxes.forEach((el) => el.classList.add('ad-slot--empty'));
+      applyStoredChoice();
+      // If the CMP shows up late, drop our banner so nobody sees two dialogs.
+      const watch = setInterval(() => {
+        if (!hasConsentUi()) return;
+        clearInterval(watch);
+        const el = document.querySelector('.consent-banner');
+        if (el) el.remove();
+      }, 500);
+      setTimeout(() => clearInterval(watch), 20000);
     }, 300);
     return;
   }
 
-  if (consent === 'granted') grantConsent();
-  else if (consent !== 'denied') showBanner();
-  else adBoxes.forEach((el) => el.classList.add('ad-slot--empty'));
+  applyStoredChoice();
 })();
