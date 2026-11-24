@@ -16,6 +16,7 @@ export const SITE = {
       ad: 'Advertisement', readGuide: 'Read the guide', allModes: 'All game modes',
       home: 'Home', related: 'Related countries', backAtlas: 'All countries', next: 'Next',
       updated: 'Data updated', free: 'Free to play', noAccount: 'No account needed', cookieSettings: 'Cookie settings',
+      listenName: 'Listen to the country name', listenCapital: 'Listen to the capital',
     },
     home: {
       eyebrow: 'Five minutes a day · 194 countries',
@@ -251,6 +252,7 @@ export const SITE = {
       ad: '广告', readGuide: '阅读指南', allModes: '全部玩法',
       home: '首页', related: '相关国家', backAtlas: '全部国家', next: '下一个',
       updated: '数据更新', free: '免费游玩', noAccount: '无需账号', cookieSettings: 'Cookie 设置',
+      listenName: '朗读国家名称', listenCapital: '朗读首都',
     },
     home: {
       eyebrow: '每天 5 分钟 · 走近 194 个国家',
@@ -486,6 +488,7 @@ export const SITE = {
       ad: 'Publicidad', readGuide: 'Leer la guía', allModes: 'Todos los modos',
       home: 'Inicio', related: 'Países relacionados', backAtlas: 'Todos los países', next: 'Siguiente',
       updated: 'Datos actualizados', free: 'Gratis', noAccount: 'Sin cuenta', cookieSettings: 'Ajustes de cookies',
+      listenName: 'Escuchar el nombre del país', listenCapital: 'Escuchar la capital',
     },
     home: {
       eyebrow: 'Cinco minutos al día · 194 países',
@@ -706,6 +709,7 @@ export const SITE = {
       ad: 'Publicité', readGuide: 'Lire le guide', allModes: 'Tous les modes',
       home: 'Accueil', related: 'Pays associés', backAtlas: 'Tous les pays', next: 'Suivant',
       updated: 'Données à jour', free: 'Gratuit', noAccount: 'Sans compte', cookieSettings: 'Paramètres des cookies',
+      listenName: 'Écouter le nom du pays', listenCapital: 'Écouter la capitale',
     },
     home: {
       eyebrow: 'Cinq minutes par jour · 194 pays',

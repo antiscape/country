@@ -56,6 +56,46 @@
     apply();
   }
 
+  /* ---------------- pronunciation ---------------- */
+  const speakButtons = [...document.querySelectorAll('[data-speak]')];
+  if (speakButtons.length) {
+    const synth = window.speechSynthesis;
+    const canSpeak = synth && typeof window.SpeechSynthesisUtterance === 'function';
+    if (!canSpeak) {
+      document.documentElement.classList.add('no-tts');
+    } else {
+      const pageLang = document.documentElement.lang || 'en';
+      let voice = null;
+      const pickVoice = () => {
+        const voices = synth.getVoices() || [];
+        voice = voices.find((v) => String(v.lang || '').toLowerCase().replace('_', '-').startsWith(pageLang.slice(0, 2).toLowerCase())) || null;
+      };
+      pickVoice();
+      if (typeof synth.addEventListener === 'function') synth.addEventListener('voiceschanged', pickVoice);
+
+      const speak = (text, btn) => {
+        synth.cancel();
+        const utter = new SpeechSynthesisUtterance(text);
+        utter.lang = pageLang;
+        if (voice) utter.voice = voice;
+        utter.rate = 0.9;
+        const done = () => btn.classList.remove('is-speaking');
+        utter.onend = done;
+        utter.onerror = done;
+        btn.classList.add('is-speaking');
+        synth.speak(utter);
+      };
+
+      for (const btn of speakButtons) {
+        btn.addEventListener('click', (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          speak(btn.dataset.speak || '', btn);
+        });
+      }
+    }
+  }
+
   /* ---------------- AdSense + consent ---------------- */
   const slots = [...document.querySelectorAll('.adsbygoogle')];
   const adBoxes = [...document.querySelectorAll('.ad-slot')];
