@@ -11,6 +11,7 @@ import {
 import { openModal, closeModal, confirmDialog, toast, confetti } from '../ui.js';
 import { session } from '../session.js';
 import { sfx } from '../audio.js';
+import { playCountryName } from '../pronounce.js';
 
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
@@ -71,17 +72,29 @@ function questionKicker(run) {
   return `<span class="dot"></span>LEVEL ${run.level} · ${t('第', 'Q')} ${run.index + 1} / ${run.total}`;
 }
 
+function speakButton(id) {
+  const label = t('朗读国家名称', 'Listen to the country name');
+  return `<button type="button" class="q-speak" data-pronounce="${escapeHtml(id)}" aria-label="${escapeHtml(label)}" title="${escapeHtml(label)}">${icon('volume')}</button>`;
+}
+
+// The name is only shown (and therefore only spoken) in the modes where it is
+// the prompt. In "which country is this?" or the population/independence
+// rounds the answer is the country, so playing it would give the answer away.
+function isNamePrompt(q) {
+  return q.type === 'flag' || q.type === 'capital';
+}
+
 function questionHead(run, q) {
   const target = BY_ID[q.targetId];
   if (q.type === 'flag') {
     return `<div class="q-kicker">${questionKicker(run)}</div>
-      <h1 class="q-title">${escapeHtml(countryName(target))}</h1>
+      <div class="q-title-row"><h1 class="q-title">${escapeHtml(countryName(target))}</h1>${speakButton(target.id)}</div>
       <div class="q-alt">${escapeHtml(altName(target))}</div>
       <p class="q-ask">${t('选出正确的国旗', 'Pick the correct flag')}</p>`;
   }
   if (q.type === 'capital') {
     return `<div class="q-kicker">${questionKicker(run)}</div>
-      <h1 class="q-title">${escapeHtml(countryName(target))}</h1>
+      <div class="q-title-row"><h1 class="q-title">${escapeHtml(countryName(target))}</h1>${speakButton(target.id)}</div>
       <div class="q-alt">${escapeHtml(altName(target))}</div>
       <p class="q-ask">${t('这个国家的首都是？', 'What is the capital?')}</p>`;
   }
@@ -352,6 +365,9 @@ export function gameView() {
         const q = currentQuestion(run);
         if (!q) { endRun(); return; }
         qs('[data-qhead]').innerHTML = questionHead(run, q);
+        if (isNamePrompt(q) && store.settings.sound !== false) {
+          playCountryName(q.targetId, getLang());
+        }
         qs('[data-qvisual]').innerHTML = questionVisual(q);
         qs('[data-answers]').innerHTML = renderAnswers(q, removedIds);
         const head = qs('[data-qhead]');
@@ -715,6 +731,19 @@ export function gameView() {
       }
 
       function onGameClick(e) {
+        const speak = e.target.closest('[data-pronounce]');
+        if (speak) {
+          e.preventDefault();
+          e.stopPropagation();
+          const audio = playCountryName(speak.dataset.pronounce, getLang());
+          const off = () => speak.classList.remove('on');
+          speak.classList.add('on');
+          if (audio) {
+            audio.addEventListener('ended', off);
+            audio.addEventListener('pause', off);
+          }
+          return;
+        }
         const choice = e.target.closest('[data-choice]');
         if (choice) {
           if (choice.disabled || answered || paused) return;

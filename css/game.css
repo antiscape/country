@@ -255,6 +255,19 @@
   letter-spacing: -.04em;
   word-break: break-word;
 }
+.q-title-row { display: flex; align-items: center; justify-content: center; gap: 12px; }
+.q-speak {
+  flex: none; display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; padding: 0; border-radius: 50%;
+  border: 1px solid var(--line); background: rgba(255,255,255,.05);
+  color: var(--muted); cursor: pointer;
+  transition: color .15s, border-color .15s, background .15s, transform .15s;
+}
+.q-speak:hover { color: var(--text); border-color: var(--line-2); background: rgba(255,255,255,.1); }
+.q-speak:active { transform: scale(.94); }
+.q-speak:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+.q-speak .ic { width: 17px; height: 17px; }
+.q-speak.on { color: var(--teal); border-color: var(--teal); background: rgba(45,212,191,.14); }
 .q-title.small-title { font-size: clamp(25px, 3vw, 38px); }
 .q-alt { margin-top: 8px; font: 600 12.5px/1.4 var(--font-display); letter-spacing: .08em; color: var(--muted); text-transform: uppercase; }
 .q-ask { margin-top: 14px; color: var(--text-2); font-size: 13px; font-weight: 600; }
