@@ -13,7 +13,7 @@
 
 ```json
 {
-  "baseUrl": "https://your-domain.com",
+  "baseUrl": "https://navpage.win",
   "contactEmail": "hello@your-domain.com",
   "adsense": {
     "enabled": true,
@@ -38,6 +38,22 @@
 npm run build
 ```
 
+也可以只重生成 SEO 文件：
+
+```bash
+npm run seo -- --domain https://navpage.win --ads-client ca-pub-XXXXXXXXXXXXXXXX
+```
+
+这个命令会更新：
+
+```text
+dist/sitemap.xml
+dist/robots.txt
+dist/ads.txt
+```
+
+`npm run build` 也会调用同一套生成器，所以正式发布前二选一即可。
+
 ---
 
 ## 2. 部署
@@ -58,7 +74,7 @@ dist/
 - 内容页是预渲染 HTML，不需要 SPA fallback；
 - `/play/` 内使用 hash 路由（`/play/#/game`），也不需要服务器重写；
 - 建议对 `assets/` 设长缓存，对 HTML 设短缓存；
-- 确认 `https://your-domain.com/ads.txt` 可直接访问。
+- 确认 `https://navpage.win/ads.txt` 可直接访问。
 
 ---
 
@@ -69,10 +85,16 @@ dist/
 3. 提交站点审核；
 4. 审核通过后创建展示广告单元，把 `client` 和 `slot` 填入 `site.config.json`；
 5. 重新构建、部署；
-6. 确认 `ads.txt` 中出现：
+6. 确认 `https://navpage.win/ads.txt` 中出现：
 
 ```text
 google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+```
+
+如果暂时没有发布商 ID，`ads.txt` 只有注释占位，不会伪造 ID；审核通过后填真实 ID 再重新生成：
+
+```bash
+npm run seo -- --domain https://navpage.win --ads-client ca-pub-你的ID
 ```
 
 > 不要在没有内容/隐私政策/联系页的情况下反复提交；先部署完整 `dist/`。

@@ -8,7 +8,9 @@
     "start": "node scripts/serve.mjs 8790",
     "dev": "node scripts/serve.mjs 8790",
     "build": "node scripts/build_site.mjs",
-    "serve:dist": "SERVE_ROOT=dist node scripts/serve.mjs 8791"
+    "serve:dist": "SERVE_ROOT=dist node scripts/serve.mjs 8791",
+    "seo": "node scripts/generate_seo_files.mjs",
+    "seo:navpage": "node scripts/generate_seo_files.mjs --domain https://navpage.win"
   },
   "engines": {
     "node": ">=18"

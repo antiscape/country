@@ -15,6 +15,7 @@
 # Node 18+
 npm start                 # 开发：游戏仪表盘 http://127.0.0.1:8790
 npm run build             # 生成 dist/：833 个可索引页面 + /play/ 游戏
+npm run seo               # 单独重生成 sitemap.xml / robots.txt / ads.txt
 npm run serve:dist        # 预览构建产物 http://127.0.0.1:8791
 ```
 
@@ -168,6 +169,40 @@ git push -u origin main
 - `_redirects` 会把 `/play`、`/zh` 等无斜杠路径 301 到带斜杠目录；
 - 构建产物约 15MB、约 1,900 个文件，仍远低于 Workers/Pages 的 20,000 文件限制；
 - GitHub 只负责源码托管；Cloudflare 负责构建与发布，不需要额外 GitHub Actions。
+
+## sitemap / robots / ads.txt 工具
+
+域名已设置为 **https://navpage.win**。`npm run build` 会自动生成：
+
+```text
+dist/sitemap.xml   833 个 URL，含四语言 hreflang
+dist/robots.txt    允许抓取，声明 sitemap
+dist/ads.txt       AdSense 授权文件
+```
+
+也可以单独重新生成，不必全量构建：
+
+```bash
+# 使用 site.config.json 里的域名
+npm run seo
+
+# 改域名
+npm run seo -- --domain https://navpage.win
+
+# 接入 AdSense：填真实发布商 ID
+npm run seo -- --domain https://navpage.win --ads-client ca-pub-XXXXXXXXXXXXXXXX
+
+# 输出到其他目录
+npm run seo -- --out /tmp/seo-test
+```
+
+工具文件：
+
+- [scripts/seo_files.mjs](scripts/seo_files.mjs)：唯一的生成逻辑，build 和 CLI 共用；
+- [scripts/generate_seo_files.mjs](scripts/generate_seo_files.mjs)：命令行入口。
+
+`ads.txt` 只有在传入真实 `pub-...` 后才会写入正式授权行；没有 ID 时只写注释占位，
+不会伪造发布商 ID。
 
 > 产品分析见 **[docs/analysis.md](docs/analysis.md)**；SEO/广告路线见 **[docs/seo-ads-roadmap.md](docs/seo-ads-roadmap.md)**。
 
@@ -382,6 +417,8 @@ geography/
 │   ├── build_data.py       # world-countries + World Bank → js/data.js
 │   ├── build_map.py        # world-atlas TopoJSON → assets/world-map.svg
 │   ├── build_site.mjs      # 833 static pages + dist/play/ + sitemap
+│   ├── seo_files.mjs       # sitemap / robots / ads.txt generator
+│   ├── generate_seo_files.mjs # npm run seo CLI
 │   ├── serve.mjs           # dev / dist server (keep-alive)
 │   └── serve.py            # fallback static server
 └── dist/                   # generated deployment output

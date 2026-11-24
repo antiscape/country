@@ -12,6 +12,7 @@ import { COUNTRIES, REGIONS, BY_ID } from '../js/data.js';
 import { MODES, MODE_ORDER, LEVELS } from '../js/modes.js';
 import { icon } from '../js/icons.js';
 import { SITE } from '../site/content.mjs';
+import { writeSeoFiles } from './seo_files.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const DIST = path.join(ROOT, 'dist');
@@ -641,28 +642,8 @@ function main() {
   sw = sw.replace(/const CACHE = 'geoquest-v[0-9]+';/, `const CACHE = 'geoquest-site-${Date.now()}';`);
   write('sw.js', sw);
 
-  // sitemap + robots + ads.txt
-  const urls = [];
-  for (const lang of LANGS) {
-    const pages = [
-      [`/${lang}/`, '1.0'], [`/${lang}/flags/`, '0.9'], [`/${lang}/capitals/`, '0.9'],
-      [`/${lang}/countries/`, '0.9'], [`/${lang}/population/`, '0.9'], [`/${lang}/independence/`, '0.9'],
-      [`/${lang}/atlas/`, '0.9'], [`/${lang}/guides/`, '0.7'], [`/${lang}/guides/how-to-play/`, '0.7'],
-      [`/${lang}/guides/flags-of-the-world/`, '0.7'], [`/${lang}/about/`, '0.5'], [`/${lang}/privacy/`, '0.3'],
-      [`/${lang}/terms/`, '0.3'], [`/${lang}/contact/`, '0.3'],
-    ];
-    for (const c of COUNTRIES) pages.push([countryPath(lang, c), '0.6']);
-    for (const [p, priority] of pages) urls.push({ p, priority, lang });
-  }
-  const rootEntry = `<url><loc>${absUrl('/')}</loc><lastmod>${TODAY}</lastmod><changefreq>weekly</changefreq><priority>0.9</priority>${LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${LOCALES[l]}" href="${absUrl('/' + l + '/')}"/>`).join('')}<xhtml:link rel="alternate" hreflang="x-default" href="${absUrl('/en/')}"/></url>`;
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${rootEntry}\n${urls.map(({ p, priority }) => {
-    const basePath = p.replace(/^\/[a-z]{2}\//, '');
-    return `<url><loc>${absUrl(p)}</loc><lastmod>${TODAY}</lastmod><changefreq>weekly</changefreq><priority>${priority}</priority>${LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${LOCALES[l]}" href="${absUrl('/' + l + '/' + basePath.replace(/^\//, ''))}"/>`).join('')}<xhtml:link rel="alternate" hreflang="x-default" href="${absUrl('/en/' + basePath.replace(/^\//, ''))}"/></url>`;
-  }).join('\n')}\n</urlset>`;
-  write('sitemap.xml', sitemap);
-  write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${absUrl('/sitemap.xml')}\n`);
-  const pub = (ADS.client || '').replace(/^ca-/, '');
-  write('ads.txt', ADS.client ? `google.com, ${pub}, DIRECT, f08c47fec0942fa0\n` : `# Add your AdSense publisher ID to site.config.json and rebuild.\n`);
+  // sitemap.xml + robots.txt + ads.txt (shared with npm run seo)
+  const seo = writeSeoFiles({ domain: BASE, adsClient: ADS.client, outDir: DIST, today: TODAY });
 
   // Cloudflare Pages: headers + redirects + branded 404
   write('_headers', `/*
@@ -695,8 +676,7 @@ function main() {
 `);
   write('404.html', `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Page not found | GEOQUEST</title><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/site.css"></head><body class="site-body"><main class="lang-hub"><div class="lang-hub-card">${logoMark()}<h1>404</h1><p>This page doesn't exist. Pick a language or head back to the game.</p><div class="lang-hub-grid"><a href="/en/"><span>English</span><small>EN</small></a><a href="/zh/"><span>中文</span><small>ZH</small></a><a href="/es/"><span>Español</span><small>ES</small></a><a href="/fr/"><span>Français</span><small>FR</small></a><a href="/play/?lang=en"><span>Play GEOQUEST</span><small>→</small></a><a href="/en/atlas/"><span>World atlas</span><small>→</small></a></div></div></main></body></html>`);
 
-  const count = urls.length + 1;
-  console.log(`Built ${count} indexable pages in ${path.relative(ROOT, DIST)}/`);
+  console.log(`Built ${seo.pages} indexable pages in ${path.relative(ROOT, DIST)}/`);
   console.log(`  baseUrl: ${BASE}${BASE.includes('example') ? '  ← change this in site.config.json before deploy' : ''}`);
   console.log(`  AdSense: ${ADS.enabled && ADS.client ? 'enabled' : 'disabled (set adsense.enabled + client + slot IDs)'}`);
   console.log(`  app: /play/ (noindex)`);
