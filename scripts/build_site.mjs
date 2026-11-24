@@ -163,6 +163,7 @@ ${xDefault}
 <link rel="apple-touch-icon" href="/assets/icon-192.png">
 <link rel="stylesheet" href="/css/base.css">
 <link rel="stylesheet" href="/css/site.css">
+${adsenseTemplate()}
 ${ga}
 ${json}
 </head>`;
@@ -235,6 +236,11 @@ function siteFooter(lang) {
     </div>
   </div>
 </footer>`;
+}
+
+function adsenseTemplate() {
+  if (!ADS.enabled || !ADS.client) return '';
+  return `<template data-adsense-auto><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(ADS.client)}" crossorigin="anonymous"></script></template>`;
 }
 
 function adSlot(lang, key, format = 'auto') {

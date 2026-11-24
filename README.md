@@ -375,6 +375,18 @@ ca-pub-6758251429919320
 5. 重新 `npm run build`；
 6. `ads.txt` 会自动写入正式授权行。
 
+Auto ads 的原始代码会以 `<template data-adsense-auto>` 的形式写进每个静态内容页的 `<head>`：
+
+```html
+<template data-adsense-auto>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6758251429919320"
+          crossorigin="anonymous"></script>
+</template>
+```
+
+用户接受 Cookie 后，`js/site.js` 会把这段原始脚本克隆到 `<head>` 并执行。
+这样既保留了 AdSense 的原始 URL/属性，也不会绕过同意横幅。
+
 如果之后创建了手动广告单元，把 `slots` 填上，并把 `autoAds` 设为 `false`（或按需保留），
 静态内容页就会出现手动广告位；游戏页仍然保持无广告。
 

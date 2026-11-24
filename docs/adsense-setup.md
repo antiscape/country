@@ -34,6 +34,7 @@
 - `contactEmail` 会出现在隐私政策、条款和联系页；
 - `client` 是发布商 ID（`ca-pub-...`）；
 - `autoAds: true` 表示使用 AdSense Auto ads，只需要发布商 ID；
+- Auto ads 原始代码以 `<template data-adsense-auto>` 写入内容页，用户同意后再由 `js/site.js` 注入 `<head>`；
 - `slots` 是可选的手动广告单元 ID，不是发布商 ID；
 - 修改后运行：
 

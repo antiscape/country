@@ -80,10 +80,18 @@
   const loadAds = () => {
     if (window.__adsenseLoaded) return;
     window.__adsenseLoaded = true;
-    const s = document.createElement('script');
-    s.async = true;
-    s.crossOrigin = 'anonymous';
-    s.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(ads.client)}`;
+    // Prefer the exact AdSense snippet embedded as an inert <template> in the
+    // page head. It is only cloned into the live DOM after consent.
+    const template = document.querySelector('template[data-adsense-auto]');
+    let s;
+    if (template?.content?.firstElementChild) {
+      s = template.content.firstElementChild.cloneNode(true);
+    } else {
+      s = document.createElement('script');
+      s.async = true;
+      s.crossOrigin = 'anonymous';
+      s.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(ads.client)}`;
+    }
     s.onerror = () => adBoxes.forEach((el) => el.classList.add('ad-slot--empty'));
     s.onload = () => {
       for (const slot of slots) {
