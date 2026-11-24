@@ -141,17 +141,18 @@
 .site-country-hit:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .cc-text { display: flex; flex-direction: column; gap: 4px; }
-.cc-name, .cc-capital { display: flex; align-items: center; gap: 6px; }
+.cc-name, .cc-capital { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-width: 0; }
+.cc-name b, .cc-capital > span { min-width: 0; overflow-wrap: anywhere; }
 .speak {
   position: relative; z-index: 2; flex: none;
   display: inline-flex; align-items: center; justify-content: center;
-  width: 20px; height: 20px; padding: 0; border-radius: 6px;
+  width: 24px; height: 24px; padding: 0; border-radius: 7px;
   border: 1px solid var(--line); background: rgba(255,255,255,.04); color: var(--muted);
   cursor: pointer; transition: color .15s, border-color .15s, background .15s;
 }
 .speak:hover { color: var(--text); border-color: var(--line-2); background: rgba(255,255,255,.08); }
 .speak:focus-visible { outline: 2px solid var(--teal); outline-offset: 1px; }
-.speak .ic { width: 12px; height: 12px; }
+.speak .ic { width: 13px; height: 13px; }
 .speak.is-speaking { color: var(--teal); border-color: var(--teal); background: rgba(45,212,191,.12); }
 .no-tts .speak { display: none; }
 .site-country-card:hover { transform: translateY(-3px); border-color: var(--line-2); background: rgba(255,255,255,.05); }
