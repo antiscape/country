@@ -64,6 +64,10 @@
     return;
   }
 
+  // When a Google-certified CMP (Funding Choices) is configured in AdSense it
+  // owns the consent UI and Consent Mode, so the built-in banner stays off.
+  if (String(ads.cmp || 'custom') === 'google') return;
+
   const lang = (document.documentElement.lang || 'en').slice(0, 2);
   const copy = {
     zh: { text: '我们使用 Cookie 展示广告并衡量效果。你可以接受或拒绝；拒绝后仍可继续玩。', accept: '接受', deny: '仅必要', privacy: '隐私政策' },
@@ -77,28 +81,27 @@
   let consent = null;
   try { consent = localStorage.getItem(CONSENT_KEY); } catch { /* noop */ }
 
-  const loadAds = () => {
-    if (window.__adsenseLoaded) return;
-    window.__adsenseLoaded = true;
-    // Prefer the exact AdSense snippet embedded as an inert <template> in the
-    // page head. It is only cloned into the live DOM after consent.
-    const template = document.querySelector('template[data-adsense-auto]');
-    let s;
-    if (template?.content?.firstElementChild) {
-      s = template.content.firstElementChild.cloneNode(true);
-    } else {
-      s = document.createElement('script');
-      s.async = true;
-      s.crossOrigin = 'anonymous';
-      s.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(ads.client)}`;
+  // The AdSense tag is already in <head>; Consent Mode decides whether it may
+  // use cookies and personalise ads. Defaults are "denied" in the page head.
+  const grantConsent = () => {
+    if (typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', {
+        ad_storage: 'granted',
+        ad_user_data: 'granted',
+        ad_personalization: 'granted',
+      });
     }
-    s.onerror = () => adBoxes.forEach((el) => el.classList.add('ad-slot--empty'));
-    s.onload = () => {
-      for (const slot of slots) {
-        try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch { /* noop */ }
-      }
-    };
-    document.head.appendChild(s);
+    if (window.__adsenseReady) return;
+    window.__adsenseReady = true;
+    for (const slot of slots) {
+      try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch { /* noop */ }
+    }
+  };
+
+  const denyConsent = () => {
+    // Consent Mode defaults already deny storage; just make sure no empty
+    // placeholder boxes stay visible.
+    adBoxes.forEach((el) => el.classList.add('ad-slot--empty'));
   };
 
   const showBanner = () => {
@@ -119,8 +122,8 @@
       const value = btn.dataset.consent;
       try { localStorage.setItem(CONSENT_KEY, value); } catch { /* noop */ }
       el.remove();
-      if (value === 'granted') loadAds();
-      else adBoxes.forEach((box) => box.classList.add('ad-slot--empty'));
+      if (value === 'granted') grantConsent();
+      else denyConsent();
     });
   };
 
@@ -131,7 +134,7 @@
     });
   });
 
-  if (consent === 'granted') loadAds();
+  if (consent === 'granted') grantConsent();
   else if (consent !== 'denied') showBanner();
   else adBoxes.forEach((el) => el.classList.add('ad-slot--empty'));
 })();

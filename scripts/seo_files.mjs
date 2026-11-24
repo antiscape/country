@@ -4,6 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { COUNTRIES } from '../js/data.js';
+import { isCurated } from '../site/country-facts.mjs';
 
 export const LANGS = ['zh', 'en', 'es', 'fr'];
 export const LOCALES = { zh: 'zh-CN', en: 'en-US', es: 'es-ES', fr: 'fr-FR' };
@@ -43,7 +44,9 @@ export function buildSeoEntries() {
       [`/${lang}/terms/`, '0.3'],
       [`/${lang}/contact/`, '0.3'],
     ];
-    for (const country of COUNTRIES) pages.push([countryPath(lang, country), '0.6']);
+    // Only countries with hand-written highlights are indexable; the rest stay
+    // online for players but are noindex and kept out of the sitemap.
+    for (const country of COUNTRIES.filter((c) => isCurated(c.id))) pages.push([countryPath(lang, country), '0.6']);
 
     for (const [p, priority] of pages) {
       const basePath = p.replace(/^\/[a-z]{2}\//, '');

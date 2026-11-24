@@ -3,8 +3,8 @@
 > **2026-11-24 更新：下面描述的 Phase 1–2 已完成落地。**
 >
 > - 静态 SEO 内容站 + `/play/` 游戏 SPA 的双层结构；
-> - 833 个可索引页面，中文 / English / Español / Français 四语言；
-> - 194 个国家页 ×4、5 个模式页、图鉴、指南、隐私/条款/关于/联系；
+> - 内容页 + 精选国家页可索引，中文 / English / Español / Français 四语言；
+> - 194 个国家页 ×4（精选国可索引，其余 noindex）、5 个模式页、图鉴、指南、隐私/条款/关于/联系；
 > - canonical / hreflang / OG / JSON-LD / sitemap / robots；
 > - AdSense 展示广告位、`ads.txt`、同意横幅（自定义 CMP，见文末警告）；
 > - 构建命令：`npm run build`，产物在 `dist/`。
@@ -255,7 +255,7 @@ AdSense 手动单元大致流程：
 ### 已完成
 
 1. 静态内容站 + `/play/` 游戏；
-2. 833 个页面、四语言、canonical/hreflang/OG/JSON-LD；
+2. 四语言内容页 + canonical/hreflang/OG/JSON-LD；
 3. `robots.txt` + `sitemap.xml`；
 4. 隐私/条款/关于/联系；
 5. AdSense 广告位、`ads.txt`、同意横幅；

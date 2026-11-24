@@ -1,0 +1,438 @@
+{
+  "US": {
+    "en": [
+      "The United States is made up of 50 states; Washington, D.C. is a federal district, not a state.",
+      "Yellowstone, established in 1872, is the world's first national park."
+    ],
+    "zh": [
+      "美国由 50 个州组成，华盛顿哥伦比亚特区是联邦直辖区，不属于任何一州。",
+      "黄石公园建于 1872 年，是世界上第一座国家公园。"
+    ],
+    "es": [
+      "Estados Unidos se compone de 50 estados; Washington D. C. es un distrito federal, no un estado.",
+      "Yellowstone, creado en 1872, es el primer parque nacional del mundo."
+    ],
+    "fr": [
+      "Les États-Unis comptent 50 États ; Washington, D.C. est un district fédéral, pas un État.",
+      "Yellowstone, créé en 1872, est le premier parc national au monde."
+    ]
+  },
+  "CN": {
+    "en": [
+      "The Great Wall stretches more than 21,000 km across northern China.",
+      "China shares land borders with 14 countries, as many as Russia.",
+      "The Yangtze is the longest river in Asia."
+    ],
+    "zh": [
+      "长城横贯中国北方，总长度超过 2.1 万公里。",
+      "中国与 14 个国家陆地接壤，与俄罗斯并列为陆地邻国最多的国家。",
+      "长江是亚洲最长的河流。"
+    ],
+    "es": [
+      "La Gran Muralla se extiende más de 21.000 km por el norte de China.",
+      "China tiene frontera terrestre con 14 países, tantos como Rusia.",
+      "El Yangtsé es el río más largo de Asia."
+    ],
+    "fr": [
+      "La Grande Muraille s'étend sur plus de 21 000 km dans le nord de la Chine.",
+      "La Chine partage une frontière terrestre avec 14 pays, autant que la Russie.",
+      "Le Yangtsé est le plus long fleuve d'Asie."
+    ]
+  },
+  "IN": {
+    "en": [
+      "India became the world's most populous country in 2023.",
+      "The Constitution recognises 22 scheduled languages; Hindi and English are used for official union business."
+    ],
+    "zh": [
+      "印度在 2023 年成为世界人口最多的国家。",
+      "印度宪法列有 22 种表列语言，联邦官方事务使用印地语和英语。"
+    ],
+    "es": [
+      "India se convirtió en el país más poblado del mundo en 2023.",
+      "La Constitución reconoce 22 lenguas programadas; el hindi y el inglés se usan en la administración federal."
+    ],
+    "fr": [
+      "L'Inde est devenue le pays le plus peuplé du monde en 2023.",
+      "La Constitution reconnaît 22 langues officielles ; l'hindi et l'anglais servent aux affaires fédérales."
+    ]
+  },
+  "ID": {
+    "en": [
+      "Indonesia is the world's largest archipelago, with more than 17,000 islands.",
+      "It is the fourth most populous country, with about 280 million people."
+    ],
+    "zh": [
+      "印度尼西亚是世界上最大的群岛国家，拥有 1.7 万多个岛屿。",
+      "它是世界第四人口大国，人口约 2.8 亿。"
+    ],
+    "es": [
+      "Indonesia es el archipiélago más grande del mundo, con más de 17.000 islas.",
+      "Es el cuarto país más poblado, con unos 280 millones de habitantes."
+    ],
+    "fr": [
+      "L'Indonésie est le plus grand archipel du monde, avec plus de 17 000 îles.",
+      "C'est le quatrième pays le plus peuplé, avec environ 280 millions d'habitants."
+    ]
+  },
+  "BR": {
+    "en": [
+      "The Amazon rainforest covers about 60 % of Brazil's territory.",
+      "Brazil is the only Portuguese-speaking country in the Americas."
+    ],
+    "zh": [
+      "亚马孙雨林覆盖了巴西约 60% 的国土。",
+      "巴西是美洲唯一的葡萄牙语国家。"
+    ],
+    "es": [
+      "La selva amazónica cubre cerca del 60 % del territorio brasileño.",
+      "Brasil es el único país lusófono de América."
+    ],
+    "fr": [
+      "La forêt amazonienne couvre environ 60 % du territoire brésilien.",
+      "Le Brésil est le seul pays lusophone des Amériques."
+    ]
+  },
+  "PK": {
+    "en": [
+      "Pakistan is home to K2, the second-highest mountain on Earth at 8,611 m.",
+      "The Indus Valley Civilisation flourished here more than 4,000 years ago."
+    ],
+    "zh": [
+      "世界第二高峰乔戈里峰（K2，8,611 米）位于巴基斯坦。",
+      "四千多年前，印度河流域文明在这里繁荣。"
+    ],
+    "es": [
+      "En Pakistán se encuentra el K2, la segunda montaña más alta del mundo (8.611 m).",
+      "La civilización del valle del Indo floreció aquí hace más de 4.000 años."
+    ],
+    "fr": [
+      "Le Pakistan abrite le K2, deuxième sommet du monde (8 611 m).",
+      "La civilisation de la vallée de l'Indus s'y est épanouie il y a plus de 4 000 ans."
+    ]
+  },
+  "NG": {
+    "en": [
+      "Nigeria is Africa's most populous country, with more than 220 million people.",
+      "Its film industry, Nollywood, is one of the world's largest by number of releases."
+    ],
+    "zh": [
+      "尼日利亚是非洲人口最多的国家，人口超过 2.2 亿。",
+      "它的电影产业“瑙莱坞”按年产量计位居世界前列。"
+    ],
+    "es": [
+      "Nigeria es el país más poblado de África, con más de 220 millones de habitantes.",
+      "Su industria cinematográfica, Nollywood, es una de las mayores del mundo por número de estrenos."
+    ],
+    "fr": [
+      "Le Nigeria est le pays le plus peuplé d'Afrique, avec plus de 220 millions d'habitants.",
+      "Son industrie cinématographique, Nollywood, est l'une des plus prolifiques au monde."
+    ]
+  },
+  "BD": {
+    "en": [
+      "The Sundarbans, shared with India, is the world's largest mangrove forest.",
+      "Bangladesh is one of the most densely populated large countries on Earth."
+    ],
+    "zh": [
+      "与印度共享的孙德尔本斯是世界上最大的红树林。",
+      "孟加拉国是世界上人口密度最高的大国之一。"
+    ],
+    "es": [
+      "Los Sundarbans, compartidos con India, forman el mayor bosque de manglares del mundo.",
+      "Bangladesh es uno de los países grandes más densamente poblados del planeta."
+    ],
+    "fr": [
+      "Les Sundarbans, partagés avec l'Inde, forment la plus grande mangrove du monde.",
+      "Le Bangladesh est l'un des grands pays les plus densément peuplés au monde."
+    ]
+  },
+  "RU": {
+    "en": [
+      "Russia is the largest country by area and spans 11 time zones.",
+      "Lake Baikal holds roughly one fifth of the world's unfrozen fresh water."
+    ],
+    "zh": [
+      "俄罗斯是面积最大的国家，横跨 11 个时区。",
+      "贝加尔湖储存了全球约五分之一的淡水资源。"
+    ],
+    "es": [
+      "Rusia es el país más extenso del mundo y abarca 11 husos horarios.",
+      "El lago Baikal contiene cerca de una quinta parte del agua dulce no congelada del mundo."
+    ],
+    "fr": [
+      "La Russie est le plus vaste pays du monde et s'étend sur 11 fuseaux horaires.",
+      "Le lac Baïkal renferme environ un cinquième de l'eau douce non gelée de la planète."
+    ]
+  },
+  "MX": {
+    "en": [
+      "Mexico City was built on the lakebed of the Aztec capital Tenochtitlan.",
+      "Mexico is one of the world's megadiverse countries and ranks among the top five for species."
+    ],
+    "zh": [
+      "墨西哥城建在阿兹特克首都特诺奇蒂特兰的湖床上。",
+      "墨西哥是全球生物多样性最丰富的国家之一，物种数量位居世界前五。"
+    ],
+    "es": [
+      "Ciudad de México se construyó sobre el lecho del lago de Tenochtitlan, la capital azteca.",
+      "México es uno de los países megadiversos del mundo y figura entre los cinco primeros por número de especies."
+    ],
+    "fr": [
+      "Mexico a été bâtie sur le lit du lac de Tenochtitlan, capitale aztèque.",
+      "Le Mexique est l'un des pays mégadivers du monde, parmi les cinq premiers pour le nombre d'espèces."
+    ]
+  },
+  "JP": {
+    "en": [
+      "Japan consists of more than 6,800 islands, though four main islands hold most of the population.",
+      "The Greater Tokyo Area is the world's largest metropolitan area, with about 37 million people."
+    ],
+    "zh": [
+      "日本由 6,800 多个岛屿组成，但绝大多数人口集中在四个主岛上。",
+      "东京都市圈人口约 3,700 万，是世界上最大的都市圈。"
+    ],
+    "es": [
+      "Japón está formado por más de 6.800 islas, aunque cuatro islas principales concentran casi toda la población.",
+      "El área metropolitana de Tokio es la mayor del mundo, con unos 37 millones de habitantes."
+    ],
+    "fr": [
+      "Le Japon compte plus de 6 800 îles, mais quatre îles principales concentrent l'essentiel de la population.",
+      "Le Grand Tokyo est la plus grande aire métropolitaine du monde, avec environ 37 millions d'habitants."
+    ]
+  },
+  "PH": {
+    "en": [
+      "The Philippines has more than 7,600 islands.",
+      "It has one of the largest English-speaking populations in the world."
+    ],
+    "zh": [
+      "菲律宾拥有 7,600 多个岛屿。",
+      "它是世界上英语使用人口最多的国家之一。"
+    ],
+    "es": [
+      "Filipinas tiene más de 7.600 islas.",
+      "Tiene una de las mayores poblaciones angloparlantes del mundo."
+    ],
+    "fr": [
+      "Les Philippines comptent plus de 7 600 îles.",
+      "Le pays abrite l'une des plus grandes populations anglophones du monde."
+    ]
+  },
+  "ET": {
+    "en": [
+      "Ethiopia was never formally colonised, apart from a brief Italian occupation from 1936 to 1941.",
+      "The Blue Nile rises from Lake Tana in the Ethiopian highlands."
+    ],
+    "zh": [
+      "埃塞俄比亚从未被正式殖民，只在 1936–1941 年被意大利短暂占领。",
+      "青尼罗河发源于埃塞俄比亚高原的塔纳湖。"
+    ],
+    "es": [
+      "Etiopía nunca fue colonizada formalmente, salvo la breve ocupación italiana de 1936 a 1941.",
+      "El Nilo Azul nace en el lago Tana, en las tierras altas etíopes."
+    ],
+    "fr": [
+      "L'Éthiopie n'a jamais été colonisée, hormis une brève occupation italienne de 1936 à 1941.",
+      "Le Nil Bleu prend sa source dans le lac Tana, sur les hauts plateaux éthiopiens."
+    ]
+  },
+  "EG": {
+    "en": [
+      "The Suez Canal links the Mediterranean and the Red Sea.",
+      "About 95 % of Egyptians live along the Nile and its delta."
+    ],
+    "zh": [
+      "苏伊士运河连接地中海与红海。",
+      "约 95% 的埃及人居住在尼罗河沿岸和三角洲地区。"
+    ],
+    "es": [
+      "El canal de Suez une el Mediterráneo y el mar Rojo.",
+      "Cerca del 95 % de los egipcios vive junto al Nilo y su delta."
+    ],
+    "fr": [
+      "Le canal de Suez relie la Méditerranée à la mer Rouge.",
+      "Environ 95 % des Égyptiens vivent le long du Nil et dans son delta."
+    ]
+  },
+  "VN": {
+    "en": [
+      "Vietnam has about 3,200 km of coastline.",
+      "It is one of the world's largest coffee exporters, behind Brazil."
+    ],
+    "zh": [
+      "越南海岸线长约 3,200 公里。",
+      "越南是世界最大的咖啡出口国之一，仅次于巴西。"
+    ],
+    "es": [
+      "Vietnam tiene unos 3.200 km de costa.",
+      "Es uno de los mayores exportadores de café del mundo, solo por detrás de Brasil."
+    ],
+    "fr": [
+      "Le Vietnam compte environ 3 200 km de côtes.",
+      "C'est l'un des plus grands exportateurs de café au monde, derrière le Brésil."
+    ]
+  },
+  "TR": {
+    "en": [
+      "Istanbul straddles Europe and Asia across the Bosphorus.",
+      "Ankara replaced Istanbul as the capital in 1923."
+    ],
+    "zh": [
+      "伊斯坦布尔横跨博斯普鲁斯海峡，连接欧亚两洲。",
+      "1923 年，安卡拉取代伊斯坦布尔成为首都。"
+    ],
+    "es": [
+      "Estambul se extiende entre Europa y Asia a través del Bósforo.",
+      "Ankara sustituyó a Estambul como capital en 1923."
+    ],
+    "fr": [
+      "Istanbul s'étend sur l'Europe et l'Asie de part et d'autre du Bosphore.",
+      "Ankara a remplacé Istanbul comme capitale en 1923."
+    ]
+  },
+  "DE": {
+    "en": [
+      "Germany was reunified in 1990 after 41 years of division.",
+      "The Rhine is the country's busiest inland waterway."
+    ],
+    "zh": [
+      "德国在分裂 41 年后于 1990 年重新统一。",
+      "莱茵河是德国最繁忙的内河航道。"
+    ],
+    "es": [
+      "Alemania se reunificó en 1990 tras 41 años de división.",
+      "El Rin es la vía navegable interior más transitada del país."
+    ],
+    "fr": [
+      "L'Allemagne a été réunifiée en 1990 après 41 ans de division.",
+      "Le Rhin est la voie navigable intérieure la plus fréquentée du pays."
+    ]
+  },
+  "FR": {
+    "en": [
+      "France is the world's most visited country, with about 100 million arrivals a year.",
+      "It has 18 regions, five of them overseas."
+    ],
+    "zh": [
+      "法国是世界上游客最多的国家，每年约有 1 亿人次入境。",
+      "法国共有 18 个大区，其中 5 个位于海外。"
+    ],
+    "es": [
+      "Francia es el país más visitado del mundo, con unos 100 millones de llegadas al año.",
+      "Tiene 18 regiones, cinco de ellas de ultramar."
+    ],
+    "fr": [
+      "La France est le pays le plus visité au monde, avec environ 100 millions d'arrivées par an.",
+      "Elle compte 18 régions, dont cinq d'outre-mer."
+    ]
+  },
+  "GB": {
+    "en": [
+      "The United Kingdom is made up of four nations: England, Scotland, Wales and Northern Ireland.",
+      "The Prime Meridian passes through Greenwich in London."
+    ],
+    "zh": [
+      "英国由英格兰、苏格兰、威尔士和北爱尔兰四个部分组成。",
+      "本初子午线穿过伦敦的格林尼治。"
+    ],
+    "es": [
+      "El Reino Unido está formado por cuatro naciones: Inglaterra, Escocia, Gales e Irlanda del Norte.",
+      "El meridiano de Greenwich pasa por Londres."
+    ],
+    "fr": [
+      "Le Royaume-Uni réunit quatre nations : l'Angleterre, l'Écosse, le pays de Galles et l'Irlande du Nord.",
+      "Le méridien de Greenwich traverse Londres."
+    ]
+  },
+  "IT": {
+    "en": [
+      "Italy contains two independent states: San Marino and Vatican City.",
+      "It has more UNESCO World Heritage sites than any other country."
+    ],
+    "zh": [
+      "意大利境内有两个独立国家：圣马力诺和梵蒂冈。",
+      "意大利拥有的联合国教科文组织世界遗产数量居世界第一。"
+    ],
+    "es": [
+      "Italia contiene dos Estados independientes: San Marino y la Ciudad del Vaticano.",
+      "Es el país con más sitios del Patrimonio Mundial de la UNESCO."
+    ],
+    "fr": [
+      "L'Italie abrite deux États indépendants : Saint-Marin et le Vatican.",
+      "C'est le pays comptant le plus de sites du patrimoine mondial de l'UNESCO."
+    ]
+  },
+  "ES": {
+    "en": [
+      "Spain is divided into 17 autonomous communities and two autonomous cities.",
+      "Spanish is the world's second most spoken native language."
+    ],
+    "zh": [
+      "西班牙分为 17 个自治区和 2 个自治市。",
+      "西班牙语是世界上母语使用人数第二多的语言。"
+    ],
+    "es": [
+      "España se organiza en 17 comunidades autónomas y dos ciudades autónomas.",
+      "El español es la segunda lengua materna más hablada del mundo."
+    ],
+    "fr": [
+      "L'Espagne compte 17 communautés autonomes et deux villes autonomes.",
+      "L'espagnol est la deuxième langue maternelle la plus parlée au monde."
+    ]
+  },
+  "CA": {
+    "en": [
+      "Canada is the second-largest country by area and has the longest coastline.",
+      "English and French are both official languages."
+    ],
+    "zh": [
+      "加拿大是面积第二大的国家，拥有世界上最长的海岸线。",
+      "英语和法语同为官方语言。"
+    ],
+    "es": [
+      "Canadá es el segundo país más extenso y tiene la costa más larga del mundo.",
+      "El inglés y el francés son lenguas oficiales."
+    ],
+    "fr": [
+      "Le Canada est le deuxième pays le plus vaste et possède le plus long littoral du monde.",
+      "L'anglais et le français sont tous deux langues officielles."
+    ]
+  },
+  "AU": {
+    "en": [
+      "Australia is the only country that covers an entire continent.",
+      "The Great Barrier Reef is the largest coral reef system on Earth."
+    ],
+    "zh": [
+      "澳大利亚是唯一独占整个大陆的国家。",
+      "大堡礁是世界上最大的珊瑚礁群。"
+    ],
+    "es": [
+      "Australia es el único país que ocupa un continente entero.",
+      "La Gran Barrera de Coral es el mayor sistema de arrecifes del mundo."
+    ],
+    "fr": [
+      "L'Australie est le seul pays qui occupe un continent entier.",
+      "La Grande Barrière de corail est le plus grand récif du monde."
+    ]
+  },
+  "ZA": {
+    "en": [
+      "South Africa has three capitals: Pretoria (executive), Cape Town (legislative) and Bloemfontein (judicial).",
+      "It recognises 12 official languages, including South African Sign Language."
+    ],
+    "zh": [
+      "南非有三个首都：比勒陀利亚（行政）、开普敦（立法）和布隆方丹（司法）。",
+      "南非承认 12 种官方语言，其中包括南非手语。"
+    ],
+    "es": [
+      "Sudáfrica tiene tres capitales: Pretoria (ejecutiva), Ciudad del Cabo (legislativa) y Bloemfontein (judicial).",
+      "Reconoce 12 lenguas oficiales, incluida la lengua de signos sudafricana."
+    ],
+    "fr": [
+      "L'Afrique du Sud a trois capitales : Pretoria (exécutif), Le Cap (législatif) et Bloemfontein (judiciaire).",
+      "Elle reconnaît 12 langues officielles, dont la langue des signes sud-africaine."
+    ]
+  }
+}

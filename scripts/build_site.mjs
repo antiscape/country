@@ -13,6 +13,7 @@ import { MODES, MODE_ORDER, LEVELS } from '../js/modes.js';
 import { icon } from '../js/icons.js';
 import { SITE } from '../site/content.mjs';
 import { writeSeoFiles } from './seo_files.mjs';
+import { factsFor, isCurated } from '../site/country-facts.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const DIST = path.join(ROOT, 'dist');
@@ -21,6 +22,7 @@ const BASE = String(process.env.SITE_BASE_URL || config.baseUrl || 'https://geoq
 const EMAIL = config.contactEmail || 'hello@geoquest.example';
 const ADS = config.adsense || {};
 const TODAY = new Date().toISOString().slice(0, 10);
+const UPDATED = String(config.contentUpdated || TODAY);
 const LANGS = ['zh', 'en', 'es', 'fr'];
 const LOCALES = { zh: 'zh-CN', en: 'en-US', es: 'es-ES', fr: 'fr-FR' };
 const OG_LOCALES = { zh: 'zh_CN', en: 'en_US', es: 'es_ES', fr: 'fr_FR' };
@@ -47,6 +49,17 @@ function countryName(c, lang) {
   if (lang === 'es') return c.nameEs || c.name;
   if (lang === 'fr') return c.nameFr || c.name;
   return c.name;
+}
+// English short names that take a definite article in running text.
+const EN_ARTICLE = new Set(['US', 'GB', 'NL', 'PH', 'AE', 'DO', 'BS', 'GM', 'MV', 'CD', 'CG', 'CF', 'KM', 'SC', 'SB', 'VC', 'KN']);
+function nameInSentence(c, lang) {
+  const name = countryName(c, lang);
+  if (lang === 'en' && EN_ARTICLE.has(c.id)) return `the ${name}`;
+  return name;
+}
+function sentenceStart(value) {
+  const s = String(value || '');
+  return s.charAt(0).toUpperCase() + s.slice(1);
 }
 function capitalName(c, lang) {
   if (lang === 'zh') return c.capitalZh;
@@ -163,7 +176,7 @@ ${xDefault}
 <link rel="apple-touch-icon" href="/assets/icon-192.png">
 <link rel="stylesheet" href="/css/base.css">
 <link rel="stylesheet" href="/css/site.css">
-${adsenseTemplate()}
+${adsenseHead()}
 ${ga}
 ${json}
 </head>`;
@@ -238,9 +251,20 @@ function siteFooter(lang) {
 </footer>`;
 }
 
-function adsenseTemplate() {
+function adsenseHead() {
   if (!ADS.enabled || !ADS.client) return '';
-  return `<template data-adsense-auto><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(ADS.client)}" crossorigin="anonymous"></script></template>`;
+  const client = encodeURIComponent(ADS.client);
+  // The AdSense tag must be in the served HTML so AdSense can verify the site
+  // and so Auto ads can run. Consent gating happens through Consent Mode, not
+  // by hiding the tag.
+  const tag = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${client}" crossorigin="anonymous"></script>`;
+  // A Google-certified CMP (Funding Choices) sets consent itself, so adding our
+  // own defaults on top of it would fight the CMP. Only emit them for the
+  // built-in banner.
+  if (String(ADS.cmp || 'custom') === 'google') return tag;
+  const defaults = `<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});</script>`;
+  return `${defaults}
+${tag}`;
 }
 
 function adSlot(lang, key, format = 'auto') {
@@ -441,8 +465,21 @@ function countryPage(lang, c) {
   const cap = capitalName(c, lang);
   const reg = regionName(c, lang);
   const sub = subregionName(c, lang);
-  const intro = format(t.country.intro, { name, region: reg, capital: cap, pop: fmtNum(c.population, lang), area: fmtArea(c, lang) });
-  const faq = t.country.faq.map(([q, a]) => [format(q, { name, capital: cap, region: reg, subregion: sub, pop: fmtNum(c.population, lang) }), format(a, { name, capital: cap, region: reg, subregion: sub, pop: fmtNum(c.population, lang) })]);
+  const sentenceName = nameInSentence(c, lang);
+  const subject = sentenceStart(sentenceName);
+  const intro = format(t.country.intro, { name: subject, region: reg, capital: cap, pop: fmtNum(c.population, lang), area: fmtArea(c, lang) });
+  const vars = { name: sentenceName, capital: cap, region: reg, subregion: sub, pop: fmtNum(c.population, lang) };
+  const faq = t.country.faq.map(([q, a], i) => {
+    // "more precisely in North America" repeated the region for countries whose
+    // subregion equals the region. Use the subregion only when it adds detail.
+    if (i === 2) {
+      const where = sub && sub !== reg ? t.country.whereSub : t.country.whereRegion;
+      return [format(q, vars), sentenceStart(format(where, vars))];
+    }
+    return [format(q, vars), format(a, { ...vars, capital: cap.replace(/\.+$/, '') })];
+  });
+  const highlights = factsFor(c.id, lang);
+  const indexable = isCurated(c.id);
   const related = COUNTRIES.filter((x) => x.region === c.region && x.id !== c.id).sort((a, b) => b.population - a.population).slice(0, 6);
   const independence = c.independence ? fmtDate(c.independence, lang) : '—';
   const borders = c.borders ? `${c.borders}${lang === 'zh' ? ' 个' : ''}` : (lang === 'zh' ? '无' : lang === 'es' ? 'Ninguna' : lang === 'fr' ? 'Aucune' : 'None');
@@ -455,7 +492,7 @@ function countryPage(lang, c) {
     <div class="site-eyebrow">${esc(t.country.eyebrow)} · ${esc(reg)}</div>
     <h1>${esc(name)}</h1>
     <p class="lead">${esc(intro)}</p>
-    <div class="site-actions"><a class="btn btn-primary" href="${playUrl(lang, 'flags')}">${icon('play')}${esc(format(t.country.playTitle, { name }))}</a><a class="btn btn-ghost" href="${atlasPath(lang)}">${icon('arrow-left')}${esc(t.country.atlasBack)}</a></div>
+    <div class="site-actions"><a class="btn btn-primary" href="${playUrl(lang, 'flags')}">${icon('play')}${esc(format(t.country.playTitle, { name: subject }))}</a><a class="btn btn-ghost" href="${atlasPath(lang)}">${icon('arrow-left')}${esc(t.country.atlasBack)}</a></div>
     <div class="country-map"><img src="/assets/world-map.svg" alt=""><span class="map-pin" style="left:${markerLeft}%;top:${markerTop}%"></span></div>
   </div>
 </section>
@@ -472,8 +509,11 @@ function countryPage(lang, c) {
   </div>
   <div class="country-body">
     <div>
-      <div class="site-eyebrow">${esc(t.country.factTitle)}</div>
-      <p class="site-lead" style="margin:12px 0 24px">${esc(factText(c, lang))}</p>
+      ${highlights.length
+        ? `<div class="site-eyebrow">${esc(t.country.highlightsTitle)}</div>
+      <ul class="country-highlights">${highlights.map((f) => `<li>${esc(f)}</li>`).join('')}</ul>`
+        : `<div class="site-eyebrow">${esc(t.country.factTitle)}</div>
+      <p class="site-lead" style="margin:12px 0 24px">${esc(factText(c, lang))}</p>`}
       <h2 class="site-h2" style="font-size:22px;margin-bottom:12px">${esc(t.country.faqTitle)}</h2>
       <div class="faq-list">${faq.map(([q, a]) => `<details class="faq-item"><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</div>
       ${adSlot(lang, 'country', 'rectangle')}
@@ -481,15 +521,15 @@ function countryPage(lang, c) {
       <div class="site-country-grid">${related.map((x) => countryCard(x, lang)).join('')}</div>
     </div>
     <aside class="country-aside">
-      <h3>${esc(t.country.playTitle.replace('{name}', name))}</h3>
-      <p>${esc(format(t.country.playLead, { name }))}</p>
+      <h3>${esc(t.country.playTitle.replace('{name}', subject))}</h3>
+      <p>${esc(format(t.country.playLead, { name: subject }))}</p>
       <a class="btn btn-primary btn-block" style="margin-top:14px" href="${playUrl(lang, 'flags')}">${icon('play')}${esc(t.common.play)}</a>
       <a class="btn btn-ghost btn-block" style="margin-top:8px" href="${atlasPath(lang)}">${icon('book')}${esc(t.common.exploreAtlas)}</a>
     </aside>
   </div>
 </section>`;
   const title = `${format(t.country.title, { name })} | GEOQUEST`;
-  const description = format(t.country.intro, { name, region: reg, capital: cap, pop: fmtNum(c.population, lang), area: fmtArea(c, lang) });
+  const description = format(t.country.intro, { name: subject, region: reg, capital: cap, pop: fmtNum(c.population, lang), area: fmtArea(c, lang) });
   const jsonld = [
     { '@context': 'https://schema.org', '@type': 'Country', name, url: absUrl(countryPath(lang, c)), description, capital: { '@type': 'City', name: cap }, containedInPlace: { '@type': 'Place', name: reg }, additionalProperty: [
       { '@type': 'PropertyValue', name: 'population', value: c.population },
@@ -502,7 +542,7 @@ function countryPage(lang, c) {
       { '@type': 'ListItem', position: 3, name, item: absUrl(countryPath(lang, c)) },
     ] },
   ];
-  return page(lang, countryPath(lang, c), title, description, body, { active: 'atlas', jsonld, image: c.flag });
+  return page(lang, countryPath(lang, c), title, description, body, { active: 'atlas', jsonld, image: c.flag, noindex: !indexable });
 }
 
 function guideIndexPage(lang) {
@@ -549,24 +589,41 @@ function guidePage(lang, slug) {
   return page(lang, guidePath(lang, slug), `${title} | GEOQUEST`, lead, body, { active: 'guides', jsonld, image: '/assets/icon-512.png' });
 }
 
+function rich(text, vars = {}) {
+  const email = vars.email || EMAIL;
+  const body = esc(format(text, { ...vars, email: '\u0000EMAIL\u0000' }));
+  return body
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, (m, label, url) => `<a href="${url}" rel="noopener noreferrer" target="_blank">${label}</a>`)
+    .replace(/\u0000EMAIL\u0000/g, `<a href="mailto:${esc(email)}">${esc(email)}</a>`);
+}
+
+function plainText(block) {
+  const value = typeof block === 'string' ? block : (block.p || block.h || '');
+  return value.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\{email\}/g, EMAIL);
+}
+
 function legalPage(lang, type) {
   const t = SITE[lang].legal;
   const map = {
     privacy: [t.privacyTitle, t.privacy],
     terms: [t.termsTitle, t.terms],
     about: [t.aboutTitle, t.about],
-    contact: [t.contactTitle, [t.contact]],
+    contact: [t.contactTitle, t.contact],
   };
-  const [title, paragraphs] = map[type];
+  const [title, blocks] = map[type];
   const body = `${crumb(lang, [[SITE[lang].common.home, `/${lang}/`], [title, null]])}
 <section class="site-section tight site-wrap"><div class="prose">
   <div class="site-eyebrow">GEOQUEST</div>
   <h1>${esc(title)}</h1>
-  <p class="updated">${esc(SITE[lang].common.updated)} · ${TODAY}</p>
-  ${paragraphs.map((p) => `<p>${esc(format(p, { email: EMAIL }))}</p>`).join('')}
+  <p class="updated">${esc(SITE[lang].common.updated)} · ${UPDATED}</p>
+  ${blocks.map((block) => {
+    if (typeof block === 'string') return `<p>${rich(block, { email: EMAIL })}</p>`;
+    const heading = block.h ? `<h2>${esc(block.h)}</h2>` : '';
+    return `${heading}<p>${rich(block.p || '', { email: EMAIL })}</p>`;
+  }).join('')}
   <p style="margin-top:24px"><a href="${playUrl(lang)}">${esc(SITE[lang].common.play)}</a> · <a href="${atlasPath(lang)}">${esc(SITE[lang].nav.atlas)}</a></p>
 </div></section>`;
-  return page(lang, legalPath(lang, type), `${title} | GEOQUEST`, paragraphs[0], body, { image: '/assets/icon-512.png' });
+  return page(lang, legalPath(lang, type), `${title} | GEOQUEST`, plainText(blocks[0]), body, { image: '/assets/icon-512.png' });
 }
 
 function languageHub() {
@@ -649,7 +706,7 @@ function main() {
   write('sw.js', sw);
 
   // sitemap.xml + robots.txt + ads.txt (shared with npm run seo)
-  const seo = writeSeoFiles({ domain: BASE, adsClient: ADS.client, outDir: DIST, today: TODAY });
+  const seo = writeSeoFiles({ domain: BASE, adsClient: ADS.client, outDir: DIST, today: UPDATED });
 
   // Cloudflare Pages: headers + redirects + branded 404
   write('_headers', `/*

@@ -1,17 +1,19 @@
 {
   "baseUrl": "https://navpage.win",
   "siteName": "GEOQUEST",
-  "contactEmail": "hello@geoquest.example",
+  "contactEmail": "wxiaowar@gmail.com",
+  "contentUpdated": "2026-11-24",
   "adsense": {
     "enabled": true,
     "client": "ca-pub-6758251429919320",
+    "autoAds": true,
+    "cmp": "custom",
     "slots": {
       "home": "",
       "mode": "",
       "atlas": "",
       "country": "",
       "guide": ""
-    },
-    "autoAds": true
+    }
   }
 }

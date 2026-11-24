@@ -14,14 +14,14 @@
 ```bash
 # Node 18+
 npm start                 # 开发：游戏仪表盘 http://127.0.0.1:8790
-npm run build             # 生成 dist/：833 个可索引页面 + /play/ 游戏
+npm run build             # 生成 dist/：可索引内容页 + /play/ 游戏
 npm run seo               # 单独重生成 sitemap.xml / robots.txt / ads.txt
 npm run serve:dist        # 预览构建产物 http://127.0.0.1:8791
 ```
 
 生产环境：
 
-- `dist/{zh,en,es,fr}/`：首页、五种模式页、图鉴、194×4 国家页、指南、隐私/条款/关于/联系
+- `dist/{zh,en,es,fr}/`：首页、五种模式页、图鉴、194×4 国家页（精选国可索引，其余 noindex）、指南、隐私/条款/关于/联系
 - `dist/play/`：游戏应用（`noindex`，通过 `?lang=xx&mode=flags` 进入）
 - `dist/sitemap.xml`、`dist/robots.txt`、`dist/ads.txt`
 - 所有静态页使用 `History` 风格路径，游戏保持 hash 路由（不影响 SEO）
@@ -176,7 +176,7 @@ git push -u origin main
 域名已设置为 **https://navpage.win**。`npm run build` 会自动生成：
 
 ```text
-dist/sitemap.xml   833 个 URL，含四语言 hreflang
+dist/sitemap.xml   仅含可索引页，含四语言 hreflang
 dist/robots.txt    允许抓取，声明 sitemap
 dist/ads.txt       AdSense 授权文件
 ```
@@ -326,7 +326,7 @@ npm run seo -- --out /tmp/seo-test
   ├── /                    首页
   ├── /flags/ /capitals/   五种模式介绍页
   ├── /atlas/              图鉴索引
-  ├── /atlas/cn/           194 个国家详情页
+  ├── /atlas/cn/           194 个国家详情页（精选国可索引）
   ├── /guides/...          2 篇指南
   └── /privacy/ /terms/    合规页
 /play/                     游戏 SPA（noindex）
@@ -339,13 +339,13 @@ npm run seo -- --out /tmp/seo-test
 - Open Graph / Twitter Card
 - `WebApplication`、`FAQPage`、`BreadcrumbList`、`Country` 等 JSON-LD
 - 面包屑、相关国家/模式内链、CTA 到游戏
-- `sitemap.xml` 833 条 URL，`robots.txt`
+- `sitemap.xml` 仅含可索引页，`robots.txt`
 
 构建产物：
 
 ```bash
 npm run build
-# 833 indexable pages, app: /play/ (noindex)
+# 153 indexable pages (24 curated countries × 4 + hub pages), app: /play/ (noindex)
 ```
 
 ### 多语言
@@ -375,22 +375,22 @@ ca-pub-6758251429919320
 5. 重新 `npm run build`；
 6. `ads.txt` 会自动写入正式授权行。
 
-Auto ads 的原始代码会以 `<template data-adsense-auto>` 的形式写进每个静态内容页的 `<head>`：
+AdSense 官方脚本直接写进每个内容页的 `<head>`，前面是一条 Consent Mode v2 默认值（全部 `denied`）：
 
 ```html
-<template data-adsense-auto>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6758251429919320"
-          crossorigin="anonymous"></script>
-</template>
+<script>gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6758251429919320"
+        crossorigin="anonymous"></script>
 ```
 
-用户接受 Cookie 后，`js/site.js` 会把这段原始脚本克隆到 `<head>` 并执行。
-这样既保留了 AdSense 的原始 URL/属性，也不会绕过同意横幅。
+脚本必须常驻，审核抓取器才会认到代码；是否允许 Cookie / 个性化由 Consent Mode 控制。
+用户接受后 `js/site.js` 发 `consent update`；拒绝后仍可玩，只出非个性化广告。
 
-如果之后创建了手动广告单元，把 `slots` 填上，并把 `autoAds` 设为 `false`（或按需保留），
-静态内容页就会出现手动广告位；游戏页仍然保持无广告。
+如果之后创建了手动广告单元，把 `slots` 填上，静态内容页就会出现手动广告位；游戏页仍然保持无广告。
 
-> **EEA/UK 注意**：当前自定义同意横幅是 UX/广告加载门控，不是 Google 认证 CMP。面向 EEA/UK 上线前，请接入 Funding Choices 或其他 Google 认证 CMP，并配置 Consent Mode v2。完整接入清单见 **[docs/adsense-setup.md](docs/adsense-setup.md)**。
+> **EEA/UK/CH**：个性化广告必须使用 Google 认证 CMP。在 AdSense 后台启用 Funding Choices（GDPR 消息），
+> 然后把 `site.config.json` 的 `adsense.cmp` 改为 `"google"`，自带横幅会自动让位。
+> 完整接入清单见 **[docs/adsense-setup.md](docs/adsense-setup.md)**。
 
 ---
 
@@ -442,7 +442,7 @@ geography/
 ├── scripts/
 │   ├── build_data.py       # world-countries + World Bank → js/data.js
 │   ├── build_map.py        # world-atlas TopoJSON → assets/world-map.svg
-│   ├── build_site.mjs      # 833 static pages + dist/play/ + sitemap
+│   ├── build_site.mjs      # static pages + dist/play/ + sitemap
 │   ├── seo_files.mjs       # sitemap / robots / ads.txt generator
 │   ├── generate_seo_files.mjs # npm run seo CLI
 │   ├── serve.mjs           # dev / dist server (keep-alive)
@@ -527,7 +527,7 @@ python3 scripts/build_map.py
 - 四语切换、键盘操作、暂停/自动暂停、PWA 离线；
 - 导出/导入存档、重置进度；
 - 四语言（zh/en/es/fr）UI、国家名、首都、数字/日期/面积；
-- `dist/` 833 个可索引页面、hreflang、canonical、JSON-LD、sitemap；
+- `dist/` 可索引页面、hreflang、canonical、JSON-LD、sitemap；
 - 静态站搜索/地区筛选、移动端导航；
 - AdSense 发布商 ID、Auto ads、同意横幅、正式 `ads.txt`。
 

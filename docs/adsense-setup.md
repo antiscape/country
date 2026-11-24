@@ -1,175 +1,142 @@
-# AdSense 展示广告接入清单（自托管）
+# AdSense 接入与审核清单（navpage.win）
 
-> 目标：在静态内容页放 AdSense 展示广告，游戏页保持无广告；面向海外中文 + 全球英文。
-> 当前代码已预留广告位、`ads.txt`、同意横幅和 `site.config.json`，只差你的域名与 AdSense ID。
->
-> 注意：Google 广告在中国大陆通常无法正常展示/结算；本项目假设主流量来自海外中文与全球英文。
+> 目标：内容页放 AdSense 展示广告，`/play/` 游戏页保持无广告；面向海外中文 + 全球英文 / 西语 / 法语。
+> 2026-11-24 已按审核要求重做：真实联系邮箱、完整隐私政策、Consent Mode v2、精选国家页。
 
 ---
 
-## 1. 上线前必须改的配置
+## 1. 当前配置
 
 `site.config.json`：
 
 ```json
 {
   "baseUrl": "https://navpage.win",
-  "contactEmail": "hello@navpage.win",
+  "siteName": "GEOQUEST",
+  "contactEmail": "wxiaowar@gmail.com",
+  "contentUpdated": "2026-11-24",
   "adsense": {
     "enabled": true,
     "client": "ca-pub-6758251429919320",
     "autoAds": true,
-    "slots": {
-      "home": "",
-      "mode": "",
-      "atlas": "",
-      "country": "",
-      "guide": ""
-    }
+    "cmp": "custom",
+    "slots": { "home": "", "mode": "", "atlas": "", "country": "", "guide": "" }
   }
 }
 ```
 
-- `baseUrl` 必须与线上域名完全一致（canonical / hreflang / sitemap 都用它）；
-- `contactEmail` 会出现在隐私政策、条款和联系页；
-- `client` 是发布商 ID（`ca-pub-...`）；
-- `autoAds: true` 表示使用 AdSense Auto ads，只需要发布商 ID；
-- Auto ads 原始代码以 `<template data-adsense-auto>` 写入内容页，用户同意后再由 `js/site.js` 注入 `<head>`；
-- `slots` 是可选的手动广告单元 ID，不是发布商 ID；
-- 修改后运行：
+| 字段 | 作用 |
+|---|---|
+| `contactEmail` | 出现在联系 / 隐私 / 条款页，必须是能收信的真实邮箱 |
+| `contentUpdated` | 页脚“数据更新”和 sitemap `lastmod` 的日期，**只在内容真的改了才改**，不要用构建时间 |
+| `adsense.cmp` | `custom` = 站点自带横幅 + Consent Mode；`google` = 使用 AdSense 里的 Funding Choices，自带横幅自动关闭 |
+| `adsense.slots` | 手动广告位 ID；目前全空，只靠 Auto ads |
+
+修改后运行 `npm run build`。
+
+---
+
+## 2. 广告代码放在哪
+
+`scripts/build_site.mjs` 的 `adsenseHead()` 会把 **AdSense 官方脚本直接写进每个内容页的 `<head>`**：
+
+```html
+<script>...gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6758251429919320" crossorigin="anonymous"></script>
+```
+
+为什么不再用 `<template>` 延迟注入：审核抓取器不执行 JS，模板里的脚本既不算“页面上有代码”，也让 Auto ads 无法在首屏工作。现在脚本常驻，靠 **Consent Mode** 控制是否允许 Cookie / 个性化，这是 Google 推荐的做法。
+
+`/`、`/404`、`/play/` 三个页面没有广告代码，符合预期（832 / 835）。
+
+---
+
+## 3. 同意管理（重要）
+
+### 现状
+
+- 默认全部 `denied`，用户点“接受”后 `site.js` 调 `gtag('consent','update',{...granted})`；
+- 拒绝后仍可玩，AdSense 只出非个性化/受限广告；
+- 页脚“Cookie 设置”可撤回。
+
+### 面向 EEA / 英国 / 瑞士时还差一步
+
+Google 要求这些地区投放**个性化广告**必须使用 **Google 认证 CMP**（集成 IAB TCF）。自带横幅不是认证 CMP，所以：
+
+1. 打开 AdSense → **隐私与消息** → 启用 **GDPR 消息**（Funding Choices，免费）；
+2. 把 `site.config.json` 的 `adsense.cmp` 改成 `"google"`；
+3. `npm run build` 重新部署 —— 自带横幅会自动让位，避免双横幅。
+
+在此之前，EEA 流量只会拿到非个性化广告，不算违规，但收入偏低。
+
+参考：[Google 认证 CMP 要求](https://support.google.com/adsense/answer/13554116)
+
+---
+
+## 4. 内容策略：精选国家页
+
+AdSense 拒审的高频原因是“低价值 / 批量生成内容”。之前 194 国 × 4 语言的页面是同一模板，页间 4-gram 重复度 40–47%。
+
+现在：
+
+- `data/country-facts.json` 存**手写的**国家亮点（目前 24 国，每国 2–3 条，四语言）；
+- 有亮点的国家页 `index,follow` 并进入 sitemap；
+- 没有亮点的国家页仍然上线给玩家用，但 `noindex,follow` 且不进 sitemap；
+- 目前可索引页 **153 个**（1 语言入口 + 4×(1 首页 + 5 模式 + 1 图鉴 + 3 指南 + 4 法务) + 24×4 国家页）。
+
+**要扩充时**：往 `data/country-facts.json` 加一个 ISO 键（`US`、`CN`…），写 `en/zh/es/fr` 各 2–3 条事实，重新 build 即可，页面和 sitemap 会自动从 noindex 变成可索引。
+
+写作要求：
+- 每条必须是该页独有的信息，不能是数据表里已有的首都/人口/面积的复述；
+- 不要用“XX 是一个位于 YY 的国家”这类模板句；
+- 四语言都要写，不要机翻后不校对。
+
+---
+
+## 5. 提交审核前检查
+
+- [x] HTTPS + HTTP 301
+- [x] 真实联系邮箱（不再是 `.example`）
+- [x] 隐私政策含：第三方 Cookie、Google Ads Settings 退出链接、aboutads / youronlinechoices、同意与撤回、日志、权利、儿童、变更
+- [x] 条款含广告条款
+- [x] 关于页说明运营者与联系方式
+- [x] `ads.txt` 正确
+- [x] 404 返回 404
+- [x] `/play/` noindex
+- [x] 内容页 AdSense 代码在 `<head>`
+- [x] Consent Mode v2 默认 denied
+- [ ] EEA/UK/CH：启用 Funding Choices 并设 `cmp: "google"`
+- [ ] 部署后确认 `https://navpage.win/ads.txt`、`/privacy/`、`/contact/` 可访问
+- [ ] Search Console 提交 sitemap，等 2–4 周有收录再提交
+
+---
+
+## 6. 部署
 
 ```bash
 npm run build
+git add -A && git commit -m "..." && git push
 ```
 
-也可以只重生成 SEO 文件：
+Cloudflare Workers Builds 会自动构建 `dist/`。部署后抽查：
 
 ```bash
-npm run seo -- --domain https://navpage.win --ads-client ca-pub-XXXXXXXXXXXXXXXX
+curl -s https://navpage.win/zh/ | grep -o 'adsbygoogle.js?client=[^"]*'
+curl -s https://navpage.win/zh/atlas/cn/ | grep -o '<meta name="robots"[^>]*>'
+curl -s https://navpage.win/zh/atlas/af/ | grep -o '<meta name="robots"[^>]*>'
 ```
 
-这个命令会更新：
-
-```text
-dist/sitemap.xml
-dist/robots.txt
-dist/ads.txt
-```
-
-`npm run build` 也会调用同一套生成器，所以正式发布前二选一即可。
+期望：第一行有 client；第二行 `index,follow`；第三行 `noindex,follow`。
 
 ---
 
-## 2. 部署
+## 7. 已知但仍需在控制台处理
 
-把 `dist/` 整个目录部署到 **HTTPS 根目录**：
-
-```text
-dist/
-├── index.html            # 语言选择
-├── zh/ en/ es/ fr/       # 静态内容页
-├── play/                 # 游戏 SPA（noindex）
-├── sitemap.xml
-├── robots.txt
-├── ads.txt
-└── assets/ css/ js/
-```
-
-- 内容页是预渲染 HTML，不需要 SPA fallback；
-- `/play/` 内使用 hash 路由（`/play/#/game`），也不需要服务器重写；
-- 建议对 `assets/` 设长缓存，对 HTML 设短缓存；
-- 确认 `https://navpage.win/ads.txt` 可直接访问。
-
----
-
-## 3. 申请 AdSense
-
-1. 用真实域名注册 AdSense；
-2. 在站点根目录验证所有权（AdSense 会提供代码或 DNS/HTML 文件方式）；
-3. 提交站点审核；
-4. 审核通过后在 AdSense 后台开启 **Auto ads**；
-5. `site.config.json` 里填入 `client`，设置 `enabled: true`、`autoAds: true`；
-6. 重新构建、部署；
-7. 确认 `https://navpage.win/ads.txt` 中出现：
-
-```text
-google.com, pub-6758251429919320, DIRECT, f08c47fec0942fa0
-```
-
-当前发布商 ID 已配置为 `ca-pub-6758251429919320`，重新构建后 `ads.txt` 会自动写入：
-
-```text
-google.com, pub-6758251429919320, DIRECT, f08c47fec0942fa0
-```
-
-如果以后更换账号，重新生成：
-
-```bash
-npm run seo -- --domain https://navpage.win --ads-client ca-pub-新ID
-```
-
-> 不要在没有内容/隐私政策/联系页的情况下反复提交；先部署完整 `dist/`。
-
----
-
-## 4. 当前广告位
-
-| 页面 | slot key | 形式 | 数量 |
-|---|---|---|---|
-| 首页 | `home` | 自适应 | 2 |
-| 模式页 | `mode` | 自适应 | 2 |
-| 图鉴 | `atlas` | 自适应 | 1 |
-| 国家页 | `country` | 矩形 | 1 |
-| 指南 | `guide` | 自适应 | 1 |
-| 游戏页 `/play/` | — | 无广告 | 0 |
-
-广告位只出现在内容页，避免遮挡答题、暂停和返回按钮。
-
----
-
-## 5. 同意管理（重要）
-
-当前 `js/site.js` 自带一个轻量同意横幅：
-
-- 用户接受后才加载 AdSense；
-- 拒绝后隐藏广告位；
-- 选择保存在 `localStorage`；
-- 页脚“Cookie 设置”可重新选择。
-
-**这不是 Google 认证 CMP。** 如果面向 EEA / UK / 瑞士流量，正式上线前必须：
-
-1. 使用 Google 认证 CMP（如 Funding Choices）或另一家认证 CMP；
-2. 配置 Consent Mode v2；
-3. 在 CMP 中声明 AdSense / 广告用途；
-4. 确保拒绝个性化广告时仍可提供服务。
-
-对于只面向非 EEA 市场，当前横幅可以作为 UX 门控；但仍建议补全隐私政策与 Cookie 说明。
-
----
-
-## 6. 内容与政策检查
-
-- [ ] 833 个静态页已部署，首页/模式/图鉴/国家/指南可访问；
-- [ ] 隐私政策、条款、关于、联系页可访问；
-- [ ] `ads.txt` 可访问；
-- [ ] 广告不覆盖答案按钮、暂停、返回；
-- [ ] 不诱导点击、不自动刷新、不隐藏广告；
-- [ ] 游戏页 `noindex`，不参与广告内容抓取；
-- [ ] 没有复制原版游戏美术/音频/代码；
-- [ ] 如果受众包含儿童，设置 child-directed 处理；
-- [ ] 不用自动工具刷展示/点击。
+1. **`www.navpage.win` TLS 握手失败** —— 在 Cloudflare 添加 `www` 的 A/AAAA 或 CNAME 记录并开启代理，然后加 301 到裸域。
+2. **Cloudflare 邮件混淆** —— Scrape Shield → Email Address Obfuscation 会把 `wxiaowar@gmail.com` 在源码里变成 `[email protected]`，浏览器 JS 会还原。若希望纯文本抓取也能看到邮箱，关掉该功能。
+3. **首选域 / 站点收录** —— 新站，先提交 Search Console 和 Bing Webmaster。
 
 参考：
 
 - [AdSense 计划政策](https://support.google.com/adsense/answer/48182)
-- [Google 认证 CMP](https://support.google.com/adsense/answer/13554116)
-
----
-
-## 7. 上线后监控
-
-- AdSense：填充率、RPM、viewability、政策通知；
-- Search Console：索引页数、sitemap、hreflang、Core Web Vitals；
-- 站点：CLS/LCP、单局完成率、页面停留；
-- 广告位 A/B：首页 Hero 下方 vs 内容中部；
-- 游戏内变现下一步再评估 GAM rewarded/interstitial。
+- [AdSense 资格要求](https://support.google.com/adsense/answer/9724)
