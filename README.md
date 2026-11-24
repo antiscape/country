@@ -50,6 +50,70 @@ npm run serve:dist        # 预览构建产物 http://127.0.0.1:8791
 
 首次打开后，PWA 会缓存核心资源；玩过的国旗也会被缓存，之后断网仍可继续。进度保存在浏览器 `localStorage`。
 
+## Cloudflare Pages 自动构建（推荐）
+
+项目已经按 Cloudflare Pages 的构建方式准备好：
+
+- `package.json` 有 `build` 脚本；
+- `.nvmrc` 固定 Node 22；
+- 构建产物是 `dist/`（已加入 `.gitignore`，由 Cloudflare 构建）；
+- 构建会生成 `dist/_headers`、`dist/_redirects`、`dist/404.html`；
+- 游戏在 `/play/`，内容页是预渲染 HTML，不需要 SPA fallback。
+
+### 1. 推到 GitHub
+
+```bash
+git remote add origin git@github.com:<you>/<repo>.git
+git push -u origin main
+```
+
+### 2. Cloudflare 连接 GitHub
+
+Cloudflare Dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**，
+选择仓库，然后填：
+
+| 配置 | 值 |
+|---|---|
+| Framework preset | None |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+| Root directory | 仓库根目录（本项目就是根目录） |
+| Node version | 由 `.nvmrc` 指定 22；也可加 `NODE_VERSION=22` |
+
+### 3. 环境变量
+
+在 Cloudflare Pages 的 **Production** 环境添加：
+
+```text
+SITE_BASE_URL=https://your-domain.com
+```
+
+构建脚本优先读取 `SITE_BASE_URL`，其次才读 `site.config.json` 的 `baseUrl`。
+这样 canonical、hreflang、sitemap 都会指向真实域名。
+
+- 自定义域名接好后，把 `SITE_BASE_URL` 改成最终域名；
+- Preview 环境可以沿用同一值（preview 页面 canonical 指生产域名，不影响主站）；
+- 如果暂时用 `*.pages.dev`，就填 `https://<project>.pages.dev`。
+
+### 4. 域名与 AdSense
+
+1. Cloudflare Pages → Custom domains 绑定域名；
+2. 改 `site.config.json` 的 `contactEmail` 和 AdSense 配置；
+3. 重新 push，Cloudflare 自动构建；
+4. 确认 `https://your-domain.com/ads.txt` 可访问；
+5. Search Console 提交 `sitemap.xml`。
+
+### 5. Cloudflare 注意事项
+
+- **不要开启 Rocket Loader**：它可能干扰 AdSense 与游戏脚本；
+- 保留 Google `Googlebot` / `AdsBot-Google` / `Mediapartners-Google` 的访问，
+  不要用 WAF / Bot Fight Mode 误伤 AdSense 爬虫；
+- `_headers` 已为 `sw.js` 设置 `no-cache`，避免 Service Worker 旧缓存；
+- `_redirects` 会把 `/play`、`/zh` 等无斜杠路径 301 到带斜杠目录；
+- 构建产物约 15MB、约 1,100 个文件，远低于 Pages 的 20,000 文件限制。
+
+GitHub 只负责源码托管；Cloudflare Pages 负责构建与发布，不需要额外 GitHub Actions。
+
 > 产品分析见 **[docs/analysis.md](docs/analysis.md)**；SEO/广告路线见 **[docs/seo-ads-roadmap.md](docs/seo-ads-roadmap.md)**。
 
 ---

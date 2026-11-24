@@ -16,7 +16,7 @@ import { SITE } from '../site/content.mjs';
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const DIST = path.join(ROOT, 'dist');
 const config = JSON.parse(fs.readFileSync(path.join(ROOT, 'site.config.json'), 'utf8'));
-const BASE = String(config.baseUrl || 'https://geoquest.example').replace(/\/+$/, '');
+const BASE = String(process.env.SITE_BASE_URL || config.baseUrl || 'https://geoquest.example').replace(/\/+$/, '');
 const EMAIL = config.contactEmail || 'hello@geoquest.example';
 const ADS = config.adsense || {};
 const TODAY = new Date().toISOString().slice(0, 10);
@@ -641,6 +641,37 @@ function main() {
   write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${absUrl('/sitemap.xml')}\n`);
   const pub = (ADS.client || '').replace(/^ca-/, '');
   write('ads.txt', ADS.client ? `google.com, ${pub}, DIRECT, f08c47fec0942fa0\n` : `# Add your AdSense publisher ID to site.config.json and rebuild.\n`);
+
+  // Cloudflare Pages: headers + redirects + branded 404
+  write('_headers', `/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/assets/*
+  Cache-Control: public, max-age=604800
+
+/css/*
+  Cache-Control: public, max-age=3600
+
+/js/*
+  Cache-Control: public, max-age=3600
+
+/sw.js
+  Cache-Control: no-cache
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/sitemap.xml
+  Content-Type: application/xml
+`);
+  write('_redirects', `/play /play/ 301
+/zh /zh/ 301
+/en /en/ 301
+/es /es/ 301
+/fr /fr/ 301
+`);
+  write('404.html', `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Page not found | GEOQUEST</title><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/site.css"></head><body class="site-body"><main class="lang-hub"><div class="lang-hub-card">${logoMark()}<h1>404</h1><p>This page doesn't exist. Pick a language or head back to the game.</p><div class="lang-hub-grid"><a href="/en/"><span>English</span><small>EN</small></a><a href="/zh/"><span>中文</span><small>ZH</small></a><a href="/es/"><span>Español</span><small>ES</small></a><a href="/fr/"><span>Français</span><small>FR</small></a><a href="/play/?lang=en"><span>Play GEOQUEST</span><small>→</small></a><a href="/en/atlas/"><span>World atlas</span><small>→</small></a></div></div></main></body></html>`);
 
   const count = urls.length + 1;
   console.log(`Built ${count} indexable pages in ${path.relative(ROOT, DIST)}/`);

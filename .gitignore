@@ -11,3 +11,6 @@ npm-debug.log*
 .env
 .env.*
 !.env.example
+
+# Cloudflare / Wrangler local state
+.wrangler/
