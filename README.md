@@ -30,17 +30,18 @@ npm run serve:dist        # 预览构建产物 http://127.0.0.1:8791
 
 ```json
 {
-  "baseUrl": "https://your-domain.com",
+  "baseUrl": "https://navpage.win",
   "contactEmail": "hello@your-domain.com",
   "adsense": {
     "enabled": true,
-    "client": "ca-pub-XXXXXXXXXXXXXXXX",
+    "client": "ca-pub-6758251429919320",
+    "autoAds": true,
     "slots": {
-      "home": "1111111111",
-      "mode": "2222222222",
-      "atlas": "3333333333",
-      "country": "4444444444",
-      "guide": "5555555555"
+      "home": "",
+      "mode": "",
+      "atlas": "",
+      "country": "",
+      "guide": ""
     }
   }
 }
@@ -357,12 +358,25 @@ npm run build
 - 游戏入口 `?lang=es`，语言切换写回 URL；
 - 翻译集中在 `js/locales/es.js`、`js/locales/fr.js`，以及 `site/content.mjs`。
 
-### AdSense 展示广告（已预留）
+### AdSense 展示广告
 
-1. 在 `site.config.json` 填 `adsense.client`、`enabled: true`、各页面 `slots`；
-2. 重新 `npm run build`；
-3. `ads.txt` 会自动生成；
-4. 静态内容页出现广告位，游戏页保持无广告（更适合游戏体验）。
+当前已配置发布商 ID：
+
+```text
+ca-pub-6758251429919320
+```
+
+采用 **Auto ads（自动广告）**：
+
+1. `adsense.enabled: true`；
+2. `adsense.client: "ca-pub-6758251429919320"`；
+3. `adsense.autoAds: true`；
+4. 在 AdSense 后台开启 Auto ads；
+5. 重新 `npm run build`；
+6. `ads.txt` 会自动写入正式授权行。
+
+如果之后创建了手动广告单元，把 `slots` 填上，并把 `autoAds` 设为 `false`（或按需保留），
+静态内容页就会出现手动广告位；游戏页仍然保持无广告。
 
 > **EEA/UK 注意**：当前自定义同意横幅是 UX/广告加载门控，不是 Google 认证 CMP。面向 EEA/UK 上线前，请接入 Funding Choices 或其他 Google 认证 CMP，并配置 Consent Mode v2。完整接入清单见 **[docs/adsense-setup.md](docs/adsense-setup.md)**。
 
@@ -503,7 +517,7 @@ python3 scripts/build_map.py
 - 四语言（zh/en/es/fr）UI、国家名、首都、数字/日期/面积；
 - `dist/` 833 个可索引页面、hreflang、canonical、JSON-LD、sitemap；
 - 静态站搜索/地区筛选、移动端导航；
-- AdSense 广告位构建、同意横幅、`ads.txt`（使用测试 ID 验证，正式 ID 待填）。
+- AdSense 发布商 ID、Auto ads、同意横幅、正式 `ads.txt`。
 
 无浏览器控制台错误。
 

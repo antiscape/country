@@ -14,16 +14,17 @@
 ```json
 {
   "baseUrl": "https://navpage.win",
-  "contactEmail": "hello@your-domain.com",
+  "contactEmail": "hello@navpage.win",
   "adsense": {
     "enabled": true,
-    "client": "ca-pub-XXXXXXXXXXXXXXXX",
+    "client": "ca-pub-6758251429919320",
+    "autoAds": true,
     "slots": {
-      "home": "1111111111",
-      "mode": "2222222222",
-      "atlas": "3333333333",
-      "country": "4444444444",
-      "guide": "5555555555"
+      "home": "",
+      "mode": "",
+      "atlas": "",
+      "country": "",
+      "guide": ""
     }
   }
 }
@@ -31,7 +32,9 @@
 
 - `baseUrl` 必须与线上域名完全一致（canonical / hreflang / sitemap 都用它）；
 - `contactEmail` 会出现在隐私政策、条款和联系页；
-- `slots` 是 AdSense 后台创建的广告单元 ID，不是发布商 ID；
+- `client` 是发布商 ID（`ca-pub-...`）；
+- `autoAds: true` 表示使用 AdSense Auto ads，只需要发布商 ID；
+- `slots` 是可选的手动广告单元 ID，不是发布商 ID；
 - 修改后运行：
 
 ```bash
@@ -83,18 +86,25 @@ dist/
 1. 用真实域名注册 AdSense；
 2. 在站点根目录验证所有权（AdSense 会提供代码或 DNS/HTML 文件方式）；
 3. 提交站点审核；
-4. 审核通过后创建展示广告单元，把 `client` 和 `slot` 填入 `site.config.json`；
-5. 重新构建、部署；
-6. 确认 `https://navpage.win/ads.txt` 中出现：
+4. 审核通过后在 AdSense 后台开启 **Auto ads**；
+5. `site.config.json` 里填入 `client`，设置 `enabled: true`、`autoAds: true`；
+6. 重新构建、部署；
+7. 确认 `https://navpage.win/ads.txt` 中出现：
 
 ```text
-google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-6758251429919320, DIRECT, f08c47fec0942fa0
 ```
 
-如果暂时没有发布商 ID，`ads.txt` 只有注释占位，不会伪造 ID；审核通过后填真实 ID 再重新生成：
+当前发布商 ID 已配置为 `ca-pub-6758251429919320`，重新构建后 `ads.txt` 会自动写入：
+
+```text
+google.com, pub-6758251429919320, DIRECT, f08c47fec0942fa0
+```
+
+如果以后更换账号，重新生成：
 
 ```bash
-npm run seo -- --domain https://navpage.win --ads-client ca-pub-你的ID
+npm run seo -- --domain https://navpage.win --ads-client ca-pub-新ID
 ```
 
 > 不要在没有内容/隐私政策/联系页的情况下反复提交；先部署完整 `dist/`。

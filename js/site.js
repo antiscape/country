@@ -59,7 +59,7 @@
   /* ---------------- AdSense + consent ---------------- */
   const slots = [...document.querySelectorAll('.adsbygoogle')];
   const adBoxes = [...document.querySelectorAll('.ad-slot')];
-  if (!ads.enabled || !ads.client || !slots.length) {
+  if (!ads.enabled || !ads.client || (!slots.length && !ads.autoAds)) {
     adBoxes.forEach((el) => el.classList.add('ad-slot--empty'));
     return;
   }

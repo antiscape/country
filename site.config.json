@@ -3,14 +3,15 @@
   "siteName": "GEOQUEST",
   "contactEmail": "hello@geoquest.example",
   "adsense": {
-    "enabled": false,
-    "client": "",
+    "enabled": true,
+    "client": "ca-pub-6758251429919320",
     "slots": {
       "home": "",
       "mode": "",
       "atlas": "",
       "country": "",
       "guide": ""
-    }
+    },
+    "autoAds": true
   }
 }
