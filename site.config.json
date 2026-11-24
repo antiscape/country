@@ -7,7 +7,7 @@
     "enabled": true,
     "client": "ca-pub-6758251429919320",
     "autoAds": true,
-    "cmp": "custom",
+    "cmp": "google",
     "slots": {
       "home": "",
       "mode": "",
