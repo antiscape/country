@@ -12,6 +12,7 @@ import { openModal, closeModal, confirmDialog, toast, confetti } from '../ui.js'
 import { session } from '../session.js';
 import { sfx } from '../audio.js';
 import { playCountryName } from '../pronounce.js';
+import { FLAG_RATIOS } from '../flag-ratios.js';
 
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
@@ -136,7 +137,8 @@ function questionVisual(q) {
 }
 
 function flagCard(c, index, removed = false) {
-  return `<button class="flag-card ${removed ? 'is-removed' : ''}" data-choice="${c.id}" data-key="${LETTERS[index]}"
+  const ratio = FLAG_RATIOS[c.id] || 1.48;
+  return `<button class="flag-card ${removed ? 'is-removed' : ''}" data-choice="${c.id}" data-key="${LETTERS[index]}" style="--r:${ratio}"
     aria-label="${escapeHtml(countryName(c))}" ${removed ? 'disabled' : ''}>
     ${flagImg(c)}
     <span class="answer-mark">${correctMark()}</span>
