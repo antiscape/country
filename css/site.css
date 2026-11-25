@@ -265,7 +265,7 @@
 .consent-banner .actions { display: flex; gap: 8px; }
 .consent-banner .btn { min-height: 34px; padding: 0 13px; font-size: 11px; }
 
-.lang-hub { min-height: 100vh; display: grid; place-items: center; padding: 40px 0; }
+.lang-hub { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; padding: 40px 0; }
 .lang-hub-card { width: min(680px, calc(100% - 40px)); padding: 40px; border-radius: 24px; border: 1px solid var(--line-2); background: linear-gradient(150deg, rgba(24,48,72,.9), rgba(7,18,31,.96)); box-shadow: var(--shadow); text-align: center; }
 .lang-hub-card .brand-mark { width: 56px; height: 56px; margin: 0 auto 18px; color: var(--gold); }
 .lang-hub-card h1 { font: 800 34px/1.1 var(--font-display); letter-spacing: -.04em; }
@@ -274,6 +274,13 @@
 .lang-hub-grid a { display: flex; align-items: center; justify-content: space-between; padding: 16px 18px; border-radius: 12px; border: 1px solid var(--line); background: rgba(255,255,255,.03); font-size: 14px; font-weight: 700; }
 .lang-hub-grid a:hover { border-color: var(--gold); background: rgba(247,184,61,.06); }
 .lang-hub-grid small { color: var(--muted); font-weight: 500; }
+.lang-hub-footer {
+  width: min(680px, calc(100% - 40px)); display: flex; flex-wrap: wrap; align-items: center;
+  justify-content: center; gap: 8px 18px; font-size: 12px; color: var(--muted);
+}
+.lang-hub-footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 14px; }
+.lang-hub-footer a { color: var(--text-2); font-weight: 600; }
+.lang-hub-footer a:hover { color: var(--gold-2); }
 
 @media (max-width: 1000px) {
   .site-hero { grid-template-columns: 1fr; text-align: center; padding-top: 40px; }

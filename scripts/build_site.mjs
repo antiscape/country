@@ -707,6 +707,19 @@ function legalPage(lang, type) {
   return page(lang, legalPath(lang, type), `${title} | GEOQUEST`, plainText(blocks[0]), body, { image: '/assets/icon-512.png' });
 }
 
+// The hub at "/" is the URL submitted to AdSense, so the policy and contact
+// pages must be reachable from it without executing the auto-redirect script.
+function hubFooter() {
+  const legal = [
+    ['/en/about/', SITE.en.legal.aboutTitle],
+    ['/en/privacy/', SITE.en.legal.privacyTitle],
+    ['/en/terms/', SITE.en.legal.termsTitle],
+    ['/en/contact/', SITE.en.legal.contactTitle],
+  ].map(([href, label]) => `<a href="${href}">${esc(label)}</a>`).join('');
+  const langs = LANGS.map((l) => `<a href="/${l}/" hreflang="${LOCALES[l]}" lang="${LOCALES[l]}">${esc(SITE[l].label)}</a>`).join('');
+  return `<footer class="lang-hub-footer"><nav aria-label="Legal">${legal}</nav><nav aria-label="Languages">${langs}</nav></footer>`;
+}
+
 function languageHub() {
   const cards = LANGS.map((l) => `<a href="/${l}/"><span>${esc(SITE[l].label)}</span><small>${l.toUpperCase()}</small></a>`).join('');
   const title = 'GEOQUEST — World geography quiz in 4 languages';
@@ -733,7 +746,7 @@ function languageHub() {
     }
     location.replace('/' + lang + '/');
   })();`;
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>${title}</title><meta name="description" content="${desc}"><meta name="robots" content="index,follow"><link rel="canonical" href="${absUrl('/')}">${alternates}<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/css/base.css?v=${BUILD_ID}"><link rel="stylesheet" href="/css/site.css?v=${BUILD_ID}"><script>${autoLang}</script></head><body class="site-body"><main class="lang-hub"><div class="lang-hub-card">${logoMark()}<h1>GEOQUEST</h1><p>${esc(SITE.en.languageLead)}</p><div class="lang-hub-grid">${cards}</div></div></main></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>${title}</title><meta name="description" content="${desc}"><meta name="robots" content="index,follow"><link rel="canonical" href="${absUrl('/')}">${alternates}<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/css/base.css?v=${BUILD_ID}"><link rel="stylesheet" href="/css/site.css?v=${BUILD_ID}"><script>${autoLang}</script></head><body class="site-body"><main class="lang-hub"><div class="lang-hub-card">${logoMark()}<h1>GEOQUEST</h1><p>${esc(SITE.en.languageLead)}</p><div class="lang-hub-grid">${cards}</div></div>${hubFooter()}</main></body></html>`;
 }
 
 /* ---------------- write ---------------- */
@@ -829,8 +842,16 @@ function main() {
 /en /en/ 301
 /es /es/ 301
 /fr /fr/ 301
+/privacy /en/privacy/ 301
+/privacy/ /en/privacy/ 301
+/terms /en/terms/ 301
+/terms/ /en/terms/ 301
+/about /en/about/ 301
+/about/ /en/about/ 301
+/contact /en/contact/ 301
+/contact/ /en/contact/ 301
 `);
-  write('404.html', `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Page not found | GEOQUEST</title><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/css/base.css?v=${BUILD_ID}"><link rel="stylesheet" href="/css/site.css?v=${BUILD_ID}"></head><body class="site-body"><main class="lang-hub"><div class="lang-hub-card">${logoMark()}<h1>404</h1><p>This page doesn't exist. Pick a language or head back to the game.</p><div class="lang-hub-grid"><a href="/en/"><span>English</span><small>EN</small></a><a href="/zh/"><span>中文</span><small>ZH</small></a><a href="/es/"><span>Español</span><small>ES</small></a><a href="/fr/"><span>Français</span><small>FR</small></a><a href="/play/?lang=en"><span>Play GEOQUEST</span><small>→</small></a><a href="/en/atlas/"><span>World atlas</span><small>→</small></a></div></div></main></body></html>`);
+  write('404.html', `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Page not found | GEOQUEST</title><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/css/base.css?v=${BUILD_ID}"><link rel="stylesheet" href="/css/site.css?v=${BUILD_ID}"></head><body class="site-body"><main class="lang-hub"><div class="lang-hub-card">${logoMark()}<h1>404</h1><p>This page doesn't exist. Pick a language or head back to the game.</p><div class="lang-hub-grid"><a href="/en/"><span>English</span><small>EN</small></a><a href="/zh/"><span>中文</span><small>ZH</small></a><a href="/es/"><span>Español</span><small>ES</small></a><a href="/fr/"><span>Français</span><small>FR</small></a><a href="/play/?lang=en"><span>Play GEOQUEST</span><small>→</small></a><a href="/en/atlas/"><span>World atlas</span><small>→</small></a></div></div>${hubFooter()}</main></body></html>`);
 
   console.log(`Built ${seo.pages} indexable pages in ${path.relative(ROOT, DIST)}/`);
   console.log(`  baseUrl: ${BASE}${BASE.includes('example') ? '  ← change this in site.config.json before deploy' : ''}`);

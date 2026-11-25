@@ -19,7 +19,7 @@
     "enabled": true,
     "client": "ca-pub-6758251429919320",
     "autoAds": true,
-    "cmp": "custom",
+    "cmp": "google",
     "slots": { "home": "", "mode": "", "atlas": "", "country": "", "guide": "" }
   }
 }
@@ -128,7 +128,7 @@ npm run build
 - [x] 内容页 AdSense 代码在 `<head>`
 - [x] Consent Mode v2 默认 denied
 - [ ] EEA/UK/CH：启用 Funding Choices 并设 `cmp: "google"`
-- [ ] 部署后确认 `https://navpage.win/ads.txt`、`/privacy/`、`/contact/` 可访问
+- [ ] 部署后确认 `https://navpage.win/ads.txt` 返回 200，且 `/privacy`、`/privacy/`、`/contact`、`/contact/` 301 到 `/en/` 版本
 - [ ] Search Console 提交 sitemap，等 2–4 周有收录再提交
 
 ---
@@ -150,11 +150,13 @@ curl -s https://navpage.win/zh/atlas/af/ | grep -o '<meta name="robots"[^>]*>'
 
 期望：第一行有 client；第二行 `index,follow`；第三行 `noindex,follow`。
 
+根路径的隐私/条款/关于/联系页由 `dist/_redirects` 301 到 `/en/` 版本（`/privacy` 和 `/privacy/` 两种写法都覆盖）。这样审核员直接访问 `navpage.win/privacy` 不会落到 404，`https://navpage.win/` 这个提交给 AdSense 的 URL 上也有页脚链接可点。
+
 ---
 
 ## 7. 已知但仍需在控制台处理
 
-1. **`www.navpage.win` TLS 握手失败** —— 在 Cloudflare 添加 `www` 的 A/AAAA 或 CNAME 记录并开启代理，然后加 301 到裸域。
+1. **`www.navpage.win` TLS 握手失败** —— 在 Cloudflare 添加 `www` 的 A/AAAA 或 CNAME 记录并开启代理，然后加 301 到裸域。AdSense 有时会同时探测 `www`，这条不修会让抓取和用户访问都出问题。
 2. **Cloudflare 邮件混淆** —— Scrape Shield → Email Address Obfuscation 会把 `wxiaowar@gmail.com` 在源码里变成 `[email protected]`，浏览器 JS 会还原。若希望纯文本抓取也能看到邮箱，关掉该功能。
 3. **首选域 / 站点收录** —— 新站，先提交 Search Console 和 Bing Webmaster。
 
