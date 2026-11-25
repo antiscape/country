@@ -128,7 +128,7 @@ npm run build
 - [x] 内容页 AdSense 代码在 `<head>`
 - [x] Consent Mode v2 默认 denied
 - [ ] EEA/UK/CH：启用 Funding Choices 并设 `cmp: "google"`
-- [ ] 部署后确认 `https://navpage.win/ads.txt` 返回 200，且 `/privacy`、`/privacy/`、`/contact`、`/contact/` 301 到 `/en/` 版本
+- [x] 部署后确认 `https://navpage.win/ads.txt` 返回 200，且 `/privacy`、`/privacy/`、`/contact`、`/contact/` 301 到 `/en/` 版本（2026-11-25 验证）
 - [ ] Search Console 提交 sitemap，等 2–4 周有收录再提交
 
 ---
